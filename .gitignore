@@ -13,3 +13,6 @@ __pycache__/
 # Cloudflare Pages build output
 dist/
 .wrangler/
+
+# Private correspondence
+email.txt

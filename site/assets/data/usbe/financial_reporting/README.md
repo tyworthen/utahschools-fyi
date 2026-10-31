@@ -25,3 +25,9 @@ L (ESEA / Title programs). Revenue and spending by program and LEA.
 Not downloaded: PDFs on the same page (accounting handbook, indirect cost
 schedules, chart-of-accounts PDFs) and any older years on the sub-pages
 afrrevenue.php, afrexpenditures.php, afrbalancesheet.php.
+
+## Personal information removed (2026-10-31)
+Author and last-modified-by names (docProps/core.xml) and one saved-file path naming a staff
+member (xl/workbook.xml) were removed from all 39 files by `scripts/strip_metadata.py`.
+Worksheet content is unchanged, including a revision note in the FY2025 and FY2026 chart of
+accounts. `manifest.csv` lists each file's original and published SHA-256.

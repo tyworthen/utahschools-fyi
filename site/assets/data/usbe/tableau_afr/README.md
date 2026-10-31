@@ -75,3 +75,10 @@ Revenue excluding other financing sources vs. Transparent Utah revenue excluding
 - Iron: Transparent Utah FY2021 ($156.6M) and FY2022 ($56.1M) disagree with USBE
   ($108.8M, $122.2M); property taxes likewise. USBE values are consistent with adjacent years.
 - Cache: diverges from FY2020 onward, growing to −20.7% in FY2024 (USBE higher). Unexplained.
+
+## Personal information removed (2026-10-31)
+The workbooks recorded a USBE staff member's Windows user folder in data-source paths and an
+"Edited by <name>" note in the embedded SQL comment. Both were redacted by
+`scripts/strip_metadata.py` in the `.twbx` files and the `extracted_*` copies. Data, queries,
+and extracts are otherwise unchanged. Original and published checksums are in
+`../../reference/metadata_redactions.csv`.

@@ -46,6 +46,7 @@
         <li><a href="#scope">Scope</a></li>
         <li><a href="#validation">Validation</a></li>
         <li><a href="#trace">Traceability</a></li>
+        <li><a href="#cleaning">Data cleaning &amp; personal information</a></li>
         <li><a href="#calcs">Standard calculations</a></li>
         <li><a href="#inflation">Inflation</a></li>
         <li><a href="#efficiency">Efficiency</a></li>
@@ -120,6 +121,15 @@
           <span>Published finding</span><i></i><span>Calculation</span><i></i><span>Normalized dataset</span><i></i><span>Original dataset</span><i></i><span>Government document</span><i></i><span>Page / table / cell</span>
         </div>
         <p class="mt-2">We keep original source documents, raw and cleaned datasets, transformation scripts, source URLs, and retrieval dates. Historical source data is never overwritten without keeping the original version.</p>
+
+        <h2 id="cleaning">Data cleaning and personal information</h2>
+        <p>Cleaning the data includes removing personal information. Government files often carry the names of the staff who created or last saved them, and some record local file paths that include a user’s name. That information is not part of the published data, so we remove it before a file enters our archive:</p>
+        <ul>
+          <li>Author and “last modified by” fields in spreadsheet metadata</li>
+          <li>Saved-file locations that include a person’s name</li>
+          <li>User folders in file paths, and “edited by” notes, inside data-tool workbooks</li>
+        </ul>
+        <p>We do not change any figures or document content. Each removal is logged with the file’s checksum before and after (<a href="assets/data/reference/metadata_redactions.csv" download>metadata_redactions.csv</a>), so every file we publish can still be matched to the original government download. We do not publish student-level records.</p>
 
         <h2 id="calcs">Standard calculations</h2>
         <div class="table-wrap">
