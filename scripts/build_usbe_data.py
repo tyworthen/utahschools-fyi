@@ -47,6 +47,13 @@ CAT_LABELS = {"instruction": "Instruction", "support": "Student support", "admin
               "transportation": "Transportation", "operations": "Operations", "capital": "Capital",
               "debt": "Debt service", "other": "Other"}
 YEARS = range(2012, 2026)
+# Administration (functions 2300-2599) is also broken down by subgroup and by object (type of spending).
+ADMIN_SUBS = {23: "admin_district", 24: "admin_school", 25: "admin_central"}
+ADMIN_SUB_LABELS = {"admin_district": "District administration (board, superintendent, elections)",
+                    "admin_school": "School administration (principals' offices)",
+                    "admin_central": "Central business services (fiscal, personnel, communications, admin technology)"}
+OBJECTS = {"1": "Salaries", "2": "Benefits", "3": "Purchased professional services", "4": "Purchased property services",
+           "5": "Other purchased services", "6": "Supplies and materials", "7": "Property and equipment", "8": "Debt service and other"}
 SRC = {"tableau": "USBE AFR Tableau Public extract", "excel": "USBE AFR Excel summary"}
 
 
@@ -96,6 +103,9 @@ names = {}                                     # lea_number -> name
 spend = defaultdict(tree)                      # spend[cat][lea][year]
 gf_exp = tree()
 bva = defaultdict(lambda: defaultdict(dict))   # bva[lea][year][submission] (General Fund expenditures)
+admin_sub = defaultdict(tree)                  # admin_sub[sub][lea][year]
+admin_obj = defaultdict(tree)                  # admin_obj[lea][year][object digit]
+admin_fn = defaultdict(dict)                   # admin_fn[lea][code] = {"name":..., "values": {year: amt}} (peers only)
 for r in district_rows("afr_expenditures_all_leas_FY2012-FY2024.csv.gz"):
     d = r["lea_number"]; y = int(r["fiscal_year"]); amt = float(r["amount"] or 0)
     names[d] = r["lea_name"]
@@ -103,8 +113,15 @@ for r in district_rows("afr_expenditures_all_leas_FY2012-FY2024.csv.gz"):
     if r["fund_code"] == "10":
         bva[d][y][r["submission_type"]] = bva[d][y].get(r["submission_type"], 0.0) + amt
     if r["submission_type"] != "Actuals": continue
-    spend[category(int(r["function_code"]))][d][y] += amt
+    fc = int(r["function_code"])
+    spend[category(fc)][d][y] += amt
     if r["fund_code"] == "10": gf_exp[d][y] += amt
+    if 2300 <= fc < 2600:
+        admin_sub[ADMIN_SUBS[fc // 100]][d][y] += amt
+        admin_obj[d][y][r["object_code"][:1]] += amt
+        if d in PEERS:
+            f = admin_fn[d].setdefault(r["function_code"], {"name": r["function"].strip(), "values": defaultdict(float)})
+            f["values"][y] += amt
 
 revenue, proptax, local, state_rev, federal = tree(), tree(), tree(), tree(), tree()
 for r in district_rows("afr_revenues_all_leas_FY2011-FY2024.csv.gz"):
@@ -133,8 +150,12 @@ def lea_of(name):
     return BY_NAME.get(str(name).strip()) if name else None
 
 
+EX_ADMIN = defaultdict(lambda: {"sub": defaultdict(float), "obj": defaultdict(float)})
+
+
 def excel_expenditures(path, sheet):
-    """Gov Funds Totals (FY2025 layout): {lea: {cat: amount}}, summing object columns, skipping TOTALS."""
+    """Gov Funds Totals (FY2025 layout): {lea: {cat: amount}}, summing object columns, skipping TOTALS.
+    Also fills EX_ADMIN[lea] with administration by subgroup and by object."""
     R = rows(path, sheet)
     hrow = next(i for i, r in enumerate(R[:6]) if r and any(isinstance(c, str) and c.strip().upper() == "TOTALS" for c in r))
     groups, objs = R[hrow - 1], R[hrow]
@@ -149,7 +170,11 @@ def excel_expenditures(path, sheet):
             code = excel_prefix_code(groups[j])
             # "2XXX Support Services" is a subtotal of the 21xx-27xx groups; skip it.
             if o in ("", "TOTALS") or code is None or str(groups[j]).strip().upper().startswith("2XXX"): continue
-            acc[category(code)] += float(r[j] or 0)
+            v = float(r[j] or 0)
+            acc[category(code)] += v
+            if 2300 <= code < 2600:
+                EX_ADMIN[d]["sub"][ADMIN_SUBS[code // 100]] += v
+                EX_ADMIN[d]["obj"][o[:1]] += v
         out[d] = acc
     return out
 
@@ -210,6 +235,8 @@ year_source = defaultdict(dict)
 for d in names:
     if d in exp25:
         for c, v in exp25[d].items(): spend[c][d][2025] += v
+        for k, v in EX_ADMIN[d]["sub"].items(): admin_sub[k][d][2025] += v
+        for k, v in EX_ADMIN[d]["obj"].items(): admin_obj[d][2025][k] += v
     if d in gfexp25: gf_exp[d][2025] = gfexp25[d]
     if d in rev25:
         revenue[d][2025] = rev25[d]["revenue"]; proptax[d][2025] = rev25[d]["proptax"]
@@ -309,6 +336,19 @@ for c in CATS:
            "Actual expenditures in the USBE function codes mapped to this category (see the Spending page and methodology).",
            lambda d, c=c: series(spend[c], d), hidden=True)
 
+for k in ADMIN_SUBS.values():
+    metric("spend_" + k, ADMIN_SUB_LABELS[k].split(" (")[0] + " spending", "money", "Nominal dollars, governmental funds",
+           {"admin_district": "Functions 2300–2399: board of education, elections, superintendent's office.",
+            "admin_school": "Functions 2400–2499: office of the principal and other school administration.",
+            "admin_central": "Functions 2500–2599: fiscal, purchasing, public information, personnel, and administrative technology services."}[k],
+           lambda d, k=k: series(admin_sub[k], d), hidden=True)
+
+def admin_detail(d):
+    fns = {c: {"name": f["name"], "values": {y: round(v) for y, v in sorted(f["values"].items())}}
+           for c, f in sorted(admin_fn[d].items()) if any(abs(v) >= 500 for v in f["values"].values())}
+    objs = {y: {k: round(v) for k, v in sorted(admin_obj[d][y].items()) if k in OBJECTS} for y in YEARS if y in admin_obj[d]}
+    return {"functions": fns, "objects": objs}
+
 def bva_for(d):
     return {y: {"original": round(v["Original Budget"]) if v.get("Original Budget") is not None else None,
                 "final": round(v["Final Budget"]) if v.get("Final Budget") is not None else None,
@@ -333,6 +373,8 @@ peer_out = {
     "spending2025": {c: round(spend[c]["30"][2025]) for c in CATS},
     "budgetVsActual": {PEERS[d]: bva_for(d) for d in PEERS},
     "gfBalance": {PEERS[d]: gfbal_for(d) for d in PEERS},
+    "adminDetail": {PEERS[d]: admin_detail(d) for d in PEERS},
+    "adminLabels": {"subs": ADMIN_SUB_LABELS, "objects": OBJECTS},
 }
 data_js = os.path.join(ASSETS, "data.js")
 block = ("// BEGIN USBE GENERATED — do not edit by hand; run scripts/build_usbe_data.py\n"

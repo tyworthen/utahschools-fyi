@@ -40,7 +40,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2 id="h100">$100 of district spending</h2>
-        <p>Every category below uses the State Auditor’s standardized definitions, so the same category means the same thing in every Utah district.</p>
+        <p>Every category below groups function codes from Utah’s uniform chart of accounts, which every district uses to report to the State Board of Education, so the same category means the same thing in every Utah district.</p>
       </div>
       <div id="hundred"></div>
     </div>
@@ -86,6 +86,61 @@
         '<p class="mt-2" style="font-size:15px;color:#334155"><strong>USBE function codes:</strong> ' + CODES[c.id] + "</p></div></div></article>";
     }).join("");
     TSF.spending.categories.forEach(function (c) { U.lineChart(document.getElementById("chart-" + c.id), "spend_" + c.id); });
+
+    // ---------- Inside administration ----------
+    var A = TSF.adminDetail, L = TSF.adminLabels, SUBS = ["admin_school", "admin_central", "admin_district"];
+    var val = function (k, d, y) { var v = (TSF.metrics["spend_" + k].values[d] || {})[y]; return v == null ? null : v; };
+    var money = function (v) { return v == null ? '<span class="muted">—</span>' : U.fmt(v, "money"); };
+    var chg = function (a, b) { return a && b != null ? U.pct(b, a) : "—"; };
+    var box = document.createElement("div");
+    box.id = "admin-detail";
+    box.className = "mt-3";
+    box.innerHTML =
+      '<h3 style="font-size:24px">Inside administration</h3>' +
+      '<p style="max-width:72ch;color:#334155">Administration has three parts. From FY2016 to FY2025, Tooele’s school administration (principals’ offices) grew 116%, within the range of its peers (+65% to +129%). Most of the gap comes from <strong>central business services</strong> — fiscal, personnel, communications, and administrative technology — which rose sharply in FY2024 and FY2025.</p>' +
+      '<div class="chart-box mt-2" id="admin-subs"></div>' +
+      '<div class="table-wrap mt-2"><table><caption>Administration by part: FY2016 vs. FY2025, four districts</caption><thead><tr><th scope="col">Part</th>' +
+        ["tooele", "iron", "cache", "boxelder"].map(function (d) { return '<th scope="col" class="n">' + TSF.districts[d].name + "</th>"; }).join("") + "</tr></thead><tbody>" +
+        SUBS.concat(["administration"]).map(function (k) {
+          var lab = k === "administration" ? "<strong>All administration</strong>" : U.esc(L.subs[k]);
+          return '<tr><th scope="row">' + lab + "</th>" + ["tooele", "iron", "cache", "boxelder"].map(function (d) {
+            var a = val(k, d, 2016), b = val(k, d, 2025);
+            return '<td class="n">' + money(a) + " → " + money(b) + '<br><span class="muted">' + chg(a, b) + "</span></td>";
+          }).join("") + "</tr>";
+        }).join("") + "</tbody></table></div>" +
+      '<div class="grid grid-2 mt-2" style="align-items:start">' +
+        '<div><div class="table-wrap"><table><caption>Tooele administration by function code</caption><thead><tr><th scope="col">Function</th>' +
+          [2019, 2021, 2023, 2024].map(function (y) { return '<th scope="col" class="n">FY' + y + "</th>"; }).join("") + "</tr></thead><tbody>" +
+          Object.keys(A.tooele.functions).filter(function (code) {
+            return [2019, 2021, 2023, 2024].some(function (y) { return Math.abs(A.tooele.functions[code].values[y] || 0) >= 500; });
+          }).map(function (code) {
+            var f = A.tooele.functions[code];
+            return '<tr><th scope="row"><span class="muted">' + code + "</span> " + U.esc(f.name.charAt(0) + f.name.slice(1).toLowerCase().replace(/^support services - /, "")) + "</th>" +
+              [2019, 2021, 2023, 2024].map(function (y) { return '<td class="n">' + money(f.values[y]) + "</td>"; }).join("") + "</tr>";
+          }).join("") + '</tbody></table></div><p class="muted" style="font-size:13px;margin-top:8px">USBE’s FY2025 files report administration by part and by type of spending, but not by individual function code.</p></div>' +
+        '<div><div class="table-wrap"><table><caption>Tooele administration by type of spending</caption><thead><tr><th scope="col">Type</th>' +
+          [2023, 2024, 2025].map(function (y) { return '<th scope="col" class="n">FY' + y + "</th>"; }).join("") + "</tr></thead><tbody>" +
+          Object.keys(L.objects).map(function (o) {
+            return '<tr><th scope="row"><span class="muted">' + o + "xx</span> " + L.objects[o] + "</th>" +
+              [2023, 2024, 2025].map(function (y) { return '<td class="n">' + money((A.tooele.objects[y] || {})[o]) + "</td>"; }).join("") + "</tr>";
+          }).join("") + "</tbody></table></div></div>" +
+      "</div>" +
+      '<div class="grid grid-3 mt-2">' +
+        U.qwa("Tooele reported $4.8M under Administrative Technology Services (function 2580) in FY2024, a code it had not used before — including salaries ($1.95M), benefits ($0.86M), and property and equipment ($1.18M). The same year, instruction spending fell $15.7M. Was this spending recorded under other functions before FY2024, and if so, which?", "Data: USBE AFR, function × program × object. The program codes don’t show where it was recorded earlier.") +
+        U.qwa("Central business services rose from $3.0M in FY2023 to $11.3M in FY2025, while supplies and materials within administration rose from $0.6M to $4.2M. What was purchased, and is it a one-time or recurring cost?", "Data: USBE AFR FY2023–FY2025. Next step: district expenditure detail and board minutes.") +
+        U.qwa("School administration grew 116% from FY2016 to FY2025 (Iron: +129%). How much of that reflects new schools and enrollment growth?", "Needs: enrollment and school counts (USBE Data Gateway).") +
+      "</div>" +
+      '<div data-source="usbe-afr"></div>';
+    document.getElementById("administration").appendChild(box);
+    U.drawLines(document.getElementById("admin-subs"), {
+      id: "admin-subs", label: "Tooele administration by part", basis: "Nominal dollars, governmental funds", unit: "money", years: TSF.years, source: "usbe-afr",
+      calc: "Functions 2300–2399 (district), 2400–2499 (school), 2500–2599 (central business services).",
+      series: SUBS.map(function (k, i) {
+        return { name: ["School admin", "Central services", "District admin"][i], color: ["#2563EB", "#FACC15", "#7C3AED"][i], dash: ["", "", "6 4"][i], bold: k === "admin_central",
+                 values: TSF.years.map(function (y) { return val(k, "tooele", y); }) };
+      })
+    });
+    box.querySelectorAll("[data-source]").forEach(function (e) { e.outerHTML = U.sourceLine(e.getAttribute("data-source"), "Administration detail: actuals, governmental funds."); });
   })();
 </script>
 </body>
