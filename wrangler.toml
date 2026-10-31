@@ -1,5 +1,17 @@
-# Cloudflare Pages project for https://utahschools.fyi
-# Direct upload:  bash scripts/build_pages.sh && npx wrangler pages deploy
+# Cloudflare Worker (static assets only) for https://utahschools.fyi
+# Build and deploy:  bash scripts/build_site.sh && npx wrangler deploy
 name = "utahschools"
-pages_build_output_dir = "dist"
-compatibility_date = "2026-10-01"
+compatibility_date = "2026-10-31"
+
+[assets]
+directory = "./dist"
+html_handling = "auto-trailing-slash"   # /utah serves utah.html; /utah.html redirects to /utah
+not_found_handling = "404-page"         # missing URLs get dist/404.html with a 404 status
+
+[[routes]]
+pattern = "utahschools.fyi"
+custom_domain = true
+
+[[routes]]
+pattern = "www.utahschools.fyi"
+custom_domain = true

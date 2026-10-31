@@ -13,7 +13,7 @@ standards and `design.md` for the visual identity.
 | `site/assets/statewide.js` | Generated figures for all 41 Utah school districts |
 | `site/assets/data/` | Preserved source downloads, normalized CSVs, source registry, validation results |
 | `scripts/build_usbe_data.py` | Rebuilds all figures from the USBE source files |
-| `scripts/build_pages.sh` | Builds the Cloudflare Pages output in `dist/` |
+| `scripts/build_site.sh` | Builds the static assets the Cloudflare Worker serves, in `dist/` |
 | `brand/` | Logo options (`logo-options/index.html`) and the production export page |
 | `scripts/export_brand.py` | Renders header/footer logos, badge, social image, and favicons into `site/assets/brand/` |
 
@@ -26,7 +26,7 @@ python3 scripts/build_usbe_data.py
 
 ## Deploying
 
-The site is hosted on Cloudflare Pages at https://utahschools.fyi. See
-[`deployment.md`](deployment.md) for setup, publishing updates, email routing, rollbacks, and limits.
+The site is a static-assets Cloudflare Worker at https://utahschools.fyi. See
+[`deployment.md`](deployment.md) for setup, publishing updates, rollbacks, and limits.
 
-Build command `bash scripts/build_pages.sh`, output directory `dist`.
+Build command `bash scripts/build_site.sh`, deploy command `npx wrangler deploy` (config in `wrangler.toml`).

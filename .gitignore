@@ -10,7 +10,7 @@ __pycache__/
 *.pyc
 .venv/
 
-# Cloudflare Pages build output
+# Cloudflare build output and local Wrangler state
 dist/
 .wrangler/
 
