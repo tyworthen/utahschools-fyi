@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logo Options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #0E2A47; --slate: #4F6B8A; --gold: #E5B43C; --gold-dark: #B7860B; --yellow: #FACC15; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #F1F5F9; color: #0F172A; padding: 40px 16px 80px; }
+  h1 { max-width: 1200px; margin: 0 auto 8px; font-size: 32px; letter-spacing: -.02em; }
+  .intro { max-width: 1200px; margin: 0 auto 32px; color: #475569; }
+  .opt { max-width: 1200px; margin: 0 auto 40px; }
+  .opt h2 { font-size: 20px; margin: 0 0 4px; }
+  .opt p { margin: 0 0 14px; color: #475569; font-size: 15px; }
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .tile { border-radius: 14px; padding: 36px 24px; display: flex; align-items: center; justify-content: center; min-height: 300px; overflow: hidden; }
+  .tile.light { background: #F5F4EF; border: 1px solid #E2E8F0; }
+  .tile.dark { background: #082F49; }
+  @media (max-width: 900px) { .tiles { grid-template-columns: 1fr; } }
+
+  /* Lockups are drawn at a fixed design width and scaled to fit the tile. */
+  .lockup { width: max-content; transform-origin: center; text-align: center; font-family: Montserrat, sans-serif; color: var(--navy); padding: 8px 12px; }
+  .lockup img.mtn { display: block; width: 900px; margin: 0 auto 18px; }
+  .dark .lockup { color: #fff; }
+  .word { font-weight: 600; font-size: 112px; line-height: 1; letter-spacing: .055em; white-space: nowrap; }
+  .tag { margin-top: 26px; font-weight: 500; font-size: 33px; letter-spacing: .2em; color: var(--slate); white-space: nowrap; }
+  .dark .tag { color: #B6C6D8; }
+  .dot { color: var(--gold); padding: 0 .35em; }
+  .fyi { color: var(--gold-dark); font-weight: 700; font-size: .5em; letter-spacing: .04em; margin-left: .12em; }
+  .dark .fyi { color: var(--yellow); }
+
+  /* Option 4: horizontal header lockup */
+  .h { width: max-content; display: flex; align-items: center; gap: 36px; text-align: left; }
+  .h img.mtn { width: 380px; margin: 0; flex-shrink: 0; }
+  .h .word { font-size: 92px; }
+  .h .tag { font-size: 25px; margin-top: 16px; letter-spacing: .18em; }
+  .h .rule { width: 3px; align-self: stretch; background: var(--gold); border-radius: 2px; }
+
+  /* Option 5: domain wordmark */
+  .dom .word { font-weight: 700; letter-spacing: .01em; text-transform: none; font-size: 124px; }
+  .dom .word .tld { color: var(--gold-dark); }
+  .dark .dom .word .tld { color: var(--yellow); }
+
+  /* Option 6: badge / app icon */
+  .badge { width: 520px; height: 520px; border-radius: 96px; background: var(--navy); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px; }
+  .dark .badge { background: #fff; }
+  .badge img.mtn { width: 100%; margin: 0 0 30px; }
+  .badge { box-sizing: border-box; }
+  .badge .word { color: #fff; font-size: 50px; letter-spacing: .06em; white-space: nowrap; }
+  .dark .badge .word { color: var(--navy); }
+  .badge .tag { color: var(--yellow); font-size: 26px; margin-top: 14px; letter-spacing: .3em; font-weight: 700; }
+  .dark .badge .tag { color: var(--gold-dark); }
+</style>
+</head>
+<body>
+<h1>Logo options</h1>
+<p class="intro">All six keep the original mountain artwork, typeface style, colors, and gold-dot tagline. None uses “Tooele.” Each is shown on the light background and on the site’s navy header.</p>
+
+<section class="opt" id="o1">
+  <h2>1 · Utah Schools — direct successor</h2>
+  <p>The original layout with “Utah” in place of “Tooele.” Closest to the current logo.</p>
+  <div class="tiles">
+    <div class="tile light"><div class="lockup"><img class="mtn" src="mountains.png" alt=""><div class="word">UTAH SCHOOLS</div><div class="tag">DATA<span class="dot">•</span>INSIGHTS<span class="dot">•</span>A STRONGER COMMUNITY</div></div></div>
+    <div class="tile dark"><div class="lockup"><img class="mtn" src="mountains-light.png" alt=""><div class="word">UTAH SCHOOLS</div><div class="tag">DATA<span class="dot">•</span>INSIGHTS<span class="dot">•</span>A STRONGER COMMUNITY</div></div></div>
+  </div>
+</section>
+
+<section class="opt" id="o2">
+  <h2>2 · Utah Schools .fyi — wordmark plus domain</h2>
+  <p>Ties the logo to utahschools.fyi, with the site’s tagline. The gold “.FYI” echoes the yellow accent.</p>
+  <div class="tiles">
+    <div class="tile light"><div class="lockup"><img class="mtn" src="mountains.png" alt=""><div class="word">UTAH SCHOOLS<span class="fyi">.FYI</span></div><div class="tag">INDEPENDENT DATA<span class="dot">•</span>INFORMED TAXPAYERS</div></div></div>
+    <div class="tile dark"><div class="lockup"><img class="mtn" src="mountains-light.png" alt=""><div class="word">UTAH SCHOOLS<span class="fyi">.FYI</span></div><div class="tag">INDEPENDENT DATA<span class="dot">•</span>INFORMED TAXPAYERS</div></div></div>
+  </div>
+</section>
+
+<section class="opt" id="o3">
+  <h2>3 · Utah School Finance — matches the current site name</h2>
+  <p>Names the subject directly, with the “Follow the money” design motto as the tagline.</p>
+  <div class="tiles">
+    <div class="tile light"><div class="lockup"><img class="mtn" src="mountains.png" alt=""><div class="word" style="font-size:96px">UTAH SCHOOL FINANCE</div><div class="tag">FOLLOW THE MONEY<span class="dot">•</span>SHOW THE EVIDENCE</div></div></div>
+    <div class="tile dark"><div class="lockup"><img class="mtn" src="mountains-light.png" alt=""><div class="word" style="font-size:96px">UTAH SCHOOL FINANCE</div><div class="tag">FOLLOW THE MONEY<span class="dot">•</span>SHOW THE EVIDENCE</div></div></div>
+  </div>
+</section>
+
+<section class="opt" id="o4">
+  <h2>4 · Horizontal — built for the site header</h2>
+  <p>Mountains beside the name, so the logo stays legible at header height (about 44px tall).</p>
+  <div class="tiles">
+    <div class="tile light"><div class="lockup h"><img class="mtn" src="mountains.png" alt=""><span class="rule"></span><div><div class="word">UTAH SCHOOLS</div><div class="tag">DATA<span class="dot">•</span>INSIGHTS<span class="dot">•</span>ACCOUNTABILITY</div></div></div></div>
+    <div class="tile dark"><div class="lockup h"><img class="mtn" src="mountains-light.png" alt=""><span class="rule"></span><div><div class="word">UTAH SCHOOLS</div><div class="tag">DATA<span class="dot">•</span>INSIGHTS<span class="dot">•</span>ACCOUNTABILITY</div></div></div></div>
+  </div>
+</section>
+
+<section class="opt" id="o5">
+  <h2>5 · utahschools.fyi — the domain as the wordmark</h2>
+  <p>Lowercase domain name, so the logo and the address are the same thing.</p>
+  <div class="tiles">
+    <div class="tile light"><div class="lockup dom"><img class="mtn" src="mountains.png" alt=""><div class="word">utahschools<span class="tld">.fyi</span></div><div class="tag">UTAH PUBLIC-SCHOOL DATA<span class="dot">•</span>INDEPENDENT</div></div></div>
+    <div class="tile dark"><div class="lockup dom"><img class="mtn" src="mountains-light.png" alt=""><div class="word">utahschools<span class="tld">.fyi</span></div><div class="tag">UTAH PUBLIC-SCHOOL DATA<span class="dot">•</span>INDEPENDENT</div></div></div>
+  </div>
+</section>
+
+<section class="opt" id="o6">
+  <h2>6 · Badge — favicon, app icon, and social image</h2>
+  <p>A compact square companion to any of the above, for browser tabs and link previews.</p>
+  <div class="tiles">
+    <div class="tile light"><div class="lockup"><div class="badge"><img class="mtn" src="mountains-light.png" alt=""><div class="word">UTAH SCHOOLS</div><div class="tag">.FYI</div></div></div></div>
+    <div class="tile dark"><div class="lockup"><div class="badge"><img class="mtn" src="mountains.png" alt=""><div class="word">UTAH SCHOOLS</div><div class="tag">.FYI</div></div></div></div>
+  </div>
+</section>
+
+<script>
+  // Scale each fixed-width lockup to fit its tile.
+  function fit() {
+    document.querySelectorAll(".tile").forEach(function (t) {
+      var l = t.querySelector(".lockup");
+      l.style.transform = "none";
+      var s = Math.min(1, (t.clientWidth - 48) / l.offsetWidth);
+      l.style.transform = "scale(" + s + ")";
+      l.style.margin = (-(1 - s) * l.offsetHeight / 2) + "px " + (-(1 - s) * l.offsetWidth / 2) + "px";
+    });
+  }
+  document.fonts.ready.then(fit); addEventListener("resize", fit);
+</script>
+</body>
+</html>

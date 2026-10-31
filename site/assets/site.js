@@ -101,7 +101,7 @@
     }).join("");
     return '<a class="skip" href="#main">Skip to content</a>' +
       '<header class="site-header"><div class="wrap">' +
-      '<a class="brand" href="index.html" aria-label="' + SITE + ' home"><img src="assets/logo-light.png" alt="Tooele Schools — Data, Insights, A Stronger Community" width="745" height="251"></a>' +
+      '<a class="brand" href="index.html" aria-label="' + SITE + ' home"><img src="assets/brand/logo-header.png" alt="Utah Schools" width="1033" height="88"></a>' +
       '<nav class="nav" id="site-nav" aria-label="Main">' + links + "</nav>" +
       '<div class="header-tools">' +
       '<button class="search-btn" type="button" data-open-search aria-label="Search the site">' + ICON.search + '<span class="label">Search</span></button>' +
@@ -111,7 +111,7 @@
   }
   function footer() {
     return '<footer class="site-footer"><div class="wrap">' +
-      '<div class="top"><div><img src="assets/logo-light.png" alt="" width="745" height="251">' +
+      '<div class="top"><div><img src="assets/brand/logo-footer.png" alt="Utah Schools — Data, Insights, Accountability" width="1124" height="128">' +
       '<p class="fname">' + SITE + '</p><p>Independent data for informed taxpayers. Utah public-school finances and outcomes, starting with Tooele County School District.</p>' +
       '<p class="updated" style="color:#94A3B8">Data last updated ' + monthYear(D.updated) + "</p></div>" +
       '<div><h2>Project</h2><ul><li><a href="methodology.html">Methodology</a></li><li><a href="sources.html">Sources</a></li><li><a href="data.html">Data</a></li><li><a href="about.html">About</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>' +

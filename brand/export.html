@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brand Export</title>
+<!-- Renders the production logo assets; scripts/export_brand.py screenshots each element by id. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #0E2A47; --slate: #B6C6D8; --gold: #E5B43C; --yellow: #FACC15; }
+  body { margin: 0; padding: 40px; background: transparent; font-family: Montserrat, sans-serif; display: flex; flex-direction: column; gap: 60px; align-items: flex-start; }
+  .h { display: flex; align-items: center; gap: 36px; color: #fff; width: max-content; padding: 4px; }
+  .h img { width: 380px; display: block; }
+  .h .rule { width: 3px; align-self: stretch; background: var(--gold); border-radius: 2px; }
+  .word { font-weight: 600; font-size: 92px; line-height: 1; letter-spacing: .055em; white-space: nowrap; }
+  .tag { margin-top: 16px; font-weight: 500; font-size: 25px; letter-spacing: .18em; color: var(--slate); white-space: nowrap; }
+  .dot { color: var(--gold); padding: 0 .35em; }
+  #header { gap: 22px; }
+  #header img { width: 300px; }
+  #header .rule { align-self: center; height: 84px; }
+
+  .badge { width: 1024px; height: 1024px; border-radius: 188px; background: var(--navy); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 96px; box-sizing: border-box; }
+  .badge img { width: 100%; margin-bottom: 60px; display: block; }
+  .badge .word { color: #fff; font-size: 98px; letter-spacing: .06em; }
+  .badge .fyi { color: var(--yellow); font-size: 52px; margin-top: 28px; letter-spacing: .3em; font-weight: 700; }
+  .square { border-radius: 0; }
+  .icon { justify-content: center; padding: 90px; }
+  .icon img { margin: 0; }
+</style>
+</head>
+<body>
+  <!-- Site header: horizontal lockup without tagline (legible at ~40px tall), for the navy header -->
+  <div class="h" id="header"><img src="logo-options/mountains-light.png" alt=""><span class="rule"></span><div class="word">UTAH SCHOOLS</div></div>
+
+  <!-- Footer: full horizontal lockup with tagline, for navy -->
+  <div class="h" id="footer"><img src="logo-options/mountains-light.png" alt=""><span class="rule"></span><div><div class="word">UTAH SCHOOLS</div><div class="tag">DATA<span class="dot">•</span>INSIGHTS<span class="dot">•</span>ACCOUNTABILITY</div></div></div>
+
+  <!-- Badge with rounded corners (transparent outside) -->
+  <div class="badge" id="badge"><img src="logo-options/mountains-light.png" alt=""><div class="word">UTAH SCHOOLS</div><div class="fyi">.FYI</div></div>
+
+  <!-- Social / link-preview image: badge content on a full navy square (no transparency) -->
+  <div class="badge square" id="og" style="width:1200px;height:1200px;padding:120px"><img src="logo-options/mountains-light.png" alt=""><div class="word" style="font-size:112px">UTAH SCHOOLS</div><div class="fyi" style="font-size:60px">.FYI</div></div>
+
+  <!-- Favicon: mountains only, rounded -->
+  <div class="badge icon" id="icon"><img src="logo-options/mountains-peak-light.png" alt=""></div>
+
+  <!-- Apple touch icon: mountains only, full square (iOS rounds the corners) -->
+  <div class="badge icon square" id="icon-square"><img src="logo-options/mountains-peak-light.png" alt=""></div>
+</body>
+</html>

@@ -14,6 +14,8 @@ standards and `design.md` for the visual identity.
 | `site/assets/data/` | Preserved source downloads, normalized CSVs, source registry, validation results |
 | `scripts/build_usbe_data.py` | Rebuilds all figures from the USBE source files |
 | `scripts/build_pages.sh` | Builds the Cloudflare Pages output in `dist/` |
+| `brand/` | Logo options (`logo-options/index.html`) and the production export page |
+| `scripts/export_brand.py` | Renders header/footer logos, badge, social image, and favicons into `site/assets/brand/` |
 
 ## Updating the data
 
