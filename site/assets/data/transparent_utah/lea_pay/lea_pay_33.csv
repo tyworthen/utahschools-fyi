@@ -1,0 +1,72 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+126416.23021,126242.6,2015,95,Washington School District,12009541.87,Administrator
+133232.16327,131286.05,2016,98,Washington School District,13056752,Administrator
+137529.92337,133664.26,2017,101,Washington School District,13890522.26,Administrator
+140194.82202,136916.275,2018,104,Washington School District,14580261.49,Administrator
+144695.91757,141884.65,2019,107,Washington School District,15482463.18,Administrator
+154327.65879,149435.97,2020,107,Washington School District,16513059.49,Administrator
+156553.13894,152689.18,2021,113,Washington School District,17690504.7,Administrator
+163566.00217,158574.94,2022,115,Washington School District,18810090.25,Administrator
+171795.37966,169511.55,2023,116,Washington School District,19928264.04,Administrator
+184633.72339,181176.22,2024,121,Washington School District,22340680.53,Administrator
+197082.37,191906.18,2025,119,Washington School District,23452802.03,Administrator
+20736.04768,9721.925,2014,792,Washington School District,16422949.76,Extracurricular
+17989.23652,8023.45,2015,1033,Washington School District,18582881.33,Extracurricular
+16342.07072,8301.54,2016,1217,Washington School District,19888300.07,Extracurricular
+17121.84618,8921.11,2017,1291,Washington School District,22104303.42,Extracurricular
+17214.2548,9273.53,2018,1326,Washington School District,22826101.87,Extracurricular
+17332.50807,9307.5,2019,1391,Washington School District,24109518.73,Extracurricular
+17508.97639,9386.085,2020,1460,Washington School District,25563105.53,Extracurricular
+18869.2546,10851.35,2021,1489,Washington School District,28096320.1,Extracurricular
+19462.18471,11134.22,2022,1500,Washington School District,29193277.07,Extracurricular
+60080.41592,38222.53,2023,49,Washington School District,2943940.38,Extracurricular
+22745.82251,13624.23,2024,1624,Washington School District,36939215.75,Extracurricular
+22832.66675,14406.8,2025,1737,Washington School District,39660342.14,Extracurricular
+30797.79675,18229.43,2014,544,Washington School District,16754001.43,Operations & Facilities
+29296.04975,16532.59,2015,629,Washington School District,18427215.29,Operations & Facilities
+28251.669,15072.71,2016,693,Washington School District,19578406.62,Operations & Facilities
+28785.91572,15666.69,2017,712,Washington School District,20495571.99,Operations & Facilities
+28931.82358,16128.73,2018,723,Washington School District,20917708.45,Operations & Facilities
+29044.63203,16131.75,2019,759,Washington School District,22044875.71,Operations & Facilities
+33919.03017,19182.315,2020,722,Washington School District,24489539.78,Operations & Facilities
+35878.34005,21133.71,2021,736,Washington School District,26406458.28,Operations & Facilities
+34707.53866,20864.45,2022,779,Washington School District,27037172.62,Operations & Facilities
+46060.56631,31372.2,2024,731,Washington School District,33670273.97,Operations & Facilities
+47279.39699,32063.75,2025,751,Washington School District,35506827.14,Operations & Facilities
+27654.73897,20181.33,2016,39,Washington School District,1078534.82,Other Staff
+32754.94714,23463.55,2019,35,Washington School District,1146423.15,Other Staff
+35874.58978,41924.68,2020,45,Washington School District,1614356.54,Other Staff
+37077.79162,31821.18,2021,37,Washington School District,1371878.29,Other Staff
+44652.45073,19649.4,2025,41,Washington School District,1830750.48,Other Staff
+72651.87453,78014.29,2014,75,Washington School District,5448890.59,Student Support
+77389.62802,84813.78,2015,81,Washington School District,6268559.87,Student Support
+78154.74422,82347.725,2017,90,Washington School District,7033926.98,Student Support
+75855.30724,80501.345,2018,98,Washington School District,7433820.11,Student Support
+78180.64933,85470.63,2019,104,Washington School District,8130787.53,Student Support
+81121.34052,87948.345,2020,116,Washington School District,9410075.5,Student Support
+92725.17864,96621.895,2021,118,Washington School District,10941571.08,Student Support
+94053.72882,99187.55,2022,127,Washington School District,11944823.56,Student Support
+103775.97483,107290.13,2023,118,Washington School District,12245565.03,Student Support
+110206.81447,113607.345,2024,132,Washington School District,14547299.51,Student Support
+105605.66878,116153.445,2025,196,Washington School District,20698711.08,Student Support
+70370.45159,73296.71,2014,1303,Washington School District,91692698.42,Teacher
+74911.86091,79513.225,2015,1444,Washington School District,108172727.15,Teacher
+63348.92912,71597.205,2016,1688,Washington School District,106932992.35,Teacher
+65172.96905,73967.56,2017,1747,Washington School District,113857176.93,Teacher
+67393.46116,75816.9,2018,1807,Washington School District,121779984.32,Teacher
+69830.85806,79292.68,2019,1849,Washington School District,129117256.56,Teacher
+71977.9109,82877.475,2020,1922,Washington School District,138341544.75,Teacher
+75735.44652,87049.17,2021,2017,Washington School District,152758395.64,Teacher
+77003.96671,89900.66,2022,2127,Washington School District,163787437.2,Teacher
+99343.45041,102879.58,2023,1830,Washington School District,181798514.25,Teacher
+88075.02802,104581.31,2024,2229,Washington School District,196319237.45,Teacher
+88777.46235,109206.425,2025,2272,Washington School District,201702394.45,Teacher
+102243.908,139817.27,2023,5,Washington School District,511219.54,Operations & Facilities
+38056.13143,34001.535,2014,14,Washington School District,532785.84,Other Staff
+34029.82385,25848.025,2015,26,Washington School District,884775.42,Other Staff
+43536.7771,37999.21,2017,31,Washington School District,1349640.09,Other Staff
+34014.29778,30870.885,2018,36,Washington School District,1224514.72,Other Staff
+36039.07105,27407.445,2022,38,Washington School District,1369484.7,Other Staff
+41351.5569,25258.74,2024,42,Washington School District,1736765.39,Other Staff
+127029.27069,125483.88,2014,87,Washington School District,11051546.55,Administrator
+67789.29046,77368.25,2016,87,Washington School District,5897668.27,Student Support

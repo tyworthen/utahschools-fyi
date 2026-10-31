@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+87662.21766,101675.1,2014,269,Canyons School District,23581136.55,Administrator
+85772.41479,103372.81,2015,280,Canyons School District,24016276.14,Administrator
+90298.84873,109073.355,2016,276,Canyons School District,24922482.25,Administrator
+91432.35557,113506.95,2017,282,Canyons School District,25783924.27,Administrator
+96637.41011,116881.01,2018,280,Canyons School District,27058474.83,Administrator
+98892.67931,118295.99,2019,288,Canyons School District,28481091.64,Administrator
+103767.3672,113229.54,2020,329,Canyons School District,34139463.81,Administrator
+110901.68166,122075.935,2021,320,Canyons School District,35488538.13,Administrator
+114074.18928,125502.4,2022,333,Canyons School District,37986705.03,Administrator
+118066.85377,131910.64,2023,334,Canyons School District,39434329.16,Administrator
+127944.1652,143230.73,2024,327,Canyons School District,41837742.02,Administrator
+134428.72231,147703.06,2025,329,Canyons School District,44227049.64,Administrator
+20845.13637,7575.935,2014,652,Canyons School District,13591028.91,Extracurricular
+30205.23249,12201.985,2015,434,Canyons School District,13109070.9,Extracurricular
+37453.83991,37922.52,2016,343,Canyons School District,12846667.09,Extracurricular
+39315.52123,40239.845,2017,332,Canyons School District,13052753.05,Extracurricular
+43247.8028,44271.93,2018,321,Canyons School District,13882544.7,Extracurricular
+46618.69503,47681.63,2019,300,Canyons School District,13985608.51,Extracurricular
+47056.97534,47605.55,2020,309,Canyons School District,14540605.38,Extracurricular
+48818.65863,48762.785,2021,322,Canyons School District,15719608.08,Extracurricular
+51299.3861,54497.88,2022,323,Canyons School District,16569701.71,Extracurricular
+56390.51135,59067.705,2023,312,Canyons School District,17593839.54,Extracurricular
+63034.98507,66495.33,2024,298,Canyons School District,18784425.55,Extracurricular
+56372.59305,53491.34,2025,344,Canyons School District,19392172.01,Extracurricular
+13523.95876,3323.565,2014,1708,Canyons School District,23098921.56,Operations & Facilities
+13682.26648,3045.52,2015,1735,Canyons School District,23738732.34,Operations & Facilities
+13550.01971,2676.755,2016,1798,Canyons School District,24362935.43,Operations & Facilities
+13701.30685,2674.86,2017,1831,Canyons School District,25087092.85,Operations & Facilities
+14283.73345,2626.4,2018,1865,Canyons School District,26639162.88,Operations & Facilities
+15078.36238,2718.43,2019,1886,Canyons School District,28437791.44,Operations & Facilities
+16887.98571,3568.075,2020,1730,Canyons School District,29216215.27,Operations & Facilities
+17615.74816,3336.25,2021,1710,Canyons School District,30122929.35,Operations & Facilities
+18687.79176,3236.81,2022,1679,Canyons School District,31376802.37,Operations & Facilities
+19308.08654,3352.25,2023,1724,Canyons School District,33287141.19,Operations & Facilities
+20451.67802,4012.02,2024,1796,Canyons School District,36731213.72,Operations & Facilities
+20384.43746,4203.22,2025,1899,Canyons School District,38710046.74,Operations & Facilities
+10229.87755,6842.71,2014,1271,Canyons School District,13002174.36,Other Staff
+9824.86403,5915.68,2015,1433,Canyons School District,14079030.15,Other Staff
+10373.24216,6324.16,2016,1534,Canyons School District,15912553.48,Other Staff
+10735.14122,6083,2017,1595,Canyons School District,17122550.25,Other Staff
+11419.50865,6793.25,2018,1509,Canyons School District,17232038.55,Other Staff
+11897.11819,6933.2,2019,1412,Canyons School District,16798730.88,Other Staff
+12156.97627,7215.79,2020,1437,Canyons School District,17469574.9,Other Staff
+13888.36137,7578,2021,1371,Canyons School District,19040943.44,Other Staff
+15010.06768,7758.63,2022,1478,Canyons School District,22184880.03,Other Staff
+17047.08578,9293.47,2023,1423,Canyons School District,24258003.07,Other Staff
+18713.20295,9996.28,2024,1432,Canyons School District,26797306.63,Other Staff
+19169.79285,10514.58,2025,1531,Canyons School District,29348952.85,Other Staff
+38991.51963,33835.95,2014,400,Canyons School District,15596607.85,Student Support
+39806.14974,35144.99,2015,388,Canyons School District,15444786.1,Student Support
+36415.45743,26865.4,2016,451,Canyons School District,16423371.3,Student Support
+36807.7598,28020.855,2017,452,Canyons School District,16637107.43,Student Support
+39236.09101,28503.635,2018,466,Canyons School District,18284018.41,Student Support
+42110.15723,31440.1,2019,505,Canyons School District,21265629.4,Student Support
+45425.61944,32154.12,2020,532,Canyons School District,24166429.54,Student Support
+49054.65558,36473.495,2021,536,Canyons School District,26293295.39,Student Support
+51480.26002,41214.62,2022,538,Canyons School District,27696379.89,Student Support
+51368.39158,36476.99,2023,569,Canyons School District,29228614.81,Student Support
+55751.47851,38687.89,2024,597,Canyons School District,33283632.67,Student Support
+56781.75479,39907.09,2025,655,Canyons School District,37192049.39,Student Support
+45895.09215,50909.385,2014,2454,Canyons School District,112626556.13,Teacher
+46122.91586,51807.98,2015,2442,Canyons School District,112632160.54,Teacher
+49128.36319,54494.245,2016,2400,Canyons School District,117908071.66,Teacher
+49241.1063,54839.01,2017,2465,Canyons School District,121379327.02,Teacher
+53374.38435,61182.44,2018,2435,Canyons School District,129966625.89,Teacher
+56159.74795,65204.64,2019,2395,Canyons School District,134502596.35,Teacher
+62960.79405,74234.73,2020,2289,Canyons School District,144117257.58,Teacher
+69394.47941,81005.325,2021,2234,Canyons School District,155027267,Teacher
+65652.20016,80188.74,2022,2432,Canyons School District,159666150.79,Teacher
+65105.71899,79405.01,2023,2602,Canyons School District,169405080.81,Teacher
+68414.87716,85015.97,2024,2643,Canyons School District,180820520.34,Teacher
+73559.4331,92065.495,2025,2538,Canyons School District,186693841.22,Teacher

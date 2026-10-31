@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+104083.83163,111777.52,2014,49,Tooele School District,5100107.75,Administrator
+110653.24735,117939.81,2015,49,Tooele School District,5422009.12,Administrator
+123855.18773,120957.1,2016,44,Tooele School District,5449628.26,Administrator
+124609.0898,123328.45,2017,49,Tooele School District,6105845.4,Administrator
+130479.28276,126924.995,2018,58,Tooele School District,7567798.4,Administrator
+134229.07812,134191.84,2019,69,Tooele School District,9261806.39,Administrator
+130527.24257,133956.09,2020,70,Tooele School District,9136906.98,Administrator
+146737.43892,145088.81,2021,74,Tooele School District,10858570.48,Administrator
+150849.80747,153210.01,2022,75,Tooele School District,11313735.56,Administrator
+155971.02447,165538.98,2023,85,Tooele School District,13257537.08,Administrator
+171352.85176,175304.49,2024,91,Tooele School District,15593109.51,Administrator
+177847.60441,176288.91,2025,93,Tooele School District,16539827.21,Administrator
+16005.58933,8553.08,2014,495,Tooele School District,7922766.72,Extracurricular
+15580.37516,8087.85,2015,525,Tooele School District,8179696.96,Extracurricular
+15961.0729,8870.65,2016,528,Tooele School District,8427446.49,Extracurricular
+15118.95644,8414.47,2017,599,Tooele School District,9056254.91,Extracurricular
+15226.06537,8536.06,2018,635,Tooele School District,9668551.51,Extracurricular
+19850.51263,12358.83,2019,558,Tooele School District,11076586.05,Extracurricular
+20084.3521,12701.02,2020,605,Tooele School District,12151033.02,Extracurricular
+22247.59901,14158.78,2021,625,Tooele School District,13904749.38,Extracurricular
+24257.82189,15560.385,2022,624,Tooele School District,15136880.86,Extracurricular
+25037.63488,16733.31,2023,681,Tooele School District,17050629.35,Extracurricular
+25721.31052,16856.73,2024,708,Tooele School District,18210687.85,Extracurricular
+25552.08864,16984.555,2025,726,Tooele School District,18550816.35,Extracurricular
+20302.92283,9943.57,2014,513,Tooele School District,10415399.41,Operations & Facilities
+20415.15163,9428.04,2015,527,Tooele School District,10758784.91,Operations & Facilities
+20564.46037,10528.18,2016,537,Tooele School District,11043115.22,Operations & Facilities
+20584.63603,10266.27,2017,547,Tooele School District,11259795.91,Operations & Facilities
+20206.65076,9417.335,2018,568,Tooele School District,11477377.63,Operations & Facilities
+23132.53685,11903.84,2019,562,Tooele School District,13000485.71,Operations & Facilities
+23982.41017,13272.98,2020,579,Tooele School District,13885815.49,Operations & Facilities
+27708.82652,16220.9,2021,557,Tooele School District,15433816.37,Operations & Facilities
+28990.03967,13606.24,2022,599,Tooele School District,17365033.76,Operations & Facilities
+30230.85897,15159.97,2023,621,Tooele School District,18773363.42,Operations & Facilities
+33999.65737,17333.21,2024,586,Tooele School District,19923799.22,Operations & Facilities
+34424.36136,19072.27,2025,573,Tooele School District,19725159.06,Operations & Facilities
+13319.56341,4306,2014,44,Tooele School District,586060.79,Other Staff
+8537.31516,3830.2,2016,64,Tooele School District,546388.17,Other Staff
+7847.2574,3229.5,2017,73,Tooele School District,572849.79,Other Staff
+9842.49293,3027.27,2018,82,Tooele School District,807084.42,Other Staff
+6908.12724,1830.05,2019,181,Tooele School District,1250371.03,Other Staff
+12293.00355,6207.6,2020,93,Tooele School District,1143249.33,Other Staff
+13136.02021,8412,2021,94,Tooele School District,1234785.9,Other Staff
+9662.10466,2663.84,2022,178,Tooele School District,1719854.63,Other Staff
+10425.48876,2964.69,2023,178,Tooele School District,1855737,Other Staff
+12507.95029,4069.17,2024,173,Tooele School District,2163875.4,Other Staff
+11076.63088,3875.4,2025,182,Tooele School District,2015946.82,Other Staff
+70023.72594,66082.485,2015,32,Tooele School District,2240759.23,Student Support
+71820.52125,72879.35,2016,32,Tooele School District,2298256.68,Student Support
+69631.92143,75359.34,2017,35,Tooele School District,2437117.25,Student Support
+75275.436,74692.2,2018,35,Tooele School District,2634640.26,Student Support
+88396.43049,88653.35,2019,41,Tooele School District,3624253.65,Student Support
+81165.44705,82164.16,2020,61,Tooele School District,4951092.27,Student Support
+91039.86691,93034.81,2021,55,Tooele School District,5007192.68,Student Support
+88980.34766,98130.015,2022,64,Tooele School District,5694742.25,Student Support
+98326.24104,103110.98,2023,67,Tooele School District,6587858.15,Student Support
+109812.14843,110318.72,2024,70,Tooele School District,7686850.39,Student Support
+110072.6087,110932.47,2025,69,Tooele School District,7595010,Student Support
+50686.4542,58530.82,2014,945,Tooele School District,47898699.22,Teacher
+52354.1153,59850.445,2015,930,Tooele School District,48689327.23,Teacher
+52394.36301,59169.21,2016,942,Tooele School District,49355489.96,Teacher
+54300.82962,60971.7,2017,955,Tooele School District,51857292.29,Teacher
+58021.41692,66716.81,2018,977,Tooele School District,56686924.33,Teacher
+66915.08445,76437.38,2019,993,Tooele School District,66446678.86,Teacher
+85070.12613,87108.5,2020,777,Tooele School District,66099488,Teacher
+91857.24759,93555.9,2021,793,Tooele School District,72842797.34,Teacher
+100606.49487,101348.39,2022,809,Tooele School District,81390654.35,Teacher
+106650.18994,108126.07,2023,859,Tooele School District,91612513.16,Teacher
+114471.80129,115167.12,2024,869,Tooele School District,99475995.32,Teacher
+115889.9862,114342.39,2025,903,Tooele School District,104648657.54,Teacher
+70394.33148,65610.58,2014,27,Tooele School District,1900646.95,Student Support
+8345.7787,3229.5,2015,46,Tooele School District,383905.82,Other Staff

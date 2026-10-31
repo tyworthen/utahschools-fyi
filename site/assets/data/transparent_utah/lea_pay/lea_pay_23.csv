@@ -1,0 +1,67 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+12258.36743,9573.17,2020,35,Piute County School District,429042.86,Extracurricular
+18008.38438,6686.77,2021,32,Piute County School District,576268.3,Operations & Facilities
+21703.36967,5228.85,2024,30,Piute County School District,651101.09,Operations & Facilities
+23066.558,4010.575,2025,30,Piute County School District,691996.74,Operations & Facilities
+44856.97653,53814.24,2015,49,Piute County School District,2197991.85,Teacher
+52042.06045,67490.475,2017,44,Piute County School District,2289850.66,Teacher
+47603.61245,55454.99,2018,49,Piute County School District,2332577.01,Teacher
+48359.00756,33058.31,2019,45,Piute County School District,2176155.34,Teacher
+56574.10778,58052.06,2020,45,Piute County School District,2545834.85,Teacher
+52477.29756,65428.14,2021,45,Piute County School District,2361478.39,Teacher
+52308.8383,68277.71,2022,47,Piute County School District,2458515.4,Teacher
+72493.93911,94205.81,2025,45,Piute County School District,3262227.26,Teacher
+45344.8,45344.8,2014,1,Piute County School District,45344.8,Other Staff
+12991.87,12991.87,2021,1,Piute County School District,12991.87,Other Staff
+13430.56,13430.56,2023,1,Piute County School District,13430.56,Other Staff
+175.64,175.64,2025,1,Piute County School District,175.64,Other Staff
+139726.44,139726.44,2020,1,Piute County School District,139726.44,Student Support
+125961.66,125961.66,2021,1,Piute County School District,125961.66,Student Support
+126137.31,126137.31,2022,1,Piute County School District,126137.31,Student Support
+137251.54,137251.54,2023,1,Piute County School District,137251.54,Student Support
+17963.67,17963.67,2024,1,Piute County School District,17963.67,Student Support
+5829.86,5829.86,2025,1,Piute County School District,5829.86,Student Support
+5602.725,5602.725,2015,2,Piute County School District,11205.45,Other Staff
+6451.565,6451.565,2016,2,Piute County School District,12903.13,Other Staff
+57635.785,57635.785,2019,2,Piute County School District,115271.57,Student Support
+1643.77,1391.165,2014,6,Piute County School District,9862.62,Student Support
+1432.44667,1229.235,2016,6,Piute County School District,8594.68,Student Support
+1385.21833,1151.15,2017,6,Piute County School District,8311.31,Student Support
+1200.12875,1042.06,2015,8,Piute County School District,9601.03,Student Support
+72442.33111,28755.03,2024,9,Piute County School District,651980.98,Administrator
+2262.48778,1130.33,2018,9,Piute County School District,20362.39,Student Support
+54996.263,36805.625,2018,10,Piute County School District,549962.63,Administrator
+60947.281,40915.225,2021,10,Piute County School District,609472.81,Administrator
+65830.156,57130.92,2022,10,Piute County School District,658301.56,Administrator
+87657.875,79889.44,2025,10,Piute County School District,876578.75,Administrator
+47360.18,21743.29,2014,11,Piute County School District,520961.98,Administrator
+50873.74636,44831.03,2016,11,Piute County School District,559611.21,Administrator
+69571.30727,52072.04,2019,11,Piute County School District,765284.38,Administrator
+66122.43545,27948.16,2023,11,Piute County School District,727346.79,Administrator
+45169.8775,23715.56,2017,12,Piute County School District,542038.53,Administrator
+61484.015,46448.37,2020,12,Piute County School District,737808.18,Administrator
+45953.51929,31720.35,2015,14,Piute County School District,643349.27,Administrator
+15073.01789,12665.24,2016,19,Piute County School District,286387.34,Extracurricular
+13047.35792,11696.675,2015,24,Piute County School District,313136.59,Extracurricular
+20543.025,11217.97,2017,24,Piute County School District,493032.6,Operations & Facilities
+18653.8044,7763.64,2016,25,Piute County School District,466345.11,Operations & Facilities
+19880.7148,10218.79,2018,25,Piute County School District,497017.87,Operations & Facilities
+14204.30731,11335.125,2014,26,Piute County School District,369311.99,Extracurricular
+13239.63615,11645.9,2018,26,Piute County School District,344230.54,Extracurricular
+16172.43577,8804.45,2014,26,Piute County School District,420483.33,Operations & Facilities
+19667.39481,3150.04,2022,27,Piute County School District,531019.66,Operations & Facilities
+12697.03,9855.795,2017,28,Piute County School District,355516.84,Extracurricular
+20335.87714,6331.28,2019,28,Piute County School District,569404.56,Operations & Facilities
+21843.54857,5188.945,2020,28,Piute County School District,611619.36,Operations & Facilities
+20919.31821,3035.73,2023,28,Piute County School District,585740.91,Operations & Facilities
+16540.58517,7554.76,2015,29,Piute County School District,479676.97,Operations & Facilities
+14687.72059,14130.085,2021,34,Piute County School District,499382.5,Extracurricular
+16644.66972,14187.685,2023,36,Piute County School District,599208.11,Extracurricular
+18839.81528,17555.16,2024,36,Piute County School District,678233.35,Extracurricular
+10659.48289,6302.64,2019,38,Piute County School District,405060.35,Extracurricular
+19909.6635,12427.025,2025,40,Piute County School District,796386.54,Extracurricular
+14801.01286,6958.79,2022,42,Piute County School District,621642.54,Extracurricular
+47910.54619,62204.5,2014,42,Piute County School District,2012242.94,Teacher
+59189.51696,83982.19,2024,46,Piute County School District,2722717.78,Teacher
+56369.0494,75762.67,2023,50,Piute County School District,2818452.47,Teacher
+45494.74176,55239,2016,51,Piute County School District,2320231.83,Teacher

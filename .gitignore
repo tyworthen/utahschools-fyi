@@ -19,3 +19,6 @@ email.txt
 
 # Draft records requests and other correspondence
 correspondence/
+
+# Raw files containing personal information (e.g. teacher-level pay with names). Never publish.
+private_data/

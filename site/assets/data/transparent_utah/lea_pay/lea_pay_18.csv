@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+10117.24164,6574.605,2014,116,Morgan School District,1173600.03,Extracurricular
+10766.09169,7389.395,2015,118,Morgan School District,1270398.82,Extracurricular
+9928.34438,6629.45,2016,128,Morgan School District,1270828.08,Extracurricular
+11609.88574,8126.035,2017,122,Morgan School District,1416406.06,Extracurricular
+11699.01343,8247.495,2018,134,Morgan School District,1567667.8,Extracurricular
+10929.20647,7713.155,2019,150,Morgan School District,1639380.97,Extracurricular
+11681.64598,7420.6,2020,169,Morgan School District,1974198.17,Extracurricular
+11641.85091,7043.01,2021,175,Morgan School District,2037323.91,Extracurricular
+11329.82672,6780.21,2022,204,Morgan School District,2311284.65,Extracurricular
+11521.98572,6087.84,2023,222,Morgan School District,2557880.83,Extracurricular
+14104.12789,8226.14,2024,223,Morgan School District,3145220.52,Extracurricular
+14246.38322,8315.32,2025,245,Morgan School District,3490363.89,Extracurricular
+18397.7094,11692.79,2014,83,Morgan School District,1527009.88,Operations & Facilities
+17694.06558,11648.825,2015,86,Morgan School District,1521689.64,Operations & Facilities
+17186.91333,11629.82,2016,93,Morgan School District,1598382.94,Operations & Facilities
+19607.15409,13902.545,2017,88,Morgan School District,1725429.56,Operations & Facilities
+21714.9617,14328.28,2019,100,Morgan School District,2171496.17,Operations & Facilities
+21021.58159,11994.35,2020,113,Morgan School District,2375438.72,Operations & Facilities
+25551.5287,16712.46,2021,100,Morgan School District,2555152.87,Operations & Facilities
+27194.08486,18405.57,2022,105,Morgan School District,2855378.91,Operations & Facilities
+29120.69509,19333.835,2023,110,Morgan School District,3203276.46,Operations & Facilities
+32512.10336,22367.175,2024,116,Morgan School District,3771403.99,Operations & Facilities
+32768.31647,22158.51,2025,119,Morgan School District,3899429.66,Operations & Facilities
+45448.67629,59330.63,2014,175,Morgan School District,7953518.35,Teacher
+44456.42916,53213.065,2015,178,Morgan School District,7913244.39,Teacher
+41839.79886,49606.795,2016,202,Morgan School District,8451639.37,Teacher
+44190.4051,52032.79,2017,198,Morgan School District,8749700.21,Teacher
+43903.93417,51248.285,2018,218,Morgan School District,9571057.65,Teacher
+48965.34427,57824.48,2019,218,Morgan School District,10674445.05,Teacher
+54303.41632,62540.78,2020,231,Morgan School District,12544089.17,Teacher
+55670.83429,66007.34,2021,245,Morgan School District,13639354.4,Teacher
+53551.38658,60031.92,2022,272,Morgan School District,14565977.15,Teacher
+57383.55159,67808.695,2023,276,Morgan School District,15837860.24,Teacher
+70389.61692,84471.61,2024,276,Morgan School District,19427534.27,Teacher
+71698.4543,86898.3,2025,272,Morgan School District,19501979.57,Teacher
+67223.655,44885.59,2025,4,Morgan School District,268894.62,Other Staff
+41133.382,18415.45,2017,5,Morgan School District,205666.91,Other Staff
+60352.08833,66963.44,2016,6,Morgan School District,362112.53,Student Support
+37012.95857,14309.04,2014,7,Morgan School District,259090.71,Other Staff
+50180.95571,61851.95,2016,7,Morgan School District,351266.69,Other Staff
+8562.49571,4373.41,2019,7,Morgan School District,59937.47,Other Staff
+42782.39286,30275.73,2023,7,Morgan School District,299476.75,Other Staff
+10404.10125,8906.45,2020,8,Morgan School District,83232.81,Other Staff
+17483.21875,17228.955,2022,8,Morgan School District,139865.75,Other Staff
+12188.46889,5937.76,2021,9,Morgan School District,109696.22,Other Staff
+47539.85444,37849.6,2024,9,Morgan School District,427858.69,Other Staff
+48042.80889,37737.56,2015,9,Morgan School District,432385.28,Student Support
+28639.234,14219.065,2018,10,Morgan School District,286392.34,Other Staff
+52212.933,43793.55,2014,10,Morgan School District,522129.33,Student Support
+54413.658,62369.11,2018,10,Morgan School District,544136.58,Student Support
+39594.27727,13955.24,2015,11,Morgan School District,435537.05,Other Staff
+47742.97091,35093.01,2019,11,Morgan School District,525172.68,Student Support
+77260.02333,103423.835,2014,12,Morgan School District,927120.28,Administrator
+96204.53083,117483.535,2016,12,Morgan School District,1154454.37,Administrator
+36607.03667,10852.455,2017,12,Morgan School District,439284.44,Student Support
+84294.11077,109008.38,2015,13,Morgan School District,1095823.44,Administrator
+103141.25385,116597.78,2017,13,Morgan School District,1340836.3,Administrator
+57718.53923,64189.4,2020,13,Morgan School District,750341.01,Student Support
+109609.70786,128161.605,2018,14,Morgan School District,1534535.91,Administrator
+166481.89467,165499.23,2024,15,Morgan School District,2497228.42,Administrator
+117383.26235,139152.62,2020,17,Morgan School District,1995515.46,Administrator
+129900.91647,144448.87,2022,17,Morgan School District,2208315.58,Administrator
+142566.43647,156704.68,2023,17,Morgan School District,2423629.42,Administrator
+161046.73824,168972.64,2025,17,Morgan School District,2737794.55,Administrator
+58313.09059,66195.92,2021,17,Morgan School District,991322.54,Student Support
+105235.75167,125730.94,2019,18,Morgan School District,1894243.53,Administrator
+122530.50889,138362.87,2021,18,Morgan School District,2205549.16,Administrator
+59306.36667,57534.81,2022,18,Morgan School District,1067514.6,Student Support
+49098.331,41370.945,2023,20,Morgan School District,981966.62,Student Support
+76128.473,88259.645,2024,20,Morgan School District,1522569.46,Student Support
+77348.10857,90285.92,2025,21,Morgan School District,1624310.28,Student Support
+21169.49368,16203.72,2018,87,Morgan School District,1841745.95,Operations & Facilities

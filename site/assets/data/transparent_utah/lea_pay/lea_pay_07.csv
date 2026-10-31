@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+114501.91884,122807.42,2014,241,Davis School District,27594962.44,Administrator
+114174.65465,124990.74,2015,254,Davis School District,29000362.28,Administrator
+118346.57869,129876.9,2016,267,Davis School District,31598536.51,Administrator
+97941.13627,120235.13,2017,389,Davis School District,38099102.01,Administrator
+125382.49832,138164.365,2018,310,Davis School District,38868574.48,Administrator
+127667.57885,141916.9,2019,330,Davis School District,42130301.02,Administrator
+134437.09969,147175.76,2020,327,Davis School District,43960931.6,Administrator
+145826.85127,157545.84,2021,315,Davis School District,45935458.15,Administrator
+151711.70061,159355.4,2022,327,Davis School District,49609726.1,Administrator
+158136.80475,168505.87,2023,345,Davis School District,54557197.64,Administrator
+171145.8398,180703.25,2024,355,Davis School District,60756773.13,Administrator
+168783.91627,175838.49,2025,359,Davis School District,60593425.94,Administrator
+18155.9505,8493.6,2014,2685,Davis School District,48748727.09,Extracurricular
+18234.90079,8638.315,2015,2758,Davis School District,50291856.38,Extracurricular
+18934.75154,8981.795,2016,2766,Davis School District,52373522.77,Extracurricular
+18262.55596,8969.53,2017,3016,Davis School District,55079868.77,Extracurricular
+15544.56972,9223.97,2018,3295,Davis School District,51219357.23,Extracurricular
+15605.42929,9325.72,2019,3401,Davis School District,53074065.02,Extracurricular
+15822.01809,9551.055,2020,3508,Davis School District,55503639.46,Extracurricular
+16357.36111,10239.84,2021,3744,Davis School District,61241960.01,Extracurricular
+16032.72354,10739.15,2022,4237,Davis School District,67930649.66,Extracurricular
+17120.29217,10771.475,2023,4170,Davis School District,71391618.33,Extracurricular
+18492.54786,11962.96,2024,4381,Davis School District,81015852.16,Extracurricular
+18761.60447,12617.28,2025,4601,Davis School District,86322142.17,Extracurricular
+16924.50368,6879.965,2014,2590,Davis School District,43834464.52,Operations & Facilities
+17378.42376,7175.555,2015,2586,Davis School District,44940603.84,Operations & Facilities
+18431.02584,7566.165,2016,2548,Davis School District,46962253.85,Operations & Facilities
+18623.97017,7342.65,2017,2658,Davis School District,49502512.72,Operations & Facilities
+23392.72365,9151.92,2018,2860,Davis School District,66903189.63,Operations & Facilities
+23906.88519,8911.855,2019,2948,Davis School District,70477497.53,Operations & Facilities
+25933.09335,10169.85,2020,2792,Davis School District,72405196.63,Operations & Facilities
+29042.03958,11643.75,2021,2451,Davis School District,71182039.01,Operations & Facilities
+26919.086,10826.55,2022,2665,Davis School District,71739364.19,Operations & Facilities
+28177.29905,10422.175,2023,2768,Davis School District,77994763.78,Operations & Facilities
+29317.99491,10798.79,2024,2938,Davis School District,86136269.04,Operations & Facilities
+28528.15397,10033.38,2025,3101,Davis School District,88465805.45,Operations & Facilities
+10524.64529,5468.36,2014,505,Davis School District,5314945.87,Other Staff
+12033.36998,6543.835,2015,480,Davis School District,5776017.59,Other Staff
+12682.6508,6345.65,2016,499,Davis School District,6328642.75,Other Staff
+14038.73171,7207.39,2017,484,Davis School District,6794746.15,Other Staff
+14086.40247,4984.23,2018,275,Davis School District,3873760.68,Other Staff
+14802.17803,3391.205,2019,254,Davis School District,3759753.22,Other Staff
+18026.49909,12468.4,2020,252,Davis School District,4542677.77,Other Staff
+28806.13664,26828.75,2021,149,Davis School District,4292114.36,Other Staff
+30056.55023,27444.49,2022,130,Davis School District,3907351.53,Other Staff
+31289.8985,29348.98,2023,153,Davis School District,4787354.47,Other Staff
+32760.71597,28700.55,2024,144,Davis School District,4717543.1,Other Staff
+30778.76252,29591.55,2025,143,Davis School District,4401363.04,Other Staff
+23094.55908,2257.975,2014,692,Davis School District,15981434.88,Student Support
+24402.80615,2557.39,2015,662,Davis School District,16154657.67,Student Support
+24109.43271,2626.675,2016,716,Davis School District,17262353.82,Student Support
+25540.43251,2830.98,2017,697,Davis School District,17801681.46,Student Support
+71692.51813,78289.31,2018,251,Davis School District,17994822.05,Student Support
+75853.58404,81371.765,2019,260,Davis School District,19721931.85,Student Support
+78485.48104,83121.965,2020,278,Davis School District,21818963.73,Student Support
+82312.12703,86438.455,2021,290,Davis School District,23870516.84,Student Support
+87411.86305,90810.67,2022,285,Davis School District,24912380.97,Student Support
+93761.13957,100639.455,2023,282,Davis School District,26440641.36,Student Support
+109576.46498,116666.03,2024,283,Davis School District,31010139.59,Student Support
+109539.13744,118023.75,2025,281,Davis School District,30780497.62,Student Support
+51874.93063,60226.58,2014,4517,Davis School District,234319061.67,Teacher
+52787.38302,60534.815,2015,4548,Davis School District,240077017.97,Teacher
+53597.89465,61447.89,2016,4706,Davis School District,252231692.23,Teacher
+54862.02621,64341.235,2017,4818,Davis School District,264325242.28,Teacher
+53330.41344,63971.01,2018,5201,Davis School District,277371480.31,Teacher
+54270.37973,64741.69,2019,5369,Davis School District,291377668.76,Teacher
+58415.45087,70685.97,2020,5283,Davis School District,308608826.92,Teacher
+64603.9178,78877.855,2021,5110,Davis School District,330126019.98,Teacher
+61953.45867,76100.68,2022,5492,Davis School District,340248395,Teacher
+66942.98299,83121.76,2023,5517,Davis School District,369324437.13,Teacher
+71713.21364,91213.34,2024,5835,Davis School District,418446601.6,Teacher
+73052.90585,94713.935,2025,5714,Davis School District,417424304.02,Teacher

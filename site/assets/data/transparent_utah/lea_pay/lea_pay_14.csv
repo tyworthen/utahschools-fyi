@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+114993.85452,123042.84,2014,186,Jordan School District,21388856.94,Administrator
+121280.18806,127942.405,2015,180,Jordan School District,21830433.85,Administrator
+123078.94135,132133.36,2016,185,Jordan School District,22769604.15,Administrator
+125920.36968,133451.92,2017,188,Jordan School District,23673029.5,Administrator
+130384.47687,136344.87,2018,195,Jordan School District,25424972.99,Administrator
+135211.48378,144337.8,2019,209,Jordan School District,28259200.11,Administrator
+146091.66134,151337.615,2020,216,Jordan School District,31555798.85,Administrator
+151695.69005,153298.545,2021,218,Jordan School District,33069660.43,Administrator
+157906.30491,156988.535,2022,232,Jordan School District,36634262.74,Administrator
+157324.12035,163739.11,2023,258,Jordan School District,40589623.05,Administrator
+167297.16419,175727.725,2024,258,Jordan School District,43162668.36,Administrator
+177509.84984,185446.12,2025,257,Jordan School District,45620031.41,Administrator
+15994.17819,7825.135,2014,1162,Jordan School District,18585235.06,Extracurricular
+17092.70109,8090.075,2015,1140,Jordan School District,19485679.24,Extracurricular
+17408.2457,8848.84,2016,1172,Jordan School District,20402463.96,Extracurricular
+17675.76269,8933.8,2017,1183,Jordan School District,20910427.26,Extracurricular
+18664.10607,9296.23,2018,1168,Jordan School District,21799675.89,Extracurricular
+19395.78589,9964.16,2019,1185,Jordan School District,22984006.28,Extracurricular
+21058.44602,9566.36,2020,1121,Jordan School District,23606517.99,Extracurricular
+24310.83156,11684.86,2021,1125,Jordan School District,27349685.51,Extracurricular
+20945.22258,9970.145,2022,1386,Jordan School District,29030078.49,Extracurricular
+21542.91822,10229.42,2023,1311,Jordan School District,28242765.78,Extracurricular
+23178.4077,11520.69,2024,1332,Jordan School District,30873639.05,Extracurricular
+20058.0754,12878.235,2025,3514,Jordan School District,70484076.97,Extracurricular
+19923.46711,8053.06,2014,1493,Jordan School District,29745736.4,Operations & Facilities
+21810.85951,9392.81,2015,1433,Jordan School District,31254961.68,Operations & Facilities
+22886.1178,10072.6,2016,1425,Jordan School District,32612717.87,Operations & Facilities
+24130.23281,13135.54,2017,1348,Jordan School District,32527553.83,Operations & Facilities
+26088.25252,17301.05,2018,1299,Jordan School District,33888640.02,Operations & Facilities
+27738.82065,18990.05,2019,1285,Jordan School District,35644384.54,Operations & Facilities
+15577.86384,2859.32,2020,2547,Jordan School District,39676819.19,Operations & Facilities
+16133.56648,2932.51,2021,2617,Jordan School District,42221543.47,Operations & Facilities
+16949.52493,2529.91,2022,2745,Jordan School District,46526445.92,Operations & Facilities
+17547.5839,2884.33,2023,2629,Jordan School District,46132598.08,Operations & Facilities
+19530.93825,3604.995,2024,2598,Jordan School District,50741377.57,Operations & Facilities
+20109.44701,4093.6,2025,2707,Jordan School District,54436273.05,Operations & Facilities
+7613.77137,6307.495,2014,1340,Jordan School District,10202453.63,Other Staff
+7320.31208,6042.12,2015,1435,Jordan School District,10504647.83,Other Staff
+7562.72872,6557.76,2016,1531,Jordan School District,11578537.67,Other Staff
+8109.17818,6931.99,2017,1501,Jordan School District,12171876.45,Other Staff
+8253.67458,6836.24,2018,1651,Jordan School District,13626816.73,Other Staff
+9587.90279,7595.73,2019,1632,Jordan School District,15647457.35,Other Staff
+12321.21887,7204.04,2020,1753,Jordan School District,21599096.68,Other Staff
+12398.57527,8958.9,2021,1779,Jordan School District,22057065.41,Other Staff
+13579.95131,9646.195,2022,1410,Jordan School District,19147731.35,Other Staff
+14332.98809,10323.22,2023,1601,Jordan School District,22947113.94,Other Staff
+15450.1571,11728.095,2024,1630,Jordan School District,25183756.08,Other Staff
+71033.63449,85757.29,2025,267,Jordan School District,18965980.41,Other Staff
+35252.3538,29657.42,2014,542,Jordan School District,19106775.76,Student Support
+37897.41196,31763.07,2015,537,Jordan School District,20350910.22,Student Support
+37620.96561,30482.92,2016,581,Jordan School District,21857781.02,Student Support
+40781.21837,33873.905,2017,560,Jordan School District,22837482.29,Student Support
+42374.78516,35972.37,2018,577,Jordan School District,24450251.04,Student Support
+45519.32653,38118.435,2019,620,Jordan School District,28221982.45,Student Support
+48537.40333,40020.32,2020,501,Jordan School District,24317239.07,Student Support
+59873.79898,52791.28,2021,501,Jordan School District,29996773.29,Student Support
+52914.83036,42947.48,2022,695,Jordan School District,36775807.1,Student Support
+51360.75594,40564.51,2023,763,Jordan School District,39188256.78,Student Support
+54120.72528,41172.55,2024,919,Jordan School District,49736946.53,Student Support
+104427.19564,111208.24,2025,307,Jordan School District,32059149.06,Student Support
+47921.36061,54003.45,2014,3301,Jordan School District,158188411.37,Teacher
+47670.49665,54584.42,2015,3404,Jordan School District,162270370.6,Teacher
+50248.61051,57966.17,2016,3340,Jordan School District,167830359.11,Teacher
+50586.16631,58556.49,2017,3445,Jordan School District,174269342.93,Teacher
+54366.69147,63758.36,2018,3481,Jordan School District,189250453.01,Teacher
+59182.48552,68800.505,2019,3510,Jordan School District,207730524.17,Teacher
+66856.15275,76213.02,2020,3508,Jordan School District,234531383.83,Teacher
+71548.02734,81362.95,2021,3543,Jordan School District,253494660.86,Teacher
+71047.20402,81231.195,2022,3920,Jordan School District,278505039.75,Teacher
+68947.54309,81510.36,2023,4022,Jordan School District,277307018.32,Teacher
+71690.09587,86984.23,2024,4179,Jordan School District,299592910.65,Teacher
+74696.87529,91581.89,2025,4271,Jordan School District,319030354.35,Teacher

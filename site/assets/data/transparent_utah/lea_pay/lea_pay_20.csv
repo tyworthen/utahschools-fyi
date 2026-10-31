@@ -1,0 +1,72 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+2522.05646,2685.94,2014,96,North Sanpete School District,242117.42,Extracurricular
+12500.39829,9240.47,2015,158,North Sanpete School District,1975062.93,Extracurricular
+14314.41032,11249.415,2016,154,North Sanpete School District,2204419.19,Extracurricular
+13257.01462,10285.93,2017,171,North Sanpete School District,2266949.5,Extracurricular
+12918.84689,10303.64,2018,177,North Sanpete School District,2286635.9,Extracurricular
+12870.46288,9961.085,2019,170,North Sanpete School District,2187978.69,Extracurricular
+11685.59533,8151.04,2020,225,North Sanpete School District,2629258.95,Extracurricular
+12313.0978,10035.37,2021,227,North Sanpete School District,2795073.2,Extracurricular
+12926.06283,9359.35,2022,244,North Sanpete School District,3153959.33,Extracurricular
+14843.27547,11959.655,2023,232,North Sanpete School District,3443639.91,Extracurricular
+14558.26253,9796.68,2024,257,North Sanpete School District,3741473.47,Extracurricular
+18948.38887,15510.24,2025,231,North Sanpete School District,4377077.83,Extracurricular
+17807.75174,11944.08,2015,92,North Sanpete School District,1638313.16,Operations & Facilities
+26485.79238,15378.62,2016,80,North Sanpete School District,2118863.39,Operations & Facilities
+20852.39418,13674.17,2017,91,North Sanpete School District,1897567.87,Operations & Facilities
+21854.16747,15377.73,2018,95,North Sanpete School District,2076145.91,Operations & Facilities
+20288.57052,12872.77,2019,96,North Sanpete School District,1947702.77,Operations & Facilities
+24763.9227,17879.415,2020,100,North Sanpete School District,2476392.27,Operations & Facilities
+27148.68479,20034.075,2021,96,North Sanpete School District,2606273.74,Operations & Facilities
+27648.50725,19352.755,2022,102,North Sanpete School District,2820147.74,Operations & Facilities
+30862.62389,23028.11,2023,95,North Sanpete School District,2931949.27,Operations & Facilities
+30163.50617,15761.87,2024,115,North Sanpete School District,3468803.21,Operations & Facilities
+30810.18628,15710.5,2025,113,North Sanpete School District,3481551.05,Operations & Facilities
+9472.41058,9419.46,2014,121,North Sanpete School District,1146161.68,Teacher
+36011.04376,44437.315,2015,210,North Sanpete School District,7562319.19,Teacher
+47306.98796,59502.615,2016,206,North Sanpete School District,9745239.52,Teacher
+39395.21294,46758.735,2017,214,North Sanpete School District,8430575.57,Teacher
+39596.23548,47880.82,2018,219,North Sanpete School District,8671575.57,Teacher
+35409.83104,43438.47,2019,221,North Sanpete School District,7825572.66,Teacher
+51607.08974,61043.3,2020,189,North Sanpete School District,9753739.96,Teacher
+55432.7607,61914.465,2021,186,North Sanpete School District,10310493.49,Teacher
+58602.20087,67493.935,2022,196,North Sanpete School District,11486031.37,Teacher
+63502.05418,74616.82,2023,201,North Sanpete School District,12763912.89,Teacher
+73575.7887,88260.23,2024,207,North Sanpete School District,15230188.26,Teacher
+82640.34941,99834.66,2025,202,North Sanpete School District,16693350.58,Teacher
+7695.9425,1268.735,2020,4,North Sanpete School District,30783.77,Other Staff
+12931.4,13280.14,2014,4,North Sanpete School District,51725.6,Student Support
+88791.0725,90528.31,2015,4,North Sanpete School District,355164.29,Student Support
+97833.565,99094.9,2017,4,North Sanpete School District,391334.26,Student Support
+76770.4975,78239.75,2019,4,North Sanpete School District,307081.99,Student Support
+574.004,392.09,2018,5,North Sanpete School District,2870.02,Other Staff
+24140.65,743.6,2022,5,North Sanpete School District,120703.25,Other Staff
+95231.392,103522.72,2016,5,North Sanpete School District,476156.96,Student Support
+80636.648,90308.38,2018,5,North Sanpete School District,403183.24,Student Support
+5915.84333,532.21,2021,6,North Sanpete School District,35495.06,Other Staff
+90222.00167,100216.465,2020,6,North Sanpete School District,541332.01,Student Support
+83153.96667,84662.69,2021,6,North Sanpete School District,498923.8,Student Support
+43351.21857,40365.76,2025,7,North Sanpete School District,303458.53,Other Staff
+15239.8775,15198.89,2014,8,North Sanpete School District,121919.02,Administrator
+549.9525,399.99,2019,8,North Sanpete School District,4399.62,Other Staff
+83689.83625,68222.795,2022,8,North Sanpete School District,669518.69,Student Support
+544.42889,442.25,2015,9,North Sanpete School District,4899.86,Other Staff
+26116.75222,3169.4,2023,9,North Sanpete School District,235050.77,Other Staff
+24461.53222,2545.62,2024,9,North Sanpete School District,220153.79,Other Staff
+98251.89333,78226.57,2023,9,North Sanpete School District,884267.04,Student Support
+119057.836,124233.4,2025,10,North Sanpete School District,1190578.36,Student Support
+769.50545,534.83,2017,11,North Sanpete School District,8464.56,Other Staff
+105059.15167,100270.29,2017,12,North Sanpete School District,1260709.82,Administrator
+112898.18917,105020.36,2018,12,North Sanpete School District,1354778.27,Administrator
+106060.68167,99776.985,2024,12,North Sanpete School District,1272728.18,Student Support
+96514.19538,95736.85,2015,13,North Sanpete School District,1254684.54,Administrator
+102765.51286,92618.175,2019,14,North Sanpete School District,1438717.18,Administrator
+132133.68071,129437.74,2022,14,North Sanpete School District,1849871.53,Administrator
+145194.57571,142220.71,2023,14,North Sanpete School District,2032724.06,Administrator
+115966.63267,117520.46,2020,15,North Sanpete School District,1739499.49,Administrator
+112333.67813,121325.43,2021,16,North Sanpete School District,1797338.85,Administrator
+10945.27625,1259.69,2016,16,North Sanpete School District,175124.42,Other Staff
+87461.51053,114746.46,2016,19,North Sanpete School District,1661768.7,Administrator
+124499.90905,158351.94,2024,21,North Sanpete School District,2614498.09,Administrator
+136589.08619,171817.65,2025,21,North Sanpete School District,2868370.81,Administrator
+3049.79,3088.96,2014,34,North Sanpete School District,103692.86,Operations & Facilities

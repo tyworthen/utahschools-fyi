@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+102193.66185,120446.74,2015,54,Cache School District,5518457.74,Administrator
+109130.28552,127316.55,2016,58,Cache School District,6329556.56,Administrator
+116434.10067,129843.875,2017,60,Cache School District,6986046.04,Administrator
+117120.50485,133545.73,2018,68,Cache School District,7964194.33,Administrator
+120634.61393,135605.24,2019,56,Cache School District,6755538.38,Administrator
+137824.34632,150687.66,2020,57,Cache School District,7855987.74,Administrator
+137908.22458,157109.99,2021,59,Cache School District,8136585.25,Administrator
+149843.97508,166980.69,2022,61,Cache School District,9140482.48,Administrator
+155757.5554,179059.54,2023,63,Cache School District,9812725.99,Administrator
+168321.46476,197605.06,2024,63,Cache School District,10604252.28,Administrator
+173687.7475,198643.79,2025,64,Cache School District,11116015.84,Administrator
+9216.62337,5892.675,2014,1230,Cache School District,11336446.75,Extracurricular
+9330.63147,5966.14,2015,1211,Cache School District,11299394.71,Extracurricular
+9679.46158,6414.1,2016,1218,Cache School District,11789584.21,Extracurricular
+9726.81195,6189.43,2017,1331,Cache School District,12946386.7,Extracurricular
+9598.97319,6054.84,2018,1493,Cache School District,14331266.98,Extracurricular
+9545.52218,5562.16,2019,1515,Cache School District,14461466.11,Extracurricular
+9298.55989,5140.52,2020,1661,Cache School District,15444907.98,Extracurricular
+10315.21863,6005.05,2021,1670,Cache School District,17226415.12,Extracurricular
+9693.1725,4656.92,2022,1936,Cache School District,18765981.96,Extracurricular
+9644.04897,4687.52,2023,2129,Cache School District,20532180.25,Extracurricular
+10547.25017,5254.095,2024,2210,Cache School District,23309422.87,Extracurricular
+11698.273,6472.835,2025,2016,Cache School District,23583718.36,Extracurricular
+20604.22496,8651.895,2014,566,Cache School District,11661991.33,Operations & Facilities
+20518.41439,8288.975,2015,588,Cache School District,12064827.66,Operations & Facilities
+22075.22878,9085,2016,576,Cache School District,12715331.78,Operations & Facilities
+21351.86305,7942.84,2017,630,Cache School District,13451673.72,Operations & Facilities
+22075.75514,8966.52,2018,695,Cache School District,15342649.82,Operations & Facilities
+21788.57177,8390.5,2019,713,Cache School District,15535251.67,Operations & Facilities
+26102.29931,11984.82,2020,664,Cache School District,17331926.74,Operations & Facilities
+27311.19092,10916.53,2021,688,Cache School District,18790099.35,Operations & Facilities
+28616.51406,11196.845,2022,704,Cache School District,20146025.9,Operations & Facilities
+29769.85079,11422.93,2023,724,Cache School District,21553371.97,Operations & Facilities
+31147.92482,13725.255,2024,762,Cache School District,23734718.71,Operations & Facilities
+32452.51239,13294.11,2025,767,Cache School District,24891077,Operations & Facilities
+6284.88656,2131.55,2014,122,Cache School District,766756.16,Other Staff
+13456.69837,3824.1,2018,43,Cache School District,578638.03,Other Staff
+34032.80318,7753.395,2014,66,Cache School District,2246165.01,Student Support
+37710.1229,15611.345,2015,62,Cache School District,2338027.62,Student Support
+46613.68931,32805.995,2016,58,Cache School District,2703593.98,Student Support
+46419.16556,34443.42,2017,63,Cache School District,2924407.43,Student Support
+53100.37015,41596.76,2018,67,Cache School District,3557724.8,Student Support
+52096.77569,55026.66,2019,72,Cache School District,3750967.85,Student Support
+61960.5788,73243.37,2020,83,Cache School District,5142728.04,Student Support
+66010.36411,71218.88,2021,90,Cache School District,5940932.77,Student Support
+73465.21753,87733.46,2022,89,Cache School District,6538404.36,Student Support
+73705.9286,89297.725,2023,100,Cache School District,7370592.86,Student Support
+83821.11022,98508.64,2024,93,Cache School District,7795363.25,Student Support
+77067.1801,95654.48,2025,99,Cache School District,7629650.83,Student Support
+62740.78165,66990.55,2014,846,Cache School District,53078701.28,Teacher
+63967.05199,67952.86,2015,865,Cache School District,55331499.97,Teacher
+66712.24778,72033.385,2016,890,Cache School District,59373900.52,Teacher
+64479.87609,68385.955,2017,974,Cache School District,62803399.31,Teacher
+76346.34968,76408.295,2018,906,Cache School District,69169792.81,Teacher
+74254.16474,74821.19,2019,921,Cache School District,68388085.73,Teacher
+85315.56493,85066.66,2020,945,Cache School District,80623208.86,Teacher
+84167.85544,87403.64,2021,1049,Cache School District,88292080.36,Teacher
+89491.64313,92049.3,2022,1053,Cache School District,94234700.22,Teacher
+98645.10483,101518.425,2023,1074,Cache School District,105944842.59,Teacher
+108604.22826,110692.295,2024,1072,Cache School District,116423732.69,Teacher
+111409.67927,114596.86,2025,1078,Cache School District,120099634.25,Teacher
+24246.01182,11479.45,2019,11,Cache School District,266706.13,Other Staff
+38433.49526,32638.47,2020,19,Cache School District,730236.41,Other Staff
+52077.15833,54264.935,2025,24,Cache School District,1249851.8,Other Staff
+47036.4168,52536.67,2023,25,Cache School District,1175910.42,Other Staff
+26699.90429,9989.225,2021,28,Cache School District,747597.32,Other Staff
+44329.7225,44238.245,2022,28,Cache School District,1241232.23,Other Staff
+51255.50032,53235.92,2024,31,Cache School District,1588920.51,Other Staff
+17037.65588,6247.5,2017,34,Cache School District,579280.3,Other Staff
+13833.6562,5196,2016,50,Cache School District,691682.81,Other Staff
+11665.61725,5503,2015,51,Cache School District,594946.48,Other Staff
+100101.14846,118116.65,2014,52,Cache School District,5205259.72,Administrator

@@ -1,0 +1,66 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+136257.537,153325.29,2019,30,Wasatch School District,4087726.11,Administrator
+154026.06455,164535.22,2020,33,Wasatch School District,5082860.13,Administrator
+174311.52513,181887.57,2022,39,Wasatch School District,6798149.48,Administrator
+174311.52513,181887.57,2023,39,Wasatch School District,6798149.48,Administrator
+175437.15792,197657.35,2025,53,Wasatch School District,9298169.37,Administrator
+15358.25396,11660.435,2014,192,Wasatch School District,2948784.76,Extracurricular
+15000.94303,10998.19,2015,228,Wasatch School District,3420215.01,Extracurricular
+15489.00045,11990.365,2016,246,Wasatch School District,3810294.11,Extracurricular
+13865.70044,10065.39,2017,275,Wasatch School District,3813067.62,Extracurricular
+12787.91439,6552.25,2018,371,Wasatch School District,4744316.24,Extracurricular
+13119.17026,6887.28,2019,417,Wasatch School District,5470694,Extracurricular
+13738.99114,7760.47,2020,387,Wasatch School District,5316989.57,Extracurricular
+14647.9311,8939.04,2021,383,Wasatch School District,5610157.61,Extracurricular
+17245.95306,10551.385,2022,396,Wasatch School District,6829397.41,Extracurricular
+17245.95306,10551.385,2023,396,Wasatch School District,6829397.41,Extracurricular
+18574.51203,11037.27,2024,403,Wasatch School District,7485528.35,Extracurricular
+22677.57115,14852.65,2025,451,Wasatch School District,10227584.59,Extracurricular
+23630.63309,16647.18,2014,165,Wasatch School District,3899054.46,Operations & Facilities
+24490.20918,17217.95,2015,159,Wasatch School District,3893943.26,Operations & Facilities
+27172.3731,17240.23,2016,187,Wasatch School District,5081233.77,Operations & Facilities
+27118.87376,15879.14,2017,197,Wasatch School District,5342418.13,Operations & Facilities
+26895.52867,13899.54,2018,240,Wasatch School District,6454926.88,Operations & Facilities
+28833.33639,13468.57,2019,241,Wasatch School District,6948834.07,Operations & Facilities
+29620.62302,11337.3,2020,245,Wasatch School District,7257052.64,Operations & Facilities
+28855.85483,7412.68,2021,267,Wasatch School District,7704513.24,Operations & Facilities
+32745.46174,12187.67,2022,288,Wasatch School District,9430692.98,Operations & Facilities
+32745.46174,12187.67,2023,288,Wasatch School District,9430692.98,Operations & Facilities
+38163.75668,21215.785,2024,280,Wasatch School District,10685851.87,Operations & Facilities
+42864.49247,24397.2,2025,271,Wasatch School District,11616277.46,Operations & Facilities
+23785.22143,20000,2018,35,Wasatch School District,832482.75,Other Staff
+27729.88277,24435.02,2020,65,Wasatch School District,1802442.38,Other Staff
+31224.30589,23357.19,2021,56,Wasatch School District,1748561.13,Other Staff
+33882.13043,27399.43,2022,47,Wasatch School District,1592460.13,Other Staff
+33882.13043,27399.43,2023,47,Wasatch School District,1592460.13,Other Staff
+44747.60756,30217.44,2024,41,Wasatch School District,1834651.91,Other Staff
+65663.29894,73019.69,2014,425,Wasatch School District,27906902.05,Teacher
+73535.8272,80213.13,2015,397,Wasatch School District,29193723.4,Teacher
+76202.26056,83444.965,2016,394,Wasatch School District,30023690.66,Teacher
+78447.45725,85498.3,2017,403,Wasatch School District,31614325.27,Teacher
+78585.51732,85422.13,2018,451,Wasatch School District,35442068.31,Teacher
+86299.78279,90315.98,2019,451,Wasatch School District,38921202.04,Teacher
+86470.83689,92006.54,2020,498,Wasatch School District,43062476.77,Teacher
+93220.25257,98963.88,2021,521,Wasatch School District,48567751.59,Teacher
+110102.8982,117629.82,2022,543,Wasatch School District,59785873.72,Teacher
+110102.8982,117629.82,2023,543,Wasatch School District,59785873.72,Teacher
+117880.06535,126349.67,2024,561,Wasatch School District,66130716.66,Teacher
+124928.40778,131493.995,2025,532,Wasatch School District,66461912.94,Teacher
+601.9,601.9,2014,1,Wasatch School District,601.9,Student Support
+299.54,299.54,2015,1,Wasatch School District,299.54,Student Support
+53939.69,53939.69,2019,1,Wasatch School District,53939.69,Student Support
+69691.97,69691.97,2024,1,Wasatch School District,69691.97,Student Support
+20923.67647,17357.66,2014,17,Wasatch School District,355702.5,Other Staff
+146024.3281,146947.22,2025,21,Wasatch School District,3066510.89,Student Support
+24276.55208,19342.47,2016,24,Wasatch School District,582637.25,Other Staff
+21858.5612,18695.46,2015,25,Wasatch School District,546464.03,Other Staff
+105582.61552,126082.83,2014,29,Wasatch School District,3061895.85,Administrator
+107705.46069,130532.84,2015,29,Wasatch School District,3123458.36,Administrator
+114830.8169,135966.54,2017,29,Wasatch School District,3330093.69,Administrator
+110247.18484,128820.72,2016,31,Wasatch School District,3417662.73,Administrator
+127059.87323,143337.21,2018,31,Wasatch School District,3938856.07,Administrator
+154045.33529,165372.815,2021,34,Wasatch School District,5237541.4,Administrator
+21567.22529,18487.7,2017,34,Wasatch School District,733285.66,Other Staff
+23019.90095,18674.975,2019,42,Wasatch School District,966835.84,Other Staff
+38557.01524,27670.67,2025,42,Wasatch School District,1619394.64,Other Staff
+170217.4408,192163.68,2024,50,Wasatch School District,8510872.04,Administrator

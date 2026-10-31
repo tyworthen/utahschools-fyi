@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+140593.42311,141828.66,2016,45,Provo School District,6326704.04,Administrator
+150701.28851,149566.19,2017,47,Provo School District,7082960.56,Administrator
+152549.86316,151391.45,2020,57,Provo School District,8695342.2,Administrator
+164008.34446,162271.435,2021,56,Provo School District,9184467.29,Administrator
+175308.4575,164927.825,2022,56,Provo School District,9817273.62,Administrator
+144403.67077,163818.26,2023,65,Provo School District,9386238.6,Administrator
+182319.11279,185626.06,2024,61,Provo School District,11121465.88,Administrator
+197298.23971,191446.79,2025,68,Provo School District,13416280.3,Administrator
+15310.20254,9367.91,2014,877,Provo School District,13427047.63,Extracurricular
+14550.09723,8925.04,2015,901,Provo School District,13109637.6,Extracurricular
+14682.91835,8122.65,2016,936,Provo School District,13743211.58,Extracurricular
+14696.923,8293.17,2017,897,Provo School District,13183139.93,Extracurricular
+14877.96242,7603.585,2018,960,Provo School District,14282843.92,Extracurricular
+15410.33393,8826.39,2019,927,Provo School District,14285379.55,Extracurricular
+16044.85785,9649.79,2020,965,Provo School District,15483287.83,Extracurricular
+17902.3548,10791.54,2021,885,Provo School District,15843584,Extracurricular
+16883.11326,9866.885,2022,948,Provo School District,16005191.37,Extracurricular
+22760.99167,11380.35,2023,898,Provo School District,20439370.52,Extracurricular
+21094.87766,13565.69,2024,867,Provo School District,18289258.93,Extracurricular
+23908.13895,15359.8,2025,763,Provo School District,18241910.02,Extracurricular
+17295.7571,7661.145,2014,414,Provo School District,7160443.44,Operations & Facilities
+15718.98671,5313.72,2015,468,Provo School District,7356485.78,Operations & Facilities
+16880.06476,6473.79,2016,460,Provo School District,7764829.79,Operations & Facilities
+17100.81698,7315.225,2017,464,Provo School District,7934779.08,Operations & Facilities
+19837.69742,6851.825,2018,492,Provo School District,9760147.13,Operations & Facilities
+19815.01136,6662.11,2019,537,Provo School District,10640661.1,Operations & Facilities
+24303.0426,10920.55,2020,470,Provo School District,11422430.02,Operations & Facilities
+23607.44398,9790.54,2021,502,Provo School District,11850936.88,Operations & Facilities
+23110.69794,8577.85,2022,520,Provo School District,12017562.93,Operations & Facilities
+19922.02307,7895.365,2023,502,Provo School District,10000855.58,Operations & Facilities
+25731.88856,10331.43,2024,578,Provo School District,14873031.59,Operations & Facilities
+29781.76757,12909.18,2025,551,Provo School District,16409753.93,Operations & Facilities
+33038.218,19155.99,2015,35,Provo School District,1156337.63,Other Staff
+30092.34644,15110.31,2016,45,Provo School District,1354155.59,Other Staff
+39045.11592,18904.37,2019,49,Provo School District,1913210.68,Other Staff
+42896.68767,20824.66,2020,43,Provo School District,1844557.57,Other Staff
+46616.20234,23404.74,2021,47,Provo School District,2190961.51,Other Staff
+47339.43069,23633.63,2023,72,Provo School District,3408439.01,Other Staff
+45224.38113,24046.32,2025,62,Provo School District,2803911.63,Other Staff
+60111.94814,65095.86,2014,59,Provo School District,3546604.94,Student Support
+70221.74943,77983.9,2015,53,Provo School District,3721752.72,Student Support
+68550.84359,75212.04,2016,64,Provo School District,4387253.99,Student Support
+66918.38101,75635.44,2017,79,Provo School District,5286552.1,Student Support
+67896.68221,76419.445,2018,68,Provo School District,4616974.39,Student Support
+68987.84722,80130.385,2019,72,Provo School District,4967125,Student Support
+73341.00486,83034.415,2020,74,Provo School District,5427234.36,Student Support
+80399.92534,87714.72,2021,73,Provo School District,5869194.55,Student Support
+86936.26373,95712.08,2022,75,Provo School District,6520219.78,Student Support
+69381.29099,83562.5,2023,142,Provo School District,9852143.32,Student Support
+98955.02587,105410.62,2024,75,Provo School District,7421626.94,Student Support
+106768.47622,111680.14,2025,74,Provo School District,7900867.24,Student Support
+57957.05614,61779.08,2014,857,Provo School District,49669197.11,Teacher
+60205.05961,63984.31,2015,855,Provo School District,51475325.97,Teacher
+60914.50997,64414.975,2016,868,Provo School District,52873794.65,Teacher
+63447.09241,67038.055,2017,876,Provo School District,55579652.95,Teacher
+65794.6303,70038.715,2018,880,Provo School District,57899274.66,Teacher
+70244.24052,74382.66,2019,850,Provo School District,59707604.44,Teacher
+71241.24169,75874.69,2020,881,Provo School District,62763533.93,Teacher
+80486.02489,85014.355,2021,854,Provo School District,68735065.26,Teacher
+82553.54758,89290.86,2022,875,Provo School District,72234354.13,Teacher
+81509.09844,88673.37,2023,861,Provo School District,70179333.76,Teacher
+87411.53729,94793.12,2024,899,Provo School District,78582972.02,Teacher
+93105.91806,99459.54,2025,881,Provo School District,82026313.81,Teacher
+41233.9676,28230.03,2014,25,Provo School District,1030849.19,Other Staff
+133974.96595,132120.01,2014,42,Provo School District,5626948.57,Administrator
+127307.49565,131729.605,2015,46,Provo School District,5856144.8,Administrator
+42571.5475,22349.525,2022,48,Provo School District,2043434.28,Other Staff
+42884.17784,16640.6,2018,51,Provo School District,2187093.07,Other Staff
+157485.35827,153711.59,2018,52,Provo School District,8189238.63,Administrator
+156702.04404,147478.525,2019,52,Provo School District,8148506.29,Administrator
+32929.94808,15389.665,2017,52,Provo School District,1712357.3,Other Staff
+49575.32365,27064.75,2024,52,Provo School District,2577916.83,Other Staff

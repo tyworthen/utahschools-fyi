@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+20903.0384,11164.92,2014,287,Uintah School District,5999172.02,Extracurricular
+22950.48748,12161.14,2015,286,Uintah School District,6563839.42,Extracurricular
+23869.82921,14034.365,2016,302,Uintah School District,7208688.42,Extracurricular
+24133.49467,13600.35,2017,291,Uintah School District,7022846.95,Extracurricular
+22860.24799,12120.67,2018,338,Uintah School District,7726763.82,Extracurricular
+23145.91529,12857.49,2019,350,Uintah School District,8101070.35,Extracurricular
+22645.37817,13544.54,2020,387,Uintah School District,8763761.35,Extracurricular
+24315.45953,15239.815,2021,384,Uintah School District,9337136.46,Extracurricular
+23331.7272,14579.34,2022,415,Uintah School District,9682666.79,Extracurricular
+24783.07909,15870.02,2023,416,Uintah School District,10309760.9,Extracurricular
+25680.80442,18096.26,2024,407,Uintah School District,10452087.4,Extracurricular
+28749.81911,19246.155,2025,418,Uintah School District,12017424.39,Extracurricular
+24824.46215,10554.235,2014,284,Uintah School District,7050147.25,Operations & Facilities
+28857.89889,14883,2015,280,Uintah School District,8080211.69,Operations & Facilities
+28698.62372,13237.375,2016,296,Uintah School District,8494792.62,Operations & Facilities
+31070.25136,18340.2,2017,279,Uintah School District,8668600.13,Operations & Facilities
+37242.22648,35085.17,2018,233,Uintah School District,8677438.77,Operations & Facilities
+42633.09063,41513.74,2019,205,Uintah School District,8739783.58,Operations & Facilities
+44916.89827,43196.455,2020,208,Uintah School District,9342714.84,Operations & Facilities
+49184.22572,48132.91,2021,201,Uintah School District,9886029.37,Operations & Facilities
+48515.6154,47486.63,2022,211,Uintah School District,10236794.85,Operations & Facilities
+52588.24204,50141.615,2023,206,Uintah School District,10833177.86,Operations & Facilities
+54935.15307,49667.05,2024,199,Uintah School District,10932095.46,Operations & Facilities
+59362.08975,59792.21,2025,198,Uintah School District,11753693.77,Operations & Facilities
+30831.95219,2890.655,2014,32,Uintah School District,986622.47,Student Support
+33496.49281,2687.025,2015,32,Uintah School District,1071887.77,Student Support
+55479.26718,73923.34,2021,39,Uintah School District,2163691.42,Student Support
+49229.52133,2778.28,2022,45,Uintah School District,2215328.46,Student Support
+98579.57512,115678.06,2025,43,Uintah School District,4238921.73,Student Support
+49591.14755,54118.11,2014,493,Uintah School District,24448435.74,Teacher
+50983.45444,55404.715,2015,516,Uintah School District,26307462.49,Teacher
+50924.09741,57065.315,2016,522,Uintah School District,26582378.85,Teacher
+54730.52552,64515.76,2017,464,Uintah School District,25394963.84,Teacher
+58043.57643,67128.65,2018,446,Uintah School District,25887435.09,Teacher
+61699.57278,73932.71,2019,449,Uintah School District,27703108.18,Teacher
+67933.94824,81238.64,2020,443,Uintah School District,30094739.07,Teacher
+76639.61976,91405.74,2021,415,Uintah School District,31805442.2,Teacher
+72745.42216,85341.45,2022,430,Uintah School District,31280531.53,Teacher
+77684.75612,89426.11,2023,441,Uintah School District,34258977.45,Teacher
+76566.30357,87798.51,2024,414,Uintah School District,31698449.68,Teacher
+90663.50395,105977.68,2025,415,Uintah School District,37625354.14,Teacher
+34178.59556,25235.48,2014,9,Uintah School District,307607.36,Other Staff
+44113.34556,28760.84,2015,9,Uintah School District,397020.11,Other Staff
+92259.484,115899.75,2025,10,Uintah School District,922594.84,Other Staff
+71186.53083,82187.73,2024,12,Uintah School District,854238.37,Other Staff
+75395.81357,84449.365,2023,14,Uintah School District,1055541.39,Other Staff
+49426.52533,38928.96,2019,15,Uintah School District,741397.88,Other Staff
+52281.86467,48105.99,2021,15,Uintah School District,784227.97,Other Staff
+44847.92188,27157,2020,16,Uintah School District,717566.75,Other Staff
+32831.96222,30443.88,2016,18,Uintah School District,590975.32,Other Staff
+49866.75222,36072.375,2018,18,Uintah School District,897601.54,Other Staff
+44598.59944,32946.79,2022,18,Uintah School District,802774.79,Other Staff
+37636.62333,41207.47,2017,21,Uintah School District,790369.09,Other Staff
+157871.9108,153124.25,2021,25,Uintah School District,3946797.77,Administrator
+133957.99,129458.46,2017,26,Uintah School District,3482907.74,Administrator
+113170.70667,114441.08,2014,27,Uintah School District,3055609.08,Administrator
+131836.67222,135915.06,2019,27,Uintah School District,3559590.15,Administrator
+167190.28111,161935.53,2024,27,Uintah School District,4514137.59,Administrator
+119712.45036,121044.7,2015,28,Uintah School District,3351948.61,Administrator
+120702.93036,130792.945,2018,28,Uintah School District,3379682.05,Administrator
+135308.98286,140917.225,2020,28,Uintah School District,3788651.52,Administrator
+122643.16379,125287.72,2016,29,Uintah School District,3556651.75,Administrator
+144234.21621,149403.46,2022,29,Uintah School District,4182792.27,Administrator
+180302.81345,175848.64,2025,29,Uintah School District,5228781.59,Administrator
+143899.6529,154134.35,2023,31,Uintah School District,4460889.24,Administrator
+38833.42765,2893.595,2016,34,Uintah School District,1320336.54,Student Support
+30304.21111,2423.09,2019,36,Uintah School District,1090951.6,Student Support
+36321.31684,2290.405,2020,38,Uintah School District,1380210.04,Student Support
+35657.365,1968.45,2017,40,Uintah School District,1426294.6,Student Support
+24248.4431,2245.01,2018,42,Uintah School District,1018434.61,Student Support
+81429.68261,93516.15,2024,46,Uintah School District,3745765.4,Student Support
+58412.1498,63265.235,2023,50,Uintah School District,2920607.49,Student Support

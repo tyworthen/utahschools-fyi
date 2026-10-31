@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+108923.72367,123611.925,2020,30,Duchesne School District,3267711.71,Administrator
+123093.66667,138676.025,2023,30,Duchesne School District,3692810,Administrator
+12474.82851,7346.98,2014,303,Duchesne School District,3779873.04,Extracurricular
+12225.32065,6822.33,2015,324,Duchesne School District,3961003.89,Extracurricular
+11637.08158,8299.46,2016,349,Duchesne School District,4061341.47,Extracurricular
+11568.96351,8111.165,2017,376,Duchesne School District,4349930.28,Extracurricular
+11221.2016,7852.62,2018,399,Duchesne School District,4477259.44,Extracurricular
+11295.10123,8915.16,2019,398,Duchesne School District,4495450.29,Extracurricular
+13012.6459,8766.97,2020,390,Duchesne School District,5074931.9,Extracurricular
+17266.6501,12989.995,2021,314,Duchesne School District,5421728.13,Extracurricular
+15968.76275,12588.66,2022,375,Duchesne School District,5988286.03,Extracurricular
+16728.15527,13354.16,2023,372,Duchesne School District,6222873.76,Extracurricular
+18078.13631,14638.785,2024,396,Duchesne School District,7158941.98,Extracurricular
+19221.81235,15608.48,2025,400,Duchesne School District,7688724.94,Extracurricular
+20852.75724,10325.16,2014,203,Duchesne School District,4233109.72,Operations & Facilities
+23112.47672,12532.23,2015,195,Duchesne School District,4506932.96,Operations & Facilities
+24762.73244,12381.01,2016,213,Duchesne School District,5274462.01,Operations & Facilities
+25050.06327,12848.175,2017,202,Duchesne School District,5060112.78,Operations & Facilities
+24896.86318,13032.525,2018,198,Duchesne School District,4929578.91,Operations & Facilities
+25834.09065,14248.65,2019,201,Duchesne School District,5192652.22,Operations & Facilities
+26786.85482,13890.48,2020,197,Duchesne School District,5277010.4,Operations & Facilities
+27487.72302,13145.27,2021,222,Duchesne School District,6102274.51,Operations & Facilities
+28615.03959,13296.525,2022,220,Duchesne School District,6295308.71,Operations & Facilities
+29957.76758,14546.97,2023,219,Duchesne School District,6560751.1,Operations & Facilities
+33286.38495,15455.33,2024,216,Duchesne School District,7189859.15,Operations & Facilities
+33772.54147,16286.41,2025,225,Duchesne School District,7598821.83,Operations & Facilities
+5247.44849,2229.5,2021,73,Duchesne School District,383063.74,Other Staff
+5560.37943,2316.83,2022,88,Duchesne School District,489313.39,Other Staff
+6740.43111,2422.06,2023,90,Duchesne School District,606638.8,Other Staff
+5790.35968,2219.35,2024,95,Duchesne School District,550084.17,Other Staff
+5869.26374,2743.91,2025,91,Duchesne School District,534103,Other Staff
+107781.01522,107485.87,2025,23,Duchesne School District,2478963.35,Student Support
+38842.80164,45944.62,2014,402,Duchesne School District,15614806.26,Teacher
+39928.22005,48458.23,2015,426,Duchesne School District,17009421.74,Teacher
+39305.39082,48455.06,2016,464,Duchesne School District,18237701.34,Teacher
+41557.74168,50445.96,2017,446,Duchesne School District,18534752.79,Teacher
+43664.96097,53155.32,2018,431,Duchesne School District,18819598.18,Teacher
+39175.96497,46924.2,2019,433,Duchesne School District,16963192.83,Teacher
+52585.75448,60617.85,2020,413,Duchesne School District,21717916.6,Teacher
+61051.6685,72332.84,2021,401,Duchesne School District,24481719.07,Teacher
+63243.86842,75273.32,2022,387,Duchesne School District,24475377.08,Teacher
+67300.51438,80875.485,2023,402,Duchesne School District,27054806.78,Teacher
+78919.12701,91315.575,2024,408,Duchesne School District,32199003.82,Teacher
+79341.77482,90853.18,2025,417,Duchesne School District,33085520.1,Teacher
+54538.55909,61881.64,2014,11,Duchesne School District,599924.15,Student Support
+59878.61,68003.43,2016,12,Duchesne School District,718543.32,Student Support
+73229.55167,79527.66,2018,12,Duchesne School District,878754.62,Student Support
+50954.82154,46780.95,2015,13,Duchesne School District,662412.68,Student Support
+10009.68571,9501.655,2019,14,Duchesne School District,140135.6,Other Staff
+61489.55786,71643.005,2017,14,Duchesne School District,860853.81,Student Support
+57002.82286,62955.72,2019,14,Duchesne School District,798039.52,Student Support
+79370.19357,79167.885,2020,14,Duchesne School District,1111182.71,Student Support
+16460.354,9966.6,2018,15,Duchesne School District,246905.31,Other Staff
+9155.33063,9990.24,2014,16,Duchesne School District,146485.29,Other Staff
+10968.43063,10223.46,2016,16,Duchesne School District,175494.89,Other Staff
+6704.91941,6839.29,2015,17,Duchesne School District,113983.63,Other Staff
+84016.47059,84007,2022,17,Duchesne School District,1428280,Student Support
+71495.62944,72994.465,2021,18,Duchesne School District,1286921.33,Student Support
+17093.23895,11002.81,2020,19,Duchesne School District,324771.54,Other Staff
+10595.44238,10484.43,2017,21,Duchesne School District,222504.29,Other Staff
+90244.98875,91975.07,2024,24,Duchesne School District,2165879.73,Student Support
+122839.4756,138661.31,2022,25,Duchesne School District,3070986.89,Administrator
+66125.2616,72642.51,2023,25,Duchesne School District,1653131.54,Student Support
+92202.75846,96925.49,2015,26,Duchesne School District,2397271.72,Administrator
+98432.42154,104737.3,2017,26,Duchesne School District,2559242.96,Administrator
+119298.28231,133064.79,2021,26,Duchesne School District,3101755.34,Administrator
+150953.87154,165748.67,2024,26,Duchesne School District,3924800.66,Administrator
+94899.06519,100301.68,2016,27,Duchesne School District,2562274.76,Administrator
+78646.83036,89667.015,2014,28,Duchesne School District,2202111.25,Administrator
+144393.2975,161585.08,2025,28,Duchesne School District,4043012.33,Administrator
+97491.53966,106703.32,2018,29,Duchesne School District,2827254.65,Administrator
+90305.36774,99354.07,2019,31,Duchesne School District,2799466.4,Administrator

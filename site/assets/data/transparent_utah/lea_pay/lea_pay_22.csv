@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+154515.11457,160160.39,2019,35,Park City School District,5408029.01,Administrator
+191640.69818,184111.18,2022,33,Park City School District,6324143.04,Administrator
+212776.79195,220819.55,2024,41,Park City School District,8723848.47,Administrator
+210511.68286,227496.77,2025,49,Park City School District,10315072.46,Administrator
+30769.75917,22113.28,2014,206,Park City School District,6338570.39,Extracurricular
+30455.08196,18808.02,2015,204,Park City School District,6212836.72,Extracurricular
+32156.63838,22382.075,2016,198,Park City School District,6367014.4,Extracurricular
+30783.29894,21275.03,2017,217,Park City School District,6679975.87,Extracurricular
+26024.56084,15293.67,2018,263,Park City School District,6844459.5,Extracurricular
+27095.01059,14962.34,2019,254,Park City School District,6882132.69,Extracurricular
+31075.01158,21118.21,2020,247,Park City School District,7675527.86,Extracurricular
+29354.11774,17217.53,2021,270,Park City School District,7925611.79,Extracurricular
+33295.44158,22855.37,2022,241,Park City School District,8024201.42,Extracurricular
+36249.07968,26869.525,2023,250,Park City School District,9062269.92,Extracurricular
+48402.42914,38587.59,2024,255,Park City School District,12342619.43,Extracurricular
+55032.50163,46885.185,2025,276,Park City School District,15188970.45,Extracurricular
+47309.61145,48954.9,2014,117,Park City School District,5535224.54,Operations & Facilities
+49833.8467,51010.215,2015,112,Park City School District,5581390.83,Operations & Facilities
+54027.5458,52492.33,2016,100,Park City School District,5402754.58,Operations & Facilities
+52381.20738,50374.66,2017,103,Park City School District,5395264.36,Operations & Facilities
+52336.39315,47567.39,2018,108,Park City School District,5652330.46,Operations & Facilities
+60077.86298,60924.045,2019,104,Park City School District,6248097.75,Operations & Facilities
+62119.95392,65463.19,2020,97,Park City School District,6025635.53,Operations & Facilities
+61697.04879,56728.49,2021,107,Park City School District,6601584.22,Operations & Facilities
+62338.02689,59346.6,2022,106,Park City School District,6607830.85,Operations & Facilities
+69766.60153,65178.385,2023,98,Park City School District,6837126.95,Operations & Facilities
+97608.54351,93085.34,2024,97,Park City School District,9468028.72,Operations & Facilities
+99971.26789,93394.62,2025,109,Park City School District,10896868.2,Operations & Facilities
+39977.01156,44584.735,2017,32,Park City School District,1279264.37,Other Staff
+32159.255,21182.475,2018,88,Park City School District,2830014.44,Other Staff
+41765.65446,27204.4,2019,92,Park City School District,3842440.21,Other Staff
+34356.48923,19755.135,2020,104,Park City School District,3573074.88,Other Staff
+49500.34095,44305.01,2021,63,Park City School District,3118521.48,Other Staff
+41879.16012,28154.61,2022,86,Park City School District,3601607.77,Other Staff
+56381.07971,54722.23,2023,70,Park City School District,3946675.58,Other Staff
+59118.31149,34376.825,2024,74,Park City School District,4374755.05,Other Staff
+70855.10119,73316.78,2025,67,Park City School District,4747291.78,Other Staff
+14581.08365,2045.02,2014,148,Park City School District,2158000.38,Student Support
+14770.46873,2012.565,2015,158,Park City School District,2333734.06,Student Support
+13893.1113,1883.8,2016,161,Park City School District,2236790.92,Student Support
+17698.69569,2527.5,2017,137,Park City School District,2424721.31,Student Support
+48101.98131,10684.63,2018,61,Park City School District,2934220.86,Student Support
+49080.82277,14827.26,2019,65,Park City School District,3190253.48,Student Support
+54004.7629,25640.555,2020,62,Park City School District,3348295.3,Student Support
+68706.22418,16473.16,2025,67,Park City School District,4603317.02,Student Support
+57173.78121,70325.67,2014,461,Park City School District,26357113.14,Teacher
+60796.77109,74737.46,2015,469,Park City School District,28513685.64,Teacher
+64685.24167,79031.99,2016,466,Park City School District,30143322.62,Teacher
+62304.51974,70684.03,2017,493,Park City School District,30716128.23,Teacher
+70346.12759,84437.19,2018,481,Park City School District,33836487.37,Teacher
+73088.91608,88462.585,2019,482,Park City School District,35228857.55,Teacher
+78569.66248,94499.61,2020,455,Park City School District,35749196.43,Teacher
+91417.96253,104156.75,2021,419,Park City School District,38304126.3,Teacher
+98128.55771,106434.7,2022,376,Park City School District,36896337.7,Teacher
+105165.60174,115607.145,2023,368,Park City School District,38700941.44,Teacher
+120570.9874,132302.285,2024,362,Park City School District,43646697.44,Teacher
+147167.53315,150326.31,2025,324,Park City School District,47682280.74,Teacher
+40140.78,30930.74,2014,18,Park City School District,722534.04,Other Staff
+153441.60364,158011.57,2015,22,Park City School District,3375715.28,Administrator
+119753.36538,136657.24,2014,26,Park City School District,3113587.5,Administrator
+131700.76852,149743.96,2016,27,Park City School District,3555920.75,Administrator
+128276.20679,146538.75,2017,28,Park City School District,3591733.79,Administrator
+151596.14821,153307.365,2018,28,Park City School District,4244692.15,Administrator
+44899.07069,44876.26,2015,29,Park City School District,1302073.05,Other Staff
+39914.47935,40520.5,2016,31,Park City School District,1237348.86,Other Staff
+178534.90853,173446.56,2021,34,Park City School District,6070186.89,Administrator
+192741.52265,195459.85,2023,34,Park City School District,6553211.77,Administrator
+159242.44474,164452.715,2020,38,Park City School District,6051212.9,Administrator
+71024.404,62545.57,2023,40,Park City School District,2840976.16,Student Support
+66154.11348,43546.22,2021,46,Park City School District,3043089.22,Student Support
+64525.85,44674.945,2022,46,Park City School District,2968189.1,Student Support
+71753.78412,23266.2,2024,51,Park City School District,3659442.99,Student Support

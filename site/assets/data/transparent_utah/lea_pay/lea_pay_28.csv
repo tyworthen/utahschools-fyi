@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+97608.16696,123674.6,2019,23,South Summit School District,2244987.84,Administrator
+116806.4487,143335.41,2022,23,South Summit School District,2686548.32,Administrator
+7865.90861,3246.395,2014,202,South Summit School District,1588913.54,Extracurricular
+7556.53445,2800,2015,220,South Summit School District,1662437.58,Extracurricular
+8020.09449,3504.01,2016,207,South Summit School District,1660159.56,Extracurricular
+7382.031,2490.7,2017,231,South Summit School District,1705249.16,Extracurricular
+8285.15154,3412.545,2018,228,South Summit School District,1889014.55,Extracurricular
+8100.55723,3379.51,2019,235,South Summit School District,1903630.95,Extracurricular
+8596.98441,4029.37,2020,211,South Summit School District,1813963.71,Extracurricular
+9389.30892,3673.74,2021,212,South Summit School District,1990533.49,Extracurricular
+9523.49384,3660.1,2022,224,South Summit School District,2133262.62,Extracurricular
+10949.36048,4092.68,2023,209,South Summit School District,2288416.34,Extracurricular
+12721.88582,4468.685,2024,220,South Summit School District,2798814.88,Extracurricular
+13094.66059,3789.84,2025,221,South Summit School District,2893919.99,Extracurricular
+28630.05732,12429.03,2017,41,South Summit School District,1173832.35,Operations & Facilities
+32961.90463,10519.34,2020,41,South Summit School District,1351438.09,Operations & Facilities
+36123.99415,13340.52,2021,41,South Summit School District,1481083.76,Operations & Facilities
+44197.34939,37370.18,2023,49,South Summit School District,2165670.12,Operations & Facilities
+48934.53982,30412.63,2024,55,South Summit School District,2691399.69,Operations & Facilities
+51857.97945,30117.96,2025,55,South Summit School District,2852188.87,Operations & Facilities
+21473.98233,10595.57,2020,30,South Summit School District,644219.47,Other Staff
+52747.9963,67958.15,2014,119,South Summit School District,6277011.56,Teacher
+52986.48492,69876.645,2015,120,South Summit School District,6358378.19,Teacher
+57834.9825,73114.8,2016,112,South Summit School District,6477518.04,Teacher
+60848.9483,78147.16,2017,112,South Summit School District,6815082.21,Teacher
+62345.19442,79574.22,2018,120,South Summit School District,7481423.33,Teacher
+63083.2588,79380.41,2019,125,South Summit School District,7885407.35,Teacher
+67532.60063,82126.895,2020,128,South Summit School District,8644172.88,Teacher
+69862.89052,86280.01,2021,135,South Summit School District,9431490.22,Teacher
+66559.64137,82878.945,2022,146,South Summit School District,9717707.64,Teacher
+77483.06326,97450.75,2023,135,South Summit School District,10460213.54,Teacher
+85170.85865,107721.62,2024,141,South Summit School District,12009091.07,Teacher
+90784.75645,116247.47,2025,138,South Summit School District,12528296.39,Teacher
+42943.595,42943.595,2015,2,South Summit School District,85887.19,Other Staff
+25645.0425,15991.595,2014,4,South Summit School District,102580.17,Other Staff
+77582.585,79793.21,2015,4,South Summit School District,310330.34,Student Support
+32419.038,41565.75,2016,5,South Summit School District,162095.19,Other Staff
+60320.04,69690.42,2014,5,South Summit School District,301600.2,Student Support
+85383.43,92888.42,2016,5,South Summit School District,426917.15,Student Support
+91708.888,93222.5,2018,5,South Summit School District,458544.44,Student Support
+70740.455,77932.23,2017,6,South Summit School District,424442.73,Student Support
+105555.38333,113262.19,2021,6,South Summit School District,633332.3,Student Support
+77189.49714,90001.13,2019,7,South Summit School District,540326.48,Student Support
+86830.94143,98666.09,2020,7,South Summit School District,607816.59,Student Support
+98757.14286,116495.01,2022,7,South Summit School District,691300,Student Support
+95985.1475,116182.34,2023,8,South Summit School District,767881.18,Student Support
+29514.88333,18778.17,2017,9,South Summit School District,265633.95,Other Staff
+140731.60222,147913.7,2024,9,South Summit School District,1266584.42,Student Support
+17513.61818,17040.32,2018,11,South Summit School District,192649.8,Other Staff
+132426.35273,141854.24,2025,11,South Summit School District,1456689.88,Student Support
+27349.89429,436.56,2024,14,South Summit School District,382898.52,Other Staff
+82882.36067,97133.81,2014,15,South Summit School District,1243235.41,Administrator
+72977.39176,91747.35,2015,17,South Summit School District,1240615.66,Administrator
+83627.36647,94768.72,2016,17,South Summit School District,1421665.23,Administrator
+23767.65471,9386.54,2019,17,South Summit School District,404050.13,Other Staff
+22477.17647,457.88,2025,17,South Summit School District,382112,Other Staff
+31569.11,19093.05,2021,19,South Summit School District,599813.09,Other Staff
+29076.94421,12331.58,2023,19,South Summit School District,552461.94,Other Staff
+86364.896,103509.34,2017,20,South Summit School District,1727297.92,Administrator
+96594.689,117452.005,2018,20,South Summit School District,1931893.78,Administrator
+105394.743,128462.985,2020,20,South Summit School District,2107894.86,Administrator
+26971.5535,13629.6,2022,20,South Summit School District,539431.07,Other Staff
+143399.76273,179467.25,2025,22,South Summit School District,3154794.78,Administrator
+94938.08958,119279.485,2021,24,South Summit School District,2278514.15,Administrator
+126281.665,166474.59,2024,24,South Summit School District,3030759.96,Administrator
+119342.09654,152940.245,2023,26,South Summit School District,3102894.51,Administrator
+28749.79571,8914.935,2016,42,South Summit School District,1207491.42,Operations & Facilities
+32112.075,6837.195,2019,42,South Summit School District,1348707.15,Operations & Facilities
+30516.02348,12766.115,2018,46,South Summit School District,1403737.08,Operations & Facilities
+26578.04255,9630.37,2015,51,South Summit School District,1355480.17,Operations & Facilities
+38214.17627,20771.55,2022,51,South Summit School District,1948922.99,Operations & Facilities
+27064.93404,9627.905,2014,52,South Summit School District,1407376.57,Operations & Facilities

@@ -1,0 +1,67 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+12192.79355,7076.985,2014,248,Carbon School District,3023812.8,Extracurricular
+12463.63342,7388.88,2015,257,Carbon School District,3203153.79,Extracurricular
+12895.53387,8075.49,2016,274,Carbon School District,3533376.28,Extracurricular
+12538.80278,7957.24,2017,374,Carbon School District,4689512.24,Extracurricular
+12501.4608,8528.22,2018,377,Carbon School District,4713050.72,Extracurricular
+13977.0966,9150.65,2019,359,Carbon School District,5017777.68,Extracurricular
+14067.31406,9416.37,2020,362,Carbon School District,5092367.69,Extracurricular
+13395.86986,10229.56,2021,348,Carbon School District,4661762.71,Extracurricular
+14344.01161,10296.365,2022,316,Carbon School District,4532707.67,Extracurricular
+16523.71184,12641.03,2023,304,Carbon School District,5023208.4,Extracurricular
+19190.56929,14837.435,2024,294,Carbon School District,5642027.37,Extracurricular
+18908.79777,15573.83,2025,264,Carbon School District,4991922.61,Extracurricular
+21609.09465,11552.975,2014,144,Carbon School District,3111709.63,Operations & Facilities
+23637.44746,12853.52,2015,138,Carbon School District,3261967.75,Operations & Facilities
+25247.33655,12885.33,2016,145,Carbon School District,3660863.8,Operations & Facilities
+26171.34576,14071.51,2017,144,Carbon School District,3768673.79,Operations & Facilities
+26561.50847,13830.215,2018,150,Carbon School District,3984226.27,Operations & Facilities
+26939.13724,14629.46,2019,145,Carbon School District,3906174.9,Operations & Facilities
+30369.24945,17020.135,2020,146,Carbon School District,4433910.42,Operations & Facilities
+31261.04709,17644.81,2021,151,Carbon School District,4720418.11,Operations & Facilities
+28834.86804,17415.425,2022,168,Carbon School District,4844257.83,Operations & Facilities
+31585.46818,18345.13,2023,170,Carbon School District,5369529.59,Operations & Facilities
+36971.05982,20908.67,2024,164,Carbon School District,6063253.81,Operations & Facilities
+37982.9673,20706.87,2025,163,Carbon School District,6191223.67,Operations & Facilities
+5406.32,1937.7,2016,85,Carbon School District,459537.2,Other Staff
+47845.86276,61784.07,2014,293,Carbon School District,14018837.79,Teacher
+51491.17942,64478.355,2015,278,Carbon School District,14314547.88,Teacher
+59284.8613,69745.02,2016,269,Carbon School District,15947627.69,Teacher
+62769.24019,74555.68,2017,267,Carbon School District,16759387.13,Teacher
+61700.31314,76577.45,2018,271,Carbon School District,16720784.86,Teacher
+66226.68529,80091.22,2019,261,Carbon School District,17285164.86,Teacher
+74117.58516,85273.17,2020,252,Carbon School District,18677631.46,Teacher
+71117.02563,86592.55,2021,254,Carbon School District,18063724.51,Teacher
+65389.47632,82399.31,2022,277,Carbon School District,18112884.94,Teacher
+70370.48279,89491.38,2023,290,Carbon School District,20407440.01,Teacher
+78400.61091,100267.13,2024,287,Carbon School District,22500975.33,Teacher
+81217.84284,98037.505,2025,292,Carbon School District,23715610.11,Teacher
+70751.36,70751.36,2020,1,Carbon School District,70751.36,Other Staff
+116271.175,116271.175,2025,2,Carbon School District,232542.35,Other Staff
+11449.27667,9147.27,2021,3,Carbon School District,34347.83,Other Staff
+100453.081,85701.96,2017,10,Carbon School District,1004530.81,Student Support
+79585.41545,79459.14,2018,11,Carbon School District,875439.57,Student Support
+120095.26,123404.74,2019,12,Carbon School District,1441143.12,Student Support
+104379.486,95037.91,2020,15,Carbon School District,1565692.29,Student Support
+95298.29933,99355.11,2021,15,Carbon School District,1429474.49,Student Support
+91121.3875,97998.015,2022,16,Carbon School District,1457942.2,Student Support
+101881.3825,106740.8,2023,16,Carbon School District,1630102.12,Student Support
+50561.45765,45947.78,2016,17,Carbon School District,859544.78,Student Support
+113948.11529,117174.75,2024,17,Carbon School District,1937117.96,Student Support
+115561.865,115236.92,2015,18,Carbon School District,2080113.57,Administrator
+118283.18,119585.36,2016,18,Carbon School District,2129097.24,Administrator
+124937.59833,123153.41,2017,18,Carbon School District,2248876.77,Administrator
+35735.69833,13670.625,2014,18,Carbon School District,643242.57,Student Support
+102468.89833,115183.21,2025,18,Carbon School District,1844440.17,Student Support
+111044.44895,112086.33,2014,19,Carbon School District,2109844.53,Administrator
+148988.44684,139435.83,2020,19,Carbon School District,2830780.49,Administrator
+143756.55053,141349.39,2021,19,Carbon School District,2731374.46,Administrator
+153379.71316,152960.22,2023,19,Carbon School District,2914214.55,Administrator
+170712.68263,169683.25,2024,19,Carbon School District,3243540.97,Administrator
+130793.1925,127506.66,2019,20,Carbon School District,2615863.85,Administrator
+123406.38952,127376.57,2018,21,Carbon School District,2591534.18,Administrator
+164607.12571,168497.42,2025,21,Carbon School District,3456749.64,Administrator
+36917.0919,1167.25,2015,21,Carbon School District,775258.93,Student Support
+130984.77455,135920.08,2022,22,Carbon School District,2881665.04,Administrator
+11199.20414,1901.1,2014,87,Carbon School District,974330.76,Other Staff
+8260.72402,1901.1,2015,87,Carbon School District,718682.99,Other Staff

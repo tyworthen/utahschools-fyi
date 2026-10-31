@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+27197.79568,1692.785,2019,44,North Summit School District,1196703.01,Administrator
+39962.63317,2626.67,2023,41,North Summit School District,1638467.96,Administrator
+39499.07864,1640.855,2025,44,North Summit School District,1737959.46,Administrator
+25376.46216,18637.63,2014,37,North Summit School District,938929.1,Extracurricular
+22959.05366,12799.14,2015,41,North Summit School District,941321.2,Extracurricular
+23313.74378,13451.91,2016,45,North Summit School District,1049118.47,Extracurricular
+21331.87867,13789.47,2017,45,North Summit School District,959934.54,Extracurricular
+20356.41962,14833.46,2020,53,North Summit School District,1078890.24,Extracurricular
+29857.84213,21925.39,2022,47,North Summit School District,1403318.58,Extracurricular
+29139.78434,23695.94,2023,53,North Summit School District,1544408.57,Extracurricular
+31168.5483,27789.94,2024,53,North Summit School District,1651933.06,Extracurricular
+34075.60466,26598.37,2025,58,North Summit School District,1976385.07,Extracurricular
+14866.84803,4272.58,2014,66,North Summit School District,981211.97,Operations & Facilities
+15375.99662,4894.46,2015,71,North Summit School District,1091695.76,Operations & Facilities
+17333.23507,5060.56,2016,69,North Summit School District,1195993.22,Operations & Facilities
+16620.05178,4895.05,2017,73,North Summit School District,1213263.78,Operations & Facilities
+21362.80169,4980.15,2018,77,North Summit School District,1644935.73,Operations & Facilities
+31552.20628,30099.39,2019,43,North Summit School District,1356744.87,Operations & Facilities
+31952.25091,32384.035,2020,44,North Summit School District,1405899.04,Operations & Facilities
+34885.18707,36719.71,2021,41,North Summit School District,1430292.67,Operations & Facilities
+34560.84556,34534.9,2022,45,North Summit School District,1555238.05,Operations & Facilities
+35673.26,40785.77,2024,49,North Summit School District,1747989.74,Operations & Facilities
+55240.01707,68416.295,2015,92,North Summit School District,5082081.57,Teacher
+61741.39682,75750.735,2017,88,North Summit School District,5433242.92,Teacher
+65904.5442,85004.53,2018,88,North Summit School District,5799599.89,Teacher
+61553.61255,73220.13,2019,98,North Summit School District,6032254.03,Teacher
+73870.06156,84780.71,2020,90,North Summit School District,6648305.54,Teacher
+78291.14864,89079.265,2021,88,North Summit School District,6889621.08,Teacher
+76433.24097,88418.29,2022,93,North Summit School District,7108291.41,Teacher
+81548.59872,99869.03,2023,94,North Summit School District,7665568.28,Teacher
+80986.31379,96957.46,2024,103,North Summit School District,8341590.32,Teacher
+75933.13349,94225.02,2025,109,North Summit School District,8276711.55,Teacher
+158.24,158.24,2022,1,North Summit School District,158.24,Other Staff
+95581.6,95581.6,2023,1,North Summit School District,95581.6,Other Staff
+102723.93,102723.93,2024,1,North Summit School District,102723.93,Other Staff
+108614.94,108614.94,2025,1,North Summit School District,108614.94,Other Staff
+84941.81,84941.81,2014,1,North Summit School District,84941.81,Student Support
+36371.69,36371.69,2016,2,North Summit School District,72743.38,Other Staff
+4052.99,4052.99,2021,2,North Summit School District,8105.98,Other Staff
+108716.485,108716.485,2022,2,North Summit School District,217432.97,Student Support
+126790.68,126790.68,2023,2,North Summit School District,253581.36,Student Support
+133692.275,133692.275,2024,2,North Summit School District,267384.55,Student Support
+140295.605,140295.605,2025,2,North Summit School District,280591.21,Student Support
+3180.76,3985.44,2018,3,North Summit School District,9542.28,Other Staff
+35269.56333,7713.48,2015,3,North Summit School District,105808.69,Student Support
+128009.93667,130315.35,2021,3,North Summit School District,384029.81,Student Support
+26990.645,27824.23,2017,4,North Summit School District,107962.58,Other Staff
+91369.8275,119540.48,2019,4,North Summit School District,365479.31,Student Support
+99731.7475,105516.095,2020,4,North Summit School District,398926.99,Student Support
+18733.57,13284.95,2015,5,North Summit School District,93667.85,Other Staff
+14363.576,6633.42,2020,5,North Summit School District,71817.88,Other Staff
+21404.71833,6172.47,2016,6,North Summit School District,128428.31,Student Support
+109474.17857,131327.65,2016,7,North Summit School District,766319.25,Administrator
+125699.77,147832.46,2018,7,North Summit School District,879898.39,Administrator
+5999.71143,4095,2019,7,North Summit School District,41997.98,Other Staff
+23670.21714,8112.54,2017,7,North Summit School District,165691.52,Student Support
+102481.5475,136055.725,2017,8,North Summit School District,819852.38,Administrator
+83400.96333,106693.73,2015,9,North Summit School District,750608.67,Administrator
+18922.08778,15088.82,2014,9,North Summit School District,170298.79,Other Staff
+18105.20556,6613.95,2018,9,North Summit School District,162946.85,Student Support
+75012.48909,110533.15,2014,11,North Summit School District,825137.38,Administrator
+40669.65452,2010.36,2020,31,North Summit School District,1260759.29,Administrator
+36825.53735,1741.515,2021,34,North Summit School District,1252068.27,Administrator
+51312.04,3028.465,2024,34,North Summit School District,1744609.36,Administrator
+37382.00675,1631.175,2022,40,North Summit School District,1495280.27,Administrator
+22007.29521,14342.815,2018,48,North Summit School District,1056350.17,Extracurricular
+34696.80396,35728.065,2023,48,North Summit School District,1665446.59,Operations & Facilities
+23273.6658,15346.655,2021,50,North Summit School District,1163683.29,Extracurricular
+40723.30373,42216.31,2025,51,North Summit School District,2076888.49,Operations & Facilities
+20900.68538,14956.22,2019,52,North Summit School District,1086835.64,Extracurricular
+53719.22943,68359.04,2014,87,North Summit School District,4673572.96,Teacher
+58440.54103,69471.82,2016,87,North Summit School District,5084327.07,Teacher

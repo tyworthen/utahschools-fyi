@@ -45,6 +45,7 @@
         <li><a href="#budget-stages">Budget stages</a></li>
         <li><a href="#scope">Scope</a></li>
         <li><a href="#students">Counting students</a></li>
+        <li><a href="#pay">Pay data</a></li>
         <li><a href="#validation">Validation</a></li>
         <li><a href="#trace">Traceability</a></li>
         <li><a href="#cleaning">Data cleaning &amp; personal information</a></li>
@@ -121,6 +122,14 @@
           <li><strong>Cache and Box Elder:</strong> none identified.</li>
         </ul>
         <p>This classification is ours, made from names and enrollment patterns; it has not yet been confirmed with the districts. Online programs in the other 37 districts have not been identified, so statewide per-student comparisons should be read with this in mind.</p>
+
+        <h2 id="pay">Pay data</h2>
+        <p>Teacher and administrator pay come from the Office of the State Auditor’s Transparent Utah dashboards, built from compensation reports that districts file each year. They are raw and unaudited.</p>
+        <ul>
+          <li><strong>Teacher pay</strong> (Teacher Pay dashboard) covers classroom teachers whose names the Auditor matched to at least one course in USBE’s CACTUS licensing database. The share matched differs by district and has grown over time, so we report pay (medians and percentiles) but not teacher counts or students per teacher, which would be misleading.</li>
+          <li><strong>Administrators</strong> (Administrator &amp; Teacher Pay dashboard) are employees the Auditor classifies as administrators from job titles and account codes. Districts title positions differently, so headcounts are not perfectly comparable.</li>
+        </ul>
+        <p><strong>Personal information.</strong> The Teacher Pay download lists individual teachers by name and license number. We keep those files private and never publish them; the site shows only district-level summaries, and statistics for groups of fewer than 10 teachers are suppressed. The administrator data is already aggregated by the Auditor.</p>
 
         <h2 id="validation">Validation</h2>
         <p>FY2012–FY2024 figures come from USBE’s Tableau Public data extracts; FY2025 from USBE’s Excel summaries. Both sources cover FY2024, so we compare them for every district: total spending, revenue, property tax, and General Fund balance. Of 164 comparisons, 162 agree to within 0.5% (nearly all exactly). The two exceptions are Provo’s revenue (+0.8%) and General Fund balance (+3.6%), which we have not yet explained. <a href="assets/data/normalized/validation_FY2024.csv" download>Download the validation results</a>.</p>

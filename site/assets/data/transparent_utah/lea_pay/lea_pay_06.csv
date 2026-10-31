@@ -1,0 +1,63 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+40257.99143,29837.39,2015,35,Daggett School District,1409029.7,Teacher
+44494.45515,30710.01,2017,33,Daggett School District,1468317.02,Teacher
+41767.6661,13631.85,2020,41,Daggett School District,1712474.31,Teacher
+39649.08955,15573.57,2021,44,Daggett School District,1744559.94,Teacher
+73779.35351,102499.93,2024,37,Daggett School District,2729836.08,Teacher
+66270.41432,58145.22,2025,44,Daggett School District,2915898.23,Teacher
+54442.3,54442.3,2022,1,Daggett School District,54442.3,Other Staff
+2502.85,2502.85,2021,1,Daggett School District,2502.85,Student Support
+1627.67,1627.67,2022,1,Daggett School District,1627.67,Student Support
+1541.14,1541.14,2021,2,Daggett School District,3082.28,Other Staff
+35506.78,50108.13,2014,3,Daggett School District,106520.34,Other Staff
+36288.10667,48549.68,2015,3,Daggett School District,108864.32,Other Staff
+28636.04667,19986.28,2020,3,Daggett School District,85908.14,Other Staff
+28136.1725,27137.135,2016,4,Daggett School District,112544.69,Other Staff
+21742.545,11539.345,2018,4,Daggett School District,86970.18,Other Staff
+9198.4725,11011.335,2023,4,Daggett School District,36793.89,Other Staff
+21371.0025,12550.4,2025,4,Daggett School District,85484.01,Other Staff
+29788.464,19986.28,2017,5,Daggett School District,148942.32,Other Staff
+29095.884,19986.28,2019,5,Daggett School District,145479.42,Other Staff
+9140.164,10517.31,2024,5,Daggett School District,45700.82,Other Staff
+91656.95667,112613.915,2015,6,Daggett School District,549941.74,Administrator
+79257.21571,104174.74,2014,7,Daggett School District,554800.51,Administrator
+100015.96,117588.83,2017,7,Daggett School District,700111.72,Administrator
+56226.305,24973.56,2022,8,Daggett School District,449810.44,Administrator
+75221.04375,29300.06,2025,8,Daggett School District,601768.35,Administrator
+79453.59889,88349.42,2016,9,Daggett School District,715082.39,Administrator
+81893.11667,95038.9,2018,9,Daggett School District,737038.05,Administrator
+67979.79111,39742.84,2019,9,Daggett School District,611818.12,Administrator
+72837.95333,25729.56,2020,9,Daggett School District,655541.58,Administrator
+65026.90889,25265.56,2021,9,Daggett School District,585242.18,Administrator
+56995.15,28917.56,2023,9,Daggett School District,512956.35,Administrator
+78391.14333,30313.56,2024,9,Daggett School District,705520.29,Administrator
+16692.52643,13444.405,2020,14,Daggett School District,233695.37,Extracurricular
+25608.06214,17024.43,2022,14,Daggett School District,358512.87,Extracurricular
+33965.09667,17420.12,2019,15,Daggett School District,509476.45,Operations & Facilities
+13769.89313,8316.255,2016,16,Daggett School District,220318.29,Extracurricular
+23907.77125,17572.785,2023,16,Daggett School District,382524.34,Extracurricular
+35032.29562,18007.24,2020,16,Daggett School District,560516.73,Operations & Facilities
+20553.07118,16689.15,2021,17,Daggett School District,349402.21,Extracurricular
+15161.43944,6857.595,2017,18,Daggett School District,272905.91,Extracurricular
+31049.84056,23319.79,2025,18,Daggett School District,558897.13,Extracurricular
+34323.6,17347.125,2021,18,Daggett School District,617824.8,Operations & Facilities
+23670.83,11401.19,2016,19,Daggett School District,449745.77,Operations & Facilities
+30255.61632,17434.65,2018,19,Daggett School District,574856.71,Operations & Facilities
+13262.3145,9140.885,2014,20,Daggett School District,265246.29,Extracurricular
+9886.435,3773.04,2015,20,Daggett School District,197728.7,Extracurricular
+27613.6705,18572.525,2024,20,Daggett School District,552273.41,Extracurricular
+13515.5919,6358.02,2018,21,Daggett School District,283827.43,Extracurricular
+13161.20619,7087.73,2019,21,Daggett School District,276385.33,Extracurricular
+18599.28905,8399.01,2015,21,Daggett School District,390585.07,Operations & Facilities
+30762.34238,9986.62,2022,21,Daggett School District,646009.19,Operations & Facilities
+20782.13045,11275.535,2014,22,Daggett School District,457206.87,Operations & Facilities
+22307.42091,7025.07,2017,22,Daggett School District,490763.26,Operations & Facilities
+29075.918,8619.23,2024,25,Daggett School District,726897.95,Operations & Facilities
+28977.9888,15371.77,2025,25,Daggett School District,724449.72,Operations & Facilities
+26617.50692,7062.13,2023,26,Daggett School District,692055.18,Operations & Facilities
+46253.8371,32255.71,2018,31,Daggett School District,1433868.95,Teacher
+42647.30161,22147.1,2019,31,Daggett School District,1322066.35,Teacher
+36389.53694,25814.995,2014,36,Daggett School District,1310023.33,Teacher
+36102.47,19545.795,2016,38,Daggett School District,1371893.86,Teacher
+64466.15225,83660.04,2023,40,Daggett School District,2578646.09,Teacher
+51240.35174,41861.565,2022,46,Daggett School District,2357056.18,Teacher

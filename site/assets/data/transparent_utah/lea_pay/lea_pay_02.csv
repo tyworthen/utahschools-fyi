@@ -1,0 +1,61 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+8860.65495,6282.88,2016,145,Beaver County School District,1284794.96719,Extracurricular
+9121.39187,5325.035,2017,150,Beaver County School District,1368208.78,Extracurricular
+8698.06247,4582.76,2018,166,Beaver County School District,1443878.37001,Extracurricular
+9115.81784,4694.465,2019,162,Beaver County School District,1476762.49,Extracurricular
+10002.01954,6614.39,2020,153,Beaver County School District,1530308.99,Extracurricular
+11327.65469,6660.86,2021,147,Beaver County School District,1665165.24,Extracurricular
+11194.75215,6607.61,2022,163,Beaver County School District,1824744.6,Extracurricular
+12377.02973,7465.77,2023,165,Beaver County School District,2042209.90586,Extracurricular
+13905.89514,9481.45,2024,181,Beaver County School District,2516967.02,Extracurricular
+12772.97423,5119.145,2025,182,Beaver County School District,2324681.31,Extracurricular
+31386.77489,17741.00641,2017,44,Beaver County School District,1381018.09532,Operations & Facilities
+34682.64239,19151.87,2018,45,Beaver County School District,1560718.9075,Operations & Facilities
+37514.08182,15184.165,2020,44,Beaver County School District,1650619.6,Operations & Facilities
+34146.82468,16106.95,2021,47,Beaver County School District,1604900.76,Operations & Facilities
+35831.89559,16989.01,2025,59,Beaver County School District,2114081.84,Operations & Facilities
+55692.71754,71490.245,2016,122,Beaver County School District,6794511.54,Teacher
+57638.18169,70380.425,2017,124,Beaver County School District,7147134.53,Teacher
+53513.3033,66530.89,2018,131,Beaver County School District,7010242.73279,Teacher
+58740.80453,76514.44,2019,128,Beaver County School District,7518822.98,Teacher
+62731.96837,83839.91,2020,129,Beaver County School District,8092423.92,Teacher
+71622.26585,91535.79,2021,121,Beaver County School District,8666294.168,Teacher
+68919.65937,84221.22,2022,127,Beaver County School District,8752796.74,Teacher
+68057.53969,86007.19,2023,137,Beaver County School District,9323882.93688,Teacher
+78947.67824,101890.25,2024,131,Beaver County School District,10342145.85001,Teacher
+86437.81566,107407.22,2025,122,Beaver County School District,10545413.51,Teacher
+51565.53,51565.53,2017,2,Beaver County School District,103131.06,Other Staff
+65287.57751,65287.57751,2018,2,Beaver County School District,130575.15501,Other Staff
+85257.055,85257.055,2022,2,Beaver County School District,170514.11,Other Staff
+105569.995,105569.995,2017,2,Beaver County School District,211139.99,Student Support
+110712.895,110712.895,2018,2,Beaver County School District,221425.79001,Student Support
+116216.255,116216.255,2019,2,Beaver County School District,232432.51,Student Support
+67172.74667,57569.2,2019,3,Beaver County School District,201518.24,Other Staff
+75747.32333,68225.72,2020,3,Beaver County School District,227241.97,Other Staff
+59672.69333,41878.31,2023,3,Beaver County School District,179018.08,Other Staff
+63808.7,40847.52,2024,3,Beaver County School District,191426.1,Other Staff
+12197.05,236.685,2021,4,Beaver County School District,48788.2,Other Staff
+52130.6025,50583.73,2016,4,Beaver County School District,208522.41,Student Support
+23680.246,3247.2,2016,5,Beaver County School District,118401.23,Other Staff
+65242.234,44661.65,2020,5,Beaver County School District,326211.17,Student Support
+73975.15,78010.5,2025,6,Beaver County School District,443850.9,Student Support
+82457.07857,86884.36,2021,7,Beaver County School District,577199.55,Student Support
+56716.975,40292.005,2022,8,Beaver County School District,453735.8,Student Support
+182854.91333,181921.1,2022,9,Beaver County School District,1645694.22,Administrator
+21541.78333,811.13,2025,9,Beaver County School District,193876.05,Other Staff
+45855.162,653.32,2024,10,Beaver County School District,458551.62,Student Support
+128046.01583,155537.725,2020,12,Beaver County School District,1536552.19,Administrator
+42499.03667,5784.06,2023,12,Beaver County School District,509988.44001,Student Support
+94225.04571,127154.055,2018,14,Beaver County School District,1319150.64,Administrator
+114581.54143,152440.33,2021,14,Beaver County School District,1604141.58,Administrator
+139457.30786,199242.25,2024,14,Beaver County School District,1952402.31,Administrator
+137039.12071,197799.955,2025,14,Beaver County School District,1918547.69,Administrator
+120006.03467,185871.65,2023,15,Beaver County School District,1800090.52,Administrator
+74240.095,70869.72,2017,16,Beaver County School District,1187841.52,Administrator
+91903.55937,126532.255,2019,16,Beaver County School District,1470456.95,Administrator
+78544.22082,103237.28,2016,17,Beaver County School District,1335251.754,Administrator
+27504.3867,12193.105,2016,46,Beaver County School District,1265201.78837,Operations & Facilities
+38577.18913,21382.225,2022,46,Beaver County School District,1774550.7,Operations & Facilities
+33199.52792,14925.955,2019,48,Beaver County School District,1593577.34,Operations & Facilities
+39088.1292,19638.745,2023,50,Beaver County School District,1954406.46,Operations & Facilities
+40792.52635,20282.145,2024,52,Beaver County School District,2121211.37,Operations & Facilities

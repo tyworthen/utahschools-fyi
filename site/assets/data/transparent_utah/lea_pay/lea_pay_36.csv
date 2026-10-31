@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+122409.97623,128222.89,2014,114,Salt Lake City School District,13954737.29,Administrator
+121431.6895,131173.26,2015,119,Salt Lake City School District,14450371.05,Administrator
+129394.91833,133549.7,2016,120,Salt Lake City School District,15527390.2,Administrator
+133806.25689,138161.085,2017,122,Salt Lake City School District,16324363.34,Administrator
+140599.23472,146480.07,2018,125,Salt Lake City School District,17574904.34,Administrator
+151178.57442,154238.415,2019,120,Salt Lake City School District,18141428.93,Administrator
+156734.9928,160300.56,2020,125,Salt Lake City School District,19591874.1,Administrator
+166016.38831,167007.155,2021,124,Salt Lake City School District,20586032.15,Administrator
+169130.68758,178264.08,2022,132,Salt Lake City School District,22325250.76,Administrator
+175586.10744,180729.64,2023,133,Salt Lake City School District,23352952.29,Administrator
+184134.12243,193444.5,2024,136,Salt Lake City School District,25042240.65,Administrator
+188836.03922,203957.81,2025,129,Salt Lake City School District,24359849.06,Administrator
+16021.68655,8352.37,2014,1683,Salt Lake City School District,26964498.47,Extracurricular
+15488.41544,7761.14,2015,1681,Salt Lake City School District,26036026.35,Extracurricular
+17753.19426,9047.52,2016,1475,Salt Lake City School District,26185961.53,Extracurricular
+17799.73192,9158.14,2017,1497,Salt Lake City School District,26646198.68,Extracurricular
+19018.65357,9608.09,2018,1505,Salt Lake City School District,28623073.62,Extracurricular
+18915.90394,9273.235,2019,1556,Salt Lake City School District,29433146.53,Extracurricular
+20643.06338,10819.65,2020,1511,Salt Lake City School District,31191668.76,Extracurricular
+24560.42313,12641.94,2021,1263,Salt Lake City School District,31019814.41,Extracurricular
+27643.71127,16028.905,2022,1306,Salt Lake City School District,36102686.92,Extracurricular
+27073.12582,15738.54,2023,1331,Salt Lake City School District,36034330.46,Extracurricular
+31789.69484,17729.16,2024,1191,Salt Lake City School District,37861526.56,Extracurricular
+31689.30481,17967.13,2025,1251,Salt Lake City School District,39643320.32,Extracurricular
+21400.3855,11966.99,2014,852,Salt Lake City School District,18233128.45,Operations & Facilities
+22592.74436,12259.87,2015,822,Salt Lake City School District,18571235.86,Operations & Facilities
+24177.54739,12760.16,2016,802,Salt Lake City School District,19390393.01,Operations & Facilities
+25454.06384,12687.785,2017,796,Salt Lake City School District,20261434.82,Operations & Facilities
+25825.38579,13673.05,2018,763,Salt Lake City School District,19704769.36,Operations & Facilities
+26251.18171,13392.53,2019,773,Salt Lake City School District,20292163.46,Operations & Facilities
+30004.98655,15897.475,2020,692,Salt Lake City School District,20763450.69,Operations & Facilities
+37067.34489,26552.92,2021,573,Salt Lake City School District,21239588.62,Operations & Facilities
+35855.35834,21314.3,2022,645,Salt Lake City School District,23126706.13,Operations & Facilities
+35593.4532,21031.745,2023,646,Salt Lake City School District,22993370.77,Operations & Facilities
+38942.98015,23305.38,2024,659,Salt Lake City School District,25663423.92,Operations & Facilities
+41626.29656,24231.245,2025,654,Salt Lake City School District,27223597.95,Operations & Facilities
+493.7927,124.825,2014,296,Salt Lake City School District,146162.64,Other Staff
+736.79419,87.45,2015,241,Salt Lake City School District,177567.4,Other Staff
+18147.87383,3.10862e-14,2023,60,Salt Lake City School District,1088872.43,Other Staff
+26810.68707,12617.01,2024,75,Salt Lake City School District,2010801.53,Other Staff
+36550.73308,2.27374e-13,2025,39,Salt Lake City School District,1425478.59,Other Staff
+73716.20542,83939.755,2014,72,Salt Lake City School District,5307566.79,Student Support
+76200.11575,78802.77,2015,73,Salt Lake City School District,5562608.45,Student Support
+77952.611,80602.035,2016,70,Salt Lake City School District,5456682.77,Student Support
+82008.67129,85861.95,2017,70,Salt Lake City School District,5740606.99,Student Support
+87389.06127,89704.61,2018,71,Salt Lake City School District,6204623.35,Student Support
+55848.12141,43343.745,2019,142,Salt Lake City School District,7930433.24,Student Support
+55315.30448,49702.19,2020,165,Salt Lake City School District,9127025.24,Student Support
+66111.91732,75988.995,2021,142,Salt Lake City School District,9387892.26,Student Support
+76025.49036,86152.21,2022,139,Salt Lake City School District,10567543.16,Student Support
+75280.18678,82480.505,2023,152,Salt Lake City School District,11442588.39,Student Support
+82989.91318,94083.24,2024,154,Salt Lake City School District,12780446.63,Student Support
+84932.88617,104978.655,2025,154,Salt Lake City School District,13079664.47,Student Support
+54477.71423,66138.735,2014,2092,Salt Lake City School District,113967378.16,Teacher
+56577.42125,66653.58,2015,2063,Salt Lake City School District,116719220.04,Teacher
+58628.72125,68802.345,2016,2048,Salt Lake City School District,120071621.11,Teacher
+60953.51864,72449.935,2017,2040,Salt Lake City School District,124345178.03,Teacher
+66937.23584,78086.73,2018,1952,Salt Lake City School District,130661484.35,Teacher
+71960.81407,83839.32,2019,1789,Salt Lake City School District,128737896.38,Teacher
+78100.89543,89341.38,2020,1710,Salt Lake City School District,133552531.19,Teacher
+88748.47079,98085.13,2021,1575,Salt Lake City School District,139778841.5,Teacher
+90520.5399,104405.28,2022,1701,Salt Lake City School District,153975438.37,Teacher
+84061.38615,99865.92,2023,1810,Salt Lake City School District,152151108.93,Teacher
+84749.65605,104832.745,2024,1940,Salt Lake City School District,164414332.74,Teacher
+93216.19525,113952.165,2025,1810,Salt Lake City School District,168721313.41,Teacher
+20073.37286,18523.25,2018,7,Salt Lake City School District,140513.61,Other Staff
+89001.54909,102542.81,2019,11,Salt Lake City School District,979017.04,Other Staff
+104198.47909,122274.23,2020,11,Salt Lake City School District,1146183.27,Other Staff
+100949.22167,122548.42,2021,12,Salt Lake City School District,1211390.66,Other Staff
+12938.01,4440.285,2017,16,Salt Lake City School District,207008.16,Other Staff
+15204.06444,12903.915,2016,18,Salt Lake City School District,273673.16,Other Staff
+28158.11342,2003.195,2022,38,Salt Lake City School District,1070008.31,Other Staff

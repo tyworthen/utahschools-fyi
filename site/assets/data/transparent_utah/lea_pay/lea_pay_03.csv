@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+103316.63024,117752.3,2015,41,Box Elder County School District,4235981.84,Administrator
+113750.57718,124691.34,2017,39,Box Elder County School District,4436272.51,Administrator
+108569.58378,128904.19,2018,45,Box Elder County School District,4885631.27,Administrator
+140835.86234,152015.85,2022,47,Box Elder County School District,6619285.53,Administrator
+15076.07371,10153.48,2014,509,Box Elder County School District,7673721.52,Extracurricular
+15002.35549,10385.26,2015,526,Box Elder County School District,7891238.99,Extracurricular
+13306.87199,8411.55,2016,633,Box Elder County School District,8423249.97,Extracurricular
+13127.32188,8548.725,2017,692,Box Elder County School District,9084106.74,Extracurricular
+13463.54623,9034.585,2018,734,Box Elder County School District,9882242.93,Extracurricular
+14514.13649,9895.21,2019,729,Box Elder County School District,10580805.5,Extracurricular
+14493.97838,10316.73,2020,773,Box Elder County School District,11203845.29,Extracurricular
+16411.34771,12072.945,2021,780,Box Elder County School District,12800851.21,Extracurricular
+14701.74198,10506.5,2022,935,Box Elder County School District,13746128.75,Extracurricular
+15160.68636,9936.18,2023,954,Box Elder County School District,14463294.79,Extracurricular
+15686.96005,9960.3,2024,1015,Box Elder County School District,15922264.45,Extracurricular
+16130.0001,12334.79,2025,1059,Box Elder County School District,17081670.11,Extracurricular
+18822.55494,12925.425,2014,462,Box Elder County School District,8696020.38,Operations & Facilities
+20458.24192,13430.32,2015,443,Box Elder County School District,9063001.17,Operations & Facilities
+19677.75167,12748.935,2016,478,Box Elder County School District,9405965.3,Operations & Facilities
+21847.02223,14205.42,2017,449,Box Elder County School District,9809312.98,Operations & Facilities
+22719.13606,15216.135,2018,462,Box Elder County School District,10496240.86,Operations & Facilities
+24653.24244,16109.36,2019,476,Box Elder County School District,11734943.4,Operations & Facilities
+25385.69421,17578.19,2020,449,Box Elder County School District,11398176.7,Operations & Facilities
+29765.04077,19237.775,2021,442,Box Elder County School District,13156148.02,Operations & Facilities
+29523.85607,19050.595,2022,460,Box Elder County School District,13580973.79,Operations & Facilities
+29166.44385,18642.17,2023,507,Box Elder County School District,14787387.03,Operations & Facilities
+28982.04538,17184.86,2024,519,Box Elder County School District,15041681.55,Operations & Facilities
+33638.29255,24656.505,2025,474,Box Elder County School District,15944550.67,Operations & Facilities
+64794.16521,67032.12,2014,265,Box Elder County School District,17170453.78,Student Support
+65877.02112,68295.67,2015,269,Box Elder County School District,17720918.68,Student Support
+67950.61253,71782.19,2016,273,Box Elder County School District,18550517.22,Student Support
+69450.26322,72516.53,2017,276,Box Elder County School District,19168272.65,Student Support
+71721.28738,75732.73,2018,282,Box Elder County School District,20225403.04,Student Support
+78015.86051,77560.03,2019,297,Box Elder County School District,23170710.57,Student Support
+82347.32715,81877.73,2020,309,Box Elder County School District,25445324.09,Student Support
+86881.93614,86869.455,2021,308,Box Elder County School District,26759636.33,Student Support
+88385.72169,89109.57,2022,314,Box Elder County School District,27753116.61,Student Support
+92349.05399,91314.86,2023,333,Box Elder County School District,30752234.98,Student Support
+100479.14282,98675.76,2024,347,Box Elder County School District,34866262.56,Student Support
+94433.39704,93676.81,2025,345,Box Elder County School District,32579521.98,Student Support
+34234.45623,8438.69,2014,604,Box Elder County School District,20677611.56,Teacher
+36130.8336,15279.375,2015,580,Box Elder County School District,20955883.49,Teacher
+54011.32832,62303.76,2016,393,Box Elder County School District,21226452.03,Teacher
+58077.31831,65685.47,2017,385,Box Elder County School District,22359767.55,Teacher
+62532.08249,70227.44,2018,386,Box Elder County School District,24137383.84,Teacher
+68786.78209,74999.8,2019,401,Box Elder County School District,27583499.62,Teacher
+72374.36654,79485.49,2020,413,Box Elder County School District,29890613.38,Teacher
+76710.98365,82431.705,2021,416,Box Elder County School District,31911769.2,Teacher
+92564.04198,92479,2022,359,Box Elder County School District,33230491.07,Teacher
+95657.97327,98637.59,2023,370,Box Elder County School District,35393450.11,Teacher
+106092.7365,108787.95,2024,369,Box Elder County School District,39148219.77,Teacher
+99100.61379,100095.58,2025,367,Box Elder County School District,36369925.26,Teacher
+41574.7275,42232.7,2016,4,Box Elder County School District,166298.91,Other Staff
+36380.31,37640.905,2018,6,Box Elder County School District,218281.86,Other Staff
+38287.35167,41407.29,2019,6,Box Elder County School District,229724.11,Other Staff
+37783.80143,30555.64,2017,7,Box Elder County School District,264486.61,Other Staff
+63827.04286,69190.49,2023,7,Box Elder County School District,446789.3,Other Staff
+45110.23375,47040.325,2020,8,Box Elder County School District,360881.87,Other Staff
+50329.32125,63169.53,2022,8,Box Elder County School District,402634.57,Other Staff
+61300.49889,64936.01,2024,9,Box Elder County School District,551704.49,Other Staff
+25685.95133,5706.19,2021,15,Box Elder County School District,385289.27,Other Staff
+39830.764,29178.87,2025,15,Box Elder County School District,597461.46,Other Staff
+9209.431,1335.02,2015,20,Box Elder County School District,184188.62,Other Staff
+6936.83318,1285.235,2014,22,Box Elder County School District,152610.33,Other Staff
+97348.392,112182.81,2014,40,Box Elder County School District,3893935.68,Administrator
+110731.708,123424.86,2016,40,Box Elder County School District,4429268.32,Administrator
+115280.60935,133754.72,2020,46,Box Elder County School District,5302908.03,Administrator
+158240.11087,162582.665,2023,46,Box Elder County School District,7279045.1,Administrator
+156994.85239,166581.13,2024,46,Box Elder County School District,7221763.21,Administrator
+171231.52891,177663.635,2025,46,Box Elder County School District,7876650.33,Administrator
+109493.61146,125900.725,2019,48,Box Elder County School District,5255693.35,Administrator
+128561.4996,141455.79,2021,50,Box Elder County School District,6428074.98,Administrator

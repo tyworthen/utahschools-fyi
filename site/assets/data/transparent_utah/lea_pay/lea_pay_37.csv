@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+117384.08982,129320.02,2014,55,Ogden School District,6456124.94,Administrator
+130985.69667,141056.05,2015,54,Ogden School District,7073227.62,Administrator
+141800.57667,151148.385,2016,54,Ogden School District,7657231.14,Administrator
+137716.33536,147738.15,2017,56,Ogden School District,7712114.78,Administrator
+141116.55113,154347.34,2018,53,Ogden School District,7479177.21,Administrator
+143985.58094,151620.43,2019,53,Ogden School District,7631235.79,Administrator
+148530.15481,150965.115,2020,54,Ogden School District,8020628.36,Administrator
+148381.66125,152621.915,2021,56,Ogden School District,8309373.03,Administrator
+143889.46831,155810.33,2022,59,Ogden School District,8489478.63,Administrator
+163402.29581,172126.455,2023,62,Ogden School District,10130942.34,Administrator
+180737.46246,187621.2,2024,65,Ogden School District,11747935.06,Administrator
+184564.43657,189390.77,2025,67,Ogden School District,12365817.25,Administrator
+16078.52698,9149.25,2014,596,Ogden School District,9582802.08,Extracurricular
+17289.31104,9751.16,2015,559,Ogden School District,9664724.87,Extracurricular
+17821.18801,10474.49,2016,572,Ogden School District,10193719.54,Extracurricular
+16404.53421,10110.14,2017,599,Ogden School District,9826315.99,Extracurricular
+16437.74519,10673.22,2018,628,Ogden School District,10322903.98,Extracurricular
+16917.46798,10876.18,2019,633,Ogden School District,10708757.23,Extracurricular
+18292.95169,12189.615,2020,632,Ogden School District,11561145.47,Extracurricular
+18696.0591,12737.4,2021,664,Ogden School District,12414183.24,Extracurricular
+19322.19834,13119.025,2022,626,Ogden School District,12095696.16,Extracurricular
+21590.90874,13917.18,2023,625,Ogden School District,13494317.96,Extracurricular
+23221.60357,14977.54,2024,631,Ogden School District,14652831.85,Extracurricular
+24888.67502,16214.2,2025,617,Ogden School District,15356312.49,Extracurricular
+16137.25146,4187.62,2014,471,Ogden School District,7600645.44,Operations & Facilities
+16510.52595,4958.8,2015,469,Ogden School District,7743436.67,Operations & Facilities
+16463.18394,3972.21,2016,485,Ogden School District,7984644.21,Operations & Facilities
+15013.31257,2864.41,2017,538,Ogden School District,8077162.16,Operations & Facilities
+15378.36019,3230.1,2018,525,Ogden School District,8073639.1,Operations & Facilities
+17030.03589,4232.22,2019,501,Ogden School District,8532047.98,Operations & Facilities
+19838.5475,5763.02,2020,424,Ogden School District,8411544.14,Operations & Facilities
+20280.09975,4332.31,2021,440,Ogden School District,8923243.89,Operations & Facilities
+21113.49953,6538.69,2022,467,Ogden School District,9860004.28,Operations & Facilities
+23741.01777,7013.53,2023,443,Ogden School District,10517270.87,Operations & Facilities
+26183.37293,8326.92,2024,427,Ogden School District,11180300.24,Operations & Facilities
+24783.55645,7631,2025,448,Ogden School District,11103033.29,Operations & Facilities
+45085.94504,46867.66,2014,133,Ogden School District,5996430.69,Other Staff
+35725.31308,16147.5,2015,65,Ogden School District,2322145.35,Other Staff
+31995.03493,16147.5,2016,71,Ogden School District,2271647.48,Other Staff
+35227.51677,16147.57,2017,62,Ogden School District,2184106.04,Other Staff
+28905.58257,15806.125,2018,70,Ogden School District,2023390.78,Other Staff
+34982.67377,16264.16,2019,61,Ogden School District,2133943.1,Other Staff
+46428.33959,35881.35,2020,49,Ogden School District,2274988.64,Other Staff
+49540.80811,58995.94,2021,53,Ogden School District,2625662.83,Other Staff
+71475.57892,88560.47,2023,37,Ogden School District,2644596.42,Other Staff
+79556.4887,105301.36,2025,23,Ogden School District,1829799.24,Other Staff
+38579.698,8644.87,2014,85,Ogden School District,3279274.33,Student Support
+53358.23016,65587.31,2015,127,Ogden School District,6776495.23,Student Support
+68398.71896,75319.91,2016,106,Ogden School District,7250264.21,Student Support
+68281.90514,78903.24,2017,109,Ogden School District,7442727.66,Student Support
+68618.64433,76665.08,2018,104,Ogden School District,7136339.01,Student Support
+67757.71491,77371.04,2019,112,Ogden School District,7588864.07,Student Support
+76201.08757,84026.08,2020,115,Ogden School District,8763125.07,Student Support
+71592.29355,77416.985,2021,110,Ogden School District,7875152.29,Student Support
+71889.21206,78604.86,2022,131,Ogden School District,9417486.78,Student Support
+78744.48102,81137.315,2023,108,Ogden School District,8504403.95,Student Support
+100325.69207,106728.21,2024,111,Ogden School District,11136151.82,Student Support
+93451.18602,98062.15,2025,83,Ogden School District,7756448.44,Student Support
+53067.82003,59498.66,2014,786,Ogden School District,41711306.54,Teacher
+62461.44074,66321.88,2015,707,Ogden School District,44160238.6,Teacher
+62872.82871,68184.23,2016,728,Ogden School District,45771419.3,Teacher
+63576.8965,68807.125,2017,718,Ogden School District,45648211.69,Teacher
+62765.88814,68716.6,2018,724,Ogden School District,45442503.01,Teacher
+62255.33707,69967.59,2019,754,Ogden School District,46940524.15,Teacher
+64513.04489,74244.37,2020,757,Ogden School District,48836374.98,Teacher
+59985.35452,69749.74,2021,763,Ogden School District,45768825.5,Teacher
+61230.74716,70841.53,2022,744,Ogden School District,45555675.89,Teacher
+62460.17845,72527.27,2023,783,Ogden School District,48906319.73,Teacher
+85040.01399,98061.155,2024,734,Ogden School District,62419370.27,Teacher
+87992.73299,100320.875,2025,756,Ogden School District,66522506.14,Teacher
+97154.9675,111679.9,2024,36,Ogden School District,3497578.83,Other Staff
+50389.13609,41859.84,2022,46,Ogden School District,2317900.26,Other Staff

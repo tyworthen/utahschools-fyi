@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+9083.83378,5333.395,2014,92,Juab School District,835712.70784,Extracurricular
+8349.85362,5274.185,2015,104,Juab School District,868384.77673,Extracurricular
+9584.64446,5521.2,2016,110,Juab School District,1054310.89063,Extracurricular
+8855.0649,4366.17,2017,121,Juab School District,1071462.85265,Extracurricular
+8158.55988,3814.39,2018,127,Juab School District,1036137.10474,Extracurricular
+9093.64493,5903.27,2019,147,Juab School District,1336765.80424,Extracurricular
+7688.99735,3581.935,2020,158,Juab School District,1214861.58065,Extracurricular
+8713.09291,1730.2,2021,105,Juab School District,914874.75592,Extracurricular
+6353.82162,1700.4,2022,155,Juab School District,984842.35082,Extracurricular
+9800.42911,2091.15,2023,94,Juab School District,921240.3365,Extracurricular
+12467.22197,8320.4,2024,173,Juab School District,2156829.4,Extracurricular
+16558.31891,14927.4,2025,193,Juab School District,3195755.55,Extracurricular
+13455.26817,6180.03,2014,89,Juab School District,1197518.86686,Operations & Facilities
+12118.52309,4816.34,2015,98,Juab School District,1187615.26278,Operations & Facilities
+12983.8502,4765.52,2016,98,Juab School District,1272417.31997,Operations & Facilities
+12450.84374,4304.695,2017,110,Juab School District,1369592.81106,Operations & Facilities
+14291.71158,4646.81,2018,118,Juab School District,1686421.96634,Operations & Facilities
+17698.59629,7241.68,2019,109,Juab School District,1929146.99576,Operations & Facilities
+17989.56009,3115.64,2020,121,Juab School District,2176736.77122,Operations & Facilities
+25511.9712,14358.542,2021,74,Juab School District,1887885.8686,Operations & Facilities
+20261.9307,2756,2022,107,Juab School District,2168026.5846,Operations & Facilities
+22170.12846,4466.4,2023,102,Juab School District,2261353.10328,Operations & Facilities
+24582.09364,9047.47,2024,121,Juab School District,2974433.33,Operations & Facilities
+27627.22476,16010.445,2025,124,Juab School District,3425775.87,Operations & Facilities
+9166.86186,1542.3,2015,43,Juab School District,394175.06,Student Support
+5892.70879,250,2021,116,Juab School District,683554.22,Student Support
+12442.9234,756.1,2023,63,Juab School District,783904.174,Student Support
+36739.2424,17834.305,2014,208,Juab School District,7641762.41873,Teacher
+41547.06444,50447.265,2015,194,Juab School District,8060130.50191,Teacher
+39638.25844,41301.64976,2016,208,Juab School District,8244757.75626,Teacher
+42997.94902,52289.11,2017,206,Juab School District,8857577.49726,Teacher
+46829.49283,58553.13,2018,201,Juab School District,9412728.05832,Teacher
+48108.77973,57694.71,2019,210,Juab School District,10102843.74302,Teacher
+51865.79662,63688.91,2020,205,Juab School District,10632488.30619,Teacher
+54875.3673,64889.7,2021,196,Juab School District,10755571.9915,Teacher
+55098.29131,66929.45,2022,215,Juab School District,11846132.6311,Teacher
+57341.03893,71072.27,2023,223,Juab School District,12787051.6811,Teacher
+72294.15707,85305.645,2024,198,Juab School District,14314243.1,Teacher
+62957.16244,75709.28,2025,205,Juab School District,12906218.3,Teacher
+70502.3125,83379.285,2019,4,Juab School District,282009.25,Other Staff
+52468.2175,50907.25,2020,4,Juab School District,209872.87,Other Staff
+36115.672,30124.76,2021,5,Juab School District,180578.36,Other Staff
+62295.024,67567.64,2023,5,Juab School District,311475.12,Other Staff
+63299.544,67127.59,2025,5,Juab School District,316497.72,Other Staff
+31993.90667,6461.56,2018,6,Juab School District,191963.44,Other Staff
+20677.6075,5232.86,2016,8,Juab School District,165420.86,Other Staff
+118092.3675,125753.635,2025,8,Juab School District,944738.94,Student Support
+21468.497,4859.85,2017,10,Juab School District,214684.97,Other Staff
+15167.96818,3958.39,2014,11,Juab School District,166847.65,Other Staff
+14282.56083,4935.615,2015,12,Juab School District,171390.73,Other Staff
+27381.25917,14079.045,2022,12,Juab School District,328575.11,Other Staff
+84528.1775,116237.065,2024,12,Juab School District,1014338.13,Student Support
+78122.52829,104698.06,2015,14,Juab School District,1093715.396,Administrator
+196036.38857,187312.15,2024,14,Juab School District,2744509.44,Administrator
+83168.90088,108400.41,2017,15,Juab School District,1247533.51321,Administrator
+66533.28912,59232.93,2014,16,Juab School District,1064532.626,Administrator
+70499.20065,23816.75,2016,17,Juab School District,1198486.41111,Administrator
+156931.89412,173805.06,2025,17,Juab School District,2667842.2,Administrator
+28771.59235,2279.92,2024,17,Juab School District,489117.07,Other Staff
+100240.68447,129483.305,2019,18,Juab School District,1804332.3205,Administrator
+105906.60442,136358.175,2021,18,Juab School District,1906318.8795,Administrator
+95573.04895,123881.84,2018,19,Juab School District,1815887.93,Administrator
+102298.23603,132353.48,2020,19,Juab School District,1943666.4845,Administrator
+115313.4025,147610,2022,20,Juab School District,2306268.05,Administrator
+122390.578,153627.76425,2023,20,Juab School District,2447811.56,Administrator
+20471.31038,1890.32,2019,26,Juab School District,532254.07,Student Support
+22233.04069,1137.96,2020,29,Juab School District,644758.18,Student Support
+13297.64735,3812.065,2016,34,Juab School District,452120.01,Student Support
+9016.86921,3401.13,2014,38,Juab School District,342641.03,Student Support
+10850.40783,2754.145,2017,46,Juab School District,499118.76,Student Support
+17070.96174,523.115,2022,46,Juab School District,785264.24,Student Support
+14378.31417,3380.105,2018,48,Juab School District,690159.08,Student Support

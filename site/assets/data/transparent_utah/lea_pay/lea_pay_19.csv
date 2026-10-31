@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+103773.16396,117362.11,2014,111,Nebo School District,11518821.2,Administrator
+107698.25627,121412.77,2015,110,Nebo School District,11846808.19,Administrator
+109395.72291,125850.09,2016,117,Nebo School District,12799299.58,Administrator
+138046.13457,134789.715,2017,94,Nebo School District,12976336.65,Administrator
+142659.923,140516.53,2018,100,Nebo School District,14265992.3,Administrator
+130428.63603,143946,2019,131,Nebo School District,17086151.32,Administrator
+132822.8978,148706.175,2020,132,Nebo School District,17532622.51,Administrator
+140290.20564,153370.84,2021,133,Nebo School District,18658597.35,Administrator
+153332.95045,162967.99,2022,133,Nebo School District,20393282.41,Administrator
+162166.67696,173249.68,2023,135,Nebo School District,21892501.39,Administrator
+182162.01828,189607.91,2024,134,Nebo School District,24409710.45,Administrator
+187919.16559,198321.21,2025,145,Nebo School District,27248279.01,Administrator
+19094.22921,11580.03,2014,949,Nebo School District,18120423.52,Extracurricular
+18240.1379,11707.45,2015,984,Nebo School District,17948295.69,Extracurricular
+19335.92771,12173.23,2016,997,Nebo School District,19277919.93,Extracurricular
+18493.99397,11200.945,2017,1054,Nebo School District,19492669.64,Extracurricular
+19283.37764,12093.57,2018,1071,Nebo School District,20652497.45,Extracurricular
+15491.35335,9013,2019,1614,Nebo School District,25003044.3,Extracurricular
+17804.37064,11251.47,2020,1503,Nebo School District,26759969.07,Extracurricular
+20086.31053,12458.4,2021,1532,Nebo School District,30772227.73,Extracurricular
+18338.42711,11560.02,2022,1632,Nebo School District,29928313.04,Extracurricular
+18180.24643,12294.56,2023,1726,Nebo School District,31379105.33,Extracurricular
+20375.57013,14036.87,2024,1855,Nebo School District,37796682.59,Extracurricular
+21382.9857,14573.88,2025,1745,Nebo School District,37313310.04,Extracurricular
+21057.951,8370.57,2014,813,Nebo School District,17120114.16,Operations & Facilities
+20529.25767,7659.29,2015,831,Nebo School District,17059813.12,Operations & Facilities
+21206.63484,7726.905,2016,856,Nebo School District,18152879.42,Operations & Facilities
+22826.7821,8231.79,2017,824,Nebo School District,18809268.45,Operations & Facilities
+22040.132,6553.41,2018,926,Nebo School District,20409162.23,Operations & Facilities
+20643.89726,7572.17,2019,1187,Nebo School District,24504306.05,Operations & Facilities
+22290.71139,8396.54,2020,1113,Nebo School District,24809561.78,Operations & Facilities
+22751.58154,9289.89,2021,1145,Nebo School District,26050560.86,Operations & Facilities
+23343.81511,6949.38,2022,1232,Nebo School District,28759580.22,Operations & Facilities
+23144.74084,7172.795,2023,1328,Nebo School District,30736215.84,Operations & Facilities
+27354.42831,9614.18,2024,1258,Nebo School District,34411870.81,Operations & Facilities
+25412.10814,9906.31,2025,1261,Nebo School District,32044668.37,Operations & Facilities
+22594.51069,8626.48,2014,889,Nebo School District,20086520,Other Staff
+24417.10703,11011.92,2015,846,Nebo School District,20656872.55,Other Staff
+25602.62826,11429.49,2016,872,Nebo School District,22325491.84,Other Staff
+26108.03067,16055.98,2017,1139,Nebo School District,29737046.93,Other Staff
+25824.29587,17811.67,2018,1226,Nebo School District,31660586.74,Other Staff
+27873.33773,20317.66,2019,392,Nebo School District,10926348.39,Other Staff
+25664.30076,19927.395,2020,436,Nebo School District,11189635.13,Other Staff
+27470.04716,19046.41,2021,447,Nebo School District,12279111.08,Other Staff
+23978.6135,13832.43,2022,514,Nebo School District,12325007.34,Other Staff
+30481.35427,17874.8,2023,372,Nebo School District,11339063.79,Other Staff
+26829.3068,9373.6,2024,525,Nebo School District,14085386.07,Other Staff
+34489.79195,15104.9,2025,609,Nebo School District,21004283.3,Other Staff
+56524.70105,67245.56,2014,105,Nebo School District,5935093.61,Student Support
+56546.89009,63804.05,2015,112,Nebo School District,6333251.69,Student Support
+66878.13039,76096.12,2016,102,Nebo School District,6821569.3,Student Support
+69229.96182,79534.97,2017,99,Nebo School District,6853766.22,Student Support
+69336.84151,76518.515,2018,106,Nebo School District,7349705.2,Student Support
+71235.70195,81903.41,2019,123,Nebo School District,8761991.34,Student Support
+79853.02803,87303.05,2020,122,Nebo School District,9742069.42,Student Support
+90143.7742,97156.63,2021,131,Nebo School District,11808834.42,Student Support
+102573.70888,103832.955,2022,134,Nebo School District,13744876.99,Student Support
+89125.83705,98878.16,2023,149,Nebo School District,13279749.72,Student Support
+106141.6258,116333.78,2024,157,Nebo School District,16664235.25,Student Support
+108656.65121,117254.53,2025,173,Nebo School District,18797600.66,Student Support
+61699.24523,65741.68,2014,1545,Nebo School District,95325333.88,Teacher
+62834.81506,65879.23,2015,1567,Nebo School District,98462155.2,Teacher
+64302.18465,65790.35,2016,1647,Nebo School District,105905698.12,Teacher
+70209.14762,72084.58,2017,1531,Nebo School District,107490205.01,Teacher
+73661.95345,73998.77,2018,1566,Nebo School District,115354619.1,Teacher
+71697.93366,73071.53,2019,1819,Nebo School District,130418541.33,Teacher
+81515.17915,80653.39,2020,1649,Nebo School District,134418530.42,Teacher
+94645.59284,89845.84,2021,1687,Nebo School District,159667115.12,Teacher
+95614.3595,95660.68,2022,1721,Nebo School District,164552312.7,Teacher
+94571.50045,94682.58,2023,1810,Nebo School District,171174415.81,Teacher
+106581.67789,106394.87,2024,1862,Nebo School District,198455084.23,Teacher
+115645.47639,114548.47,2025,1852,Nebo School District,214175422.27,Teacher

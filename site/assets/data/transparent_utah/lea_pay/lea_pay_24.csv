@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+14502.96167,7518.32,2020,54,Rich School District,783159.93,Extracurricular
+15798.53875,8913.69,2021,56,Rich School District,884718.17,Extracurricular
+12992.27517,6528.11,2023,60,Rich School District,779536.51,Extracurricular
+15460.80985,6054.93,2024,67,Rich School District,1035874.26,Extracurricular
+15267.38324,6180.42,2025,71,Rich School District,1083984.21,Extracurricular
+42854.77143,11970.915,2015,70,Rich School District,2999834,Teacher
+43988.61093,7873.54,2016,75,Rich School District,3299145.82,Teacher
+46720.24579,7829.6,2017,76,Rich School District,3550738.68,Teacher
+57938.04375,73401.48,2018,64,Rich School District,3708034.8,Teacher
+61591.07889,74617.26,2019,63,Rich School District,3880237.97,Teacher
+62193.88182,74846.95,2020,66,Rich School District,4104796.2,Teacher
+71288.66155,86176.865,2021,58,Rich School District,4134742.37,Teacher
+73427.93339,89443.515,2022,62,Rich School District,4552531.87,Teacher
+78346.68613,104009.935,2023,62,Rich School District,4857494.54,Teacher
+80452.23154,104714.87,2024,65,Rich School District,5229395.05,Teacher
+92913.79339,118668.28,2025,59,Rich School District,5481913.81,Teacher
+91310.04,91310.04,2014,1,Rich School District,91310.04,Student Support
+138833.32,138833.32,2019,1,Rich School District,138833.32,Student Support
+153719.27,153719.27,2021,1,Rich School District,153719.27,Student Support
+144709.51,144709.51,2023,1,Rich School District,144709.51,Student Support
+156942.05,156942.05,2024,1,Rich School District,156942.05,Student Support
+63677.47,63677.47,2018,2,Rich School District,127354.94,Student Support
+80397.035,80397.035,2022,2,Rich School District,160794.07,Student Support
+80370.845,80370.845,2025,2,Rich School District,160741.69,Student Support
+64011.79333,47082.63,2014,3,Rich School District,192035.38,Extracurricular
+17723.25667,16023.73,2014,3,Rich School District,53169.77,Other Staff
+44391.49333,31753.29,2020,3,Rich School District,133174.48,Other Staff
+57608.32667,44465.93,2015,3,Rich School District,172824.98,Student Support
+26641.09,17100.92,2016,3,Rich School District,79923.27,Student Support
+48134.51667,113.03,2020,3,Rich School District,144403.55,Student Support
+37195.2975,33104.22,2019,4,Rich School District,148781.19,Other Staff
+47265.725,43553.505,2022,4,Rich School District,189062.9,Other Staff
+41768.595,34519.265,2024,4,Rich School District,167074.38,Other Staff
+43986.112,49073.52,2017,5,Rich School District,219930.56,Other Staff
+44934.024,46297.88,2018,5,Rich School District,224670.12,Other Staff
+37714.362,24609.12,2021,5,Rich School District,188571.81,Other Staff
+49587.87,48566.535,2014,6,Rich School District,297527.22,Operations & Facilities
+30972.65167,21715.2,2023,6,Rich School District,185835.91,Other Staff
+48171.04429,35456,2025,7,Rich School District,337197.31,Other Staff
+18825.75,179.35,2017,7,Rich School District,131780.25,Student Support
+105613.25,128063.5,2019,8,Rich School District,844906,Administrator
+115852.41875,147316.315,2020,8,Rich School District,926819.35,Administrator
+28945.64625,35936.375,2016,8,Rich School District,231565.17,Other Staff
+84992.54889,98847.58,2016,9,Rich School District,764932.94,Administrator
+88665.24556,103147.52,2018,9,Rich School District,797987.21,Administrator
+62196.241,21702.14,2014,10,Rich School District,621962.41,Administrator
+81689.502,69657.45,2017,10,Rich School District,816895.02,Administrator
+103836.647,91714.5,2021,10,Rich School District,1038366.47,Administrator
+104329.44364,63286.37,2022,11,Rich School District,1147623.88,Administrator
+125271.13727,36986.32,2025,11,Rich School District,1377982.51,Administrator
+62966.3375,24979.665,2015,12,Rich School District,755596.05,Administrator
+121483.29417,128238.925,2023,12,Rich School District,1457799.53,Administrator
+13998.26333,505.955,2015,12,Rich School District,167979.16,Other Staff
+111723.94923,34936.63,2024,13,Rich School District,1452411.34,Administrator
+17537.98,9643.23,2015,25,Rich School District,438449.5,Extracurricular
+31223.4456,12988.36,2019,25,Rich School District,780586.14,Operations & Facilities
+18850.37577,11810.77,2016,26,Rich School District,490109.77,Extracurricular
+30753.47192,14372.56,2016,26,Rich School District,799590.27,Operations & Facilities
+30600.29538,12223.885,2020,26,Rich School District,795607.68,Operations & Facilities
+26605.33074,10116.11,2017,27,Rich School District,718343.93,Operations & Facilities
+26858.10185,10713.21,2018,27,Rich School District,725168.75,Operations & Facilities
+40484.51111,16890.77,2025,27,Rich School District,1093081.8,Operations & Facilities
+30072.0775,12594.385,2021,28,Rich School District,842018.17,Operations & Facilities
+21925.02655,10347.32,2015,29,Rich School District,635825.77,Operations & Facilities
+30892.46069,13165.74,2022,29,Rich School District,895881.36,Operations & Facilities
+32893.02935,11563.2,2023,31,Rich School District,1019683.91,Operations & Facilities
+40578.30613,12823.81,2024,31,Rich School District,1257927.49,Operations & Facilities
+16613.03735,9304.435,2017,34,Rich School District,564843.27,Extracurricular
+68966.86206,75872.205,2014,34,Rich School District,2344873.31,Teacher
+17576.5302,12035.35,2022,51,Rich School District,896403.04,Extracurricular
+12382.5275,4491.1,2018,52,Rich School District,643891.43,Extracurricular
+14577.97154,6467.425,2019,52,Rich School District,758054.52,Extracurricular

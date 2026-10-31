@@ -1,0 +1,72 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+110689.39,110689.39,2014,1,Tintic School District,110689.39,Administrator
+112626.35,112626.35,2015,1,Tintic School District,112626.35,Administrator
+116476.8,116476.8,2016,1,Tintic School District,116476.8,Administrator
+123474.41,123474.41,2017,1,Tintic School District,123474.41,Administrator
+126609.83,126609.83,2018,1,Tintic School District,126609.83,Administrator
+64127.39,64127.39,2014,1,Tintic School District,64127.39,Student Support
+54099.8,54099.8,2018,1,Tintic School District,54099.8,Student Support
+93685.08,93685.08,2023,1,Tintic School District,93685.08,Student Support
+108567.94,108567.94,2024,1,Tintic School District,108567.94,Student Support
+115994.81,115994.81,2025,1,Tintic School District,115994.81,Student Support
+115278.22,115278.22,2019,2,Tintic School District,230556.44,Administrator
+117124.24,117124.24,2020,2,Tintic School District,234248.48,Administrator
+45335.935,45335.935,2016,2,Tintic School District,90671.87,Student Support
+48605.59,48605.59,2017,2,Tintic School District,97211.18,Student Support
+52190.265,52190.265,2020,2,Tintic School District,104380.53,Student Support
+57943.97,57943.97,2021,2,Tintic School District,115887.94,Student Support
+60943.865,60943.865,2022,2,Tintic School District,121887.73,Student Support
+128243.07667,131278.49,2021,3,Tintic School District,384729.23,Administrator
+131535.4375,131016.17,2022,4,Tintic School District,526141.75,Administrator
+139707.66,141866.945,2023,4,Tintic School District,558830.64,Administrator
+156845.6525,158497.63,2024,4,Tintic School District,627382.61,Administrator
+170046.18,174431.03,2025,4,Tintic School District,680184.72,Administrator
+34109.02,35283.48,2019,4,Tintic School District,136436.08,Student Support
+57330.718,68345.62,2014,5,Tintic School District,286653.59,Other Staff
+54899.64,59888.415,2018,6,Tintic School District,329397.84,Other Staff
+48083.56143,45283.45,2015,7,Tintic School District,336584.93,Other Staff
+49439.11857,57578.37,2017,7,Tintic School District,346073.83,Other Staff
+66696.58714,74138.53,2020,7,Tintic School District,466876.11,Other Staff
+47641.03,57092.405,2016,8,Tintic School District,381128.24,Other Staff
+49625.555,65840.055,2019,8,Tintic School District,397004.44,Other Staff
+64329.88,62701.45,2022,8,Tintic School District,514639.04,Other Staff
+59546.95556,71476.48,2021,9,Tintic School District,535922.6,Other Staff
+63833.90556,60966.87,2023,9,Tintic School District,574505.15,Other Staff
+78947.8,76907.71,2025,9,Tintic School District,710530.2,Other Staff
+61666.526,49198.7,2024,10,Tintic School District,616665.26,Other Staff
+23727.93429,18898.28,2021,14,Tintic School District,332191.08,Operations & Facilities
+31500.37429,21484.575,2024,14,Tintic School District,441005.24,Operations & Facilities
+15626.78733,15714.08,2020,15,Tintic School District,234401.81,Extracurricular
+15105.87867,4921.73,2014,15,Tintic School District,226588.18,Operations & Facilities
+21816.09933,15547.67,2022,15,Tintic School District,327241.49,Operations & Facilities
+24604.57933,15865.8,2023,15,Tintic School District,369068.69,Operations & Facilities
+15222.13,13223.005,2018,16,Tintic School District,243554.08,Extracurricular
+11928.23688,10134.085,2019,16,Tintic School District,190851.79,Extracurricular
+24698.4225,25097.765,2024,16,Tintic School District,395174.76,Extracurricular
+15976.34188,10414.955,2016,16,Tintic School District,255621.47,Operations & Facilities
+30280.23687,20758.765,2025,16,Tintic School District,484483.79,Operations & Facilities
+17589.85765,18753.61,2022,17,Tintic School District,299027.58,Extracurricular
+18576.19235,16201.57,2023,17,Tintic School District,315795.27,Extracurricular
+25871.31235,25875.09,2025,17,Tintic School District,439812.31,Extracurricular
+14048.63333,7243.79,2014,18,Tintic School District,252875.4,Extracurricular
+11085.85111,5939.75,2017,18,Tintic School District,199545.32,Extracurricular
+12400.14056,6308.785,2015,18,Tintic School District,223202.53,Operations & Facilities
+16223.74944,12032.565,2020,18,Tintic School District,292027.49,Operations & Facilities
+65207.64722,67921.82,2014,18,Tintic School District,1173737.65,Teacher
+69177.23889,72375.735,2015,18,Tintic School District,1245190.3,Teacher
+14782.82684,12432.11,2021,19,Tintic School District,280873.71,Extracurricular
+70810.73053,75587.2,2016,19,Tintic School District,1345403.88,Teacher
+67537.14474,71204.85,2018,19,Tintic School District,1283205.75,Teacher
+12124.777,5658.845,2016,20,Tintic School District,242495.54,Extracurricular
+72418.626,77121.205,2017,20,Tintic School District,1448372.52,Teacher
+71928.73,67881.275,2020,20,Tintic School District,1438574.6,Teacher
+65807.7145,63616.83,2021,20,Tintic School District,1316154.29,Teacher
+17030.61238,11536.34,2015,21,Tintic School District,357642.86,Extracurricular
+64719.22619,70545.47,2022,21,Tintic School District,1359103.75,Teacher
+64852.44364,63913.825,2019,22,Tintic School District,1426753.76,Teacher
+12834.87208,8155.48,2017,24,Tintic School District,308036.93,Operations & Facilities
+12032.95542,8554.435,2018,24,Tintic School District,288790.93,Operations & Facilities
+68139.845,71269.14,2023,24,Tintic School District,1635356.28,Teacher
+78530.52833,82778.47,2024,24,Tintic School District,1884732.68,Teacher
+10683.11154,3074.08,2019,26,Tintic School District,277760.9,Operations & Facilities
+74839.61667,79544.98,2025,27,Tintic School District,2020669.65,Teacher

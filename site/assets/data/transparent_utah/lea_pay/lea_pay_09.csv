@@ -1,0 +1,71 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+17703.57613,9767.88,2014,111,Emery School District,1965096.95,Extracurricular
+17265.30759,8496.015,2015,108,Emery School District,1864653.22,Extracurricular
+17452.64324,8595.665,2016,102,Emery School District,1780169.61,Extracurricular
+12747.76579,7457.46,2017,145,Emery School District,1848426.04,Extracurricular
+13057.74736,7625.93,2018,159,Emery School District,2076181.83,Extracurricular
+13115.97744,7669.545,2019,168,Emery School District,2203484.21,Extracurricular
+13691.61399,9462.99,2020,183,Emery School District,2505565.36,Extracurricular
+15368.07487,10525.74,2021,197,Emery School District,3027510.75,Extracurricular
+16411.11782,11160.36,2022,193,Emery School District,3167345.74,Extracurricular
+13695.61268,10093.74,2023,198,Emery School District,2711731.31,Extracurricular
+14454.44388,10106.15,2024,219,Emery School District,3165523.21,Extracurricular
+17900.75115,13586.22,2025,227,Emery School District,4063470.51,Extracurricular
+32166.84592,19820.82,2014,103,Emery School District,3313185.13,Operations & Facilities
+32891.1297,21628.835,2015,100,Emery School District,3289112.97,Operations & Facilities
+35981.08753,25326.52,2016,97,Emery School District,3490165.49,Operations & Facilities
+37030.02674,22229.33,2017,95,Emery School District,3517852.54,Operations & Facilities
+33384.1303,15086.53,2018,101,Emery School District,3371797.16,Operations & Facilities
+35979.41541,17089.705,2019,98,Emery School District,3525982.71,Operations & Facilities
+39408.55495,18362.65,2020,99,Emery School District,3901446.94,Operations & Facilities
+39903.73213,18939.285,2021,108,Emery School District,4309603.07,Operations & Facilities
+37970.96721,18171.915,2022,122,Emery School District,4632458,Operations & Facilities
+41499.0783,17106.345,2023,106,Emery School District,4398902.3,Operations & Facilities
+45255.71064,23830.37,2024,109,Emery School District,4932872.46,Operations & Facilities
+50653.55421,28997.74,2025,107,Emery School District,5419930.3,Operations & Facilities
+38452.52525,46811.565,2014,238,Emery School District,9151701.01,Teacher
+32979.5897,21926.89,2015,270,Emery School District,8904489.22,Teacher
+34916.97872,19593.865,2016,266,Emery School District,9287916.34,Teacher
+43160.59817,51341.74,2017,213,Emery School District,9193207.41,Teacher
+48413.9164,61191.08,2018,197,Emery School District,9537541.53,Teacher
+50231.60325,64608.88,2019,197,Emery School District,9895625.84,Teacher
+57690.24678,72549.21,2020,174,Emery School District,10038102.94,Teacher
+62943.36641,75975.725,2021,198,Emery School District,12462786.55,Teacher
+63288.46399,74608.06,2022,203,Emery School District,12847558.19,Teacher
+55597.27136,67843.33,2023,199,Emery School District,11063857,Teacher
+61426.90995,75199.28,2024,191,Emery School District,11732539.8,Teacher
+67641.85505,83774.24,2025,212,Emery School District,14340073.27,Teacher
+18736.04,18736.04,2022,2,Emery School District,37472.08,Other Staff
+34234.95,37161.68,2014,3,Emery School District,102704.85,Other Staff
+35430.23667,30274.89,2017,3,Emery School District,106290.71,Other Staff
+38580.86,35128.76,2020,3,Emery School District,115742.58,Other Staff
+31333.7425,33110.67,2015,4,Emery School District,125334.97,Other Staff
+39644.025,40147.36,2019,4,Emery School District,158576.1,Other Staff
+61717.125,65785.955,2021,4,Emery School District,246868.5,Other Staff
+33421.682,30514.05,2016,5,Emery School District,167108.41,Other Staff
+40405.874,42056.27,2018,5,Emery School District,202029.37,Other Staff
+25157.37833,2750.465,2024,6,Emery School District,150944.27,Other Staff
+69064.89571,61875.32,2015,7,Emery School District,483454.27,Student Support
+63630.06375,64945.02,2014,8,Emery School District,509040.51,Student Support
+60628.93091,52125.72,2016,11,Emery School District,666918.24,Student Support
+173626.235,171300.825,2025,16,Emery School District,2778019.76,Administrator
+119381.33611,130128.215,2018,18,Emery School District,2148864.05,Administrator
+134748.95778,149033.53,2020,18,Emery School District,2425481.24,Administrator
+97545.67842,115941.19,2014,19,Emery School District,1853367.89,Administrator
+99081.33526,123464.86,2016,19,Emery School District,1882545.37,Administrator
+107378.47737,124195.2,2017,19,Emery School District,2040191.07,Administrator
+88014.8281,112802.03,2015,21,Emery School District,1848311.39,Administrator
+114464.46143,131161.57,2019,21,Emery School District,2403753.69,Administrator
+120633.98619,139800.35,2021,21,Emery School District,2533313.71,Administrator
+121811.58333,139967.84,2022,21,Emery School District,2558043.25,Administrator
+127523.23524,143042.58,2023,21,Emery School District,2677987.94,Administrator
+139768.7381,158991.26,2024,21,Emery School District,2935143.5,Administrator
+36976.12667,29038.61,2017,21,Emery School District,776498.66,Student Support
+21662.62704,2505.31,2018,27,Emery School District,584890.93,Student Support
+32404.05071,3331.79,2020,28,Emery School District,907313.42,Student Support
+48180.93071,2998.06,2025,28,Emery School District,1349066.06,Student Support
+23355.50194,2306.28,2019,31,Emery School District,724020.56,Student Support
+32961.94618,2677.905,2021,34,Emery School District,1120706.17,Student Support
+34142.28971,2477.81,2022,34,Emery School District,1160837.85,Student Support
+23661.54229,3086.885,2023,48,Emery School District,1135754.03,Student Support
+25212.05292,2179.915,2024,48,Emery School District,1210178.54,Student Support

@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+110051.17933,127883.565,2016,30,Murray City School District,3301535.38,Administrator
+12877.46501,7760.58,2014,355,Murray City School District,4571500.08,Extracurricular
+12547.31047,7311.52,2015,365,Murray City School District,4579768.32,Extracurricular
+13856.49414,8515.13,2016,343,Murray City School District,4752777.49,Extracurricular
+13086.514,7841.665,2017,380,Murray City School District,4972875.32,Extracurricular
+14736.93119,8674.035,2018,378,Murray City School District,5570559.99,Extracurricular
+16984.99291,10113.72,2019,337,Murray City School District,5723942.61,Extracurricular
+19001.96607,11756.39,2020,333,Murray City School District,6327654.7,Extracurricular
+19471.51898,12747.525,2021,332,Murray City School District,6464544.3,Extracurricular
+19428.12642,12660.17,2022,372,Murray City School District,7227263.03,Extracurricular
+18943.25778,11607.76,2023,397,Murray City School District,7520473.34,Extracurricular
+20777.05124,13868.64,2024,412,Murray City School District,8560145.11,Extracurricular
+21677.82694,14553.635,2025,428,Murray City School District,9278109.93,Extracurricular
+19634.94225,9426.41,2014,169,Murray City School District,3318305.24,Operations & Facilities
+18565.9064,7453.63,2015,175,Murray City School District,3249033.62,Operations & Facilities
+18636.89122,7317.6,2016,180,Murray City School District,3354640.42,Operations & Facilities
+19669.33792,8942.82,2017,173,Murray City School District,3402795.46,Operations & Facilities
+20767.00967,9846.38,2018,181,Murray City School District,3758828.75,Operations & Facilities
+22651.52644,11058.115,2019,180,Murray City School District,4077274.76,Operations & Facilities
+23807.25422,10976.925,2020,180,Murray City School District,4285305.76,Operations & Facilities
+23709.35989,11497.395,2021,188,Murray City School District,4457359.66,Operations & Facilities
+23191.90881,9808.58,2022,201,Murray City School District,4661573.67,Operations & Facilities
+22997.37797,7302.54,2023,217,Murray City School District,4990431.02,Operations & Facilities
+26552.03926,11757.35,2024,215,Murray City School District,5708688.44,Operations & Facilities
+26182.35857,10843.785,2025,230,Murray City School District,6021942.47,Operations & Facilities
+36603.76233,7973.875,2023,30,Murray City School District,1098112.87,Other Staff
+56917.03609,41727.26,2024,23,Murray City School District,1309091.83,Other Staff
+61243.99457,73644.12,2019,35,Murray City School District,2143539.81,Student Support
+91090.05594,98557.705,2022,32,Murray City School District,2914881.79,Student Support
+83295.75438,90678.41,2023,32,Murray City School District,2665464.14,Student Support
+48024.93598,55875.2,2014,485,Murray City School District,23292093.95,Teacher
+47269.0298,54795.68,2015,489,Murray City School District,23114555.57,Teacher
+47247.13624,55727.755,2016,492,Murray City School District,23245591.03,Teacher
+47365.99173,54722.8,2017,503,Murray City School District,23825093.84,Teacher
+50643.81629,59754.57,2018,525,Murray City School District,26588003.55,Teacher
+53554.70355,63299.15,2019,507,Murray City School District,27152234.7,Teacher
+56403.68236,66166.6,2020,529,Murray City School District,29837547.97,Teacher
+56113.81233,66545.015,2021,486,Murray City School District,27271312.79,Teacher
+62040.78308,75564.535,2022,522,Murray City School District,32385288.77,Teacher
+64328.69142,78018.99,2023,536,Murray City School District,34480178.6,Teacher
+66430.29548,84866.875,2024,558,Murray City School District,37068104.88,Teacher
+69423.60764,89373.77,2025,559,Murray City School District,38807796.67,Teacher
+43627.285,53135.195,2014,8,Murray City School District,349018.28,Other Staff
+42107.91,52715.57,2015,9,Murray City School District,378971.19,Other Staff
+41085.23778,49081.3,2016,9,Murray City School District,369767.14,Other Staff
+50491.48273,59652.05,2018,11,Murray City School District,555406.31,Other Staff
+40674.50167,50548.645,2017,12,Murray City School District,488094.02,Other Staff
+40439.57765,26721.58,2019,17,Murray City School District,687472.82,Other Staff
+51260.35706,54687.19,2020,17,Murray City School District,871426.07,Other Staff
+45345.332,34822.635,2021,20,Murray City School District,906906.64,Other Staff
+83515.77,92751.71,2014,20,Murray City School District,1670315.4,Student Support
+76308.8719,85822.76,2015,21,Murray City School District,1602486.31,Student Support
+42886.24083,24921.045,2022,24,Murray City School District,1029269.78,Other Staff
+129143.686,136991.57,2017,25,Murray City School District,3228592.15,Administrator
+73240.3888,83277.72,2016,25,Murray City School District,1831009.72,Student Support
+113377.15731,119217.815,2014,26,Murray City School District,2947806.09,Administrator
+169764.34346,169116.16,2022,26,Murray City School District,4413872.93,Administrator
+197400.84654,201663.795,2024,26,Murray City School District,5132422.01,Administrator
+208711.74692,205967.025,2025,26,Murray City School District,5426505.42,Administrator
+70041.20577,75425.025,2017,26,Murray City School District,1821071.35,Student Support
+111124.40259,120552.94,2015,27,Murray City School District,3000358.87,Administrator
+139976.17852,143453.8,2018,27,Murray City School District,3779356.82,Administrator
+158252.52593,162410.53,2020,27,Murray City School District,4272818.2,Administrator
+76642.90074,84833.41,2018,27,Murray City School District,2069358.32,Student Support
+108655.72,110595.3,2025,27,Murray City School District,2933704.44,Student Support
+143176.38964,150399.61,2019,28,Murray City School District,4008938.91,Administrator
+154047.01929,164644.925,2021,28,Murray City School District,4313316.54,Administrator
+169452.69429,180228.475,2023,28,Murray City School District,4744675.44,Administrator
+48741.74645,22817.39,2025,31,Murray City School District,1510994.14,Other Staff
+94209.39,99634.27,2024,31,Murray City School District,2920491.09,Student Support
+64175.84353,71899.345,2021,34,Murray City School District,2181978.68,Student Support
+58439.46425,64281.92,2020,40,Murray City School District,2337578.57,Student Support

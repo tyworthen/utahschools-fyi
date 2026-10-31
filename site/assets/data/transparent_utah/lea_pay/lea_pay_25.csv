@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+20412.81304,16630.35,2014,171,San Juan School District,3490591.03,Extracurricular
+18568.83167,13815.88,2015,192,San Juan School District,3565215.68,Extracurricular
+19132.76769,14384.44,2016,195,San Juan School District,3730889.7,Extracurricular
+17343.86983,12593.34,2017,233,San Juan School District,4041121.67,Extracurricular
+16557.2359,11756.53,2018,271,San Juan School District,4487010.93,Extracurricular
+16823.26092,11964.23,2019,283,San Juan School District,4760982.84,Extracurricular
+17677.06652,13298.54,2020,270,San Juan School District,4772807.96,Extracurricular
+18556.37223,15262.13,2021,242,San Juan School District,4490642.08,Extracurricular
+16512.63718,11375.27,2022,301,San Juan School District,4970303.79,Extracurricular
+17647.51021,13308.62,2023,291,San Juan School District,5135425.47,Extracurricular
+19254.16942,13955.19,2024,294,San Juan School District,5660725.81,Extracurricular
+20457.52174,14974.275,2025,288,San Juan School District,5891766.26,Extracurricular
+21628.45958,12690.92,2014,212,San Juan School District,4585233.43,Operations & Facilities
+23416.07161,14137.39,2015,205,San Juan School District,4800294.68,Operations & Facilities
+24262.8377,14474.835,2016,204,San Juan School District,4949618.89,Operations & Facilities
+23446.98986,14331.42,2017,213,San Juan School District,4994208.84,Operations & Facilities
+23662.15938,14380.89,2018,225,San Juan School District,5323985.86,Operations & Facilities
+26326.96412,15947.21,2019,211,San Juan School District,5554989.43,Operations & Facilities
+26398.06612,16218.53,2020,214,San Juan School District,5649186.15,Operations & Facilities
+28123.32461,17021.285,2021,204,San Juan School District,5737158.22,Operations & Facilities
+28856.17541,18313.17,2022,209,San Juan School District,6030940.66,Operations & Facilities
+31909.02237,21128.47,2023,198,San Juan School District,6317986.43,Operations & Facilities
+33997.89545,24503.28,2024,211,San Juan School District,7173555.94,Operations & Facilities
+37627.80468,26593.12,2025,203,San Juan School District,7638444.35,Operations & Facilities
+37264.39769,20044.44,2014,373,San Juan School District,13899620.34,Teacher
+40260.57302,31697.93,2015,364,San Juan School District,14654848.58,Teacher
+41971.64351,34487.895,2016,370,San Juan School District,15529508.1,Teacher
+40092.89846,14459.36,2017,389,San Juan School District,15596137.5,Teacher
+48789.45261,61351.73,2018,333,San Juan School District,16246887.72,Teacher
+49041.9193,61304.87,2019,344,San Juan School District,16870420.24,Teacher
+54611.27012,69536.5,2020,321,San Juan School District,17530217.71,Teacher
+65297.77771,78663.7,2021,266,San Juan School District,17369208.87,Teacher
+56582.98203,70133.86,2022,325,San Juan School District,18389469.16,Teacher
+61579.46966,76732.615,2023,322,San Juan School District,19828589.23,Teacher
+65683.02749,81670.41,2024,331,San Juan School District,21741082.1,Teacher
+64049.50084,82582.96,2025,332,San Juan School District,21264434.28,Teacher
+90093.72857,100199.16,2014,7,San Juan School District,630656.1,Other Staff
+73387.90444,73019.62,2022,9,San Juan School District,660491.14,Other Staff
+79518.56444,75350.25,2023,9,San Juan School District,715667.08,Other Staff
+71759.64556,75444.33,2025,9,San Juan School District,645836.81,Other Staff
+78833.32222,85577.84,2016,9,San Juan School District,709499.9,Student Support
+72431.829,66904.5,2017,10,San Juan School District,724318.29,Other Staff
+61748.934,60003.14,2018,10,San Juan School District,617489.34,Other Staff
+68711.515,70947.685,2024,10,San Juan School District,687115.15,Other Staff
+71013.279,78796.335,2015,10,San Juan School District,710132.79,Student Support
+62397.20909,66467.93,2015,11,San Juan School District,686369.3,Other Staff
+59300.30091,62638.32,2019,11,San Juan School District,652303.31,Other Staff
+65703.71545,69226.03,2020,11,San Juan School District,722740.87,Other Staff
+55726.50636,66153.88,2021,11,San Juan School District,612991.57,Other Staff
+71714.10091,74474.59,2014,11,San Juan School District,788855.11,Student Support
+61702.48923,57835.16,2016,13,San Juan School District,802132.36,Other Staff
+74353.68687,73325.95,2019,16,San Juan School District,1189658.99,Student Support
+59063.46944,66363.97,2017,18,San Juan School District,1063142.45,Student Support
+64647.03722,67097.955,2018,18,San Juan School District,1163646.67,Student Support
+75027.05278,66273.195,2020,18,San Juan School District,1350486.95,Student Support
+75633.64263,69861.6,2021,19,San Juan School District,1437039.21,Student Support
+107067.0796,120849.06,2016,25,San Juan School District,2676676.99,Administrator
+107718.2156,125022.66,2018,25,San Juan School District,2692955.39,Administrator
+93774.32769,111127.29,2014,26,San Juan School District,2438132.52,Administrator
+67162.43731,65788.845,2022,26,San Juan School District,1746223.37,Student Support
+87406.63654,81173.215,2023,26,San Juan School District,2272572.55,Student Support
+96652.34577,95269.43,2024,26,San Juan School District,2512960.99,Student Support
+95328.71519,113022.44,2015,27,San Juan School District,2573875.31,Administrator
+107310.92185,127454.02,2019,27,San Juan School District,2897394.89,Administrator
+92628.80333,90144.27,2025,27,San Juan School District,2500977.69,Student Support
+99828.78964,116948.195,2017,28,San Juan School District,2795206.11,Administrator
+116470.00821,131486.01,2020,28,San Juan School District,3261160.23,Administrator
+117883.57964,133541.255,2021,28,San Juan School District,3300740.23,Administrator
+125075.22321,140528.725,2022,28,San Juan School District,3502106.25,Administrator
+146842.42655,169367.73,2025,29,San Juan School District,4258430.37,Administrator
+122245.16323,150229.95,2023,31,San Juan School District,3789600.06,Administrator
+134607.10516,157511.07,2024,31,San Juan School District,4172820.26,Administrator

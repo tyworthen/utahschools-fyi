@@ -1,0 +1,72 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+17840.40846,12459.23,2014,91,Kane School District,1623477.17,Extracurricular
+18891.24167,12435.32,2015,90,Kane School District,1700211.75,Extracurricular
+17553.95489,11910.45,2016,92,Kane School District,1614963.85,Extracurricular
+17537.84187,11786.52,2017,91,Kane School District,1595943.61,Extracurricular
+16370.73584,11011.23,2018,101,Kane School District,1653444.32,Extracurricular
+15570.86669,11169.62,2019,121,Kane School District,1884074.87,Extracurricular
+15045.29978,10717.18,2020,137,Kane School District,2061206.07,Extracurricular
+17672.56234,12586.285,2021,128,Kane School District,2262087.98,Extracurricular
+16604.76135,12075.95,2022,141,Kane School District,2341271.35,Extracurricular
+17014.24868,9264.89,2023,152,Kane School District,2586165.8,Extracurricular
+18970.30156,11012.28,2024,147,Kane School District,2788634.33,Extracurricular
+19208.16575,11100.62,2025,153,Kane School District,2938849.36,Extracurricular
+20381.36419,13758.325,2014,62,Kane School District,1263644.58,Operations & Facilities
+21413.89683,13152.17,2015,63,Kane School District,1349075.5,Operations & Facilities
+21161.24015,12194.84,2016,65,Kane School District,1375480.61,Operations & Facilities
+21006.14636,12011.38,2017,66,Kane School District,1386405.66,Operations & Facilities
+21248.25533,13114.455,2018,60,Kane School District,1274895.32,Operations & Facilities
+21455.27048,13567.72,2019,63,Kane School District,1351682.04,Operations & Facilities
+24308.73517,15543.775,2020,58,Kane School District,1409906.64,Operations & Facilities
+24984.47102,14661.23,2021,59,Kane School District,1474083.79,Operations & Facilities
+26348.08933,15914.82,2022,60,Kane School District,1580885.36,Operations & Facilities
+31941.84109,18341.71,2023,55,Kane School District,1756801.26,Operations & Facilities
+28420.73,13521.635,2024,70,Kane School District,1989451.1,Operations & Facilities
+32125.97284,18160.24,2025,67,Kane School District,2152440.18,Operations & Facilities
+41310.76362,32709.03,2014,141,Kane School District,5824817.67,Teacher
+41815.22028,47343.54,2015,143,Kane School District,5979576.5,Teacher
+45247.74761,49694.165,2016,138,Kane School District,6244189.17,Teacher
+42922.97767,11105.6,2017,159,Kane School District,6824753.45,Teacher
+57877.11615,77245.2,2018,117,Kane School District,6771622.59,Teacher
+50475.00504,68195.05,2019,119,Kane School District,6006525.6,Teacher
+59094.57582,81488.235,2020,122,Kane School District,7209538.25,Teacher
+65866.26748,87770.07,2021,115,Kane School District,7574620.76,Teacher
+65667.69101,86485.29,2022,119,Kane School District,7814455.23,Teacher
+71317.58197,92761.47,2023,122,Kane School District,8700745,Teacher
+75062.10877,89534,2024,130,Kane School District,9758074.14,Teacher
+70671.97455,93470.69,2025,121,Kane School District,8551308.92,Teacher
+30151.09,30151.09,2018,1,Kane School District,30151.09,Other Staff
+32256.12,32256.12,2019,1,Kane School District,32256.12,Other Staff
+34120.22,34120.22,2020,1,Kane School District,34120.22,Other Staff
+706.46,706.46,2023,1,Kane School District,706.46,Other Staff
+10162.17,10162.17,2024,1,Kane School District,10162.17,Other Staff
+40897.54,40897.54,2025,1,Kane School District,40897.54,Other Staff
+41171.48,41171.48,2022,2,Kane School District,82342.96,Other Staff
+86600.295,86600.295,2014,2,Kane School District,173200.59,Student Support
+94680.48,94680.48,2015,2,Kane School District,189360.96,Student Support
+104546.71,104546.71,2016,2,Kane School District,209093.42,Student Support
+105991.425,105991.425,2017,2,Kane School District,211982.85,Student Support
+101142.83,101142.83,2020,2,Kane School District,202285.66,Student Support
+17241.77333,19804.58,2017,3,Kane School District,51725.32,Other Staff
+111168.35,106421.07,2022,3,Kane School District,333505.05,Student Support
+148275.43,138137.48,2024,3,Kane School District,444826.29,Student Support
+52587.7075,55378.2,2019,4,Kane School District,210350.83,Student Support
+57304.865,50503.24,2021,4,Kane School District,229219.46,Student Support
+104078.81,122675.84,2023,4,Kane School District,416315.24,Student Support
+127547.556,127268.33,2025,5,Kane School District,637737.78,Student Support
+13783.79667,10041.575,2016,6,Kane School District,82702.78,Other Staff
+9982.86,5945.61,2015,9,Kane School District,89845.74,Other Staff
+9069.377,7441.84,2014,10,Kane School District,90693.77,Other Staff
+112827.27643,125189.05,2021,14,Kane School District,1579581.87,Administrator
+76399.38214,64316.36,2022,14,Kane School District,1069591.35,Administrator
+132697.49214,164816.855,2024,14,Kane School District,1857764.89,Administrator
+135747.61714,178259.25,2025,14,Kane School District,1900466.64,Administrator
+74224.75333,80888.28,2014,15,Kane School District,1113371.3,Administrator
+90893.24,98829.61,2018,15,Kane School District,1363398.6,Administrator
+95024.19067,106134.08,2019,15,Kane School District,1425362.86,Administrator
+101191.86333,117097.77,2020,15,Kane School District,1517877.95,Administrator
+115671.03333,135888.27,2023,15,Kane School District,1735065.5,Administrator
+74311.09625,84014.64,2015,16,Kane School District,1188977.54,Administrator
+76634.72118,60748.05,2017,17,Kane School District,1302790.26,Administrator
+76545.86333,73383.505,2016,18,Kane School District,1377825.54,Administrator
+8999.27581,2242.94,2018,31,Kane School District,278977.55,Student Support

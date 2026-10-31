@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+12874.00872,7700.81,2014,78,Garfield School District,1004172.68,Extracurricular
+13772.63623,8779.44,2015,77,Garfield School District,1060492.99,Extracurricular
+13619.82892,9173.42,2016,74,Garfield School District,1007867.34,Extracurricular
+13379.96506,9210.97,2017,81,Garfield School District,1083777.17,Extracurricular
+13379.96506,9210.97,2018,81,Garfield School District,1083777.17,Extracurricular
+12102.17824,6748.44,2019,91,Garfield School District,1101298.22,Extracurricular
+14110.99974,8719.64,2020,77,Garfield School District,1086546.98,Extracurricular
+17869.26068,12269.32,2021,73,Garfield School District,1304456.03,Extracurricular
+15689.70565,10663.39,2022,85,Garfield School District,1333624.98,Extracurricular
+19474.92727,13347.46,2023,77,Garfield School District,1499569.4,Extracurricular
+22334.15759,16149.27,2024,79,Garfield School District,1764398.45,Extracurricular
+17248.50071,10548.235,2025,112,Garfield School District,1931832.08,Extracurricular
+12845.62373,3111.24,2014,67,Garfield School District,860656.79,Operations & Facilities
+13812.04656,4779.555,2015,64,Garfield School District,883970.98,Operations & Facilities
+14179.71585,3964.72,2016,65,Garfield School District,921681.53,Operations & Facilities
+13504.89362,3068.3,2017,69,Garfield School District,931837.66,Operations & Facilities
+13504.89362,3068.3,2018,69,Garfield School District,931837.66,Operations & Facilities
+13895.26453,2486.72,2019,75,Garfield School District,1042144.84,Operations & Facilities
+15118.02543,2857.71,2020,70,Garfield School District,1058261.78,Operations & Facilities
+18113.14957,5385.485,2021,70,Garfield School District,1267920.47,Operations & Facilities
+18561.07039,3975.755,2022,76,Garfield School District,1410641.35,Operations & Facilities
+19364.50443,3150.56,2023,79,Garfield School District,1529795.85,Operations & Facilities
+20209.48714,3229.5,2024,84,Garfield School District,1697596.92,Operations & Facilities
+35556.1814,18987.65,2025,43,Garfield School District,1528915.8,Operations & Facilities
+48379.69362,57799.51,2014,94,Garfield School District,4547691.2,Teacher
+47754.663,59529.015,2015,100,Garfield School District,4775466.3,Teacher
+45238.99374,49491.26,2016,107,Garfield School District,4840572.33,Teacher
+42554.28623,27032.835,2017,114,Garfield School District,4851188.63,Teacher
+42554.28623,27032.835,2018,114,Garfield School District,4851188.63,Teacher
+44219.33924,30278.34,2019,119,Garfield School District,5262101.37,Teacher
+46993.31168,30260.82,2020,113,Garfield School District,5310244.22,Teacher
+54095.18886,61171.21,2021,105,Garfield School District,5679994.83,Teacher
+55252.44855,64466.045,2022,110,Garfield School District,6077769.34,Teacher
+59744.50871,65566.075,2023,116,Garfield School District,6930363.01,Teacher
+68677.14927,79731.035,2024,110,Garfield School District,7554486.42,Teacher
+66218.80509,79227.37,2025,108,Garfield School District,7151630.95,Teacher
+85149.08,85149.08,2014,1,Garfield School District,85149.08,Other Staff
+84505.445,84505.445,2015,2,Garfield School District,169010.89,Student Support
+96756.97,96756.97,2016,2,Garfield School District,193513.94,Student Support
+101258.735,101258.735,2017,2,Garfield School District,202517.47,Student Support
+101258.735,101258.735,2018,2,Garfield School District,202517.47,Student Support
+110880.29,110880.29,2025,2,Garfield School District,221760.58,Student Support
+30066.33667,545,2015,3,Garfield School District,90199.01,Other Staff
+72787.19333,84598.27,2019,3,Garfield School District,218361.58,Student Support
+26581.455,10684.73,2016,4,Garfield School District,106325.82,Other Staff
+30380.1325,22735.11,2025,4,Garfield School District,121520.53,Other Staff
+81768.6675,93229.995,2020,4,Garfield School District,327074.67,Student Support
+132555.8075,142198.175,2024,4,Garfield School District,530223.23,Student Support
+36519.234,429.92,2017,5,Garfield School District,182596.17,Other Staff
+36519.234,429.92,2018,5,Garfield School District,182596.17,Other Staff
+4898.728,1312.1,2020,5,Garfield School District,24493.64,Other Staff
+4432.22,161.48,2022,5,Garfield School District,22161.1,Other Staff
+39212.786,26993.3,2024,5,Garfield School District,196063.93,Other Staff
+73760.498,95957.52,2021,5,Garfield School District,368802.49,Student Support
+76799.762,105133.87,2022,5,Garfield School District,383998.81,Student Support
+89294.484,125341.4,2023,5,Garfield School District,446472.42,Student Support
+30258.05,16020.66,2014,6,Garfield School District,181548.3,Student Support
+10340.95375,792.235,2019,8,Garfield School District,82727.63,Other Staff
+1896.9275,137.69,2023,8,Garfield School District,15175.42,Other Staff
+2253.75455,229.72,2021,11,Garfield School District,24791.3,Other Staff
+82737.5675,64966.49,2022,16,Garfield School District,1323801.08,Administrator
+88087.03,44746.315,2024,16,Garfield School District,1409392.48,Administrator
+101835.71938,131134.14,2025,16,Garfield School District,1629371.51,Administrator
+67749.73412,54568.14,2015,17,Garfield School District,1151745.48,Administrator
+71397.00882,64869.09,2016,17,Garfield School District,1213749.15,Administrator
+70537.54118,55009.1,2017,17,Garfield School District,1199138.2,Administrator
+70537.54118,55009.1,2018,17,Garfield School District,1199138.2,Administrator
+57870.47278,46308.17,2014,18,Garfield School District,1041668.51,Administrator
+61925.22789,24511.62,2021,19,Garfield School District,1176579.33,Administrator
+62694.573,48807.8,2019,20,Garfield School District,1253891.46,Administrator
+67764.7685,27329.56,2023,20,Garfield School District,1355295.37,Administrator
+59784.35524,24571.56,2020,21,Garfield School District,1255471.46,Administrator

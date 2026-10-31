@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+137850.55522,155382.62,2019,23,Logan School District,3170562.77,Administrator
+207142.5013,209858.57,2025,23,Logan School District,4764277.53,Administrator
+8055.07062,5247.98,2014,468,Logan School District,3769773.05,Extracurricular
+9579.95998,6208.055,2015,416,Logan School District,3985263.35,Extracurricular
+9899.3469,6812.73,2016,445,Logan School District,4405209.37,Extracurricular
+10473.28402,7060.7,2017,435,Logan School District,4555878.55,Extracurricular
+11207.4606,7868.87,2018,453,Logan School District,5076979.65,Extracurricular
+12801.94453,7944.76,2019,433,Logan School District,5543241.98,Extracurricular
+15010.25319,11475.51,2020,373,Logan School District,5598824.44,Extracurricular
+16857.98561,12231.59,2021,353,Logan School District,5950868.92,Extracurricular
+17345.91767,12604.825,2022,352,Logan School District,6105763.02,Extracurricular
+17281.0465,11641.11,2023,391,Logan School District,6756889.18,Extracurricular
+18879.98434,13336.225,2024,392,Logan School District,7400953.86,Extracurricular
+18216.16471,12100.35,2025,414,Logan School District,7541492.19,Extracurricular
+17467.74377,10897.175,2014,138,Logan School District,2410548.64,Operations & Facilities
+17120.80932,9817.455,2015,146,Logan School District,2499638.16,Operations & Facilities
+20763.68395,13221.395,2016,124,Logan School District,2574696.81,Operations & Facilities
+18808.16985,12544.76,2017,135,Logan School District,2539102.93,Operations & Facilities
+18609.26028,12422.34,2018,143,Logan School District,2661124.22,Operations & Facilities
+19921.61161,9285.68,2019,155,Logan School District,3087849.8,Operations & Facilities
+22670.99907,15176.535,2020,140,Logan School District,3173939.87,Operations & Facilities
+22948.3541,15190.975,2021,144,Logan School District,3304562.99,Operations & Facilities
+23824.3773,14445.84,2022,141,Logan School District,3359237.2,Operations & Facilities
+22738.91597,11975.195,2023,154,Logan School District,3501793.06,Operations & Facilities
+25551.68164,15521.665,2024,152,Logan School District,3883855.61,Operations & Facilities
+27618.36531,16988.01,2025,143,Logan School District,3949426.24,Operations & Facilities
+15426.25031,2597.57,2016,64,Logan School District,987280.02,Other Staff
+20152.81603,7006.215,2018,68,Logan School District,1370391.49,Other Staff
+24851.19102,5216.06,2019,59,Logan School District,1466220.27,Other Staff
+40150.97634,15830.96,2021,41,Logan School District,1646190.03,Other Staff
+45905.68086,19549.28,2022,35,Logan School District,1606698.83,Other Staff
+46713.60486,18041.73,2023,35,Logan School District,1634976.17,Other Staff
+60964.979,25761.565,2025,30,Logan School District,1828949.37,Other Staff
+48039.55378,52476.5,2015,37,Logan School District,1777463.49,Student Support
+46710.26884,54577.75,2018,43,Logan School District,2008541.56,Student Support
+51823.7417,63318.42,2020,47,Logan School District,2435715.86,Student Support
+68074.25767,81761.94,2021,43,Logan School District,2927193.08,Student Support
+62386.23812,23990.415,2025,32,Logan School District,1996359.62,Student Support
+66452.16105,71187.67,2014,315,Logan School District,20932430.73,Teacher
+67280.253,68471.19,2015,307,Logan School District,20655037.67,Teacher
+70394.98895,70947.75,2016,315,Logan School District,22174421.52,Teacher
+70002.88156,70801.385,2017,308,Logan School District,21560887.52,Teacher
+73223.86321,73922.2,2018,290,Logan School District,21234920.33,Teacher
+74615.78037,79372.065,2019,324,Logan School District,24175512.84,Teacher
+82982.58591,85167.96,2020,303,Logan School District,25143723.53,Teacher
+94058.18445,95556.88,2021,281,Logan School District,26430349.83,Teacher
+97592.22853,97439.89,2022,286,Logan School District,27911377.36,Teacher
+105181.32031,103407.28,2023,289,Logan School District,30397401.57,Teacher
+113227.75127,112447.87,2024,283,Logan School District,32043453.61,Teacher
+116784.18215,115180.065,2025,302,Logan School District,35268823.01,Teacher
+122676.6615,124652.66,2016,20,Logan School District,2453533.23,Administrator
+172631.358,187836.3,2022,20,Logan School District,3452627.16,Administrator
+165830.58476,176786.87,2021,21,Logan School District,3482442.28,Administrator
+117677.54864,130347.21,2017,22,Logan School District,2588906.07,Administrator
+128206.24727,140053.86,2018,22,Logan School District,2820537.44,Administrator
+145222.97,162050.615,2020,22,Logan School District,3194905.34,Administrator
+198559.40091,201390.68,2023,22,Logan School District,4368306.82,Administrator
+216852.04773,218398.445,2024,22,Logan School District,4770745.05,Administrator
+92064.12125,112276.035,2014,24,Logan School District,2209538.91,Administrator
+90744.62308,117904.34,2015,26,Logan School District,2359360.2,Administrator
+54404.85971,22935.45,2024,34,Logan School District,1849765.23,Other Staff
+48159.89353,56603.85,2014,34,Logan School District,1637436.38,Student Support
+54291.91556,63775.61,2016,36,Logan School District,1954508.96,Student Support
+53402.90065,60572.3,2019,46,Logan School District,2456533.43,Student Support
+68340.28739,82034.64,2022,46,Logan School District,3143653.22,Student Support
+73705.20583,90140.165,2023,48,Logan School District,3537849.88,Student Support
+81054.77125,99894.505,2024,48,Logan School District,3890629.02,Student Support
+17768.554,4303.005,2015,50,Logan School District,888427.7,Other Staff
+29286.3028,11042.23,2020,50,Logan School District,1464315.14,Other Staff
+24761.67902,9688.5,2017,51,Logan School District,1262845.63,Other Staff
+40659.13137,49016.15,2017,51,Logan School District,2073615.7,Student Support
+12401.89096,1985.115,2014,52,Logan School District,644898.33,Other Staff

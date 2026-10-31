@@ -1,0 +1,61 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+128265.44276,135489.28,2016,214,Alpine School District,27448804.75,Administrator
+137353.86616,140276.15,2017,219,Alpine School District,30080496.69,Administrator
+143854.87068,146556.895,2018,236,Alpine School District,33949749.48,Administrator
+125666.26229,127871.695,2019,258,Alpine School District,32421895.67,Administrator
+159804.52195,161418.975,2020,272,Alpine School District,43466829.97,Administrator
+151904.59243,152849.785,2021,280,Alpine School District,42533285.88,Administrator
+165184.77798,169235.75,2022,287,Alpine School District,47408031.28,Administrator
+157230.92576,171876.4,2023,349,Alpine School District,54873593.09,Administrator
+171593.84164,186743.755,2024,354,Alpine School District,60744219.94,Administrator
+178342.66101,194271.445,2025,358,Alpine School District,63846672.64,Administrator
+12044.84067,7123.87,2016,3205,Alpine School District,38603714.36,Extracurricular
+12289.48612,7019.81,2017,3337,Alpine School District,41010015.17,Extracurricular
+12856.6131,7022.745,2018,3498,Alpine School District,44972432.61,Extracurricular
+12788.27019,7420.2,2019,3581,Alpine School District,45794795.55,Extracurricular
+14477.4351,8589.29,2020,3855,Alpine School District,55810512.3,Extracurricular
+14795.2986,9273.74,2021,3693,Alpine School District,54639037.74,Extracurricular
+14413.73905,6387.335,2022,4048,Alpine School District,58346815.66,Extracurricular
+15402.79169,9281.76,2023,4422,Alpine School District,68111144.87,Extracurricular
+17490.75312,11611.045,2024,4596,Alpine School District,80387501.35,Extracurricular
+17555.18754,11561.625,2025,4738,Alpine School District,83176478.56,Extracurricular
+24549.07108,10438.685,2016,1766,Alpine School District,43353659.53,Operations & Facilities
+24819.66155,10413.33,2017,1834,Alpine School District,45519259.28,Operations & Facilities
+26804.08219,11782.44,2018,1782,Alpine School District,47764874.46,Operations & Facilities
+25401.34015,12062.51,2019,1809,Alpine School District,45951024.34,Operations & Facilities
+29970.19626,13433.33,2020,1903,Alpine School District,57033283.48,Operations & Facilities
+29457.93306,13766.08,2021,1878,Alpine School District,55321998.28,Operations & Facilities
+30960.09859,10522.985,2022,2042,Alpine School District,63220521.33,Operations & Facilities
+33546.81094,13652.71,2023,1989,Alpine School District,66724606.95,Operations & Facilities
+35571.13606,12908.75,2024,2043,Alpine School District,72671830.98,Operations & Facilities
+38084.50059,14949.39,2025,1963,Alpine School District,74759874.65,Operations & Facilities
+21410.20659,3438.05,2016,132,Alpine School District,2826147.27,Other Staff
+16282.35087,2522.7,2017,172,Alpine School District,2800564.35,Other Staff
+5820.45286,3557.97,2018,1193,Alpine School District,6943800.26,Other Staff
+8739.62934,4674.66,2019,1323,Alpine School District,11562529.62,Other Staff
+8451.51074,4605.36,2020,1316,Alpine School District,11122188.13,Other Staff
+7154.55186,3761.12,2021,1290,Alpine School District,9229371.9,Other Staff
+6066.39225,4375.32,2022,1309,Alpine School District,7940907.46,Other Staff
+5155.16454,4461.72,2023,1220,Alpine School District,6289300.74,Other Staff
+6064.97909,4773.9,2024,1174,Alpine School District,7120285.45,Other Staff
+6429.31266,5231.04,2025,1141,Alpine School District,7335845.74,Other Staff
+30804.88309,5304.305,2016,466,Alpine School District,14355075.52,Student Support
+30983.29109,8382.54,2017,549,Alpine School District,17009826.81,Student Support
+39289.12145,13065.36,2018,490,Alpine School District,19251669.51,Student Support
+43215.94675,16639.59,2019,452,Alpine School District,19533607.93,Student Support
+49215.85599,18671.92,2020,491,Alpine School District,24164985.29,Student Support
+52836.6835,18076.38,2021,492,Alpine School District,25995648.28,Student Support
+65425.18477,35644.265,2022,482,Alpine School District,31534939.06,Student Support
+66199.18696,48798.315,2023,474,Alpine School District,31378414.62,Student Support
+72268.21346,56287.385,2024,486,Alpine School District,35122351.74,Student Support
+79960.98459,78487.065,2025,462,Alpine School District,36941974.88,Student Support
+76966.69225,79883.595,2016,3608,Alpine School District,277695825.64,Teacher
+77644.54088,81021.405,2017,3724,Alpine School District,289148270.22,Teacher
+83951.16115,86978.3,2018,3763,Alpine School District,315908219.42,Teacher
+81446.00737,84006.67,2019,3810,Alpine School District,310309288.08,Teacher
+85655.32689,89159.3,2020,4015,Alpine School District,343906137.47,Teacher
+88842.08603,92465.695,2021,4130,Alpine School District,366917815.31,Teacher
+103814.43221,108374.26,2022,4123,Alpine School District,428026903.99,Teacher
+90419.701,96229.01,2023,4563,Alpine School District,412585095.68,Teacher
+116251.43081,123099.72,2024,4309,Alpine School District,500927415.34,Teacher
+123084.33594,130156.23,2025,4313,Alpine School District,530862740.93,Teacher

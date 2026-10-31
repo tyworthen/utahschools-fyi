@@ -45,6 +45,7 @@
         <li><a href="#funds">The district’s funds</a></li>
         <li><a href="#budget">Budget vs. actual</a></li>
         <li><a href="#reserves">Reserves</a></li>
+        <li><a href="#pay">Teacher and administrator pay</a></li>
         <li><a href="#debt">Debt &amp; bonds</a></li>
       </ol></nav>
 
@@ -127,6 +128,16 @@
           <div data-source="usbe-afr" data-extra="Balance sheet codes 986x nonspendable, 987x restricted, 988x committed, 989x assigned, 9899 unassigned."></div>
         </section>
 
+        <section id="pay" class="mt-3" aria-labelledby="pay-h">
+          <span class="eyebrow" style="color:#B45309">Pay</span>
+          <h2 id="pay-h">Teacher and administrator pay</h2>
+          <p class="prose">Most school spending is salaries and benefits. These figures come from the compensation reports districts file with the State Auditor. Teacher pay covers classroom teachers matched to a course they taught; administrator figures cover every employee the Auditor classifies as an administrator. Both include salary and benefits.</p>
+          <div class="chart-box mt-2" id="tpay-chart"></div>
+          <div class="chart-box mt-2" id="acount-chart"></div>
+          <div class="chart-box mt-2" id="apay-chart"></div>
+          <div class="mt-2" data-qwa data-meta="Data: State Auditor Administrator &amp; Teacher Pay · USBE AFR">Tooele’s administrator headcount grew from 44 in FY2016 to 93 in FY2025, while Iron, Cache, and Box Elder each added 6 to 7. Tooele’s median administrator pay is at or below its peers’. What positions were added, and are they titled or classified differently than in peer districts?</div>
+        </section>
+
         <section id="debt" class="mt-3" aria-labelledby="debt-h">
           <span class="eyebrow" style="color:#B45309">Debt &amp; Bonds</span>
           <h2 id="debt-h">What does the district owe?</h2>
@@ -161,7 +172,7 @@
     U.lineChart(document.getElementById("rev-chart"), "revenue_total");
     var OE = TSF.onlineEnrollment.tooele, ey = TSF.years;
     U.drawLines(document.getElementById("enr-chart"), {
-      id: "enr", label: "Tooele enrollment: in-person and online", basis: "October 1 enrollment, K-12", unit: "count", years: ey, source: "usbe-enrollment",
+      id: "enr", label: "Tooele enrollment: in-person and online", basis: "October 1 enrollment, K-12", unit: "count", axis: "Students", years: ey, source: "usbe-enrollment",
       calc: "In-person = total October 1 enrollment − enrollment in the district’s online program (Blue Peak High through October 2020, then the Digital Education Center). The online breakdown starts with October 2018 (FY2019).",
       notes: "School-level counts are only available from FY2019, so the in-person and online lines start there.",
       series: [
@@ -171,6 +182,9 @@
       ]
     });
     U.lineChart(document.getElementById("sps-chart"), "spend_per_student");
+    U.lineChart(document.getElementById("tpay-chart"), "teacher_comp_median");
+    U.lineChart(document.getElementById("acount-chart"), "admin_count");
+    U.lineChart(document.getElementById("apay-chart"), "admin_comp_median");
     U.lineChart(document.getElementById("rps-chart"), "revenue_per_student");
     U.lineChart(document.getElementById("exp-chart"), "expenditures_total");
 

@@ -224,7 +224,7 @@
     opts = opts || {};
     var m = D.metrics[metricId];
     drawLines(el, {
-      id: metricId, label: m.label, basis: m.basis, unit: m.unit, calc: m.calc, notes: m.notes, source: m.source, years: D.years,
+      id: metricId, label: m.label, basis: m.basis, unit: m.unit, axis: m.axis, calc: m.calc, notes: m.notes, source: m.source, years: D.years,
       emptyMsg: "When figures are added for Tooele, Iron, Cache, and Box Elder, they will be drawn here on a shared scale that starts at zero. Calculation: " + esc(m.calc),
       series: Object.keys(D.districts).map(function (k) {
         var d = D.districts[k];
@@ -285,7 +285,7 @@
       svg += '<text x="' + x(i) + '" y="' + (H - B + 20) + '" text-anchor="middle" font-size="12" fill="#64748B">' + (years.length <= 12 || i % 2 === 0 ? "FY" + String(yr).slice(2) : "") + "</text>";
     });
     svg += '<text x="' + ((L + W - R) / 2) + '" y="' + (H - 6) + '" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">Fiscal year</text>';
-    svg += '<text transform="translate(14 ' + ((T + H - B) / 2) + ') rotate(-90)" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">' + esc(unitLabel(unit)) + "</text>";
+    svg += '<text transform="translate(14 ' + ((T + H - B) / 2) + ') rotate(-90)" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">' + esc(cfg.axis || unitLabel(unit)) + "</text>";
     var labels = [];
     series.forEach(function (s) {
       var d = "", pen = false, last = null;
@@ -366,7 +366,7 @@
     if (unit === "percent") return v + "%";
     return v >= 1000 ? (v / 1000) + "k" : String(v);
   }
-  function unitLabel(u) { return { dollars: "Dollars", money: "Dollars", percent: "Percent", ratio: "Students per teacher", count: "Students" }[u] || ""; }
+  function unitLabel(u) { return { dollars: "Dollars", money: "Dollars", percent: "Percent", ratio: "Ratio", count: "Count" }[u] || ""; }
 
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {

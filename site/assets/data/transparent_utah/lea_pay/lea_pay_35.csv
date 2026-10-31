@@ -1,0 +1,55 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+97415.79804,107007.81,2017,97,Weber School District,9449332.41,Administrator
+141248.20277,149911.715,2018,94,Weber School District,13277331.06,Administrator
+145179.68364,155249.94,2019,99,Weber School District,14372788.68,Administrator
+154971.19861,163488.26,2020,101,Weber School District,15652091.06,Administrator
+159976.8592,173010.115,2021,100,Weber School District,15997685.92,Administrator
+161747.25742,167127.91,2022,93,Weber School District,15042494.94,Administrator
+187221.01808,190626.94,2023,99,Weber School District,18534880.79,Administrator
+198723.69913,200672.61,2024,103,Weber School District,20468541.01,Administrator
+208591.35123,207180.26,2025,114,Weber School District,23779414.04,Administrator
+17762.50524,14310.95,2017,1011,Weber School District,17957892.8,Extracurricular
+19771.18232,15533.38,2018,1103,Weber School District,21807614.1,Extracurricular
+20690.95476,16330.025,2019,1140,Weber School District,23587688.43,Extracurricular
+20436.41099,16451.58,2020,1247,Weber School District,25484204.5,Extracurricular
+22151.42522,18040.3,2021,1248,Weber School District,27644978.68,Extracurricular
+22151.18241,18235.15,2022,1302,Weber School District,28840839.5,Extracurricular
+24499.8953,19959.225,2023,1284,Weber School District,31457865.57,Extracurricular
+25628.10705,20539.67,2024,1344,Weber School District,34444175.87,Extracurricular
+26467.91927,21599.8,2025,1402,Weber School District,37108022.82,Extracurricular
+15631.29982,4492.575,2017,1410,Weber School District,22040132.75,Operations & Facilities
+18308.16128,5597.45,2018,1557,Weber School District,28505807.11,Operations & Facilities
+19263.11809,5562.23,2019,1580,Weber School District,30435726.58,Operations & Facilities
+21508.71578,6576.435,2020,1496,Weber School District,32177038.8,Operations & Facilities
+23061.12688,7476.73,2021,1479,Weber School District,34107406.65,Operations & Facilities
+21958.58572,6480.02,2022,1553,Weber School District,34101683.63,Operations & Facilities
+25104.86412,7236.565,2023,1528,Weber School District,38360232.37,Operations & Facilities
+26307.43584,7143.9,2024,1573,Weber School District,41381596.57,Operations & Facilities
+25762.72792,6354.45,2025,1742,Weber School District,44878672.03,Operations & Facilities
+25268.83129,358.035,2019,70,Weber School District,1768818.19,Other Staff
+17890.09469,837.77,2020,64,Weber School District,1144966.06,Other Staff
+17728.94,171.37,2021,71,Weber School District,1258754.74,Other Staff
+13961.12265,10.36,2022,151,Weber School District,2108129.52,Other Staff
+25176.24452,1048.7,2023,62,Weber School District,1560927.16,Other Staff
+74521.34391,76918.53,2017,69,Weber School District,5141972.73,Student Support
+82663.5226,88572.35,2018,73,Weber School District,6034437.15,Student Support
+83882.18372,90189.14,2019,78,Weber School District,6542810.33,Student Support
+90481.71179,96895.445,2020,84,Weber School District,7600463.79,Student Support
+93637.91469,100833.845,2021,98,Weber School District,9176515.64,Student Support
+102248.74782,107690.83,2022,101,Weber School District,10327123.53,Student Support
+109592.53243,115942.32,2023,111,Weber School District,12164771.1,Student Support
+110426.32064,122461.4,2024,125,Weber School District,13803290.08,Student Support
+121586.43792,130472.035,2025,130,Weber School District,15806236.93,Student Support
+45464.65624,53961.565,2017,2436,Weber School District,110751902.6,Teacher
+50231.38419,58876.98,2018,2549,Weber School District,128039798.3,Teacher
+53207.57643,61320.67,2019,2577,Weber School District,137115924.46,Teacher
+56496.7397,65035.4,2020,2543,Weber School District,143671209.06,Teacher
+60960.37768,71996.4,2021,2559,Weber School District,155997606.49,Teacher
+61649.91838,71509.43,2022,2692,Weber School District,165961580.28,Teacher
+65865.94524,76708.86,2023,2742,Weber School District,180604421.86,Teacher
+72157.30332,85943.51,2024,2723,Weber School District,196484336.94,Teacher
+79664.14346,96593.13,2025,2563,Weber School District,204179199.69,Teacher
+58864.29632,53604.99,2017,19,Weber School District,1118421.63,Other Staff
+87289.44818,92967.405,2025,22,Weber School District,1920367.86,Other Staff
+69210.12875,87329.265,2024,24,Weber School District,1661043.09,Other Staff
+44639.51862,48863.07,2018,29,Weber School District,1294546.04,Other Staff

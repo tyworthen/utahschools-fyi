@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+89845.35811,111894.14,2015,37,Iron School District,3324278.25,Administrator
+89667.09436,113960.44,2016,39,Iron School District,3497016.68,Administrator
+100886.77371,119544.27,2017,35,Iron School District,3531037.08,Administrator
+108922.55784,135634.51,2019,37,Iron School District,4030134.64,Administrator
+139827.55027,150991.8,2022,37,Iron School District,5173619.36,Administrator
+146985.7139,165066.57,2023,41,Iron School District,6026414.27,Administrator
+170685.1707,180716.55,2024,43,Iron School District,7339462.34,Administrator
+10796.51989,8277.1,2014,563,Iron School District,6078440.7,Extracurricular
+11126.13257,8805.33,2015,534,Iron School District,5941354.79,Extracurricular
+11555.39421,9059.34,2016,537,Iron School District,6205246.69,Extracurricular
+10259.40212,8303.435,2017,652,Iron School District,6689130.18,Extracurricular
+11483.40574,9233.21,2018,641,Iron School District,7360863.08,Extracurricular
+11369.25115,9332.62,2019,696,Iron School District,7912998.8,Extracurricular
+12237.13217,9975.94,2020,705,Iron School District,8627178.18,Extracurricular
+12594.57108,10380.25,2021,730,Iron School District,9194036.89,Extracurricular
+12642.02372,10221.595,2022,790,Iron School District,9987198.74,Extracurricular
+13901.99762,10995.75,2023,835,Iron School District,11608168.01,Extracurricular
+16037.45671,13425.21,2024,829,Iron School District,13295051.61,Extracurricular
+16516.28553,14561.96,2025,885,Iron School District,14616912.69,Extracurricular
+24829.03812,16695.89,2014,256,Iron School District,6356233.76,Operations & Facilities
+24567.36223,14971.53,2015,269,Iron School District,6608620.44,Operations & Facilities
+25535.63232,15576.2,2016,271,Iron School District,6920156.36,Operations & Facilities
+27419.26685,16252.86,2017,298,Iron School District,8170941.52,Operations & Facilities
+28561.36659,16621.85,2018,299,Iron School District,8539848.61,Operations & Facilities
+30416.76332,17081.255,2019,292,Iron School District,8881694.89,Operations & Facilities
+32733.23192,19099.36,2020,287,Iron School District,9394437.56,Operations & Facilities
+32811.52671,18617.41,2021,295,Iron School District,9679400.38,Operations & Facilities
+35276.27244,19679.92,2022,295,Iron School District,10406500.37,Operations & Facilities
+38386.79478,22054.25,2023,295,Iron School District,11324104.46,Operations & Facilities
+41241.90538,22212.415,2024,316,Iron School District,13032442.1,Operations & Facilities
+43019.34859,21653.15,2025,333,Iron School District,14325443.08,Operations & Facilities
+32438.27622,21501.32,2014,37,Iron School District,1200216.22,Other Staff
+40553.80629,26552.18,2015,35,Iron School District,1419383.22,Other Staff
+37764.73446,28552.215,2019,56,Iron School District,2114825.13,Other Staff
+41511.42259,24510.865,2021,58,Iron School District,2407662.51,Other Staff
+44391.77655,27564.79,2022,55,Iron School District,2441547.71,Other Staff
+61920.13682,33127.485,2024,44,Iron School District,2724486.02,Other Staff
+64691.60217,75910.93,2014,23,Iron School District,1487906.85,Student Support
+62582.51943,70748.48,2019,35,Iron School District,2190388.18,Student Support
+71147.21462,88767.68,2021,39,Iron School District,2774741.37,Student Support
+94269.31702,107563.36,2024,47,Iron School District,4430657.9,Student Support
+100945.23469,109406.47,2025,49,Iron School District,4946316.5,Student Support
+50525.41869,63427.57,2014,610,Iron School District,30820505.4,Teacher
+55498.22629,67723.02,2015,579,Iron School District,32133473.02,Teacher
+56277.70556,67594.61,2016,597,Iron School District,33597790.22,Teacher
+69005.01727,76662.275,2017,506,Iron School District,34916538.74,Teacher
+71934.54431,78981.07,2018,503,Iron School District,36183075.79,Teacher
+76301.33643,82911.99,2019,498,Iron School District,37998065.54,Teacher
+85456.03288,90951.99,2020,497,Iron School District,42471648.34,Teacher
+88983.64926,94126.5,2021,503,Iron School District,44758775.58,Teacher
+93128.59959,96951.6,2022,517,Iron School District,48147485.99,Teacher
+100443.06611,104433.04,2023,535,Iron School District,53737040.37,Teacher
+109144.76868,111558.545,2024,554,Iron School District,60466201.85,Teacher
+113666.03449,116485.125,2025,564,Iron School District,64107643.45,Teacher
+68487.274,79164.35,2017,25,Iron School District,1712181.85,Student Support
+63043.65154,77159.81,2016,26,Iron School District,1639134.94,Student Support
+57478.38963,73763.11,2015,27,Iron School District,1551916.52,Student Support
+69589.13519,86223.25,2018,27,Iron School District,1878906.65,Student Support
+75539.25059,89373.925,2020,34,Iron School District,2568334.52,Student Support
+118209.46639,141889.28,2020,36,Iron School District,4255540.79,Administrator
+25250.7525,28367.94,2017,36,Iron School District,909027.09,Other Staff
+84755.60278,98971.225,2022,36,Iron School District,3051201.7,Student Support
+85936.83342,105670.11,2014,38,Iron School District,3265599.67,Administrator
+129783.72684,146127.355,2021,38,Iron School District,4931781.62,Administrator
+96270.5545,125532.77,2018,40,Iron School District,3850822.18,Administrator
+35562.22595,26997.04,2016,42,Iron School District,1493613.49,Other Staff
+89774.90952,101110.37,2023,42,Iron School District,3770546.2,Student Support
+179304.37565,187692,2025,46,Iron School District,8248001.28,Administrator
+53956.90087,33007.675,2023,46,Iron School District,2482017.44,Other Staff
+58385.10157,31438.26,2025,51,Iron School District,2977640.18,Other Staff
+35835.03731,28282.46,2018,52,Iron School District,1863421.94,Other Staff
+43509.91135,28160.715,2020,52,Iron School District,2262515.39,Other Staff

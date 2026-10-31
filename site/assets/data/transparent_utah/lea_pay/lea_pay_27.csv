@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+86655.47826,104638.82,2015,23,South Sanpete School District,1993076,Administrator
+13722.93983,9298.575,2014,236,South Sanpete School District,3238613.8,Extracurricular
+13711.42376,9760.5,2015,229,South Sanpete School District,3139916.04,Extracurricular
+12608.60802,8713.69,2016,263,South Sanpete School District,3316063.91,Extracurricular
+12874.73551,8953.69,2017,265,South Sanpete School District,3411804.91,Extracurricular
+12443.21437,8801.07,2018,295,South Sanpete School District,3670748.24,Extracurricular
+12917.32623,9641.48,2019,308,South Sanpete School District,3978536.48,Extracurricular
+14933.85038,10662.035,2020,312,South Sanpete School District,4659361.32,Extracurricular
+15377.59893,11875.875,2021,290,South Sanpete School District,4459503.69,Extracurricular
+15251.69326,11202.19,2022,273,South Sanpete School District,4163712.26,Extracurricular
+16810.98495,13502.74,2023,293,South Sanpete School District,4925618.59,Extracurricular
+18804.15323,14421.81,2024,294,South Sanpete School District,5528421.05,Extracurricular
+20187.03686,15968.77,2025,283,South Sanpete School District,5712931.43,Extracurricular
+17745.30908,8589.45,2014,119,South Sanpete School District,2111691.78,Operations & Facilities
+16361.21122,6302.6,2015,123,South Sanpete School District,2012428.98,Operations & Facilities
+15496.33317,5960.875,2016,126,South Sanpete School District,1952537.98,Operations & Facilities
+17631.91955,7252.76,2017,111,South Sanpete School District,1957143.07,Operations & Facilities
+16101.49992,6255.345,2018,124,South Sanpete School District,1996585.99,Operations & Facilities
+16678.8891,6834.06,2019,133,South Sanpete School District,2218292.25,Operations & Facilities
+18562.78102,7922.375,2020,128,South Sanpete School District,2376035.97,Operations & Facilities
+18939.95441,6364.76,2021,127,South Sanpete School District,2405374.21,Operations & Facilities
+17576.2355,5092.45,2022,131,South Sanpete School District,2302486.85,Operations & Facilities
+18443.14932,5776.92,2023,132,South Sanpete School District,2434495.71,Operations & Facilities
+21815.41611,6599.32,2024,126,South Sanpete School District,2748742.43,Operations & Facilities
+20669.69831,5020.53,2025,136,South Sanpete School District,2811078.97,Operations & Facilities
+48177.75059,61496.62,2014,287,South Sanpete School District,13827014.42,Teacher
+47183.01764,60938.09,2015,301,South Sanpete School District,14202088.31,Teacher
+51884.63605,64915.68,2016,281,South Sanpete School District,14579582.73,Teacher
+52107.80293,66721.21,2017,300,South Sanpete School District,15632340.88,Teacher
+54035.08374,67690.45,2018,302,South Sanpete School District,16318595.29,Teacher
+53361.12252,62100.67,2019,317,South Sanpete School District,16915475.84,Teacher
+57406.05495,67297.34,2020,307,South Sanpete School District,17623658.87,Teacher
+59425.45805,71282.555,2021,302,South Sanpete School District,17946488.33,Teacher
+57788.49873,69542.93,2022,314,South Sanpete School District,18145588.6,Teacher
+58852.59327,73278.355,2023,336,South Sanpete School District,19774471.34,Teacher
+63543.34881,79834.225,2024,336,South Sanpete School District,21350565.2,Teacher
+67946.61049,82474.45,2025,328,South Sanpete School District,22286488.24,Teacher
+19283.17,26511.01,2021,5,South Sanpete School District,96415.85,Other Staff
+66556.014,74784.47,2025,5,South Sanpete School District,332780.07,Other Staff
+63942.436,59414.37,2014,5,South Sanpete School District,319712.18,Student Support
+16424.08,10271.225,2015,6,South Sanpete School District,98544.48,Other Staff
+17103.785,11571.81,2017,6,South Sanpete School District,102622.71,Other Staff
+26465.87667,21901.955,2020,6,South Sanpete School District,158795.26,Other Staff
+21950.60714,11792.57,2018,7,South Sanpete School District,153654.25,Other Staff
+42576.94286,29062.7,2024,7,South Sanpete School District,298038.6,Other Staff
+60860,56953.68,2015,7,South Sanpete School District,426020,Student Support
+53087.295,47909.78,2016,8,South Sanpete School District,424698.36,Student Support
+54630.63,51159.795,2017,8,South Sanpete School District,437045.04,Student Support
+57198.77625,55313.54,2018,8,South Sanpete School District,457590.21,Student Support
+61239.92375,56611.15,2019,8,South Sanpete School District,489919.39,Student Support
+61823.55875,68540.725,2020,8,South Sanpete School District,494588.47,Student Support
+59308.42875,67176.245,2021,8,South Sanpete School District,474467.43,Student Support
+13678.06333,10969.63,2014,9,South Sanpete School District,123102.57,Other Staff
+62336.15222,65862.46,2023,9,South Sanpete School District,561025.37,Other Staff
+65653.19,70543.39,2022,9,South Sanpete School District,590878.71,Student Support
+13391.524,10118.765,2016,10,South Sanpete School District,133915.24,Other Staff
+59065.86091,60865.68,2023,11,South Sanpete School District,649724.47,Student Support
+35112.66083,27553.515,2022,12,South Sanpete School District,421351.93,Other Staff
+85619.15833,91033.54,2024,12,South Sanpete School District,1027429.9,Student Support
+77096.56,95955.285,2025,12,South Sanpete School District,925158.72,Student Support
+26151.43846,26196.61,2019,13,South Sanpete School District,339968.7,Other Staff
+106541.56158,114697.32,2016,19,South Sanpete School District,2024289.67,Administrator
+85263.67,101182.05,2014,21,South Sanpete School District,1790537.07,Administrator
+114095.10952,132153.99,2019,21,South Sanpete School District,2395997.3,Administrator
+98469.16045,118339.215,2017,22,South Sanpete School District,2166321.53,Administrator
+106193.05136,124831.5,2018,22,South Sanpete School District,2336247.13,Administrator
+127108.07292,140957.595,2020,24,South Sanpete School District,3050593.75,Administrator
+115797.29875,135608.635,2022,24,South Sanpete School District,2779135.17,Administrator
+112452.6404,134392.45,2021,25,South Sanpete School District,2811316.01,Administrator
+124687.8772,149516.93,2023,25,South Sanpete School District,3117196.93,Administrator
+132125.2944,158404.92,2024,25,South Sanpete School District,3303132.36,Administrator
+131696.18346,163397.365,2025,26,South Sanpete School District,3424100.77,Administrator

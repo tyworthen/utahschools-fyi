@@ -451,6 +451,53 @@ metric("spend_per_student_real_change", "Spending per student, inflation-adjuste
                               for y in sp if y in cpi_factor and 2016 in sp})(per_student(current_exp, d)),
        ENR_NOTE + " " + CPI_OUT["note"])
 
+# ---------- Pay (Transparent Utah, Office of the State Auditor; raw, unaudited) ----------
+TU = os.path.join(ASSETS, "data", "transparent_utah")
+tpay = defaultdict(dict)                                 # tpay[lea][year] = summary row
+for r in csv.DictReader(open(os.path.join(TU, "teacher_pay_summary", "teacher_pay_by_district.csv"))):
+    tpay[r["lea_number"]][int(r["fiscal_year"])] = r
+lpay = defaultdict(dict)                                 # lpay[lea][(year, category)] = row
+for d in names:
+    f = os.path.join(TU, "lea_pay", f"lea_pay_{d}.csv")
+    if os.path.exists(f):
+        for r in csv.DictReader(open(f, encoding="utf-8-sig")):
+            lpay[d][(int(r["fiscal_year"]), r["job_category"])] = r
+TP_NOTE = ("Classroom teachers the State Auditor matched to at least one course in USBE's CACTUS licensing database. "
+           "The share of teachers matched differs by district and has risen over time, so these figures describe matched "
+           "classroom teachers rather than every teacher, and teacher counts are not complete headcounts. Total compensation "
+           "is salary plus benefits. Statistics for fewer than 10 teachers are not shown. Raw, unaudited State Auditor data.")
+LP_NOTE = ("Job categories are assigned by the State Auditor from job titles and account codes in each district's "
+           "compensation report; 'Administrator' covers district and school administrators, full- and part-time. "
+           "Districts title positions differently, so headcounts are not perfectly comparable. Raw, unaudited State Auditor data.")
+def tp(field):
+    return lambda d: {y: round(float(r[field])) for y, r in tpay[d].items() if r[field] not in ("", None)}
+def lp(cat, field, cast=float):
+    return lambda d: {y: cast(float(r[field])) for (y, c), r in lpay[d].items() if c == cat and r[field] not in ("", None)}
+
+metric("teacher_comp_median", "Teacher pay (median total compensation)", "dollars", "Median salary + benefits of classroom teachers, nominal dollars",
+       "Median total compensation of classroom teachers in the State Auditor's Teacher Pay data for the district and year.",
+       tp("total_compensation_median"), TP_NOTE, source="transparent-teacher-pay")
+metric("teacher_wages_median", "Teacher wages (median)", "dollars", "Median total wages of classroom teachers, nominal dollars",
+       "Median total wages (all pay, excluding benefits) of classroom teachers in the State Auditor's Teacher Pay data.",
+       tp("total_wages_median"), TP_NOTE, source="transparent-teacher-pay", hidden=True)
+metric("teachers_in_pay_data", "Classroom teachers in Teacher Pay data", "count", "Teachers matched to a course (not a full headcount)",
+       "Number of classroom teachers in the State Auditor's Teacher Pay data.",
+       lambda d: {y: int(r["teachers"]) for y, r in tpay[d].items()}, TP_NOTE, source="transparent-teacher-pay", hidden=True)
+metric("admin_count", "Administrators", "count", "Employees in the Administrator job category",
+       "Number of employees the State Auditor classifies as administrators.", lp("Administrator", "num_employees", lambda v: int(v)),
+       LP_NOTE, source="transparent-lea-pay")
+metric("admin_comp_median", "Administrator pay (median total compensation)", "dollars", "Median salary + benefits of administrators, nominal dollars",
+       "Median total compensation of employees in the Administrator job category.", lp("Administrator", "cat_median", lambda v: round(v)),
+       LP_NOTE, source="transparent-lea-pay")
+metric("admin_comp_total", "Administrator compensation, total", "money", "Total salary + benefits of administrators, nominal dollars",
+       "Sum of total compensation for employees in the Administrator job category.", lp("Administrator", "total_amount", lambda v: round(v)),
+       LP_NOTE, source="transparent-lea-pay", hidden=True)
+metric("admins_per_1000", "Administrators per 1,000 students", "ratio", "Administrators ÷ October 1 enrollment × 1,000",
+       "Administrator headcount ÷ October 1 enrollment × 1,000.",
+       lambda d: {y: round(1000 * int(float(r["num_employees"])) / enroll[d][y], 2)
+                  for (y, c), r in lpay[d].items() if c == "Administrator" and enroll[d].get(y)},
+       LP_NOTE + " " + ENR_NOTE, source="transparent-lea-pay")
+
 for k in ADMIN_SUBS.values():
     metric("spend_" + k, ADMIN_SUB_LABELS[k].split(" (")[0] + " spending", "money", "Nominal dollars, governmental funds",
            {"admin_district": "Functions 2300–2399: board of education, elections, superintendent's office.",
@@ -463,6 +510,11 @@ def admin_detail(d):
            for c, f in sorted(admin_fn[d].items()) if any(abs(v) >= 500 for v in f["values"].values())}
     objs = {y: {k: round(v) for k, v in sorted(admin_obj[d][y].items()) if k in OBJECTS} for y in YEARS if y in admin_obj[d]}
     return {"functions": fns, "objects": objs}
+
+AXIS = {"enrollment": "Students", "admin_count": "Administrators", "teachers_in_pay_data": "Teachers",
+        "admins_per_1000": "Per 1,000 students"}
+for k, ax in AXIS.items():
+    metrics[k]["axis"] = ax
 
 def bva_for(d):
     return {y: {"original": round(v["Original Budget"]) if v.get("Original Budget") is not None else None,
@@ -482,7 +534,7 @@ peer_metrics = {}
 for k, m in metrics.items():
     pm = dict(m); pm["values"] = rekey(m["values"])
     if k == "admin_share": pm["notes"] = TOOELE_ADMIN + m["notes"]
-    if k == "enrollment" or "_per_student" in k or k == "enrollment_growth": pm["notes"] = TOOELE_ONLINE + m["notes"]
+    if k in ("enrollment", "enrollment_growth", "admins_per_1000") or "_per_student" in k: pm["notes"] = TOOELE_ONLINE + m["notes"]
     peer_metrics[k] = pm
 peer_out = {
     "metrics": peer_metrics,

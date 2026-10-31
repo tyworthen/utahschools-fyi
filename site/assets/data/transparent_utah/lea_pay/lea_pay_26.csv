@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+129814.8787,129045.08,2019,23,Sevier School District,2985742.21,Administrator
+18681.66892,14198.475,2014,176,Sevier School District,3287973.73,Extracurricular
+18781.11372,12178.17,2015,180,Sevier School District,3380600.47,Extracurricular
+21684.55236,12478.545,2016,182,Sevier School District,3946588.53,Extracurricular
+19777.68239,12294.295,2017,188,Sevier School District,3718204.29,Extracurricular
+19319.2232,12581,2018,194,Sevier School District,3747929.3,Extracurricular
+20038.70856,13182.43,2019,195,Sevier School District,3907548.17,Extracurricular
+18308.64656,12708.8,2020,212,Sevier School District,3881433.07,Extracurricular
+18521.36092,14198.485,2021,218,Sevier School District,4037656.68,Extracurricular
+19051.61357,13863.21,2022,221,Sevier School District,4210406.6,Extracurricular
+18928.15778,14270.13,2023,239,Sevier School District,4523829.71,Extracurricular
+20766.74633,16426.38,2024,240,Sevier School District,4984019.12,Extracurricular
+21668.50034,16846.81,2025,236,Sevier School District,5113766.08,Extracurricular
+22370.85783,16922.11,2014,157,Sevier School District,3512224.68,Operations & Facilities
+22328.83434,16916.035,2015,166,Sevier School District,3706586.5,Operations & Facilities
+23214.2116,16802.47,2016,163,Sevier School District,3783916.49,Operations & Facilities
+21975.55256,15122.495,2017,168,Sevier School District,3691892.83,Operations & Facilities
+23604.25229,16547.91,2018,166,Sevier School District,3918305.88,Operations & Facilities
+23455.39632,14477.9,2019,171,Sevier School District,4010872.77,Operations & Facilities
+25063.74509,15364.61,2020,159,Sevier School District,3985135.47,Operations & Facilities
+25917.72392,16835.6,2021,158,Sevier School District,4095000.38,Operations & Facilities
+27588.08451,17674.25,2022,153,Sevier School District,4220976.93,Operations & Facilities
+28989.02168,17725.26,2023,155,Sevier School District,4493298.36,Operations & Facilities
+31208.68274,18432.91,2024,157,Sevier School District,4899763.19,Operations & Facilities
+37893.73369,21412.515,2025,168,Sevier School District,6366147.26,Operations & Facilities
+10042.74622,2774.61,2014,90,Sevier School District,903847.16,Student Support
+9501.0928,2719.12,2015,100,Sevier School District,950109.28,Student Support
+8797.03868,2389.25,2016,106,Sevier School District,932486.1,Student Support
+10102.81587,2623.06,2017,109,Sevier School District,1101206.93,Student Support
+11589.31226,3545.34,2018,106,Sevier School District,1228467.1,Student Support
+12664.70294,3082.9,2019,109,Sevier School District,1380452.62,Student Support
+16988.57805,3260.17,2020,113,Sevier School District,1919709.32,Student Support
+16716.85092,3082.9,2021,131,Sevier School District,2189907.47,Student Support
+14728.83093,3259.53,2022,140,Sevier School District,2062036.33,Student Support
+17213.51659,1216.46,2023,135,Sevier School District,2323824.74,Student Support
+17236.05888,1194.715,2024,152,Sevier School District,2619880.95,Student Support
+49610.98405,63152.36,2014,338,Sevier School District,16768512.61,Teacher
+50364.48769,63130.995,2015,338,Sevier School District,17023196.84,Teacher
+42421.39305,52157.075,2016,354,Sevier School District,15017173.14,Teacher
+51714.49956,64534.06,2017,342,Sevier School District,17686358.85,Teacher
+54157.37226,67231.36,2018,340,Sevier School District,18413506.57,Teacher
+54502.02195,67388.31,2019,359,Sevier School District,19566225.88,Teacher
+60852.99687,71109.945,2020,332,Sevier School District,20203194.96,Teacher
+63224.74309,74006.25,2021,333,Sevier School District,21053839.45,Teacher
+56982.83706,67616.34,2022,340,Sevier School District,19374164.6,Teacher
+76186.91289,92566.5,2023,329,Sevier School District,25065494.34,Teacher
+74318.73438,92357.49,2024,363,Sevier School District,26977700.58,Teacher
+57814.09881,15506.3,2025,489,Sevier School District,28271094.32,Teacher
+59221.24444,69276.15,2014,9,Sevier School District,532991.2,Other Staff
+107784.87889,117740.85,2023,9,Sevier School District,970063.91,Other Staff
+116947.16333,130466.65,2024,9,Sevier School District,1052524.47,Other Staff
+61644.841,73188.74,2015,10,Sevier School District,616448.41,Other Staff
+87973.08,98804.845,2020,10,Sevier School District,879730.8,Other Staff
+84675.862,92159.37,2021,10,Sevier School District,846758.62,Other Staff
+78358.302,89262.18,2022,10,Sevier School District,783583.02,Other Staff
+83386.234,96460.07,2025,10,Sevier School District,833862.34,Other Staff
+80973.66727,87541.59,2019,11,Sevier School District,890710.34,Other Staff
+73436.74917,82458.27,2016,12,Sevier School District,881240.99,Other Staff
+68175.9175,77362.285,2017,12,Sevier School District,818111.01,Other Staff
+69381.22923,82616.37,2018,13,Sevier School District,901955.98,Other Staff
+110108.28933,117255.05,2025,15,Sevier School District,1651624.34,Student Support
+116521.99444,114403.04,2016,18,Sevier School District,2097395.9,Administrator
+126415.02158,121709.28,2017,19,Sevier School District,2401885.41,Administrator
+111242.5045,111515.2,2015,20,Sevier School District,2224850.09,Administrator
+129577.2655,126530.55,2018,20,Sevier School District,2591545.31,Administrator
+106791.62524,105877.67,2014,21,Sevier School District,2242624.13,Administrator
+132029.08083,131802.325,2020,24,Sevier School District,3168697.94,Administrator
+138332.54583,135752.46,2021,24,Sevier School District,3319981.1,Administrator
+136786.7284,133124.86,2022,25,Sevier School District,3419668.21,Administrator
+149417.716,150121.54,2023,25,Sevier School District,3735442.9,Administrator
+164145.8128,166042.3,2024,25,Sevier School District,4103645.32,Administrator
+171088.8252,172897.22,2025,25,Sevier School District,4277220.63,Administrator

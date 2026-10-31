@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+18483.78289,14078.75,2014,90,Grand School District,1663540.46,Extracurricular
+18746.84435,15083.335,2015,92,Grand School District,1724709.68,Extracurricular
+20327.02231,17974.89,2016,91,Grand School District,1849759.03,Extracurricular
+19656.0443,16672.38,2017,93,Grand School District,1828012.12,Extracurricular
+20932.95261,19898.125,2018,88,Grand School District,1842099.83,Extracurricular
+23150.86009,15202.725,2019,106,Grand School District,2453991.17,Extracurricular
+26559.73532,27569.03,2020,94,Grand School District,2496615.12,Extracurricular
+24649.89794,17765.905,2021,102,Grand School District,2514289.59,Extracurricular
+26680.87758,18316.58,2022,95,Grand School District,2534683.37,Extracurricular
+24946.62771,11545.04,2023,105,Grand School District,2619395.91,Extracurricular
+31460.30509,22485.505,2024,106,Grand School District,3334792.34,Extracurricular
+29212.96397,11294.99,2025,141,Grand School District,4119027.92,Extracurricular
+19698.3765,10056.91,2014,80,Grand School District,1575870.12,Operations & Facilities
+20171.01362,7552.255,2015,80,Grand School District,1613681.09,Operations & Facilities
+26365.4897,27485.74,2017,67,Grand School District,1766487.81,Operations & Facilities
+31613.22358,30024.25,2018,67,Grand School District,2118085.98,Operations & Facilities
+30150.43362,19585.9,2019,80,Grand School District,2412034.69,Operations & Facilities
+35015.24309,30267.255,2020,68,Grand School District,2381036.53,Operations & Facilities
+42032.7605,45638.275,2021,60,Grand School District,2521965.63,Operations & Facilities
+40213.87183,37607.115,2022,60,Grand School District,2412832.31,Operations & Facilities
+46967.19552,47489.16,2023,58,Grand School District,2724097.34,Operations & Facilities
+54523.45875,54839.345,2024,56,Grand School District,3053313.69,Operations & Facilities
+14262.76538,7379.4,2015,39,Grand School District,556247.85,Other Staff
+17112.05513,9563.4,2016,39,Grand School District,667370.15,Other Staff
+19768.12231,11688.72,2017,39,Grand School District,770956.77,Other Staff
+43754.55957,55422.82,2014,141,Grand School District,6169392.9,Teacher
+39394.18677,45905.7,2015,161,Grand School District,6342464.07,Teacher
+48016.82178,58253.75,2016,135,Grand School District,6482270.94,Teacher
+49996.07,61665.87,2017,137,Grand School District,6849461.59,Teacher
+47503.60546,56953.3,2018,130,Grand School District,6175468.71,Teacher
+54309.76054,67868.93,2019,147,Grand School District,7983534.8,Teacher
+52120.39277,68578.05,2020,155,Grand School District,8078660.88,Teacher
+67176.36424,77902.13,2021,125,Grand School District,8397045.53,Teacher
+67122.1596,79207.565,2022,126,Grand School District,8457392.11,Teacher
+82186.7766,88330.895,2023,106,Grand School District,8711798.32,Teacher
+78472.94697,92419.08,2024,122,Grand School District,9573699.53,Teacher
+85300.81756,100413.75,2025,123,Grand School District,10492000.56,Teacher
+76227.21,76227.21,2025,2,Grand School District,152454.42,Other Staff
+81810.49667,83697.07,2017,3,Grand School District,245431.49,Student Support
+36238.614,20068.8,2015,5,Grand School District,181193.07,Student Support
+33216.915,30100.435,2016,6,Grand School District,199301.49,Student Support
+92138.33667,90404.465,2020,6,Grand School District,552830.02,Student Support
+21540.2825,6116.565,2014,8,Grand School District,172322.26,Student Support
+118343.47875,124084.32,2025,8,Grand School District,946747.83,Student Support
+27912.40778,25014.19,2019,9,Grand School District,251211.67,Other Staff
+101935.59778,102750.72,2021,9,Grand School District,917420.38,Student Support
+88592.68889,114031.34,2024,9,Grand School District,797334.2,Student Support
+86945.488,107221.025,2022,10,Grand School District,869454.88,Student Support
+100292.82818,111502.46,2014,11,Grand School District,1103221.11,Administrator
+110934.96818,116376.72,2018,11,Grand School District,1220284.65,Administrator
+113645.93545,114273.72,2021,11,Grand School District,1250105.29,Administrator
+21799.00091,16502.65,2018,11,Grand School District,239789.01,Other Staff
+96730.19583,115609.72,2015,12,Grand School District,1160762.35,Administrator
+102571.33417,119869.32,2016,12,Grand School District,1230856.01,Administrator
+106616.74,121984.31,2017,12,Grand School District,1279400.88,Administrator
+120893.93417,130217.385,2019,12,Grand School District,1450727.21,Administrator
+119823.5225,127460.87,2022,12,Grand School District,1437882.27,Administrator
+133426.53917,141455.68,2023,12,Grand School District,1601118.47,Administrator
+137952.90083,142138.775,2024,12,Grand School District,1655434.81,Administrator
+141162.335,150947.995,2025,12,Grand School District,1693948.02,Administrator
+105920.88429,121769.98,2020,14,Grand School District,1482892.38,Administrator
+21253.07375,13600.88,2022,16,Grand School District,340049.18,Other Staff
+60199.17059,73885.1,2023,17,Grand School District,1023385.9,Student Support
+21158.58316,11313.49,2021,19,Grand School District,402013.08,Other Staff
+13902.2225,5899.555,2018,24,Grand School District,333653.34,Student Support
+15359.9772,6956.91,2014,25,Grand School District,383999.43,Other Staff
+21003.30462,7520.915,2023,26,Grand School District,546085.92,Other Staff
+19594.46556,4478.81,2019,27,Grand School District,529050.57,Student Support
+25253.53036,7593.98,2020,28,Grand School District,707098.85,Other Staff
+19667.09034,6826.68,2024,29,Grand School District,570345.62,Other Staff
+60997.18192,67385.37,2025,52,Grand School District,3171853.46,Operations & Facilities
+19615.00931,9401.73,2016,87,Grand School District,1706505.81,Operations & Facilities

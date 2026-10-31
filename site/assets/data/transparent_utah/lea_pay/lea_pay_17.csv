@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+87445.31348,105537.96,2019,23,Millard School District,2011242.21,Administrator
+99353.73043,121307.83,2020,23,Millard School District,2285135.8,Administrator
+118973.26348,155922.5,2023,23,Millard School District,2736385.06,Administrator
+16121.4649,15675.72,2014,149,Millard School District,2402098.27,Extracurricular
+17402.61356,16187.23,2015,146,Millard School District,2540781.58,Extracurricular
+18670.26497,16472.1,2016,143,Millard School District,2669847.89,Extracurricular
+20012.9943,17180.825,2017,142,Millard School District,2841845.19,Extracurricular
+14372.68359,13243.615,2018,198,Millard School District,2845791.35,Extracurricular
+14230.96533,11449.78,2019,214,Millard School District,3045426.58,Extracurricular
+14701.17482,10765.445,2020,224,Millard School District,3293063.16,Extracurricular
+15558.50368,13226.36,2021,223,Millard School District,3469546.32,Extracurricular
+16266.64684,15247.59,2022,225,Millard School District,3659995.54,Extracurricular
+17415.16965,15178.62,2023,255,Millard School District,4440868.26,Extracurricular
+18235.12697,14906.02,2024,271,Millard School District,4941719.41,Extracurricular
+20417.64336,18164.71,2025,271,Millard School District,5533181.35,Extracurricular
+18333.49791,6509.475,2014,182,Millard School District,3336696.62,Operations & Facilities
+18915.26207,8846.23,2015,179,Millard School District,3385831.91,Operations & Facilities
+18502.85426,6707.17,2016,195,Millard School District,3608056.58,Operations & Facilities
+19164.21921,6289.99,2017,189,Millard School District,3622037.43,Operations & Facilities
+19829.75495,4867.4,2018,206,Millard School District,4084929.52,Operations & Facilities
+20658.9603,6233.63,2019,197,Millard School District,4069815.18,Operations & Facilities
+20604.37854,5034.08,2020,205,Millard School District,4223897.6,Operations & Facilities
+22727.72783,7722.2,2021,203,Millard School District,4613728.75,Operations & Facilities
+25468.83254,12204.08,2022,197,Millard School District,5017360.01,Operations & Facilities
+25648.03586,11359.955,2023,210,Millard School District,5386087.53,Operations & Facilities
+28915.20533,12698.08,2024,199,Millard School District,5754125.86,Operations & Facilities
+29564.20465,12255.84,2025,202,Millard School District,5971969.34,Operations & Facilities
+39978.13568,49220.915,2014,264,Millard School District,10554227.82,Teacher
+41093.56896,49427.96,2015,270,Millard School District,11095263.62,Teacher
+42315.26415,52043.89,2016,282,Millard School District,11932904.49,Teacher
+42529.10963,51721.68,2017,294,Millard School District,12503558.23,Teacher
+54889.05004,68886.93,2018,240,Millard School District,13173372.01,Teacher
+58933.12917,71507.18,2019,229,Millard School District,13495686.58,Teacher
+61427.54655,75832.21,2020,223,Millard School District,13698342.88,Teacher
+76889.76898,91663.895,2021,216,Millard School District,16608190.1,Teacher
+78539.72933,93265.89,2022,224,Millard School District,17592899.37,Teacher
+77755.7605,95477.72,2023,242,Millard School District,18816894.04,Teacher
+85131.97785,102033.51,2024,246,Millard School District,20942466.55,Teacher
+90014.09742,107015.365,2025,240,Millard School District,21603383.38,Teacher
+65650.49,72265.1,2014,3,Millard School District,196951.47,Student Support
+68784.48,74538.99,2015,3,Millard School District,206353.44,Student Support
+70515.62333,77604.47,2016,3,Millard School District,211546.87,Student Support
+75293.39667,79397.65,2017,3,Millard School District,225880.19,Student Support
+80573.11667,83816.9,2018,3,Millard School District,241719.35,Student Support
+58270.206,59604.78,2022,5,Millard School District,291351.03,Other Staff
+49835.866,46919.83,2019,5,Millard School District,249179.33,Student Support
+58497.42571,51637.64,2019,7,Millard School District,409481.98,Other Staff
+52765.16714,44428.27,2020,7,Millard School District,369356.17,Other Staff
+61733.28143,56174.01,2021,7,Millard School District,432132.97,Other Staff
+51915.08143,64209.89,2023,7,Millard School District,363405.57,Other Staff
+59010.20143,63609.18,2024,7,Millard School District,413071.41,Other Staff
+69480.76625,51535.22,2018,8,Millard School District,555846.13,Other Staff
+61129.37625,66603.07,2025,8,Millard School District,489035.01,Other Staff
+52298.03556,37832.38,2014,9,Millard School District,470682.32,Other Staff
+61810.27,46228.3,2016,9,Millard School District,556292.43,Other Staff
+88066.92444,87489.59,2020,9,Millard School District,792602.32,Student Support
+113471.67111,115650.29,2021,9,Millard School District,1021245.04,Student Support
+51372.01818,39155.31,2015,11,Millard School District,565092.2,Other Staff
+65768.62636,47513.79,2017,11,Millard School District,723454.89,Other Staff
+112637.36364,115788.82,2022,11,Millard School District,1239011,Student Support
+106970.62182,102757.44,2023,11,Millard School District,1176676.84,Student Support
+107430.83769,103697.54,2024,13,Millard School District,1396600.89,Student Support
+110023.41077,111939.95,2025,13,Millard School District,1430304.34,Student Support
+86912.26562,100428.535,2014,16,Millard School District,1390596.25,Administrator
+89745.88118,103800.19,2015,17,Millard School District,1525679.98,Administrator
+88764.03556,109658.48,2016,18,Millard School District,1597752.64,Administrator
+93188.76368,113219.02,2017,19,Millard School District,1770586.51,Administrator
+143728.45,176612.005,2024,20,Millard School District,2874569,Administrator
+97537.74524,113178.2,2018,21,Millard School District,2048292.65,Administrator
+107403.34833,136958.245,2021,24,Millard School District,2577680.36,Administrator
+115311.91042,145256.64,2022,24,Millard School District,2767485.85,Administrator
+127732.80083,169991.915,2025,24,Millard School District,3065587.22,Administrator

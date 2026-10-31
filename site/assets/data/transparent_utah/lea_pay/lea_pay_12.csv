@@ -1,0 +1,73 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+127544.82063,133652.98431,2014,213,Granite School District,27167046.79321,Administrator
+136091.21063,140136.0207,2015,212,Granite School District,28851336.65287,Administrator
+138681.3492,144972.51233,2016,220,Granite School District,30509896.82398,Administrator
+141420.88321,148705.22607,2017,225,Granite School District,31819698.72195,Administrator
+159529.77585,168102.1007,2018,222,Granite School District,35415610.23919,Administrator
+162145.12031,174335.23743,2019,235,Granite School District,38104103.27369,Administrator
+177557.22031,186251.01713,2020,230,Granite School District,40838160.67055,Administrator
+187565.04046,197914.05882,2021,244,Granite School District,45765869.87313,Administrator
+181887.21124,197428.1312,2022,251,Granite School District,45653690.02021,Administrator
+193035.54897,208441.41123,2023,250,Granite School District,48258887.24132,Administrator
+197089.49269,212130.61657,2024,248,Granite School District,48878194.18746,Administrator
+200817.39518,216377.50966,2025,257,Granite School District,51610070.56103,Administrator
+14835.28703,9628.9452,2014,3099,Granite School District,45974554.49407,Extracurricular
+14596.9824,9187.0308,2015,3107,Granite School District,45352824.31705,Extracurricular
+14927.36202,9420.2946,2016,3020,Granite School District,45080633.31081,Extracurricular
+15240.55877,9603.0144,2017,3045,Granite School District,46407501.45504,Extracurricular
+15913.3656,9936.8586,2018,2938,Granite School District,46753468.12343,Extracurricular
+17319.54088,10901.9088,2019,2829,Granite School District,48996981.14793,Extracurricular
+17464.26109,10986.06085,2020,2893,Granite School District,50524107.34123,Extracurricular
+20910.15313,13732.66341,2021,2736,Granite School District,57210178.97059,Extracurricular
+20548.64441,13489.89558,2022,2702,Granite School District,55522437.19594,Extracurricular
+22465.9049,14838.53982,2023,2562,Granite School District,57557648.3579,Extracurricular
+25733.65124,18667.74447,2024,2744,Granite School District,70613139.01009,Extracurricular
+27033.08942,19251.68959,2025,2712,Granite School District,73313738.51607,Extracurricular
+24443.67945,9917.9964,2014,2113,Granite School District,51649494.68452,Operations & Facilities
+23588.10917,8552.142,2015,2263,Granite School District,53379891.04347,Operations & Facilities
+24128.64573,9123.894,2016,2280,Granite School District,55013312.26951,Operations & Facilities
+25304.74,10544.7204,2017,2264,Granite School District,57289931.3584,Operations & Facilities
+25883.29567,11075.8536,2018,2296,Granite School District,59428046.8532,Operations & Facilities
+27464.47284,10550.2824,2019,2229,Granite School District,61218309.9576,Operations & Facilities
+28801.11892,13624.19625,2020,2071,Granite School District,59647117.27397,Operations & Facilities
+35966.40143,17097.9959,2021,1890,Granite School District,67976498.70759,Operations & Facilities
+34741.32403,16078.2766,2022,1892,Granite School District,65730585.06595,Operations & Facilities
+37229.32818,15915.15094,2023,1873,Granite School District,69730531.68491,Operations & Facilities
+41034.87387,20891.56801,2024,1904,Granite School District,78130399.85712,Operations & Facilities
+44487.28621,22008.76295,2025,1933,Granite School District,85993924.2514,Operations & Facilities
+18104.07775,10.6488,2016,149,Granite School District,2697507.58413,Other Staff
+57128.29506,65622.53992,2017,44,Granite School District,2513644.98283,Other Staff
+70578.91135,71544.63811,2018,58,Granite School District,4093576.85801,Other Staff
+17524.61933,-285.12,2019,263,Granite School District,4608974.88509,Other Staff
+41173.30539,17289.69529,2020,112,Granite School District,4611410.20374,Other Staff
+69863.18355,81075.63728,2021,86,Granite School District,6008233.78529,Other Staff
+65564.63874,79196.67621,2022,91,Granite School District,5966382.12512,Other Staff
+66127.76017,65484.2459,2023,114,Granite School District,7538564.65928,Other Staff
+80671.61748,92170.2816,2024,90,Granite School District,7260445.5736,Other Staff
+82748.84067,100070.8948,2025,93,Granite School District,7695642.18212,Other Staff
+18383.85791,4466.4048,2014,980,Granite School District,18016180.75317,Student Support
+19776.38521,5075.6976,2015,945,Granite School District,18688684.02506,Student Support
+19208.56073,4321.3878,2016,976,Granite School District,18747555.2717,Student Support
+19151.45925,4585.2156,2017,1020,Granite School District,19534488.43237,Student Support
+77522.16234,83138.9995,2018,325,Granite School District,25194702.75985,Student Support
+73597.99232,81662.49582,2019,390,Granite School District,28703217.00416,Student Support
+85059.14133,91613.40691,2020,373,Granite School District,31727059.71472,Student Support
+90554.0169,100214.8545,2021,386,Granite School District,34953850.52417,Student Support
+90410.69828,98395.31972,2022,400,Granite School District,36164279.31027,Student Support
+103440.66889,110724.86822,2023,410,Granite School District,42410674.24462,Student Support
+110846.42439,120523.5136,2024,393,Granite School District,43562644.78425,Student Support
+115614.65415,126440.00299,2025,393,Granite School District,45436559.08218,Student Support
+68179.25917,72295.48821,2014,3673,Granite School District,250422418.92599,Teacher
+70346.10126,74305.93181,2015,3649,Granite School District,256692923.51581,Teacher
+71542.37056,75673.72345,2016,3659,Granite School District,261773533.8969,Teacher
+73712.47855,77012.86375,2017,3631,Granite School District,267650009.61619,Teacher
+67489.37657,75329.07976,2018,4283,Granite School District,289056999.85006,Teacher
+72222.67692,80760.37139,2019,4087,Granite School District,295174080.57818,Teacher
+77607.25482,86003.64568,2020,4042,Granite School District,313688523.9822,Teacher
+83517.35827,94100.5791,2021,3963,Granite School District,330979290.81161,Teacher
+86832.06472,97634.784,2022,3879,Granite School District,336821579.04207,Teacher
+94295.38346,104619.48708,2023,3918,Granite School District,369449312.40819,Teacher
+92033.08253,106246.77601,2024,3956,Granite School District,364082874.50108,Teacher
+92758.50524,110010.27873,2025,4020,Granite School District,372889191.06936,Teacher
+59200.77744,62296.79073,2014,46,Granite School District,2723235.76231,Other Staff
+50866.23713,53371.12548,2015,52,Granite School District,2645044.33102,Other Staff

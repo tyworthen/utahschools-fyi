@@ -1,0 +1,68 @@
+cat_average,cat_median,fiscal_year,num_employees,lea_name,total_amount,job_category
+10485.49617,6696.36,2014,47,Wayne School District,492818.32,Extracurricular
+9584.65818,5870.625,2015,44,Wayne School District,421724.96,Extracurricular
+8228.70943,3943,2017,53,Wayne School District,436121.6,Extracurricular
+10574.90093,4050.02,2022,54,Wayne School District,571044.65,Extracurricular
+9934.93983,5641.925,2023,58,Wayne School District,576226.51,Extracurricular
+11022.40938,5762.81,2024,65,Wayne School District,716456.61,Extracurricular
+15614.52806,9082.32,2025,67,Wayne School District,1046173.38,Extracurricular
+11931.94359,4929.33,2015,39,Wayne School District,465345.8,Operations & Facilities
+12699.73743,7640.92,2017,35,Wayne School District,444490.81,Operations & Facilities
+17456.74057,7484.8,2019,35,Wayne School District,610985.92,Operations & Facilities
+38771.84035,56051.81,2014,57,Wayne School District,2209994.9,Teacher
+48320.92018,68599.39,2016,57,Wayne School District,2754292.45,Teacher
+47679.71236,68883.63,2017,55,Wayne School District,2622384.18,Teacher
+46117.39879,47700.175,2018,58,Wayne School District,2674809.13,Teacher
+50963.482,56733.03,2019,55,Wayne School District,2802991.51,Teacher
+54339.474,64331.24,2020,55,Wayne School District,2988671.07,Teacher
+59202.75,59202.75,2015,1,Wayne School District,59202.75,Other Staff
+64590.99,64590.99,2016,1,Wayne School District,64590.99,Other Staff
+50987.52,50987.52,2017,1,Wayne School District,50987.52,Other Staff
+50127.62,50127.62,2018,1,Wayne School District,50127.62,Other Staff
+117197.46,117197.46,2024,1,Wayne School District,117197.46,Other Staff
+124829.72,124829.72,2025,1,Wayne School District,124829.72,Other Staff
+84673.41,84673.41,2015,1,Wayne School District,84673.41,Student Support
+94481.58,94481.58,2017,1,Wayne School District,94481.58,Student Support
+97903.83,97903.83,2018,1,Wayne School District,97903.83,Student Support
+138067.58,138067.58,2025,1,Wayne School District,138067.58,Student Support
+70885.835,70885.835,2023,2,Wayne School District,141771.67,Other Staff
+64406.72,64406.72,2014,2,Wayne School District,128813.44,Student Support
+83087.445,83087.445,2016,2,Wayne School District,166174.89,Student Support
+98423.625,98423.625,2019,2,Wayne School District,196847.25,Student Support
+103693.485,103693.485,2020,2,Wayne School District,207386.97,Student Support
+95071.675,95071.675,2021,2,Wayne School District,190143.35,Student Support
+95101.11,95101.11,2022,2,Wayne School District,190202.22,Student Support
+111991.79,111991.79,2023,2,Wayne School District,223983.58,Student Support
+81750.46667,98612.02,2024,3,Wayne School District,245251.4,Student Support
+99989.462,125845.21,2025,10,Wayne School District,999894.62,Administrator
+48052.99364,42584.4,2014,11,Wayne School District,528582.93,Administrator
+53966.83182,27481.5,2021,11,Wayne School District,593635.15,Administrator
+58418.96917,48892.18,2016,12,Wayne School District,701027.63,Administrator
+67936.35583,51458.93,2022,12,Wayne School District,815236.27,Administrator
+87553.48231,78806.08,2023,13,Wayne School District,1138195.27,Administrator
+86674.74846,73516.28,2024,13,Wayne School District,1126771.73,Administrator
+53826.52733,48680.66,2018,15,Wayne School District,807397.91,Administrator
+60583.62933,47290.97,2019,15,Wayne School District,908754.44,Administrator
+69750.44733,55283.28,2020,15,Wayne School District,1046256.71,Administrator
+46978.45353,35746.61,2017,17,Wayne School District,798633.71,Administrator
+48078.58111,35443.905,2015,18,Wayne School District,865414.46,Administrator
+29027.88318,19053.445,2023,22,Wayne School District,638613.43,Operations & Facilities
+35189.87042,21203.33,2024,24,Wayne School District,844556.89,Operations & Facilities
+39045.5464,23105.71,2025,25,Wayne School District,976138.66,Operations & Facilities
+23908.35037,17733.18,2021,27,Wayne School District,645525.46,Operations & Facilities
+24769.51571,18314.42,2022,28,Wayne School District,693546.44,Operations & Facilities
+20656.50419,14914.07,2020,31,Wayne School District,640351.63,Operations & Facilities
+13485.46735,8198.735,2016,34,Wayne School District,458505.89,Operations & Facilities
+12073.05833,8781.96,2014,36,Wayne School District,434630.1,Operations & Facilities
+15750.60028,7969.03,2018,36,Wayne School District,567021.61,Operations & Facilities
+8362.97146,6159.925,2018,48,Wayne School District,401422.63,Extracurricular
+62727.31458,77472.795,2023,48,Wayne School District,3010911.1,Teacher
+9021.832,3773.19,2016,50,Wayne School District,451091.6,Extracurricular
+54712.0422,73559.03,2015,50,Wayne School District,2735602.11,Teacher
+59660.4252,76599.945,2022,50,Wayne School District,2983021.26,Teacher
+9212.4498,5607.03,2019,51,Wayne School District,469834.94,Extracurricular
+9657.91941,5471.59,2020,51,Wayne School District,492553.89,Extracurricular
+10895.52647,4798.48,2021,51,Wayne School District,555671.85,Extracurricular
+60508.48627,73309.31,2021,51,Wayne School District,3085932.8,Teacher
+67774.75804,87477.12,2024,51,Wayne School District,3456512.66,Teacher
+70447.10462,86132.99,2025,52,Wayne School District,3663249.44,Teacher
