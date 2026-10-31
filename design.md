@@ -1,10 +1,9 @@
-# Follow the Money --- Design Specification
+# Utah Schools FYI --- Design Specification
 
 ## 1. Design Concept
 
-**Project:** Tooele County School Finance Accountability Project\
-**Design Direction:** Follow the Money\
-**Primary Audience:** Tooele County taxpayers\
+**Project:** Utah Schools FYI --- Utah Public School Finance Accountability Project\
+**Primary Audience:** Utah taxpayers\
 **Primary Goals:** Government accountability, taxpayer education,
 financial transparency, and evidence-based investigation\
 **Tone:** Independent, confident, analytical, accessible, civic-minded,
@@ -18,7 +17,6 @@ site, or generic government portal.
 
 The visual identity should communicate:
 
--   **Follow the money**
 -   **Look at the numbers**
 -   **Ask better questions**
 -   **Show the evidence**
@@ -35,14 +33,14 @@ visual conventions.
 
 ## Recommended Working Name
 
-**Tooele School Finance**
+**Utah Schools FYI**
 
 Alternative descriptors:
 
--   Tooele School Finance Transparency
--   Tooele Schools Data Project
--   Tooele School Finance Accountability Project
--   Tooele Taxpayer Data
+-   Utah School Finance Transparency
+-   Utah Schools Data Project
+-   Utah Public School Accountability Project
+-   Utah Taxpayer School Data
 
 ### Recommended Tagline
 
@@ -51,8 +49,8 @@ Alternative descriptors:
 
 ### Recommended Homepage Statement
 
-> Independent, nonpartisan research and analysis of Tooele County School
-> District finances, taxation, spending, enrollment, staffing, debt, and
+> Independent, nonpartisan research and analysis of Utah public school
+> district finances, taxation, spending, enrollment, staffing, debt, and
 > educational outcomes.
 
 ------------------------------------------------------------------------
@@ -76,7 +74,7 @@ Avoid visual tricks, sensationalism, or manipulative color choices.
 
 ### Local
 
-Use Tooele Valley imagery selectively to establish place and community.
+Use Utah imagery selectively to establish place and community.
 
 ### Accessible
 
@@ -85,8 +83,8 @@ understand the primary message of every page.
 
 ### Independent
 
-Do not imitate the official Tooele County School District visual
-identity.
+Do not imitate the official visual identity of any school district,
+the Utah State Board of Education, or other government agency.
 
 ------------------------------------------------------------------------
 
@@ -136,7 +134,6 @@ Use sparingly for:
 -   Highlighted data
 -   Important annotations
 -   Active states
--   "Follow the Money" visual motif
 -   Key numbers requiring attention
 
 Yellow should never mean "bad" by itself.
@@ -334,16 +331,17 @@ two clicks.
 
 ## Hero
 
-Dark navy background with a subtle Tooele Valley mountain photograph.
+Dark navy background with a subtle Utah landscape photograph.
 
 Recommended headline:
 
-> **Follow the money.**
+> **Understand the numbers.**
 
 Subheadline:
 
-> Understand how Tooele County School District collects, spends, and
-> manages taxpayer dollars.
+> Understand how Utah school districts collect, spend, and manage
+> taxpayer dollars, starting with a case study of Tooele County School
+> District.
 
 Supporting text:
 
@@ -623,7 +621,7 @@ Every chart should have a small source line.
 Example:
 
 > Source: Tooele County School District FY2026 Final Budget; analysis by
-> Tooele School Finance. Updated October 2026.
+> Utah Schools FYI. Updated October 2026.
 
 Clicking the source should open the underlying document or source page.
 
@@ -744,9 +742,9 @@ Footer should reinforce independence.
 
 Example:
 
-> **Tooele School Finance**
+> **Utah Schools FYI**
 
-> Independent financial research for Tooele County taxpayers.
+> Independent financial research for Utah taxpayers.
 
 Links:
 
@@ -758,8 +756,8 @@ Links:
 
 Then:
 
-> This project is independent of Tooele County School District and is
-> not affiliated with the district or Utah State Board of Education.
+> This project is independent and is not affiliated with any Utah school
+> district, the Utah State Board of Education, or any other government agency.
 
 ------------------------------------------------------------------------
 
@@ -769,9 +767,6 @@ Use photography sparingly.
 
 Preferred subjects:
 
--   Tooele Valley
--   Oquirrh Mountains
--   Stansbury Mountains
 -   Local school exteriors
 -   Public civic buildings
 -   Students/schools only where appropriate and legally usable
@@ -862,7 +857,7 @@ Where evidence is incomplete, frame the issue as a question.
 
 ## 4. Local but independent
 
-Use Tooele imagery without adopting the district's branding.
+Use local imagery without adopting any district's branding.
 
 ## 5. Data should be approachable
 
@@ -912,12 +907,11 @@ Build reusable components for:
 
 ``` text
 ┌─────────────────────────────────────────────────────────────┐
-│ LOGO       FINANCES  TAXES  SPENDING  COMPARE  RESEARCH 🔍 │
+│ LOGO   UTAH  DISTRICTS  TOOELE CASE STUDY ▾  DATA  ABOUT 🔍 │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│              [TOOELE VALLEY IMAGE]                          │
+│              [UTAH LANDSCAPE IMAGE]                         │
 │                                                             │
-│              FOLLOW THE MONEY.                              │
 │              Understand the numbers.                        │
 │                                                             │
 │  Independent, nonpartisan financial analysis for taxpayers. │

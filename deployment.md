@@ -76,21 +76,6 @@ The site's `_headers` file already sends a one-year `Strict-Transport-Security` 
 HTTPS is confirmed working, leave it in place; removing HTTPS later would break the site for
 visitors whose browsers have remembered it.
 
-### 1.5 Set up hello@utahschools.fyi
-
-The About page lists **hello@utahschools.fyi**. Cloudflare Email Routing forwards it to an
-inbox you already use, at no cost.
-
-1. `utahschools.fyi` zone → **Email** → **Email Routing** → **Get started**.
-2. Create the custom address **hello** → action **Send to an email** → your existing inbox.
-3. Cloudflare sends a verification email to that inbox; click the link.
-4. Let Cloudflare **Add records** (MX and SPF) when prompted, then confirm the status shows
-   **Enabled**.
-5. Test: send a message to hello@utahschools.fyi from a different account.
-
-Email Routing only receives mail. To reply *as* hello@utahschools.fyi, add the address as a
-"send mail as" alias in your mail provider (for Gmail: Settings → Accounts → Send mail as),
-using that provider's outgoing mail server, or use a mail service that supports custom domains.
 
 ---
 
@@ -116,7 +101,7 @@ After the first deploy, and after any change to headers or structure:
 - [ ] `https://utahschools.fyi/sitemap.xml` and `/robots.txt` load.
 - [ ] Link previews show the Utah Schools .FYI badge: paste the URL into
       <https://www.opengraph.xyz> or a message to yourself.
-- [ ] hello@utahschools.fyi forwards to your inbox.
+- [ ] info@utahschools.fyi forwards to your inbox.
 
 ### Search engines (optional)
 

@@ -27,12 +27,12 @@ window.TSF = {
   // Homepage KPI strip. Tooele only, current fiscal year.
   kpis: [
     // `metric` KPIs take Tooele's FY2025 value from that metric (see bottom of file).
-    { id: "revenue",      label: "Total Revenue",        metric: "revenue_total",      value: null, format: "money", note: "FY2025, excl. bond proceeds & transfers", source: "usbe-afr", href: "compare.html?metric=revenue_total" },
-    { id: "expenditures", label: "Total Expenditures",   metric: "expenditures_total", value: null, format: "money", note: "FY2025, incl. construction & debt", source: "usbe-afr", href: "compare.html?metric=expenditures_total" },
-    { id: "enrollment",   label: "Enrollment",           metric: "enrollment",         value: null, format: "count", note: "October 1, 2024 (FY2025)", source: "usbe-gateway", href: "compare.html?metric=enrollment" },
-    { id: "perstudent",   label: "Spending / Student",   metric: "spend_per_student",  value: null, format: "dollars", note: "FY2025, current spending, nominal", source: "usbe-afr", href: "compare.html?metric=spend_per_student" },
-    { id: "proptax",      label: "Property Tax Revenue", metric: "property_tax_total", value: null, format: "money", note: "FY2025, governmental funds", source: "usbe-afr", href: "compare.html?metric=property_tax_total" },
-    { id: "debt",         label: "Outstanding Debt",     value: null, format: "money",   note: "General obligation bonds", source: "auditor-reports", ref: "", href: "finances.html#debt" }
+    { id: "revenue",      label: "Total Revenue",        metric: "revenue_total",      value: null, format: "money", note: "FY2025, excl. bond proceeds & transfers", source: "usbe-afr", href: "tooele-compare.html?metric=revenue_total" },
+    { id: "expenditures", label: "Total Expenditures",   metric: "expenditures_total", value: null, format: "money", note: "FY2025, incl. construction & debt", source: "usbe-afr", href: "tooele-compare.html?metric=expenditures_total" },
+    { id: "enrollment",   label: "Enrollment",           metric: "enrollment",         value: null, format: "count", note: "October 1, 2024 (FY2025)", source: "usbe-gateway", href: "tooele-compare.html?metric=enrollment" },
+    { id: "perstudent",   label: "Spending / Student",   metric: "spend_per_student",  value: null, format: "dollars", note: "FY2025, current spending, nominal", source: "usbe-afr", href: "tooele-compare.html?metric=spend_per_student" },
+    { id: "proptax",      label: "Property Tax Revenue", metric: "property_tax_total", value: null, format: "money", note: "FY2025, governmental funds", source: "usbe-afr", href: "tooele-compare.html?metric=property_tax_total" },
+    { id: "debt",         label: "Outstanding Debt",     value: null, format: "money",   note: "General obligation bonds", source: "auditor-reports", ref: "", href: "tooele-finances.html#debt" }
   ],
 
   // "Where the money goes": share of a typical $100 of district spending.

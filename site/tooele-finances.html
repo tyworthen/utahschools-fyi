@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tooele Finances · Utah Schools FYI</title>
 <meta name="description" content="Tooele County School District revenue, expenditures, funds, budget versus actual results, and debt.">
-<link rel="canonical" href="https://utahschools.fyi/finances">
+<link rel="canonical" href="https://utahschools.fyi/tooele-finances">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Utah Schools FYI">
 <meta property="og:title" content="Tooele Finances · Utah Schools FYI">
 <meta property="og:description" content="Tooele County School District revenue, expenditures, funds, budget versus actual results, and debt.">
-<meta property="og:url" content="https://utahschools.fyi/finances">
+<meta property="og:url" content="https://utahschools.fyi/tooele-finances">
 <meta property="og:image" content="https://utahschools.fyi/assets/brand/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
@@ -73,7 +73,7 @@
           <h2 id="exp-h">Where does the money go?</h2>
           <p class="prose">Spending is reported by <em>function</em> — the purpose of the spending, such as instruction or transportation — under Utah’s uniform chart of accounts. That makes Tooele’s categories directly comparable with other Utah districts.</p>
           <div class="chart-box mt-2" id="exp-chart"></div>
-          <p class="mt-1"><a class="link-arrow" href="spending.html">Spending by category →</a></p>
+          <p class="mt-1"><a class="link-arrow" href="tooele-spending.html">Spending by category →</a></p>
         </section>
 
         <section id="funds" class="mt-3" aria-labelledby="funds-h">
@@ -215,7 +215,7 @@
     var dps = U.latest("debt_per_student", "tooele");
     document.getElementById("debt-per").innerHTML = mini(dps && U.fmt(dps.value, "dollars"));
     var ds = (TSF.metrics.spend_debt.values.tooele || {})[2025];
-    document.getElementById("debt-service").innerHTML = mini(U.fmt(ds, "money")) + '<p class="muted" style="font-size:13px;margin:4px 0 0">Principal and interest, functions 5xxx. <a href="compare.html?metric=spend_debt">History →</a></p>';
+    document.getElementById("debt-service").innerHTML = mini(U.fmt(ds, "money")) + '<p class="muted" style="font-size:13px;margin:4px 0 0">Principal and interest, functions 5xxx. <a href="tooele-compare.html?metric=spend_debt">History →</a></p>';
     document.getElementById("bonds").innerHTML = TSF.bonds.length
       ? '<div class="table-wrap"><table><thead><tr><th>Year</th><th>Issue</th><th class="n">Principal</th><th>Final maturity</th></tr></thead><tbody>' +
         TSF.bonds.map(function (b) { return "<tr><td>" + b.year + "</td><td>" + U.esc(b.name) + '</td><td class="n">' + (U.fmt(b.principal, "money") || "—") + "</td><td>" + (b.finalMaturity || "—") + "</td></tr>"; }).join("") + "</tbody></table></div>" + U.sourceLine("auditor-reports")

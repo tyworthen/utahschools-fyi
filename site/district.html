@@ -108,7 +108,7 @@
     function median(arr) { var a = arr.filter(function (v) { return v != null; }).sort(function (p, q) { return p - q; }), h = a.length / 2; return a.length ? (a.length % 2 ? a[Math.floor(h)] : (a[h - 1] + a[h]) / 2) : null; }
 
     document.title = D.name + " · " + U.SITE;
-    document.getElementById("crumb").textContent = D.short;
+    document.getElementById("crumb").textContent = isTooele ? "Tooele case study" : D.short;
     document.getElementById("name").textContent = D.name;
     document.getElementById("intro").textContent = role + " · USBE district number " + id + ". Standardized figures from the district’s Annual Financial Reports to the Utah State Board of Education, FY2012–FY" + LAST + ". All dollars nominal.";
     var pick = document.getElementById("pick");
@@ -144,7 +144,7 @@
     function drawHundred() {
       var y = gy.value, cats = Object.keys(LABELS).map(function (c) { return { id: c, label: LABELS[c], amount: S.categories[id][c][y] || 0 }; });
       document.getElementById("go-sub").textContent = "Every $100 " + D.short + " spent in FY" + y + ", by purpose. Capital and debt service rise and fall with construction cycles.";
-      document.getElementById("hundred").innerHTML = U.hundredBar(cats, isTooele ? function (c) { return "spending.html#" + c.id; } : null);
+      document.getElementById("hundred").innerHTML = U.hundredBar(cats, isTooele ? function (c) { return "tooele-spending.html#" + c.id; } : null);
     }
     gy.addEventListener("change", drawHundred); drawHundred();
 
@@ -180,8 +180,8 @@
     }).join("") || '<tr><td colspan="5" class="muted">No balance sheet data.</td></tr>';
 
     document.getElementById("more").innerHTML = '<div class="ct">More for this district</div>' + (isTooele
-      ? '<p>Tooele is the project’s case study, with deeper pages on <a href="finances.html">finances</a>, <a href="taxes.html">taxes</a>, <a href="spending.html">spending by category</a>, and <a href="research.html">open research questions</a>.</p>'
-      : '<p><a href="compare.html?add=' + id + '">Compare ' + U.esc(D.short) + ' with Tooele and its peers →</a> · Taxes, staffing, enrollment, debt, and outcomes for every district are planned as the statewide dataset grows (<a href="about.html#roadmap">roadmap</a>).</p>');
+      ? '<p>Tooele is the project’s first case study, with deeper pages on <a href="tooele-finances.html">finances</a>, <a href="tooele-taxes.html">taxes</a>, <a href="tooele-spending.html">spending by category</a>, <a href="tooele-compare.html">peer comparisons</a>, <a href="tooele-schools.html">schools</a>, and <a href="tooele-research.html">open research questions</a>.</p>'
+      : '<p><a href="tooele-compare.html?add=' + id + '">Compare ' + U.esc(D.short) + ' with Tooele and its peers →</a> · Taxes, staffing, enrollment, debt, and outcomes for every district are planned as the statewide dataset grows (<a href="about.html#roadmap">roadmap</a>).</p>');
   })();
 </script>
 </body>

@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tooele Spending · Utah Schools FYI</title>
 <meta name="description" content="Where Tooele County School District spends its money, by category, over time, and compared with peer districts.">
-<link rel="canonical" href="https://utahschools.fyi/spending">
+<link rel="canonical" href="https://utahschools.fyi/tooele-spending">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Utah Schools FYI">
 <meta property="og:title" content="Tooele Spending · Utah Schools FYI">
 <meta property="og:description" content="Where Tooele County School District spends its money, by category, over time, and compared with peer districts.">
-<meta property="og:url" content="https://utahschools.fyi/spending">
+<meta property="og:url" content="https://utahschools.fyi/tooele-spending">
 <meta property="og:image" content="https://utahschools.fyi/assets/brand/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
@@ -215,7 +215,7 @@
           var a = mv("admin_count", 2016), b = mv("admin_count", 2025);
           return '<tr><th scope="row">' + TSF.districts[d].name + '</th><td class="n">' + (a == null ? "—" : a) + '</td><td class="n">' + (b == null ? "—" : b) + '</td><td class="n">' + (a && b != null ? U.pct(b, a) : "—") +
             '</td><td class="n">' + (U.fmt(mv("admins_per_1000", 2025), "ratio") || "—") + '</td><td class="n">' + (U.fmt(mv("admin_comp_median", 2025), "dollars") || "—") + "</td></tr>";
-        }).join("") + '</tbody></table></div><p class="muted" style="font-size:13px;margin-top:8px">Source: Office of the Utah State Auditor, Administrator &amp; Teacher Pay (raw, unaudited). Job categories come from job titles, so districts that title positions differently are not perfectly comparable. Median pay = salary + benefits. <a href="finances.html#pay">More on pay →</a></p>' +
+        }).join("") + '</tbody></table></div><p class="muted" style="font-size:13px;margin-top:8px">Source: Office of the Utah State Auditor, Administrator &amp; Teacher Pay (raw, unaudited). Job categories come from job titles, so districts that title positions differently are not perfectly comparable. Median pay = salary + benefits. <a href="tooele-finances.html#pay">More on pay →</a></p>' +
       '<div class="grid grid-3 mt-2">' +
         U.qwa("Tooele reported $4.8M under Administrative Technology Services (function 2580) in FY2024, a code it had not used before — including salaries ($1.95M), benefits ($0.86M), and property and equipment ($1.18M). The same year, instruction spending fell $15.7M. Was this spending recorded under other functions before FY2024, and if so, which?", "Data: USBE AFR, function × program × object. The program codes don’t show where it was recorded earlier.") +
         U.qwa("Central business services rose from $3.0M in FY2023 to $11.3M in FY2025, while supplies and materials within administration rose from $0.6M to $4.2M. What was purchased, and is it a one-time or recurring cost?", "Data: USBE AFR FY2023–FY2025. Next step: district expenditure detail and board minutes.") +

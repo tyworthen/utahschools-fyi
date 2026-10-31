@@ -1,9 +1,9 @@
-# Tooele County School District Financial Accountability Project
+# Utah Public School Financial Accountability Project
 
 ## Mission
 
-Provide Tooele County taxpayers with an independent, factual,
-accessible analysis of Tooele County School District finances,
+Provide Utah taxpayers with an independent, factual,
+accessible analysis of Utah School districts finances,
 taxation, spending, debt, staffing, enrollment, capital projects,
 and educational outcomes.
 
@@ -21,26 +21,26 @@ measures, tax increases, bonds, or specific policy outcomes.
 
 ## Central Research Question
 
-Is Tooele County School District using taxpayer resources efficiently
+Are Utah school districts using taxpayer resources efficiently
 relative to:
 
 - its educational responsibilities;
 - student enrollment and enrollment growth;
 - inflation;
 - historical district performance;
-- comparable Utah school districts;
+- other comparable Utah school districts;
 - available state and federal funding; and
 - measurable educational outcomes?
 
 The project must not assume that the answer is yes or no.
 
-## Primary Subject
+## First Case Study
 
 Tooele County School District
 
 ## Comparison Districts
 
-Primary peer districts:
+Primary peer districts of Tooele:
 
 - Iron County School District
 - Cache County School District
@@ -927,7 +927,7 @@ Provide downloadable or reproducible underlying data whenever practical.
 
 # Design Direction
 
-Retain the existing **“Follow the Money”** visual identity developed for the Tooele project, but adapt it for a statewide Utah context.
+Retain the existing visual identity developed for the Tooele project, but adapt it for a statewide Utah context.
 
 Design principles:
 

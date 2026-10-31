@@ -5,36 +5,41 @@
   var SITE = "Utah Schools FYI";
   var INDEPENDENCE = "An independent research and data project. Not affiliated with the Utah State Board of Education, the Utah Office of the State Auditor, Utah school districts, or any other government agency.";
 
+  // Pages about the Tooele case study sit in a submenu; everything else is statewide.
+  var TOOELE = [
+    ["district.html?id=30", "Overview"],
+    ["tooele-finances.html", "Finances"],
+    ["tooele-taxes.html", "Taxes"],
+    ["tooele-spending.html", "Spending"],
+    ["tooele-compare.html", "Compare Peer Districts"],
+    ["tooele-schools.html", "Schools"],
+    ["tooele-research.html", "Research"]
+  ];
   var NAV = [
     ["utah.html", "Utah"],
     ["districts.html", "Districts"],
-    ["finances.html", "Finances"],
-    ["taxes.html", "Taxes"],
-    ["spending.html", "Spending"],
-    ["compare.html", "Compare"],
-    ["schools.html", "Schools"],
-    ["research.html", "Research"],
+    [TOOELE, "Tooele Case Study"],
     ["data.html", "Data"],
     ["methodology.html", "Methodology"],
     ["about.html", "About"]
   ];
 
   var SEARCH_INDEX = [
-    ["index.html", "Home", "Follow the money: the Tooele case study and statewide scope"],
+    ["index.html", "Home", "Utah school district finances, starting with the Tooele case study"],
     ["utah.html", "Utah overview", "Statewide school district finances, trends, and rankings"],
     ["districts.html", "Districts", "All 41 Utah school districts: key figures and profiles"],
-    ["district.html?id=30", "Tooele County School District profile", "Case study district profile"],
-    ["finances.html", "Finances", "Revenue, expenditures, funds, budget vs. actual"],
-    ["finances.html#revenue", "Where does the money come from?", "Local, state, and federal revenue"],
-    ["finances.html#debt", "Debt & Bonds", "Outstanding principal, debt service, bond timeline"],
-    ["taxes.html", "Taxes", "How Utah school property taxes work"],
-    ["taxes.html#calculator", "Taxpayer calculator", "What does the school district cost me?"],
-    ["spending.html", "Where the money goes", "$100 of district spending by category"],
-    ["compare.html", "Compare districts", "Tooele, Iron, Cache, Box Elder, and any other Utah district"],
-    ["schools.html", "Schools", "School-level profiles (planned)"],
-    ["research.html", "Research & Investigations", "Questions, investigations, and audit findings"],
-    ["research.html#audits", "Audits & reviews", "2025 legislative audit, purchase-card review"],
-    ["research.html#template", "How investigations are written", "Investigation page structure"],
+    ["district.html?id=30", "Tooele case study overview", "Tooele County School District profile"],
+    ["tooele-finances.html", "Tooele finances", "Revenue, expenditures, funds, budget vs. actual"],
+    ["tooele-finances.html#revenue", "Where does the money come from?", "Local, state, and federal revenue"],
+    ["tooele-finances.html#debt", "Debt & Bonds", "Outstanding principal, debt service, bond timeline"],
+    ["tooele-taxes.html", "Tooele taxes", "How Utah school property taxes work"],
+    ["tooele-taxes.html#calculator", "Taxpayer calculator", "What does the school district cost me?"],
+    ["tooele-spending.html", "Tooele spending: where the money goes", "$100 of district spending by category"],
+    ["tooele-compare.html", "Tooele: compare peer districts", "Tooele, Iron, Cache, Box Elder, and any other Utah district"],
+    ["tooele-schools.html", "Tooele schools", "School-level profiles (planned)"],
+    ["tooele-research.html", "Tooele research & investigations", "Questions, investigations, and audit findings"],
+    ["tooele-research.html#audits", "Audits & reviews", "2025 legislative audit, purchase-card review"],
+    ["tooele-research.html#template", "How investigations are written", "Investigation page structure"],
     ["data.html", "Data Explorer", "Filter, view, and download datasets"],
     ["methodology.html", "Methodology", "Evidence standards, calculations, inflation"],
     ["methodology.html#labels", "Fact, calculation, interpretation, hypothesis, opinion", "How claims are labeled"],
@@ -96,8 +101,15 @@
     // Cloudflare Pages serves clean URLs (/utah for utah.html), so normalize before matching.
     var here = location.pathname.split("/").pop() || "index.html";
     if (here.indexOf(".") < 0) here += ".html";
+    if (here === "district.html" && /[?&]id=30\b/.test(location.search)) here = "district.html?id=30";
+    function link(n) { return '<a href="' + n[0] + '"' + (n[0] === here ? ' aria-current="page"' : "") + ">" + n[1] + "</a>"; }
     var links = NAV.map(function (n) {
-      return '<a href="' + n[0] + '"' + (n[0] === here ? ' aria-current="page"' : "") + ">" + n[1] + "</a>";
+      if (typeof n[0] === "string") return link(n);
+      var on = n[0].some(function (c) { return c[0] === here; });
+      return '<div class="nav-group' + (on ? " current" : "") + '">' +
+        '<button type="button" class="nav-parent" aria-expanded="false" aria-controls="nav-tooele">' + n[1] +
+        '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>' +
+        '<div class="nav-sub" id="nav-tooele">' + n[0].map(link).join("") + "</div></div>";
     }).join("");
     return '<a class="skip" href="#main">Skip to content</a>' +
       '<header class="site-header"><div class="wrap">' +
@@ -114,8 +126,9 @@
       '<div class="top"><div><img src="assets/brand/logo-footer.png" alt="Utah Schools — Data, Insights, Accountability" width="1124" height="128">' +
       '<p class="fname">' + SITE + '</p><p>Independent data for informed taxpayers. Utah public-school finances and outcomes, starting with Tooele County School District.</p>' +
       '<p class="updated" style="color:#94A3B8">Data last updated ' + monthYear(D.updated) + "</p></div>" +
-      '<div><h2>Project</h2><ul><li><a href="methodology.html">Methodology</a></li><li><a href="sources.html">Sources</a></li><li><a href="data.html">Data</a></li><li><a href="about.html">About</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>' +
-      '<div><h2>Explore</h2><ul><li><a href="utah.html">Utah overview</a></li><li><a href="districts.html">Districts</a></li><li><a href="finances.html">Tooele finances</a></li><li><a href="compare.html">Compare</a></li><li><a href="research.html">Research</a></li></ul></div></div>' +
+      '<div><h2>Project</h2><ul><li><a href="methodology.html">Methodology</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>' +
+      '<div><h2>Explore</h2><ul><li><a href="utah.html">Utah overview</a></li><li><a href="districts.html">Districts</a></li><li><a href="data.html">Data Explorer</a></li></ul></div>' +
+      '<div><h2>Tooele Case Study</h2><ul>' + TOOELE.map(function (n) { return '<li><a href="' + n[0] + '">' + n[1] + "</a></li>"; }).join("") + "</ul></div></div>" +
       '<p class="disclaimer"><strong style="color:#CBD5E1">' + INDEPENDENCE + '</strong> The project does not endorse or oppose any candidate, party, school board member, ballot measure, tax, or bond.</p>' +
       "</div></footer>";
   }
@@ -174,7 +187,7 @@
         cats.map(function (c) { return c.label + " $" + (c.amount / total * 100).toFixed(2); }).join(", ") + '">' +
         cats.map(function (c, i) {
           var share = c.amount / total * 100;
-          return '<a href="spending.html#' + c.id + '" style="flex:' + share + ";background:" + CAT_COLORS[i] + '" title="' + esc(c.label) + ": $" + share.toFixed(2) + '">' + (share >= 7 ? "$" + share.toFixed(0) : "") + "</a>";
+          return '<a href="tooele-spending.html#' + c.id + '" style="flex:' + share + ";background:" + CAT_COLORS[i] + '" title="' + esc(c.label) + ": $" + share.toFixed(2) + '">' + (share >= 7 ? "$" + share.toFixed(0) : "") + "</a>";
         }).join("") + "</div>";
     } else {
       html += emptyState("FY" + D.spending.fy + " category totals not yet entered",
@@ -182,7 +195,7 @@
     }
     html += '<div class="cat-list">' + cats.map(function (c, i) {
       var share = complete && total ? "$" + (c.amount / total * 100).toFixed(2) : null;
-      return '<a class="cat-item" href="spending.html#' + c.id + '"><span class="sw" style="background:' + CAT_COLORS[i] + '"></span><span><span class="nm">' + esc(c.label) + "</span><br>" +
+      return '<a class="cat-item" href="tooele-spending.html#' + c.id + '"><span class="sw" style="background:' + CAT_COLORS[i] + '"></span><span><span class="nm">' + esc(c.label) + "</span><br>" +
         (share ? '<span class="amt">' + share + '</span><span class="muted" style="font-size:13px"> of $100</span>' : '<span class="amt pending">Pending</span>') + "</span></a>";
     }).join("") + "</div>";
     html += sourceLine(D.spending.source, "Basis: " + D.spending.basis + ", FY" + D.spending.fy + ", nominal dollars.");
@@ -375,6 +388,14 @@
     searchDialog();
     var mb = document.querySelector(".menu-btn"), nav = document.getElementById("site-nav");
     if (mb) mb.addEventListener("click", function () { var o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded", o); });
+    document.querySelectorAll(".nav-group").forEach(function (g) {
+      var b = g.querySelector(".nav-parent");
+      function set(o) { g.classList.toggle("open", o); b.setAttribute("aria-expanded", o); }
+      b.addEventListener("click", function () { set(!g.classList.contains("open")); });
+      g.addEventListener("keydown", function (e) { if (e.key === "Escape") { set(false); b.focus(); } });
+      g.addEventListener("focusout", function (e) { if (!g.contains(e.relatedTarget)) set(false); });
+      document.addEventListener("click", function (e) { if (!g.contains(e.target)) set(false); });
+    });
     document.querySelectorAll("[data-updated]").forEach(function (e) { e.textContent = monthYear(D.updated); });
     document.querySelectorAll("[data-qwa]").forEach(function (e) { e.outerHTML = qwa(e.innerHTML, e.getAttribute("data-meta")); });
     document.querySelectorAll("[data-source]").forEach(function (e) { e.outerHTML = sourceLine(e.getAttribute("data-source"), e.getAttribute("data-extra")); });
