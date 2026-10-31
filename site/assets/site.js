@@ -93,7 +93,9 @@
 
   /* ---------- Layout ---------- */
   function header() {
+    // Cloudflare Pages serves clean URLs (/utah for utah.html), so normalize before matching.
     var here = location.pathname.split("/").pop() || "index.html";
+    if (here.indexOf(".") < 0) here += ".html";
     var links = NAV.map(function (n) {
       return '<a href="' + n[0] + '"' + (n[0] === here ? ' aria-current="page"' : "") + ">" + n[1] + "</a>";
     }).join("");

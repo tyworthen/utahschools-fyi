@@ -9,3 +9,7 @@ hyperd*.log
 __pycache__/
 *.pyc
 .venv/
+
+# Cloudflare Pages build output
+dist/
+.wrangler/
