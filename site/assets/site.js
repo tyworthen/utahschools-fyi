@@ -1,8 +1,8 @@
-/* Utah School Finance — shared layout, formatting, and chart components */
+/* Utah Schools FYI — shared layout, formatting, and chart components */
 (function () {
   "use strict";
   var D = window.TSF;
-  var SITE = "Utah School Finance";
+  var SITE = "Utah Schools FYI";
   var INDEPENDENCE = "An independent research and data project. Not affiliated with the Utah State Board of Education, the Utah Office of the State Auditor, Utah school districts, or any other government agency.";
 
   var NAV = [

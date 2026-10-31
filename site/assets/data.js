@@ -1,5 +1,5 @@
 /*
- * Utah School Finance — site dataset
+ * Utah Schools FYI — site dataset
  *
  * Every figure the site displays comes from this file. A value of `null`
  * means the figure has not yet been collected and verified; the site shows

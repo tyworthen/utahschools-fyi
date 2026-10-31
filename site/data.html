@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data Explorer · Utah School Finance</title>
+<title>Data Explorer · Utah Schools FYI</title>
 <meta name="description" content="Filter, view, and download standardized financial data for all 41 Utah school districts.">
 <link rel="canonical" href="https://utahschools.fyi/data">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Utah School Finance">
-<meta property="og:title" content="Data Explorer · Utah School Finance">
+<meta property="og:site_name" content="Utah Schools FYI">
+<meta property="og:title" content="Data Explorer · Utah Schools FYI">
 <meta property="og:description" content="Filter, view, and download standardized financial data for all 41 Utah school districts.">
 <meta property="og:url" content="https://utahschools.fyi/data">
 <meta property="og:image" content="https://utahschools.fyi/assets/brand/og-image.png">
@@ -142,8 +142,8 @@
       var q = function (v) { v = v == null ? "" : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
       return [keys.join(",")].concat(list.map(function (r) { return keys.map(function (k) { return q(r[k]); }).join(","); })).join("\n");
     }
-    $("dl-csv").addEventListener("click", function () { download("usf_" + $("metric").value + ".csv", csv(rows()), "text/csv"); });
-    $("dl-json").addEventListener("click", function () { download("usf_" + $("metric").value + ".json", JSON.stringify({ updated: TSF.updated, rows: rows() }, null, 2), "application/json"); });
+    $("dl-csv").addEventListener("click", function () { download("utahschools_" + $("metric").value + ".csv", csv(rows()), "text/csv"); });
+    $("dl-json").addEventListener("click", function () { download("utahschools_" + $("metric").value + ".json", JSON.stringify({ updated: TSF.updated, rows: rows() }, null, 2), "application/json"); });
     ["metric", "district", "from", "to"].forEach(function (id) { $(id).addEventListener("change", draw); });
     document.querySelectorAll("[data-view]").forEach(function (b) {
       b.addEventListener("click", function () {

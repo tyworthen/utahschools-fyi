@@ -1,4 +1,4 @@
-# Utah School Finance — utahschools.fyi
+# Utah Schools FYI — utahschools.fyi
 
 Independent, nonpartisan research and data on Utah public-school finances and outcomes,
 starting with a case study of Tooele County School District. See `context.md` for scope and
