@@ -24,31 +24,9 @@ python3 -m pip install openpyxl
 python3 scripts/build_usbe_data.py
 ```
 
-## Deploying (Cloudflare Pages)
+## Deploying
 
-Git integration — Cloudflare dashboard → Workers & Pages → Create → Pages → connect this repo:
+The site is hosted on Cloudflare Pages at https://utahschools.fyi. See
+[`deployment.md`](deployment.md) for setup, publishing updates, email routing, rollbacks, and limits.
 
-- Production branch: `main`
-- Framework preset: None
-- Build command: `bash scripts/build_pages.sh`
-- Build output directory: `dist`
-
-Then Custom domains → add `utahschools.fyi` (and `www.utahschools.fyi`, redirected to the apex).
-
-Direct upload instead of Git integration:
-
-```sh
-bash scripts/build_pages.sh
-npx wrangler pages deploy
-```
-
-Notes:
-
-- Cloudflare Pages limits each file to 25 MiB. The build skips the unzipped Tableau
-  folders (`extracted_*`), whose `.hyper` files exceed it; the original `.twbx`
-  workbooks and the CSV exports are still published. The build fails if any other
-  file is too large.
-- Pages serves clean URLs (`/utah` for `utah.html`); internal links keep `.html` so the
-  site also works when opened from disk.
-- `site/_headers` sets security and caching headers; `site/sitemap.xml` and
-  `site/robots.txt` point at `https://utahschools.fyi`.
+Build command `bash scripts/build_pages.sh`, output directory `dist`.
