@@ -1,0 +1,493 @@
+lea_number,lea_name,fiscal_year,fund,original_budget,final_budget,actual,source
+01,Alpine District,2013,10 General Fund,,389081515,372409878,USBE AFR Tableau Public extract
+01,Alpine District,2014,10 General Fund,405454034,417973514,397201567,USBE AFR Tableau Public extract
+01,Alpine District,2015,10 General Fund,425215042,433824935,405891136,USBE AFR Tableau Public extract
+01,Alpine District,2016,10 General Fund,460810187,476213887,444061962,USBE AFR Tableau Public extract
+01,Alpine District,2017,10 General Fund,493086194,513247335,460395600,USBE AFR Tableau Public extract
+01,Alpine District,2018,10 General Fund,538102251,541817412,493101580,USBE AFR Tableau Public extract
+01,Alpine District,2019,10 General Fund,576430081,595296018,536613680,USBE AFR Tableau Public extract
+01,Alpine District,2020,10 General Fund,604620286,653717367,594998445,USBE AFR Tableau Public extract
+01,Alpine District,2021,10 General Fund,638813747,687685641,618754034,USBE AFR Tableau Public extract
+01,Alpine District,2022,10 General Fund,722045676,762681909,673496246,USBE AFR Tableau Public extract
+01,Alpine District,2023,10 General Fund,764454134,782324822,739372453,USBE AFR Tableau Public extract
+01,Alpine District,2024,10 General Fund,819432580,846668866,793873497,USBE AFR Tableau Public extract
+02,Beaver District,2013,10 General Fund,,12924294,12356891,USBE AFR Tableau Public extract
+02,Beaver District,2014,10 General Fund,12651986,13685171,12452200,USBE AFR Tableau Public extract
+02,Beaver District,2015,10 General Fund,13310381,14278535,13516093,USBE AFR Tableau Public extract
+02,Beaver District,2016,10 General Fund,13962430,14051416,13015102,USBE AFR Tableau Public extract
+02,Beaver District,2017,10 General Fund,13937995,14982310,13950572,USBE AFR Tableau Public extract
+02,Beaver District,2018,10 General Fund,14627540,15542751,14575763,USBE AFR Tableau Public extract
+02,Beaver District,2019,10 General Fund,15351506,16389046,15349098,USBE AFR Tableau Public extract
+02,Beaver District,2020,10 General Fund,16231853,16644807,15439469,USBE AFR Tableau Public extract
+02,Beaver District,2021,10 General Fund,15999080,18818777,17289724,USBE AFR Tableau Public extract
+02,Beaver District,2022,10 General Fund,18288659,20166219,17801095,USBE AFR Tableau Public extract
+02,Beaver District,2023,10 General Fund,20309023,22837486,19833689,USBE AFR Tableau Public extract
+02,Beaver District,2024,10 General Fund,22624990,23891683,23042131,USBE AFR Tableau Public extract
+03,Box Elder District,2013,10 General Fund,,69711786,67567196,USBE AFR Tableau Public extract
+03,Box Elder District,2014,10 General Fund,69241895,69716540,67712030,USBE AFR Tableau Public extract
+03,Box Elder District,2015,10 General Fund,70053875,71556889,69889208,USBE AFR Tableau Public extract
+03,Box Elder District,2016,10 General Fund,75703607,80534502,73427903,USBE AFR Tableau Public extract
+03,Box Elder District,2017,10 General Fund,79334968,80006203,75176935,USBE AFR Tableau Public extract
+03,Box Elder District,2018,10 General Fund,82144703,86718383,80711019,USBE AFR Tableau Public extract
+03,Box Elder District,2019,10 General Fund,91789159,94368957,91037744,USBE AFR Tableau Public extract
+03,Box Elder District,2020,10 General Fund,99978277,99567103,97449046,USBE AFR Tableau Public extract
+03,Box Elder District,2021,10 General Fund,100213377,103806986,107770864,USBE AFR Tableau Public extract
+03,Box Elder District,2022,10 General Fund,112212367,121200835,110404500,USBE AFR Tableau Public extract
+03,Box Elder District,2023,10 General Fund,133615495,127890311,124100995,USBE AFR Tableau Public extract
+03,Box Elder District,2024,10 General Fund,138659478,141196388,133460420,USBE AFR Tableau Public extract
+04,Cache District,2013,10 General Fund,,98722056,89378902,USBE AFR Tableau Public extract
+04,Cache District,2014,10 General Fund,96673980,102935091,94463399,USBE AFR Tableau Public extract
+04,Cache District,2015,10 General Fund,100745859,108318305,97974793,USBE AFR Tableau Public extract
+04,Cache District,2016,10 General Fund,109715524,118687537,105544957,USBE AFR Tableau Public extract
+04,Cache District,2017,10 General Fund,119809595,,115091214,USBE AFR Tableau Public extract
+04,Cache District,2018,10 General Fund,125506354,143625309,131728431,USBE AFR Tableau Public extract
+04,Cache District,2019,10 General Fund,137955319,149059732,133776892,USBE AFR Tableau Public extract
+04,Cache District,2020,10 General Fund,148495727,163546358,142496588,USBE AFR Tableau Public extract
+04,Cache District,2021,10 General Fund,153925344,181740880,156419215,USBE AFR Tableau Public extract
+04,Cache District,2022,10 General Fund,175579405,204873112,169547685,USBE AFR Tableau Public extract
+04,Cache District,2023,10 General Fund,201761863,217852018,189013775,USBE AFR Tableau Public extract
+04,Cache District,2024,10 General Fund,217089526,240117737,205575163,USBE AFR Tableau Public extract
+05,Carbon District,2013,10 General Fund,,,25088532,USBE AFR Tableau Public extract
+05,Carbon District,2014,10 General Fund,,,25962602,USBE AFR Tableau Public extract
+05,Carbon District,2015,10 General Fund,25371720,26398370,26141100,USBE AFR Tableau Public extract
+05,Carbon District,2016,10 General Fund,26887750,27994750,26835167,USBE AFR Tableau Public extract
+05,Carbon District,2017,10 General Fund,26485500,30641500,28596146,USBE AFR Tableau Public extract
+05,Carbon District,2018,10 General Fund,28991745,31491745,29315033,USBE AFR Tableau Public extract
+05,Carbon District,2019,10 General Fund,30050098,31150098,31479099,USBE AFR Tableau Public extract
+05,Carbon District,2020,10 General Fund,31388913,33816622,33067565,USBE AFR Tableau Public extract
+05,Carbon District,2021,10 General Fund,33779071,35229071,35931245,USBE AFR Tableau Public extract
+05,Carbon District,2022,10 General Fund,35642150,38532285,38446862,USBE AFR Tableau Public extract
+05,Carbon District,2023,10 General Fund,38656408,41556462,39045791,USBE AFR Tableau Public extract
+05,Carbon District,2024,10 General Fund,43859776,44859776,43985430,USBE AFR Tableau Public extract
+06,Daggett District,2013,10 General Fund,,,2979759,USBE AFR Tableau Public extract
+06,Daggett District,2014,10 General Fund,3218613,3314675,3201061,USBE AFR Tableau Public extract
+06,Daggett District,2015,10 General Fund,3489146,3253972,3125774,USBE AFR Tableau Public extract
+06,Daggett District,2016,10 General Fund,3326160,3342887,3233771,USBE AFR Tableau Public extract
+06,Daggett District,2017,10 General Fund,3500724,3479199,3476450,USBE AFR Tableau Public extract
+06,Daggett District,2018,10 General Fund,3924917,3807468,3762389,USBE AFR Tableau Public extract
+06,Daggett District,2019,10 General Fund,3827790,4079451,3643442,USBE AFR Tableau Public extract
+06,Daggett District,2020,10 General Fund,4256135,4009235,3856782,USBE AFR Tableau Public extract
+06,Daggett District,2021,10 General Fund,4265246,4488110,4264288,USBE AFR Tableau Public extract
+06,Daggett District,2022,10 General Fund,4562051,4729101,4650479,USBE AFR Tableau Public extract
+06,Daggett District,2023,10 General Fund,5172425,5044428,5086808,USBE AFR Tableau Public extract
+06,Daggett District,2024,10 General Fund,5868482,6465041,6283103,USBE AFR Tableau Public extract
+07,Davis District,2013,10 General Fund,,387443562,386554208,USBE AFR Tableau Public extract
+07,Davis District,2014,10 General Fund,397235507,406639300,402994655,USBE AFR Tableau Public extract
+07,Davis District,2015,10 General Fund,415628600,420292100,411202618,USBE AFR Tableau Public extract
+07,Davis District,2016,10 General Fund,439460600,439114800,439590772,USBE AFR Tableau Public extract
+07,Davis District,2017,10 General Fund,467069800,466198500,460462031,USBE AFR Tableau Public extract
+07,Davis District,2018,10 General Fund,493861100,498054300,501033534,USBE AFR Tableau Public extract
+07,Davis District,2019,10 General Fund,524617500,526640300,521617092,USBE AFR Tableau Public extract
+07,Davis District,2020,10 General Fund,560537700,556861300,546468298,USBE AFR Tableau Public extract
+07,Davis District,2021,10 General Fund,567784200,592645000,592722523,USBE AFR Tableau Public extract
+07,Davis District,2022,10 General Fund,621300900,650035300,642085475,USBE AFR Tableau Public extract
+07,Davis District,2023,10 General Fund,680287400,707521348,684782289,USBE AFR Tableau Public extract
+07,Davis District,2024,10 General Fund,750102400,779131300,755259124,USBE AFR Tableau Public extract
+08,Duchesne District,2013,10 General Fund,,,31432378,USBE AFR Tableau Public extract
+08,Duchesne District,2014,10 General Fund,32864000,33954000,32637482,USBE AFR Tableau Public extract
+08,Duchesne District,2015,10 General Fund,35193000,35729000,35226252,USBE AFR Tableau Public extract
+08,Duchesne District,2016,10 General Fund,36551000,38671000,37382819,USBE AFR Tableau Public extract
+08,Duchesne District,2017,10 General Fund,37842000,38060000,36563632,USBE AFR Tableau Public extract
+08,Duchesne District,2018,10 General Fund,39407000,39325000,38734276,USBE AFR Tableau Public extract
+08,Duchesne District,2019,10 General Fund,41631000,44134000,44080901,USBE AFR Tableau Public extract
+08,Duchesne District,2020,10 General Fund,45670000,48248000,45469527,USBE AFR Tableau Public extract
+08,Duchesne District,2021,10 General Fund,46926000,52887000,49319481,USBE AFR Tableau Public extract
+08,Duchesne District,2022,10 General Fund,51046000,56929000,54716919,USBE AFR Tableau Public extract
+08,Duchesne District,2023,10 General Fund,57269000,59653000,57811020,USBE AFR Tableau Public extract
+08,Duchesne District,2024,10 General Fund,64121000,,70697140,USBE AFR Tableau Public extract
+09,Emery District,2013,10 General Fund,,22553077,21436853,USBE AFR Tableau Public extract
+09,Emery District,2014,10 General Fund,21936376,23147554,22179743,USBE AFR Tableau Public extract
+09,Emery District,2015,10 General Fund,22847070,24122163,22418676,USBE AFR Tableau Public extract
+09,Emery District,2016,10 General Fund,23324035,24420305,22937343,USBE AFR Tableau Public extract
+09,Emery District,2017,10 General Fund,23436157,24325377,22646311,USBE AFR Tableau Public extract
+09,Emery District,2018,10 General Fund,23315084,25656139,23680244,USBE AFR Tableau Public extract
+09,Emery District,2019,10 General Fund,24929202,27012231,24551533,USBE AFR Tableau Public extract
+09,Emery District,2020,10 General Fund,25991048,27945148,25196638,USBE AFR Tableau Public extract
+09,Emery District,2021,10 General Fund,26866007,31004283,27439955,USBE AFR Tableau Public extract
+09,Emery District,2022,10 General Fund,28968925,34219173,28986156,USBE AFR Tableau Public extract
+09,Emery District,2023,10 General Fund,32286769,51722790,31628183,USBE AFR Tableau Public extract
+09,Emery District,2024,10 General Fund,47730125,57645527,33111742,USBE AFR Tableau Public extract
+10,Garfield District,2013,10 General Fund,,,8349251,USBE AFR Tableau Public extract
+10,Garfield District,2014,10 General Fund,9506923,9768948,8475739,USBE AFR Tableau Public extract
+10,Garfield District,2015,10 General Fund,9695088,9491572,8839859,USBE AFR Tableau Public extract
+10,Garfield District,2016,10 General Fund,9827312,9595382,9260469,USBE AFR Tableau Public extract
+10,Garfield District,2017,10 General Fund,10151631,9890077,9524627,USBE AFR Tableau Public extract
+10,Garfield District,2018,10 General Fund,10224880,10886076,9813026,USBE AFR Tableau Public extract
+10,Garfield District,2019,10 General Fund,11348801,12593495,10217421,USBE AFR Tableau Public extract
+10,Garfield District,2020,10 General Fund,12955707,13847462,11035711,USBE AFR Tableau Public extract
+10,Garfield District,2021,10 General Fund,14106182,15507859,11792739,USBE AFR Tableau Public extract
+10,Garfield District,2022,10 General Fund,16529652,,14136729,USBE AFR Tableau Public extract
+10,Garfield District,2023,10 General Fund,17277421,,16191208,USBE AFR Tableau Public extract
+10,Garfield District,2024,10 General Fund,17702243,,18850269,USBE AFR Tableau Public extract
+11,Grand District,2013,10 General Fund,1885338,12522753,12608294,USBE AFR Tableau Public extract
+11,Grand District,2014,10 General Fund,13451978,13014447,12963134,USBE AFR Tableau Public extract
+11,Grand District,2015,10 General Fund,13226356,13862388,13274367,USBE AFR Tableau Public extract
+11,Grand District,2016,10 General Fund,13899033,14184299,13834563,USBE AFR Tableau Public extract
+11,Grand District,2017,10 General Fund,14287202,14785901,14424476,USBE AFR Tableau Public extract
+11,Grand District,2018,10 General Fund,15107015,15516607,15364596,USBE AFR Tableau Public extract
+11,Grand District,2019,10 General Fund,16817880,17492323,17256583,USBE AFR Tableau Public extract
+11,Grand District,2020,10 General Fund,17553689,19052211,17366290,USBE AFR Tableau Public extract
+11,Grand District,2021,10 General Fund,19052211,21234458,18427862,USBE AFR Tableau Public extract
+11,Grand District,2022,10 General Fund,20106806,22776646,18843177,USBE AFR Tableau Public extract
+11,Grand District,2023,10 General Fund,22895839,24590782,19961488,USBE AFR Tableau Public extract
+11,Grand District,2024,10 General Fund,25505695,29003927,23526507,USBE AFR Tableau Public extract
+12,Granite District,2013,10 General Fund,,436237429,428336611,USBE AFR Tableau Public extract
+12,Granite District,2014,10 General Fund,448751716,444584419,439666402,USBE AFR Tableau Public extract
+12,Granite District,2015,10 General Fund,463068698,456495721,451106008,USBE AFR Tableau Public extract
+12,Granite District,2016,10 General Fund,476790764,467467868,458315881,USBE AFR Tableau Public extract
+12,Granite District,2017,10 General Fund,491064853,486711786,471303190,USBE AFR Tableau Public extract
+12,Granite District,2018,10 General Fund,518317337,507645623,499280841,USBE AFR Tableau Public extract
+12,Granite District,2019,10 General Fund,548024922,530786119,519466418,USBE AFR Tableau Public extract
+12,Granite District,2020,10 General Fund,573237080,560708178,550850849,USBE AFR Tableau Public extract
+12,Granite District,2021,10 General Fund,594940498,597972914,591437108,USBE AFR Tableau Public extract
+12,Granite District,2022,10 General Fund,639238154,610434830,604356495,USBE AFR Tableau Public extract
+12,Granite District,2023,10 General Fund,693158266,634967527,624093177,USBE AFR Tableau Public extract
+12,Granite District,2024,10 General Fund,711990358,696158543,673356241,USBE AFR Tableau Public extract
+13,Iron District,2013,10 General Fund,,51493825,51123806,USBE AFR Tableau Public extract
+13,Iron District,2014,10 General Fund,52614043,52217828,52096151,USBE AFR Tableau Public extract
+13,Iron District,2015,10 General Fund,54539268,54202222,53642916,USBE AFR Tableau Public extract
+13,Iron District,2016,10 General Fund,57518136,56695727,56265132,USBE AFR Tableau Public extract
+13,Iron District,2017,10 General Fund,60337470,59693469,58957932,USBE AFR Tableau Public extract
+13,Iron District,2018,10 General Fund,64362007,63745184,63503207,USBE AFR Tableau Public extract
+13,Iron District,2019,10 General Fund,66588370,68263872,67757432,USBE AFR Tableau Public extract
+13,Iron District,2020,10 General Fund,72324216,74609727,73891695,USBE AFR Tableau Public extract
+13,Iron District,2021,10 General Fund,74318850,84448029,82339295,USBE AFR Tableau Public extract
+13,Iron District,2022,10 General Fund,91213295,95936219,92669763,USBE AFR Tableau Public extract
+13,Iron District,2023,10 General Fund,113817782,112605326,106032346,USBE AFR Tableau Public extract
+13,Iron District,2024,10 General Fund,126235283,135370617,129463042,USBE AFR Tableau Public extract
+14,Jordan District,2013,10 General Fund,,300983369,273963376,USBE AFR Tableau Public extract
+14,Jordan District,2014,10 General Fund,297469276,309118866,282619725,USBE AFR Tableau Public extract
+14,Jordan District,2015,10 General Fund,307828803,320319335,292526260,USBE AFR Tableau Public extract
+14,Jordan District,2016,10 General Fund,316731670,,303033772,USBE AFR Tableau Public extract
+14,Jordan District,2017,10 General Fund,337229197,349476669,315359975,USBE AFR Tableau Public extract
+14,Jordan District,2018,10 General Fund,376754713,364629277,337122599,USBE AFR Tableau Public extract
+14,Jordan District,2019,10 General Fund,426338985,395101609,371553580,USBE AFR Tableau Public extract
+14,Jordan District,2020,10 General Fund,471098066,463312274,418269253,USBE AFR Tableau Public extract
+14,Jordan District,2021,10 General Fund,482228470,515436112,464008550,USBE AFR Tableau Public extract
+14,Jordan District,2022,10 General Fund,502984100,542509709,479080169,USBE AFR Tableau Public extract
+14,Jordan District,2023,10 General Fund,553360529,580737858,521608045,USBE AFR Tableau Public extract
+14,Jordan District,2024,10 General Fund,611735673,622243853,568207533,USBE AFR Tableau Public extract
+15,Juab District,2013,10 General Fund,,13322000,13072111,USBE AFR Tableau Public extract
+15,Juab District,2014,10 General Fund,13310000,13400000,13222785,USBE AFR Tableau Public extract
+15,Juab District,2015,10 General Fund,13595000,13925000,13656153,USBE AFR Tableau Public extract
+15,Juab District,2016,10 General Fund,14420000,15000000,14555837,USBE AFR Tableau Public extract
+15,Juab District,2017,10 General Fund,15600000,15600000,15807054,USBE AFR Tableau Public extract
+15,Juab District,2018,10 General Fund,16790000,17700000,17125287,USBE AFR Tableau Public extract
+15,Juab District,2019,10 General Fund,18500000,19035000,18349929,USBE AFR Tableau Public extract
+15,Juab District,2020,10 General Fund,20100000,20300000,20231679,USBE AFR Tableau Public extract
+15,Juab District,2021,10 General Fund,19300000,22620000,22517098,USBE AFR Tableau Public extract
+15,Juab District,2022,10 General Fund,24000000,27525000,25986887,USBE AFR Tableau Public extract
+15,Juab District,2023,10 General Fund,29125000,29660000,26043364,USBE AFR Tableau Public extract
+15,Juab District,2024,10 General Fund,31500000,35035000,32877691,USBE AFR Tableau Public extract
+16,Kane District,2013,10 General Fund,,,11415241,USBE AFR Tableau Public extract
+16,Kane District,2014,10 General Fund,12271509,12779131,11910871,USBE AFR Tableau Public extract
+16,Kane District,2015,10 General Fund,12589825,13544167,12580277,USBE AFR Tableau Public extract
+16,Kane District,2016,10 General Fund,15823390,16386522,15301207,USBE AFR Tableau Public extract
+16,Kane District,2017,10 General Fund,14954318,15126488,14800069,USBE AFR Tableau Public extract
+16,Kane District,2018,10 General Fund,15132495,15207011,13700286,USBE AFR Tableau Public extract
+16,Kane District,2019,10 General Fund,15805760,16798974,15336672,USBE AFR Tableau Public extract
+16,Kane District,2020,10 General Fund,17178383,17096641,15462471,USBE AFR Tableau Public extract
+16,Kane District,2021,10 General Fund,15668348,17562399,15904373,USBE AFR Tableau Public extract
+16,Kane District,2022,10 General Fund,16598709,18778635,16396942,USBE AFR Tableau Public extract
+16,Kane District,2023,10 General Fund,18017726,20386070,19203499,USBE AFR Tableau Public extract
+16,Kane District,2024,10 General Fund,19798357,24088725,20740126,USBE AFR Tableau Public extract
+17,Millard District,2013,10 General Fund,,23481324,23162524,USBE AFR Tableau Public extract
+17,Millard District,2014,10 General Fund,23723924,23736341,23050413,USBE AFR Tableau Public extract
+17,Millard District,2015,10 General Fund,24305139,24649530,24241385,USBE AFR Tableau Public extract
+17,Millard District,2016,10 General Fund,25800352,30214456,25989362,USBE AFR Tableau Public extract
+17,Millard District,2017,10 General Fund,26859122,27078431,27078431,USBE AFR Tableau Public extract
+17,Millard District,2018,10 General Fund,28774508,28828797,28235997,USBE AFR Tableau Public extract
+17,Millard District,2019,10 General Fund,29107836,29742047,28798745,USBE AFR Tableau Public extract
+17,Millard District,2020,10 General Fund,30764210,30665183,30097125,USBE AFR Tableau Public extract
+17,Millard District,2021,10 General Fund,30583380,33195577,32424397,USBE AFR Tableau Public extract
+17,Millard District,2022,10 General Fund,33471818,35706937,35686439,USBE AFR Tableau Public extract
+17,Millard District,2023,10 General Fund,38230649,38657729,37473526,USBE AFR Tableau Public extract
+17,Millard District,2024,10 General Fund,41880430,43565758,41553583,USBE AFR Tableau Public extract
+18,Morgan District,2013,10 General Fund,14191936,14218254,13467018,USBE AFR Tableau Public extract
+18,Morgan District,2014,10 General Fund,15232384,15142160,13304113,USBE AFR Tableau Public extract
+18,Morgan District,2015,10 General Fund,,16441929,14162685,USBE AFR Tableau Public extract
+18,Morgan District,2016,10 General Fund,16298638,16055805,14734711,USBE AFR Tableau Public extract
+18,Morgan District,2017,10 General Fund,16298638,17176662,15496075,USBE AFR Tableau Public extract
+18,Morgan District,2018,10 General Fund,17542928,19556524,17469280,USBE AFR Tableau Public extract
+18,Morgan District,2019,10 General Fund,18933934,22048228,18699341,USBE AFR Tableau Public extract
+18,Morgan District,2020,10 General Fund,23065275,23883821,22982328,USBE AFR Tableau Public extract
+18,Morgan District,2021,10 General Fund,25867191,26490995,24593723,USBE AFR Tableau Public extract
+18,Morgan District,2022,10 General Fund,26671803,27329721,25910129,USBE AFR Tableau Public extract
+18,Morgan District,2023,10 General Fund,28007000,30071360,29257097,USBE AFR Tableau Public extract
+18,Morgan District,2024,10 General Fund,38275314,38177838,35062510,USBE AFR Tableau Public extract
+19,Nebo District,2013,10 General Fund,,178887323,170352872,USBE AFR Tableau Public extract
+19,Nebo District,2014,10 General Fund,178369173,184958649,175759994,USBE AFR Tableau Public extract
+19,Nebo District,2015,10 General Fund,183917077,189005649,178940017,USBE AFR Tableau Public extract
+19,Nebo District,2016,10 General Fund,197123780,203105250,192405455,USBE AFR Tableau Public extract
+19,Nebo District,2017,10 General Fund,207379431,215516023,205696867,USBE AFR Tableau Public extract
+19,Nebo District,2018,10 General Fund,215015417,228947376,216217143,USBE AFR Tableau Public extract
+19,Nebo District,2019,10 General Fund,237490271,243799297,228555286,USBE AFR Tableau Public extract
+19,Nebo District,2020,10 General Fund,250609718,262749084,236736146,USBE AFR Tableau Public extract
+19,Nebo District,2021,10 General Fund,265023401,305745531,266074559,USBE AFR Tableau Public extract
+19,Nebo District,2022,10 General Fund,295772881,341956268,290482041,USBE AFR Tableau Public extract
+19,Nebo District,2023,10 General Fund,317153317,353495972,314676874,USBE AFR Tableau Public extract
+19,Nebo District,2024,10 General Fund,367785283,418653886,385696313,USBE AFR Tableau Public extract
+20,North Sanpete District,2013,10 General Fund,,,17111106,USBE AFR Tableau Public extract
+20,North Sanpete District,2014,10 General Fund,,17580492,16862587,USBE AFR Tableau Public extract
+20,North Sanpete District,2015,10 General Fund,17745589,19559952,17869432,USBE AFR Tableau Public extract
+20,North Sanpete District,2016,10 General Fund,18618656,19596118,18330571,USBE AFR Tableau Public extract
+20,North Sanpete District,2017,10 General Fund,20001255,21147029,19456841,USBE AFR Tableau Public extract
+20,North Sanpete District,2018,10 General Fund,20201115,21619164,20339515,USBE AFR Tableau Public extract
+20,North Sanpete District,2019,10 General Fund,21486439,22756142,21011906,USBE AFR Tableau Public extract
+20,North Sanpete District,2020,10 General Fund,23552143,25015250,23180789,USBE AFR Tableau Public extract
+20,North Sanpete District,2021,10 General Fund,23114426,27123036,25318488,USBE AFR Tableau Public extract
+20,North Sanpete District,2022,10 General Fund,25694360,27228427,27171346,USBE AFR Tableau Public extract
+20,North Sanpete District,2023,10 General Fund,25604260,32890347,30252272,USBE AFR Tableau Public extract
+20,North Sanpete District,2024,10 General Fund,29715047,33003887,31879335,USBE AFR Tableau Public extract
+21,North Summit District,2013,10 General Fund,,7765842,7750999,USBE AFR Tableau Public extract
+21,North Summit District,2014,10 General Fund,7995975,7964287,7777755,USBE AFR Tableau Public extract
+21,North Summit District,2015,10 General Fund,8326466,8276572,8063848,USBE AFR Tableau Public extract
+21,North Summit District,2016,10 General Fund,8485370,8327867,8269243,USBE AFR Tableau Public extract
+21,North Summit District,2017,10 General Fund,8710221,8751978,8703752,USBE AFR Tableau Public extract
+21,North Summit District,2018,10 General Fund,9059997,9903770,10228327,USBE AFR Tableau Public extract
+21,North Summit District,2019,10 General Fund,10737366,11501702,11370100,USBE AFR Tableau Public extract
+21,North Summit District,2020,10 General Fund,11951214,11958080,11794745,USBE AFR Tableau Public extract
+21,North Summit District,2021,10 General Fund,12327985,12937029,12342378,USBE AFR Tableau Public extract
+21,North Summit District,2022,10 General Fund,14147262,14148804,13708960,USBE AFR Tableau Public extract
+21,North Summit District,2023,10 General Fund,14129757,14718011,14561651,USBE AFR Tableau Public extract
+21,North Summit District,2024,10 General Fund,15882824,16184502,15688572,USBE AFR Tableau Public extract
+22,Park City District,2013,10 General Fund,,43690018,43976098,USBE AFR Tableau Public extract
+22,Park City District,2014,10 General Fund,46412572,47509918,47486881,USBE AFR Tableau Public extract
+22,Park City District,2015,10 General Fund,54436243,54586270,53201482,USBE AFR Tableau Public extract
+22,Park City District,2016,10 General Fund,60508038,60576855,58947994,USBE AFR Tableau Public extract
+22,Park City District,2017,10 General Fund,62730910,62780912,61265719,USBE AFR Tableau Public extract
+22,Park City District,2018,10 General Fund,68640488,68640489,66205855,USBE AFR Tableau Public extract
+22,Park City District,2019,10 General Fund,76284454,76818366,74922570,USBE AFR Tableau Public extract
+22,Park City District,2020,10 General Fund,81590112,80847397,77104705,USBE AFR Tableau Public extract
+22,Park City District,2021,10 General Fund,81053496,86626819,82637208,USBE AFR Tableau Public extract
+22,Park City District,2022,10 General Fund,90867567,92514945,86277078,USBE AFR Tableau Public extract
+22,Park City District,2023,10 General Fund,107865681,109175947,101637727,USBE AFR Tableau Public extract
+22,Park City District,2024,10 General Fund,134299280,109620945,99075076,USBE AFR Tableau Public extract
+23,Piute District,2013,10 General Fund,,3847704,3851705,USBE AFR Tableau Public extract
+23,Piute District,2014,10 General Fund,3959221,4180358,3998630,USBE AFR Tableau Public extract
+23,Piute District,2015,10 General Fund,4107536,4446566,4465601,USBE AFR Tableau Public extract
+23,Piute District,2016,10 General Fund,4434175,4530957,4509299,USBE AFR Tableau Public extract
+23,Piute District,2017,10 General Fund,4724001,4689557,4606081,USBE AFR Tableau Public extract
+23,Piute District,2018,10 General Fund,4589676,4698571,4666516,USBE AFR Tableau Public extract
+23,Piute District,2019,10 General Fund,4868959,4923652,4883300,USBE AFR Tableau Public extract
+23,Piute District,2020,10 General Fund,5053928,5041846,4841432,USBE AFR Tableau Public extract
+23,Piute District,2021,10 General Fund,4965777,5401850,5394020,USBE AFR Tableau Public extract
+23,Piute District,2022,10 General Fund,5445494,5807035,5714399,USBE AFR Tableau Public extract
+23,Piute District,2023,10 General Fund,6152824,6224177,6177219,USBE AFR Tableau Public extract
+23,Piute District,2024,10 General Fund,6681756,6956131,6823332,USBE AFR Tableau Public extract
+24,Rich District,2013,10 General Fund,,6383073,5895096,USBE AFR Tableau Public extract
+24,Rich District,2014,10 General Fund,6585422,6656347,6265011,USBE AFR Tableau Public extract
+24,Rich District,2015,10 General Fund,6640518,6724791,6150196,USBE AFR Tableau Public extract
+24,Rich District,2016,10 General Fund,6761472,6997916,6690766,USBE AFR Tableau Public extract
+24,Rich District,2017,10 General Fund,7181498,7403894,7023367,USBE AFR Tableau Public extract
+24,Rich District,2018,10 General Fund,7570328,7772329,7386981,USBE AFR Tableau Public extract
+24,Rich District,2019,10 General Fund,7752162,7858650,7656661,USBE AFR Tableau Public extract
+24,Rich District,2020,10 General Fund,8247464,8534329,7969958,USBE AFR Tableau Public extract
+24,Rich District,2021,10 General Fund,8419102,9304936,8657167,USBE AFR Tableau Public extract
+24,Rich District,2022,10 General Fund,9609654,9360459,9356298,USBE AFR Tableau Public extract
+24,Rich District,2023,10 General Fund,9748722,11731784,10892639,USBE AFR Tableau Public extract
+24,Rich District,2024,10 General Fund,11832224,11616793,11251468,USBE AFR Tableau Public extract
+25,San Juan District,2013,10 General Fund,,31663950,30084893,USBE AFR Tableau Public extract
+25,San Juan District,2014,10 General Fund,31121008,31412041,30799574,USBE AFR Tableau Public extract
+25,San Juan District,2015,10 General Fund,32054951,32331176,31916793,USBE AFR Tableau Public extract
+25,San Juan District,2016,10 General Fund,31941357,33773718,33529869,USBE AFR Tableau Public extract
+25,San Juan District,2017,10 General Fund,35474331,36987836,35614847,USBE AFR Tableau Public extract
+25,San Juan District,2018,10 General Fund,37007379,38345315,37182593,USBE AFR Tableau Public extract
+25,San Juan District,2019,10 General Fund,38870387,42672665,38731086,USBE AFR Tableau Public extract
+25,San Juan District,2020,10 General Fund,42596320,43213426,41033840,USBE AFR Tableau Public extract
+25,San Juan District,2021,10 General Fund,42483150,52153094,45961938,USBE AFR Tableau Public extract
+25,San Juan District,2022,10 General Fund,47196883,51144062,44186528,USBE AFR Tableau Public extract
+25,San Juan District,2023,10 General Fund,51679897,53425716,48652737,USBE AFR Tableau Public extract
+25,San Juan District,2024,10 General Fund,55762441,55521836,51815911,USBE AFR Tableau Public extract
+26,Sevier District,2013,10 General Fund,,33836163,29088773,USBE AFR Tableau Public extract
+26,Sevier District,2014,10 General Fund,38342888,34503590,30901071,USBE AFR Tableau Public extract
+26,Sevier District,2015,10 General Fund,41160147,35786616,30818544,USBE AFR Tableau Public extract
+26,Sevier District,2016,10 General Fund,43355254,38278011,32538394,USBE AFR Tableau Public extract
+26,Sevier District,2017,10 General Fund,46144837,40254682,33786246,USBE AFR Tableau Public extract
+26,Sevier District,2018,10 General Fund,50517732,43141014,34949003,USBE AFR Tableau Public extract
+26,Sevier District,2019,10 General Fund,55075801,44776509,37284643,USBE AFR Tableau Public extract
+26,Sevier District,2020,10 General Fund,61863346,46729785,37445751,USBE AFR Tableau Public extract
+26,Sevier District,2021,10 General Fund,65355273,50866528,39499650,USBE AFR Tableau Public extract
+26,Sevier District,2022,10 General Fund,72181032,56459961,44794238,USBE AFR Tableau Public extract
+26,Sevier District,2023,10 General Fund,84357719,62478700,51780230,USBE AFR Tableau Public extract
+26,Sevier District,2024,10 General Fund,92428894,,51209462,USBE AFR Tableau Public extract
+27,South Sanpete District,2013,10 General Fund,,,22198926,USBE AFR Tableau Public extract
+27,South Sanpete District,2014,10 General Fund,25910899,24391089,22081796,USBE AFR Tableau Public extract
+27,South Sanpete District,2015,10 General Fund,,27225178,23435083,USBE AFR Tableau Public extract
+27,South Sanpete District,2016,10 General Fund,24309253,26825354,24000658,USBE AFR Tableau Public extract
+27,South Sanpete District,2017,10 General Fund,26922337,26922337,25205094,USBE AFR Tableau Public extract
+27,South Sanpete District,2018,10 General Fund,29354317,30286087,26511636,USBE AFR Tableau Public extract
+27,South Sanpete District,2019,10 General Fund,31098932,30831900,28173243,USBE AFR Tableau Public extract
+27,South Sanpete District,2020,10 General Fund,31723061,34044883,30407685,USBE AFR Tableau Public extract
+27,South Sanpete District,2021,10 General Fund,35740228,36440916,30510913,USBE AFR Tableau Public extract
+27,South Sanpete District,2022,10 General Fund,35062499,38295271,31477495,USBE AFR Tableau Public extract
+27,South Sanpete District,2023,10 General Fund,39023945,40081205,36377583,USBE AFR Tableau Public extract
+27,South Sanpete District,2024,10 General Fund,41271216,43965227,39210951,USBE AFR Tableau Public extract
+28,South Summit District,2013,10 General Fund,,11692513,10889237,USBE AFR Tableau Public extract
+28,South Summit District,2014,10 General Fund,,12236794,11256004,USBE AFR Tableau Public extract
+28,South Summit District,2015,10 General Fund,12319727,12774478,11921415,USBE AFR Tableau Public extract
+28,South Summit District,2016,10 General Fund,12616672,13076264,12205170,USBE AFR Tableau Public extract
+28,South Summit District,2017,10 General Fund,13590508,13875735,13060087,USBE AFR Tableau Public extract
+28,South Summit District,2018,10 General Fund,15367223,16883372,16208460,USBE AFR Tableau Public extract
+28,South Summit District,2019,10 General Fund,17949767,18197214,17201932,USBE AFR Tableau Public extract
+28,South Summit District,2020,10 General Fund,18987238,18737530,17940521,USBE AFR Tableau Public extract
+28,South Summit District,2021,10 General Fund,19785959,19762453,18946127,USBE AFR Tableau Public extract
+28,South Summit District,2022,10 General Fund,21947867,22008685,21474590,USBE AFR Tableau Public extract
+28,South Summit District,2023,10 General Fund,24446776,24387254,23593512,USBE AFR Tableau Public extract
+28,South Summit District,2024,10 General Fund,27473379,27473379,26557764,USBE AFR Tableau Public extract
+29,Tintic District,2013,10 General Fund,,,3110559,USBE AFR Tableau Public extract
+29,Tintic District,2014,10 General Fund,,,3146664,USBE AFR Tableau Public extract
+29,Tintic District,2015,10 General Fund,,,3286776,USBE AFR Tableau Public extract
+29,Tintic District,2016,10 General Fund,,,3541625,USBE AFR Tableau Public extract
+29,Tintic District,2017,10 General Fund,,,3803219,USBE AFR Tableau Public extract
+29,Tintic District,2018,10 General Fund,,,3780362,USBE AFR Tableau Public extract
+29,Tintic District,2019,10 General Fund,,,3979286,USBE AFR Tableau Public extract
+29,Tintic District,2020,10 General Fund,,,4131750,USBE AFR Tableau Public extract
+29,Tintic District,2021,10 General Fund,,,4309069,USBE AFR Tableau Public extract
+29,Tintic District,2022,10 General Fund,,,4941346,USBE AFR Tableau Public extract
+29,Tintic District,2023,10 General Fund,,,5549194,USBE AFR Tableau Public extract
+29,Tintic District,2024,10 General Fund,,,6621128,USBE AFR Tableau Public extract
+30,Tooele District,2013,10 General Fund,,81393522,80381201,USBE AFR Tableau Public extract
+30,Tooele District,2014,10 General Fund,81397708,83336980,81435091,USBE AFR Tableau Public extract
+30,Tooele District,2015,10 General Fund,84910842,85914789,84896751,USBE AFR Tableau Public extract
+30,Tooele District,2016,10 General Fund,88690754,89252856,86767682,USBE AFR Tableau Public extract
+30,Tooele District,2017,10 General Fund,92447702,96450190,94224883,USBE AFR Tableau Public extract
+30,Tooele District,2018,10 General Fund,101155641,105661928,105537999,USBE AFR Tableau Public extract
+30,Tooele District,2019,10 General Fund,122269346,123426543,121554364,USBE AFR Tableau Public extract
+30,Tooele District,2020,10 General Fund,131408674,135047257,134984410,USBE AFR Tableau Public extract
+30,Tooele District,2021,10 General Fund,144634549,173229938,165521961,USBE AFR Tableau Public extract
+30,Tooele District,2022,10 General Fund,174667013,194484020,175307178,USBE AFR Tableau Public extract
+30,Tooele District,2023,10 General Fund,199726472,211757620,196407599,USBE AFR Tableau Public extract
+30,Tooele District,2024,10 General Fund,197221220,197511392,191587472,USBE AFR Tableau Public extract
+31,Uintah District,2013,10 General Fund,,50360621,44127189,USBE AFR Tableau Public extract
+31,Uintah District,2014,10 General Fund,49825695,54413993,45340344,USBE AFR Tableau Public extract
+31,Uintah District,2015,10 General Fund,52166900,56796961,50354188,USBE AFR Tableau Public extract
+31,Uintah District,2016,10 General Fund,57258702,59970548,53888487,USBE AFR Tableau Public extract
+31,Uintah District,2017,10 General Fund,56924320,58302085,52310103,USBE AFR Tableau Public extract
+31,Uintah District,2018,10 General Fund,56905007,58641812,52159029,USBE AFR Tableau Public extract
+31,Uintah District,2019,10 General Fund,60334022,61502253,54336846,USBE AFR Tableau Public extract
+31,Uintah District,2020,10 General Fund,61134174,61022398,58874924,USBE AFR Tableau Public extract
+31,Uintah District,2021,10 General Fund,62084099,68744434,63794931,USBE AFR Tableau Public extract
+31,Uintah District,2022,10 General Fund,70847355,73286876,65376790,USBE AFR Tableau Public extract
+31,Uintah District,2023,10 General Fund,76098197,78076775,71108719,USBE AFR Tableau Public extract
+31,Uintah District,2024,10 General Fund,85196891,89665273,85702030,USBE AFR Tableau Public extract
+32,Wasatch District,2013,10 General Fund,,38714805,37961031,USBE AFR Tableau Public extract
+32,Wasatch District,2014,10 General Fund,40855612,41619410,41559870,USBE AFR Tableau Public extract
+32,Wasatch District,2015,10 General Fund,43575617,44817524,44191145,USBE AFR Tableau Public extract
+32,Wasatch District,2016,10 General Fund,47116977,47616977,46824197,USBE AFR Tableau Public extract
+32,Wasatch District,2017,10 General Fund,48804072,50250577,49280058,USBE AFR Tableau Public extract
+32,Wasatch District,2018,10 General Fund,54533894,56758437,56228786,USBE AFR Tableau Public extract
+32,Wasatch District,2019,10 General Fund,62694003,64480393,62224276,USBE AFR Tableau Public extract
+32,Wasatch District,2020,10 General Fund,68399867,68799867,67893361,USBE AFR Tableau Public extract
+32,Wasatch District,2021,10 General Fund,69751543,81883927,79274710,USBE AFR Tableau Public extract
+32,Wasatch District,2022,10 General Fund,88924841,88924841,84426757,USBE AFR Tableau Public extract
+32,Wasatch District,2023,10 General Fund,95684498,98625030,95794796,USBE AFR Tableau Public extract
+32,Wasatch District,2024,10 General Fund,108304612,109304612,107224859,USBE AFR Tableau Public extract
+33,Washington District,2013,10 General Fund,,172891584,166840281,USBE AFR Tableau Public extract
+33,Washington District,2014,10 General Fund,167179108,175359871,171446929,USBE AFR Tableau Public extract
+33,Washington District,2015,10 General Fund,176535396,181256508,174361674,USBE AFR Tableau Public extract
+33,Washington District,2016,10 General Fund,185713937,187049591,182473449,USBE AFR Tableau Public extract
+33,Washington District,2017,10 General Fund,195882021,198022188,193496063,USBE AFR Tableau Public extract
+33,Washington District,2018,10 General Fund,210573367,210578817,206178986,USBE AFR Tableau Public extract
+33,Washington District,2019,10 General Fund,222667435,230649584,220601855,USBE AFR Tableau Public extract
+33,Washington District,2020,10 General Fund,247313032,259880456,239726290,USBE AFR Tableau Public extract
+33,Washington District,2021,10 General Fund,265162331,279828451,270941088,USBE AFR Tableau Public extract
+33,Washington District,2022,10 General Fund,298765886,303241714,285755886,USBE AFR Tableau Public extract
+33,Washington District,2023,10 General Fund,347063110,338040488,327506926,USBE AFR Tableau Public extract
+33,Washington District,2024,10 General Fund,353558043,360590377,342190106,USBE AFR Tableau Public extract
+34,Wayne District,2013,10 General Fund,,,5201678,USBE AFR Tableau Public extract
+34,Wayne District,2014,10 General Fund,,,5249669,USBE AFR Tableau Public extract
+34,Wayne District,2015,10 General Fund,5317751,5931084,5890963,USBE AFR Tableau Public extract
+34,Wayne District,2016,10 General Fund,5582495,5883090,5594078,USBE AFR Tableau Public extract
+34,Wayne District,2017,10 General Fund,5475766,6043439,5580664,USBE AFR Tableau Public extract
+34,Wayne District,2018,10 General Fund,6115950,5985603,5651822,USBE AFR Tableau Public extract
+34,Wayne District,2019,10 General Fund,6477340,6743743,6280397,USBE AFR Tableau Public extract
+34,Wayne District,2020,10 General Fund,6962002,6955392,6236242,USBE AFR Tableau Public extract
+34,Wayne District,2021,10 General Fund,6861000,7467052,6250553,USBE AFR Tableau Public extract
+34,Wayne District,2022,10 General Fund,7342866,7638937,6414307,USBE AFR Tableau Public extract
+34,Wayne District,2023,10 General Fund,7912302,,6917518,USBE AFR Tableau Public extract
+34,Wayne District,2024,10 General Fund,8309314,,7881553,USBE AFR Tableau Public extract
+35,Weber District,2013,10 General Fund,,189567053,178985453,USBE AFR Tableau Public extract
+35,Weber District,2014,10 General Fund,190932205,192450410,182569960,USBE AFR Tableau Public extract
+35,Weber District,2015,10 General Fund,198933185,,188670645,USBE AFR Tableau Public extract
+35,Weber District,2016,10 General Fund,202290928,202290928,194296209,USBE AFR Tableau Public extract
+35,Weber District,2017,10 General Fund,208486688,211750500,204068509,USBE AFR Tableau Public extract
+35,Weber District,2018,10 General Fund,218249900,216768137,215142935,USBE AFR Tableau Public extract
+35,Weber District,2019,10 General Fund,232168772,234168773,230067028,USBE AFR Tableau Public extract
+35,Weber District,2020,10 General Fund,246406629,251458705,242719451,USBE AFR Tableau Public extract
+35,Weber District,2021,10 General Fund,251458705,274317000,261263766,USBE AFR Tableau Public extract
+35,Weber District,2022,10 General Fund,280817000,292552966,284596643,USBE AFR Tableau Public extract
+35,Weber District,2023,10 General Fund,300650289,317867211,295166510,USBE AFR Tableau Public extract
+35,Weber District,2024,10 General Fund,331657424,337004500,330801815,USBE AFR Tableau Public extract
+36,Salt Lake District,2013,10 General Fund,,,173249839,USBE AFR Tableau Public extract
+36,Salt Lake District,2014,10 General Fund,176184464,178067837,174329020,USBE AFR Tableau Public extract
+36,Salt Lake District,2015,10 General Fund,,182821706,182246866,USBE AFR Tableau Public extract
+36,Salt Lake District,2016,10 General Fund,187251639,189786250,186798023,USBE AFR Tableau Public extract
+36,Salt Lake District,2017,10 General Fund,192842736,198561283,195230696,USBE AFR Tableau Public extract
+36,Salt Lake District,2018,10 General Fund,213052747,215751236,213751927,USBE AFR Tableau Public extract
+36,Salt Lake District,2019,10 General Fund,216272956,219684988,215601244,USBE AFR Tableau Public extract
+36,Salt Lake District,2020,10 General Fund,227323472,231104285,223478253,USBE AFR Tableau Public extract
+36,Salt Lake District,2021,10 General Fund,238080976,262776492,244107152,USBE AFR Tableau Public extract
+36,Salt Lake District,2022,10 General Fund,251434214,272786208,249249437,USBE AFR Tableau Public extract
+36,Salt Lake District,2023,10 General Fund,257573665,301923555,269490117,USBE AFR Tableau Public extract
+36,Salt Lake District,2024,10 General Fund,286653394,309910902,286958487,USBE AFR Tableau Public extract
+37,Ogden City District,2013,10 General Fund,,116081020,93138155,USBE AFR Tableau Public extract
+37,Ogden City District,2014,10 General Fund,104180153,95380620,87556669,USBE AFR Tableau Public extract
+37,Ogden City District,2015,10 General Fund,93018534,94386737,90918215,USBE AFR Tableau Public extract
+37,Ogden City District,2016,10 General Fund,94861000,94477000,94222764,USBE AFR Tableau Public extract
+37,Ogden City District,2017,10 General Fund,95100084,96295858,95114842,USBE AFR Tableau Public extract
+37,Ogden City District,2018,10 General Fund,99010875,96603428,95898279,USBE AFR Tableau Public extract
+37,Ogden City District,2019,10 General Fund,99643880,99002415,99255589,USBE AFR Tableau Public extract
+37,Ogden City District,2020,10 General Fund,104103317,103093351,100464255,USBE AFR Tableau Public extract
+37,Ogden City District,2021,10 General Fund,104584407,109720884,105948176,USBE AFR Tableau Public extract
+37,Ogden City District,2022,10 General Fund,108768301,114690098,112013191,USBE AFR Tableau Public extract
+37,Ogden City District,2023,10 General Fund,126427378,125743886,124561530,USBE AFR Tableau Public extract
+37,Ogden City District,2024,10 General Fund,128417626,134571237,135814985,USBE AFR Tableau Public extract
+38,Provo District,2013,10 General Fund,,94196049,92009785,USBE AFR Tableau Public extract
+38,Provo District,2014,10 General Fund,96910405,95756783,94500834,USBE AFR Tableau Public extract
+38,Provo District,2015,10 General Fund,96553884,106790360,102871687,USBE AFR Tableau Public extract
+38,Provo District,2016,10 General Fund,113669921,114130230,109019696,USBE AFR Tableau Public extract
+38,Provo District,2017,10 General Fund,120964314,127364483,118253904,USBE AFR Tableau Public extract
+38,Provo District,2018,10 General Fund,125584477,123972510,121793245,USBE AFR Tableau Public extract
+38,Provo District,2019,10 General Fund,124957299,131495599,126338669,USBE AFR Tableau Public extract
+38,Provo District,2020,10 General Fund,132393898,138469123,130444546,USBE AFR Tableau Public extract
+38,Provo District,2021,10 General Fund,133443567,143008865,137586645,USBE AFR Tableau Public extract
+38,Provo District,2022,10 General Fund,157091976,151455312,136832983,USBE AFR Tableau Public extract
+38,Provo District,2023,10 General Fund,157342660,150648873,148658841,USBE AFR Tableau Public extract
+38,Provo District,2024,10 General Fund,155126926,157062786,156011373,USBE AFR Tableau Public extract
+39,Logan City District,2013,10 General Fund,,38588586,37665372,USBE AFR Tableau Public extract
+39,Logan City District,2014,10 General Fund,38553787,37758500,37067641,USBE AFR Tableau Public extract
+39,Logan City District,2015,10 General Fund,39797739,39822388,39811481,USBE AFR Tableau Public extract
+39,Logan City District,2016,10 General Fund,41581031,43115431,42906802,USBE AFR Tableau Public extract
+39,Logan City District,2017,10 General Fund,44414754,44219636,42217464,USBE AFR Tableau Public extract
+39,Logan City District,2018,10 General Fund,44312908,44302209,42611215,USBE AFR Tableau Public extract
+39,Logan City District,2019,10 General Fund,47724240,47314310,46406800,USBE AFR Tableau Public extract
+39,Logan City District,2020,10 General Fund,51242335,50339949,47822642,USBE AFR Tableau Public extract
+39,Logan City District,2021,10 General Fund,51195374,53684847,52454071,USBE AFR Tableau Public extract
+39,Logan City District,2022,10 General Fund,55573310,57550198,56063809,USBE AFR Tableau Public extract
+39,Logan City District,2023,10 General Fund,58913569,64715268,63165311,USBE AFR Tableau Public extract
+39,Logan City District,2024,10 General Fund,64596458,66119453,64991538,USBE AFR Tableau Public extract
+40,Murray District,2013,10 General Fund,,40791421,37996650,USBE AFR Tableau Public extract
+40,Murray District,2014,10 General Fund,41465367,41255885,40555694,USBE AFR Tableau Public extract
+40,Murray District,2015,10 General Fund,41496109,42297823,38738788,USBE AFR Tableau Public extract
+40,Murray District,2016,10 General Fund,43093652,43397119,41018826,USBE AFR Tableau Public extract
+40,Murray District,2017,10 General Fund,44147570,44655052,42520702,USBE AFR Tableau Public extract
+40,Murray District,2018,10 General Fund,46888007,47729582,47324373,USBE AFR Tableau Public extract
+40,Murray District,2019,10 General Fund,48590534,49462969,48422839,USBE AFR Tableau Public extract
+40,Murray District,2020,10 General Fund,52386126,54793297,52410148,USBE AFR Tableau Public extract
+40,Murray District,2021,10 General Fund,55129608,61938255,57815906,USBE AFR Tableau Public extract
+40,Murray District,2022,10 General Fund,62557197,68042229,59039849,USBE AFR Tableau Public extract
+40,Murray District,2023,10 General Fund,63008334,67866737,63134076,USBE AFR Tableau Public extract
+40,Murray District,2024,10 General Fund,72129017,74681357,67319050,USBE AFR Tableau Public extract
+42,Canyons District,2013,10 General Fund,,220608321,212581992,USBE AFR Tableau Public extract
+42,Canyons District,2014,10 General Fund,223286419,228539394,219910018,USBE AFR Tableau Public extract
+42,Canyons District,2015,10 General Fund,228620748,229156958,222460564,USBE AFR Tableau Public extract
+42,Canyons District,2016,10 General Fund,240668792,242438183,239438085,USBE AFR Tableau Public extract
+42,Canyons District,2017,10 General Fund,247351621,249425003,242407407,USBE AFR Tableau Public extract
+42,Canyons District,2018,10 General Fund,263068679,264007340,257752509,USBE AFR Tableau Public extract
+42,Canyons District,2019,10 General Fund,268663121,272825671,268129283,USBE AFR Tableau Public extract
+42,Canyons District,2020,10 General Fund,294844430,299841390,291589932,USBE AFR Tableau Public extract
+42,Canyons District,2021,10 General Fund,299886754,316624140,313126757,USBE AFR Tableau Public extract
+42,Canyons District,2022,10 General Fund,322045743,342948313,333086103,USBE AFR Tableau Public extract
+42,Canyons District,2023,10 General Fund,347355637,355686010,354300930,USBE AFR Tableau Public extract
+42,Canyons District,2024,10 General Fund,370192946,386790912,377740831,USBE AFR Tableau Public extract

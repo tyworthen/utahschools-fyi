@@ -3,12 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About · Tooele School Finance</title>
-<meta name="description" content="About Tooele School Finance: an independent, nonpartisan project analyzing Tooele County School District finances for taxpayers.">
+<title>About · Utah School Finance</title>
+<meta name="description" content="About Utah School Finance: an independent, nonpartisan research and data project on Utah public-school finances, starting with Tooele County School District.">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
+<style>
+  .phase { border-left: 6px solid var(--gray-200); }
+  .phase.now { border-left-color: var(--yellow); }
+  .phase.started { border-left-color: var(--info); }
+  .phase h3 { margin-top: 10px; }
+  .phase ul { padding-left: 1.1em; margin: 8px 0 0; font-size: 15px; color: var(--ink-2); }
+</style>
 </head>
 <body>
 <div id="site-header"></div>
@@ -17,38 +24,86 @@
     <div class="wrap">
       <p class="crumbs"><a href="index.html">Home</a> / About</p>
       <h1>Independent data for informed taxpayers.</h1>
-      <p>Independent, nonpartisan research and analysis of Tooele County School District finances, taxation, spending, enrollment, staffing, debt, and educational outcomes.</p>
+      <p>Independent, nonpartisan research and data on Utah public-school finances and outcomes — starting with a detailed case study of Tooele County School District.</p>
     </div>
   </section>
 
-  <section class="section white">
+  <section class="section tight white" aria-label="Independence statement">
+    <div class="wrap">
+      <div class="callout method" style="margin:0"><div class="ct">Independence</div>
+        <p style="font-size:18px;color:#082F49;font-weight:600">An independent research and data project. Not affiliated with the Utah State Board of Education, the Utah Office of the State Auditor, Utah school districts, or any other government agency.</p></div>
+    </div>
+  </section>
+
+  <section class="section white" style="padding-top:24px">
     <div class="wrap">
       <div class="grid grid-2" style="gap:56px">
         <div class="prose">
           <h2 class="mt-0">Our mission</h2>
-          <p>To give Tooele County taxpayers an independent, factual, and accessible analysis of how their school district raises, spends, and manages public money.</p>
-          <ol>
-            <li><strong>Government accountability</strong></li>
-            <li><strong>Taxpayer education</strong></li>
-            <li><strong>Financial transparency</strong></li>
-            <li><strong>Investigation</strong> of spending that appears inefficient, unusual, or unexplained</li>
-          </ol>
-          <p>Our goal is not to tell you what to conclude. It is to give you enough reliable information to reach your own conclusions.</p>
-          <h2>Who this is for</h2>
-          <p>Tooele County taxpayers first — and also parents, educators, school employees, community organizations, journalists, researchers, and public officials. We write for intelligent readers who may not know government accounting terms.</p>
+          <p>To give Utah taxpayers, parents, educators, journalists, researchers, and other members of the public independent, factual, accessible analysis of Utah public-school finances and outcomes.</p>
+          <p>We want to help answer questions like:</p>
+          <ul>
+            <li>Where does school funding come from, and how much are districts spending?</li>
+            <li>How has spending changed over time, and how much is spent per student?</li>
+            <li>How do staffing and compensation change relative to enrollment?</li>
+            <li>How much debt does each district carry, and what are capital projects costing?</li>
+            <li>How do districts compare with similar districts?</li>
+            <li>What changes look unusual or deserve a closer look?</li>
+            <li>How do spending patterns relate to measurable educational outcomes?</li>
+          </ul>
+          <p>We don’t presume that higher spending is wasteful or that lower spending is better. Efficiency is judged alongside each district’s responsibilities, students, enrollment growth, legal requirements, and results.</p>
+          <p>Our goal is not to tell you what to conclude. It is to make public information easier to understand and investigate, so you can reach your own conclusions.</p>
         </div>
         <div>
           <div class="card" style="border-top:6px solid #082F49">
             <h2 style="font-size:26px">Political neutrality</h2>
             <div class="grid grid-2" style="gap:20px">
               <div><p style="font-weight:800;color:#15803D;font-size:14px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">✓ We do</p>
-                <ul style="padding-left:1.1em;font-size:15px;color:#334155;margin:0"><li>Investigate government spending</li><li>Identify unusual trends</li><li>Compare districts</li><li>Question unexplained spending</li><li>Analyze tax burdens</li><li>Publish evidence, including evidence unfavorable to the district</li></ul></div>
+                <ul style="padding-left:1.1em;font-size:15px;color:#334155;margin:0"><li>Present primary-source facts</li><li>Separate facts from calculations, interpretations, and hypotheses</li><li>Identify alternative explanations for anomalies</li><li>Link to original government records</li><li>Let readers reproduce our calculations</li><li>Publish evidence, including evidence unfavorable to a district</li></ul></div>
               <div><p style="font-weight:800;color:#334155;font-size:14px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">✕ We don’t</p>
-                <ul style="padding-left:1.1em;font-size:15px;color:#334155;margin:0"><li>Support or oppose candidates or parties</li><li>Take positions on bonds, tax increases, or ballot measures</li><li>Assume misconduct or infer intent</li><li>Call spending wasteful without evidence</li><li>Use inflammatory language</li></ul></div>
+                <ul style="padding-left:1.1em;font-size:15px;color:#334155;margin:0"><li>Support or oppose candidates, parties, or board members</li><li>Take positions on bonds, tax increases, or ballot measures</li><li>Assume misconduct or infer intent from unusual spending</li><li>Call spending wasteful without evidence</li><li>Use inflammatory language</li></ul></div>
             </div>
           </div>
-          <div class="callout method mt-2"><div class="ct">Independence</div><p>This project is independent of Tooele County School District and is not affiliated with the district or the Utah State Board of Education.</p></div>
+          <div class="card mt-2">
+            <h2 style="font-size:22px">Who this is for</h2>
+            <p style="margin:0">Taxpayers first — and parents, educators, school employees, community organizations, journalists, researchers, and public officials. We write for intelligent readers who may not know government accounting terms.</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="roadmap" aria-labelledby="road-h" style="scroll-margin-top:72px">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Roadmap</span>
+        <h2 id="road-h">From one district to the whole state</h2>
+        <p>Tooele County School District is the proof of concept: the place where we build the methodology, data model, and investigative framework that every Utah district profile will use.</p>
+      </div>
+      <div class="grid grid-2">
+        <article class="card phase now">
+          <span class="tag investigate">In progress</span>
+          <h3>Phase 1 — Tooele case study</h3>
+          <p>A comprehensive financial and operational profile of Tooele County School District, validated against primary government records.</p>
+          <ul><li>Done: revenue, spending by category, budget vs. actual, and reserves, FY2012–FY2025</li><li>Next: enrollment, per-student and inflation-adjusted figures, taxes, debt and bonds, staffing, outcomes, audit findings</li></ul>
+        </article>
+        <article class="card phase started">
+          <span class="tag info">Started</span>
+          <h3>Phase 2 — Peer comparison</h3>
+          <p>Tooele alongside Iron County, Cache County, and Box Elder school districts, then peer groups defined by enrollment, geography, growth, and demographics.</p>
+          <ul><li>Done: four-district comparisons on every finance measure; any district can be added on the <a href="compare.html">Compare</a> page</li><li>Next: data-driven peer groups</li></ul>
+        </article>
+        <article class="card phase started">
+          <span class="tag info">Started</span>
+          <h3>Phase 3 — Utah statewide dataset</h3>
+          <p>Normalized datasets for all Utah school districts (and charter schools where comparable), a statewide data explorer, and standardized district profiles.</p>
+          <ul><li>Done: all 41 districts — <a href="utah.html">Utah overview</a>, <a href="districts.html">district profiles</a>, <a href="data.html">data explorer</a></li><li>Next: charter LEAs, enrollment, staffing, outcomes, tax rates</li></ul>
+        </article>
+        <article class="card phase">
+          <span class="tag neutral">Planned</span>
+          <h3>Phase 4 — Investigative research</h3>
+          <p>Use the statewide dataset to identify unusual trends, outliers, budget variances, compensation patterns, debt activity, and capital spending that warrant a closer look — then return to primary documents before publishing anything substantive.</p>
+        </article>
       </div>
     </div>
   </section>

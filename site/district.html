@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>District Profile · Utah School Finance</title>
+<meta name="description" content="Standardized financial profile of a Utah school district: revenue, spending by category, budget vs. actual, and reserves.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / <a href="districts.html">Districts</a> / <span id="crumb"></span></p>
+      <h1 id="name">District profile</h1>
+      <p id="intro"></p>
+      <div class="controls" style="margin:16px 0 0">
+        <div class="field"><label for="pick" style="color:#CBD5E1">Switch district</label><select id="pick"></select></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kpi-strip" aria-label="Key figures">
+    <div class="wrap"><div class="kpi-grid four" id="kpis"></div></div>
+  </section>
+
+  <section class="section white" aria-labelledby="money-h">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow" style="color:#B45309">Finances</span><h2 id="money-h">Revenue and spending</h2>
+        <p>Spending includes construction and debt payments, so it can exceed revenue in years when bond proceeds or reserves are being spent.</p></div>
+      <div class="chart-box" id="money"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="go-h">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow" style="color:#B45309">Spending</span><h2 id="go-h">Where the money goes</h2><p id="go-sub"></p></div>
+      <div class="controls"><div class="field"><label for="gy">Fiscal year</label><select id="gy"></select></div></div>
+      <div id="hundred"></div>
+      <div data-source="usbe-afr" data-extra="Categories group USBE function codes; see methodology."></div>
+    </div>
+  </section>
+
+  <section class="section white" aria-labelledby="vs-h">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow" style="color:#B45309">In context</span><h2 id="vs-h">Compared with the state</h2>
+        <p>This district against the median of all 41 Utah districts<span id="vs-tooele"></span>. Shares and ratios put districts of different sizes on the same scale.</p></div>
+      <div class="controls"><div class="field"><label for="vm">Measure</label><select id="vm"></select></div></div>
+      <div class="chart-box" id="vs"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="bva-h">
+    <div class="wrap">
+      <div class="grid grid-2" style="gap:40px;align-items:start">
+        <div>
+          <span class="eyebrow" style="color:#B45309">Accountability</span>
+          <h2 id="bva-h" style="font-size:28px">General Fund: budget vs. actual</h2>
+          <div class="table-wrap"><table><caption class="sr-only">General Fund budget vs actual</caption>
+            <thead><tr><th scope="col">FY</th><th scope="col" class="n">Final budget</th><th scope="col" class="n">Actual</th><th scope="col" class="n">Difference</th></tr></thead>
+            <tbody id="bva"></tbody></table></div>
+          <p class="muted mt-1" style="font-size:13px">General Fund expenditures. Negative = spent less than the final (amended) budget. FY2025 budgets are not in USBE’s FY2025 files.</p>
+        </div>
+        <div>
+          <span class="eyebrow" style="color:#B45309">Reserves</span>
+          <h2 style="font-size:28px">General Fund balance</h2>
+          <div class="table-wrap"><table><caption class="sr-only">General Fund balance at year end</caption>
+            <thead><tr><th scope="col">FY</th><th scope="col" class="n">Committed</th><th scope="col" class="n">Unassigned</th><th scope="col" class="n">Total</th><th scope="col" class="n">% of spending</th></tr></thead>
+            <tbody id="fb"></tbody></table></div>
+          <p class="muted mt-1" style="font-size:13px">Total also includes nonspendable, restricted, and assigned balances. <a href="methodology.html#calcs">Definitions</a></p>
+        </div>
+      </div>
+      <div class="callout method mt-3" id="more"></div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/statewide.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, S = TSF_STATE, ids = Object.keys(S.districts), Y = S.years, LAST = Y[Y.length - 1];
+    var id = new URLSearchParams(location.search).get("id");
+    if (!S.districts[id]) id = "30";
+    var D = S.districts[id], isTooele = id === "30", peerKey = S.peers[id];
+    var COLOR = isTooele ? TSF.districts.tooele.color : peerKey ? TSF.districts[peerKey].color : "#0F172A";
+    var role = isTooele ? "Case study" : peerKey ? "Initial peer district" : "Utah school district";
+    var val = function (m, d, y) { var v = S.metrics[m].values[d || id][y]; return v == null ? null : v; };
+    function median(arr) { var a = arr.filter(function (v) { return v != null; }).sort(function (p, q) { return p - q; }), h = a.length / 2; return a.length ? (a.length % 2 ? a[Math.floor(h)] : (a[h - 1] + a[h]) / 2) : null; }
+
+    document.title = D.name + " · " + U.SITE;
+    document.getElementById("crumb").textContent = D.short;
+    document.getElementById("name").textContent = D.name;
+    document.getElementById("intro").textContent = role + " · USBE district number " + id + ". Standardized figures from the district’s Annual Financial Reports to the Utah State Board of Education, FY2012–FY" + LAST + ". All dollars nominal.";
+    var pick = document.getElementById("pick");
+    pick.innerHTML = ids.map(function (d) { return '<option value="' + d + '">' + S.districts[d].short + "</option>"; }).join("");
+    pick.value = id;
+    pick.addEventListener("change", function () { location.search = "?id=" + pick.value; });
+
+    // KPIs
+    var K = [["revenue_total", "Revenue"], ["expenditures_total", "Spending"], ["property_tax_total", "Property tax revenue"], ["gf_fund_balance_pct", "GF balance, % of spending"]];
+    document.getElementById("kpis").innerHTML = K.map(function (k) {
+      var m = S.metrics[k[0]], v = val(k[0], id, LAST), prev = val(k[0], id, LAST - 5);
+      var chg = m.unit === "money" && v != null && prev ? U.pct(v, prev) + " since FY" + (LAST - 5) : "FY" + LAST;
+      return '<div class="kpi"><span class="label">' + k[1] + '</span>' + (v == null ? '<span class="value pending">' + U.PENDING + "</span>" : '<span class="value">' + U.fmt(v, m.unit) + "</span>") +
+        '<span class="note">' + chg + '</span><a href="utah.html#rank">Statewide ranking →</a></div>';
+    }).join("");
+
+    // Revenue and spending
+    U.drawLines(document.getElementById("money"), {
+      id: "money", label: D.short + ": revenue and spending", basis: "Nominal dollars, governmental funds", unit: "money", years: Y, source: "usbe-afr",
+      calc: "Revenue = local + state + federal (excludes bond proceeds and transfers). Spending = all functions, including construction and debt service.",
+      notes: S.metrics.revenue_total.notes,
+      series: [
+        { name: "Revenue", color: "#2563EB", bold: false, values: Y.map(function (y) { return val("revenue_total", id, y); }) },
+        { name: "Spending", color: COLOR, dash: "6 4", bold: isTooele, values: Y.map(function (y) { return val("expenditures_total", id, y); }) },
+        { name: "Property tax", color: "#0D9488", dash: "2 4", bold: false, values: Y.map(function (y) { return val("property_tax_total", id, y); }) }
+      ]
+    });
+
+    // $100
+    var LABELS = { instruction: "Instruction", support: "Student support", administration: "Administration", transportation: "Transportation", operations: "Operations", capital: "Capital", debt: "Debt service", other: "Other" };
+    var gy = document.getElementById("gy");
+    gy.innerHTML = Y.slice().reverse().map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
+    function drawHundred() {
+      var y = gy.value, cats = Object.keys(LABELS).map(function (c) { return { id: c, label: LABELS[c], amount: S.categories[id][c][y] || 0 }; });
+      document.getElementById("go-sub").textContent = "Every $100 " + D.short + " spent in FY" + y + ", by purpose. Capital and debt service rise and fall with construction cycles.";
+      document.getElementById("hundred").innerHTML = U.hundredBar(cats, isTooele ? function (c) { return "spending.html#" + c.id; } : null);
+    }
+    gy.addEventListener("change", drawHundred); drawHundred();
+
+    // Compared with the state
+    var VS = ["instruction_share", "admin_share", "local_share", "gf_fund_balance_pct", "gf_budget_variance"];
+    var vm = document.getElementById("vm");
+    vm.innerHTML = VS.map(function (k) { return '<option value="' + k + '">' + S.metrics[k].label + "</option>"; }).join("");
+    if (!isTooele) document.getElementById("vs-tooele").textContent = " and the Tooele case study";
+    function drawVs() {
+      var k = vm.value, m = S.metrics[k];
+      var series = [
+        { name: D.short, color: COLOR, bold: true, values: Y.map(function (y) { return val(k, id, y); }) },
+        { name: "State median", color: "#94A3B8", dash: "4 3", bold: false, values: Y.map(function (y) { return median(ids.map(function (d) { return val(k, d, y); })); }) }
+      ];
+      if (!isTooele) series.push({ name: "Tooele", color: TSF.districts.tooele.color, bold: false, values: Y.map(function (y) { return val(k, "30", y); }) });
+      U.drawLines(document.getElementById("vs"), { id: "vs", label: m.label, basis: m.basis, unit: m.unit, years: Y, calc: m.calc, notes: m.notes, source: m.source, series: series });
+    }
+    vm.addEventListener("change", drawVs); drawVs();
+
+    // Budget vs actual
+    var bva = S.budgetVsActual[id] || {};
+    document.getElementById("bva").innerHTML = Object.keys(bva).sort().reverse().map(function (y) {
+      var b = bva[y], v = b.final != null && b.actual != null ? b.actual - b.final : null;
+      return '<tr><th scope="row">FY' + y + '</th><td class="n">' + (U.fmt(b.final, "money") || "—") + '</td><td class="n">' + (U.fmt(b.actual, "money") || "—") + '</td><td class="n">' +
+        (v == null ? "—" : (v < 0 ? "−" : "+") + U.fmt(Math.abs(v), "money") + ' <span class="muted">(' + (v < 0 ? "−" : "+") + Math.abs(100 * v / b.final).toFixed(1) + "%)</span>") + "</td></tr>";
+    }).join("") || '<tr><td colspan="4" class="muted">No budget data.</td></tr>';
+
+    // Fund balance
+    var gb = S.gfBalance[id] || {};
+    document.getElementById("fb").innerHTML = Object.keys(gb).sort().reverse().map(function (y) {
+      var g = gb[y], t = g.nonspendable + g.restricted + g.committed + g.assigned + g.unassigned;
+      return '<tr><th scope="row">FY' + y + '</th><td class="n">' + U.fmt(g.committed, "money") + '</td><td class="n">' + U.fmt(g.unassigned, "money") + '</td><td class="n"><strong>' + U.fmt(t, "money") + '</strong></td><td class="n">' + (U.fmt(val("gf_fund_balance_pct", id, +y), "percent") || "—") + "</td></tr>";
+    }).join("") || '<tr><td colspan="5" class="muted">No balance sheet data.</td></tr>';
+
+    document.getElementById("more").innerHTML = '<div class="ct">More for this district</div>' + (isTooele
+      ? '<p>Tooele is the project’s case study, with deeper pages on <a href="finances.html">finances</a>, <a href="taxes.html">taxes</a>, <a href="spending.html">spending by category</a>, and <a href="research.html">open research questions</a>.</p>'
+      : '<p><a href="compare.html?add=' + id + '">Compare ' + U.esc(D.short) + ' with Tooele and its peers →</a> · Taxes, staffing, enrollment, debt, and outcomes for every district are planned as the statewide dataset grows (<a href="about.html#roadmap">roadmap</a>).</p>');
+  })();
+</script>
+</body>
+</html>

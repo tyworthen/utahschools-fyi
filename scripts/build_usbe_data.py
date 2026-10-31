@@ -1,40 +1,53 @@
-"""Build site figures from USBE Annual Financial Report (AFR) data.
+"""Build site figures for every Utah school district from USBE Annual Financial Report (AFR) data.
 
 Inputs (preserved originals under site/assets/data/usbe/):
-  tableau_afr/afr_expenditures_4_districts_FY2012-FY2024.csv
-  tableau_afr/afr_revenues_4_districts_FY2011-FY2024.csv
-  tableau_afr/afr_balancesheet_4_districts_FY2011-FY2024.csv
+  tableau_afr/afr_expenditures_all_leas_FY2012-FY2024.csv.gz
+  tableau_afr/afr_revenues_all_leas_FY2011-FY2024.csv.gz
+  tableau_afr/afr_balancesheet_all_leas_FY2011-FY2024.csv.gz
   financial_reporting/reports/annualfinancialreport/2025fiscalyear/... (FY2025 Excel)
   financial_reporting/reports/annualfinancialreport/2024fiscalyear/... (FY2024 Excel, validation only)
 
-Output: replaces the block between "// BEGIN USBE GENERATED" and "// END USBE GENERATED"
-in site/assets/data.js, and writes site/assets/data/normalized/usbe_site_figures.json.
+Outputs:
+  site/assets/data.js                 block between "// BEGIN USBE GENERATED" and "// END USBE GENERATED"
+                                      (Tooele and its three initial peers, keyed tooele/iron/cache/boxelder)
+  site/assets/statewide.js            window.TSF_STATE: every district, keyed by USBE district number
+  site/assets/data/normalized/        revenue.csv, expenditures.csv, budgets.csv, fund_balances.csv
+                                      (long format, keyed by lea_number) and usbe_site_figures.json
+
+Scope: school districts only. Charter LEAs are in the source files but are excluded until their
+data can be presented with a clear district/charter distinction.
 
 Definitions (governmental funds, actuals, nominal dollars):
-  revenue      = Local + State + Federal (excludes 5000s other financing sources / special
-                 and extraordinary items such as bond proceeds and transfers)
+  revenue      = Local + State + Federal (excludes 5000s other financing sources / special and
+                 extraordinary items such as bond proceeds and transfers, and state code 3750
+                 Capital Development Project Grants, which the Tableau extract omits in every year)
   property tax = revenue codes 1100-1199
-  expenditures = all functions; categories by function code (see CATEGORY below)
+  expenditures = all functions; categories by function code (see category())
   admin share  = functions 2300-2599 / current expenditures (excludes 4000s capital, 5000s debt)
   GF balance   = General Fund (10) total fund balance (9800-9899) at fiscal year end
 
 Run: python3 scripts/build_usbe_data.py   (needs openpyxl)
 """
-import csv, json, os, re, sys, warnings
+import csv, gzip, json, os, re, warnings
 from collections import defaultdict
 
 import openpyxl
 
 warnings.filterwarnings("ignore")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA = os.path.join(ROOT, "site", "assets", "data", "usbe")
+ASSETS = os.path.join(ROOT, "site", "assets")
+DATA = os.path.join(ASSETS, "data", "usbe")
 TAB = os.path.join(DATA, "tableau_afr")
 AFR = os.path.join(DATA, "financial_reporting", "reports", "annualfinancialreport")
-DATA_JS = os.path.join(ROOT, "site", "assets", "data.js")
+NORM = os.path.join(ASSETS, "data", "normalized")
 
-DISTRICTS = {"30": "tooele", "13": "iron", "04": "cache", "03": "boxelder"}
-NAMES = {"Tooele District": "tooele", "Iron District": "iron", "Cache District": "cache", "Box Elder District": "boxelder"}
+PEERS = {"30": "tooele", "13": "iron", "04": "cache", "03": "boxelder"}
 CATS = ["instruction", "support", "administration", "transportation", "operations", "capital", "debt", "other"]
+CAT_LABELS = {"instruction": "Instruction", "support": "Student support", "administration": "Administration",
+              "transportation": "Transportation", "operations": "Operations", "capital": "Capital",
+              "debt": "Debt service", "other": "Other"}
+YEARS = range(2012, 2026)
+SRC = {"tableau": "USBE AFR Tableau Public extract", "excel": "USBE AFR Excel summary"}
 
 
 def category(code):
@@ -48,6 +61,12 @@ def category(code):
     if 4000 <= code < 5000: return "capital"
     if 5000 <= code < 6000: return "debt"
     return "other"                                       # 2900s, enterprise, community services
+
+
+def bal_cat(code):
+    c = int(code)
+    if c == 9899: return "unassigned"
+    return {986: "nonspendable", 987: "restricted", 988: "committed", 989: "assigned"}.get(c // 10)
 
 
 def excel_prefix_code(header):
@@ -65,49 +84,64 @@ def tree():
     return defaultdict(lambda: defaultdict(float))
 
 
-# ---------- Tableau extracts (FY2012-FY2024) ----------
-spend = defaultdict(tree)          # spend[cat][district][year]
-gf_exp = tree()                    # General Fund actual expenditures
-bva = defaultdict(lambda: defaultdict(dict))  # bva[district][year][submission] (GF expenditures)
-for r in csv.DictReader(open(os.path.join(TAB, "afr_expenditures_4_districts_FY2012-FY2024.csv"))):
-    d = DISTRICTS.get(r["lea_number"]); y = int(r["fiscal_year"]); amt = float(r["amount"] or 0)
-    if not d or r["fund_type"] != "Governmental": continue
+def district_rows(name):
+    with gzip.open(os.path.join(TAB, name), "rt", newline="") as fh:
+        for r in csv.DictReader(fh):
+            if r["lea_type"] == "District":
+                yield r
+
+
+# ---------- Tableau extracts (FY2012-FY2024), all districts ----------
+names = {}                                     # lea_number -> name
+spend = defaultdict(tree)                      # spend[cat][lea][year]
+gf_exp = tree()
+bva = defaultdict(lambda: defaultdict(dict))   # bva[lea][year][submission] (General Fund expenditures)
+for r in district_rows("afr_expenditures_all_leas_FY2012-FY2024.csv.gz"):
+    d = r["lea_number"]; y = int(r["fiscal_year"]); amt = float(r["amount"] or 0)
+    names[d] = r["lea_name"]
+    if r["fund_type"] != "Governmental": continue
     if r["fund_code"] == "10":
         bva[d][y][r["submission_type"]] = bva[d][y].get(r["submission_type"], 0.0) + amt
     if r["submission_type"] != "Actuals": continue
     spend[category(int(r["function_code"]))][d][y] += amt
     if r["fund_code"] == "10": gf_exp[d][y] += amt
 
-revenue, proptax = tree(), tree()
-for r in csv.DictReader(open(os.path.join(TAB, "afr_revenues_4_districts_FY2011-FY2024.csv"))):
-    d = DISTRICTS.get(r["lea_number"]); y = int(r["fiscal_year"]); amt = float(r["amount"] or 0)
-    if not d or r["submission_type"] != "Actuals" or r["fund_type"] != "Governmental": continue
-    if r["revenue_source"] in ("Local", "State", "Federal"): revenue[d][y] += amt
+revenue, proptax, local, state_rev, federal = tree(), tree(), tree(), tree(), tree()
+for r in district_rows("afr_revenues_all_leas_FY2011-FY2024.csv.gz"):
+    d = r["lea_number"]; y = int(r["fiscal_year"]); amt = float(r["amount"] or 0)
+    names.setdefault(d, r["lea_name"])
+    if r["submission_type"] != "Actuals" or r["fund_type"] != "Governmental": continue
+    src = r["revenue_source"]
+    if src in ("Local", "State", "Federal"):
+        revenue[d][y] += amt
+        {"Local": local, "State": state_rev, "Federal": federal}[src][d][y] += amt
     if r["revenue_code"][:2] == "11": proptax[d][y] += amt
 
 BAL_KEYS = ["nonspendable", "restricted", "committed", "assigned", "unassigned"]
-def bal_cat(code):
-    c = int(code)
-    if c == 9899: return "unassigned"
-    return {986: "nonspendable", 987: "restricted", 988: "committed", 989: "assigned"}.get(c // 10)
-gf_bal = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))  # [d][y][cat]
-for r in csv.DictReader(open(os.path.join(TAB, "afr_balancesheet_4_districts_FY2011-FY2024.csv"))):
-    d = DISTRICTS.get(r["lea_number"]); y = int(r["fiscal_year"])
-    if not d or r["submission_type"] != "Actuals" or r["fund_code"] != "10" or r["bs_group_1"] != "Fund Balance": continue
+gf_bal = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
+for r in district_rows("afr_balancesheet_all_leas_FY2011-FY2024.csv.gz"):
+    d = r["lea_number"]; y = int(r["fiscal_year"])
+    if r["submission_type"] != "Actuals" or r["fund_code"] != "10" or r["bs_group_1"] != "Fund Balance": continue
     k = bal_cat(r["bs_code"])
     if k: gf_bal[d][y][k] += float(r["amount"] or 0)
 
+BY_NAME = {v: k for k, v in names.items()}
 
-# ---------- Excel AFR summaries (FY2025, and FY2024 for validation) ----------
+
+# ---------- Excel AFR summaries (FY2025; FY2024 for validation) ----------
+def lea_of(name):
+    return BY_NAME.get(str(name).strip()) if name else None
+
+
 def excel_expenditures(path, sheet):
-    """Return {district: {cat: amount}} summing object columns (excludes TOTALS columns)."""
+    """Gov Funds Totals (FY2025 layout): {lea: {cat: amount}}, summing object columns, skipping TOTALS."""
     R = rows(path, sheet)
     hrow = next(i for i, r in enumerate(R[:6]) if r and any(isinstance(c, str) and c.strip().upper() == "TOTALS" for c in r))
     groups, objs = R[hrow - 1], R[hrow]
-    name_col = next(j for j, c in enumerate(objs) if c in ("Lea", "LEA Name", "Lea Name"))
+    name_col = list(objs).index("Lea")
     out = {}
     for r in R[hrow + 1:]:
-        d = NAMES.get(str(r[name_col]).strip()) if len(r) > name_col else None
+        d = lea_of(r[name_col]) if len(r) > name_col else None
         if not d: continue
         acc = defaultdict(float)
         for j in range(name_col + 1, len(r)):
@@ -121,10 +155,10 @@ def excel_expenditures(path, sheet):
 
 
 def excel_fund_total(path, sheet="10"):
-    """Per-fund expenditure sheets: return {district: GRAND TOTAL} (header row 6, names in col 3)."""
+    """Per-fund expenditure sheets: {lea: GRAND TOTAL} (header row 6, names in column 3)."""
     R = rows(path, sheet)
     col = list(R[6]).index("GRAND TOTAL")
-    return {NAMES[str(r[3]).strip()]: float(r[col] or 0) for r in R[7:] if len(r) > col and str(r[3]).strip() in NAMES}
+    return {lea_of(r[3]): float(r[col] or 0) for r in R[7:] if len(r) > col and lea_of(r[3])}
 
 
 def excel_revenue(path, sheet):
@@ -139,24 +173,27 @@ def excel_revenue(path, sheet):
                 cols["TOTAL " + h.strip().upper().split()[0]] = j
     out = {}
     for r in R[hrow + 1:]:
-        d = NAMES.get(str(r[name_col]).strip())
+        d = lea_of(r[name_col])
         if not d: continue
-        rev = sum(float(r[cols[k]] or 0) for k in ("TOTAL LOCAL", "TOTAL STATE", "TOTAL FEDERAL"))
+        parts = {k: float(r[cols["TOTAL " + k.upper()]] or 0) for k in ("Local", "State", "Federal")}
+        # Code 3750 (state Capital Development Project Grants) is absent from USBE's Tableau extract
+        # in every year; exclude it here so FY2025 is consistent with FY2012-FY2024.
+        parts["State"] -= sum(float(r[j] or 0) for h, j in cols.items() if h.startswith("3750"))
         pt = sum(float(r[j] or 0) for h, j in cols.items() if h[:2] == "11" and h[:4].isdigit())
-        out[d] = {"revenue": rev, "proptax": pt}
+        out[d] = {"revenue": sum(parts.values()), "proptax": pt, **parts}
     return out
 
 
 def excel_gf_balance(path):
     R = rows(path, "10")
-    codes = R[6]; name_col = 3
+    codes = R[6]
     out = {}
     for r in R[8:]:
-        d = NAMES.get(str(r[name_col]).strip()) if len(r) > name_col else None
+        d = lea_of(r[3]) if len(r) > 3 else None
         if not d: continue
         acc = defaultdict(float)
         for j, c in enumerate(codes):
-            if isinstance(c, str) and c[:2] == "98" or c == "9899":
+            if isinstance(c, str) and c[:2] == "98":
                 k = bal_cat(c)
                 if k: acc[k] += float(r[j] or 0)
         out[d] = acc
@@ -169,98 +206,178 @@ exp25 = excel_expenditures(os.path.join(F25, "AFR Summary Expenditure GF AMD 1.x
 gfexp25 = excel_fund_total(os.path.join(F25, "AFR Summary Expenditure GF AMD 1.xlsx"))
 rev25 = excel_revenue(os.path.join(F25, "fy25annualfinancialreportafr", "AFR Summary Revenue GF.xlsx"), "Gov Funds Totals")
 bal25 = excel_gf_balance(os.path.join(F25, "fy25annualfinancialreportafr", "AFR Summary BalSheet GF.xlsx"))
-for d in DISTRICTS.values():
-    for c, v in exp25[d].items(): spend[c][d][2025] += v
-    gf_exp[d][2025] = gfexp25[d]
-    revenue[d][2025] = rev25[d]["revenue"]; proptax[d][2025] = rev25[d]["proptax"]
-    for k, v in bal25[d].items(): gf_bal[d][2025][k] = v
+year_source = defaultdict(dict)
+for d in names:
+    if d in exp25:
+        for c, v in exp25[d].items(): spend[c][d][2025] += v
+    if d in gfexp25: gf_exp[d][2025] = gfexp25[d]
+    if d in rev25:
+        revenue[d][2025] = rev25[d]["revenue"]; proptax[d][2025] = rev25[d]["proptax"]
+        local[d][2025], state_rev[d][2025], federal[d][2025] = rev25[d]["Local"], rev25[d]["State"], rev25[d]["Federal"]
+    if d in bal25:
+        for k, v in bal25[d].items(): gf_bal[d][2025][k] = v
 
-# Validation: FY2024 Excel vs. Tableau extract
-print("FY2024 validation (Excel vs Tableau), $M:")
+# Validation: FY2024 Excel vs. Tableau extract, every district
 R24 = rows(os.path.join(F24, "AFR Summary Expenditure AF.xlsx"), "Gov Funds Total")
 gt = list(R24[3]).index("Grand Total")
-exp24 = {NAMES[str(r[2]).strip()]: {"total": float(r[gt] or 0)} for r in R24[5:] if len(r) > gt and str(r[2]).strip() in NAMES}
+exp24 = {lea_of(r[2]): float(r[gt] or 0) for r in R24[5:] if len(r) > gt and lea_of(r[2])}
 rev24 = excel_revenue(os.path.join(F24, "AFR Summary Revenue AF.xlsx"), "Gov Funds Totals")
 bal24 = excel_gf_balance(os.path.join(F24, "AFR Summary BalSheet AF.xlsx"))
-worst = 0.0
-for d in DISTRICTS.values():
-    e_x = sum(exp24[d].values()); e_t = sum(spend[c][d][2024] for c in CATS)
-    b_x = sum(bal24[d].values()); b_t = sum(gf_bal[d][2024].values())
-    for label, a, b in (("expenditures", e_x, e_t), ("revenue", rev24[d]["revenue"], revenue[d][2024]),
-                        ("property tax", rev24[d]["proptax"], proptax[d][2024]), ("GF balance", b_x, b_t)):
-        pct = 0 if b == 0 else 100 * (a - b) / b; worst = max(worst, abs(pct))
-        print(f"  {d:9} {label:13} excel {a/1e6:9.2f}  tableau {b/1e6:9.2f}  diff {pct:+.2f}%")
-print(f"largest total-level difference: {worst:.2f}%")
+checks, mismatches = 0, []
+for d in sorted(names):
+    pairs = (("expenditures", exp24.get(d), sum(spend[c][d][2024] for c in CATS)),
+             ("revenue", rev24.get(d, {}).get("revenue"), revenue[d][2024]),
+             ("property tax", rev24.get(d, {}).get("proptax"), proptax[d][2024]),
+             ("GF balance", sum(bal24[d].values()) if d in bal24 else None, sum(gf_bal[d][2024].values())))
+    for label, a, b in pairs:
+        if a is None or not b: continue
+        checks += 1; pct = 100 * (a - b) / b
+        if abs(pct) > 0.5: mismatches.append((names[d], label, a, b, pct))
+print(f"FY2024 validation: {checks} Excel-vs-Tableau totals across {len(names)} districts; "
+      f"{len(mismatches)} differ by more than 0.5%")
+for n, label, a, b, pct in mismatches:
+    print(f"  {n:24} {label:13} excel {a:>15,.0f}  tableau {b:>15,.0f}  {pct:+.1f}%")
+os.makedirs(NORM, exist_ok=True)
+with open(os.path.join(NORM, "validation_FY2024.csv"), "w", newline="") as fh:
+    w = csv.writer(fh)
+    w.writerow(["check", "Excel and Tableau FY2024 totals (expenditures, revenue, property tax, GF balance) per district",
+                "comparisons", checks, "threshold_pct", 0.5])
+    w.writerow(["lea_name", "measure", "excel_value", "tableau_value", "difference_pct"])
+    w.writerows((n, label, round(a, 2), round(b, 2), round(pct, 3)) for n, label, a, b, pct in mismatches)
+missing25 = [names[d] for d in names if d not in rev25 or d not in exp25]
+if missing25: print("No FY2025 Excel row for:", ", ".join(sorted(missing25)))
 
 
-# ---------- Assemble ----------
-YEARS = range(2012, 2026)
-def series(t, d, digits=0):
-    return {y: round(t[d][y], digits) for y in YEARS if y in t[d]}
-
+# ---------- Assemble metrics (values keyed by lea_number) ----------
 total_exp = tree()
 for c in CATS:
-    for d in DISTRICTS.values():
+    for d in names:
         for y, v in spend[c][d].items(): total_exp[d][y] += v
 
-metrics = {}
-def metric(key, label, unit, basis, calc, values, notes=""):
-    metrics[key] = {"label": label, "unit": unit, "basis": basis, "calc": calc, "source": "usbe-afr",
-                    "ref": "assets/data/usbe/tableau_afr/README.md", "notes": notes, "values": values}
+def series(t, d):
+    return {y: round(t[d][y]) for y in YEARS if y in t[d]}
 
 FY25_NOTE = "FY2012–FY2024 from the USBE AFR Tableau extracts; FY2025 from the USBE AFR Excel summaries."
+ADMIN_NOTE = ("Central business services (25xx) includes fiscal, personnel, public information, and administrative "
+              "technology. Districts assign some costs differently — for example, not every district uses function 2580 "
+              "(Administrative Technology Services) — so compare shares with care. ")
+TOOELE_ADMIN = ("Coding caution: Tooele reported function 2580 for the first time in FY2024 ($4.8M), the same year its "
+                "instruction spending fell $15.7M; part of Tooele's FY2024–FY2025 increase may reflect reclassification "
+                "rather than new spending (not yet verified). Cache has used 2580 since FY2012; Iron and Box Elder do not use it. ")
+
+metrics = {}
+def metric(key, label, unit, basis, calc, fn, notes=FY25_NOTE, hidden=False):
+    metrics[key] = {"label": label, "unit": unit, "basis": basis, "calc": calc, "source": "usbe-afr",
+                    "ref": "assets/data/normalized/", "notes": notes, "hidden": hidden,
+                    "values": {d: fn(d) for d in sorted(names)}}
+
 metric("revenue_total", "Total revenue", "money", "Nominal dollars, governmental funds",
-       "Local + state + federal revenue, actuals. Excludes other financing sources (bond proceeds, transfers, asset sales).",
-       {d: series(revenue, d) for d in DISTRICTS.values()}, FY25_NOTE)
+       "Local + state + federal revenue, actuals. Excludes other financing sources (bond proceeds, transfers, asset sales) and state Capital Development Project Grants (code 3750), which USBE's Tableau extract omits.",
+       lambda d: series(revenue, d))
+metric("expenditures_total", "Total expenditures", "money", "Nominal dollars, governmental funds",
+       "All functions, actuals, including capital construction and debt service.", lambda d: series(total_exp, d))
 metric("property_tax_total", "Property tax revenue", "money", "Nominal dollars, governmental funds",
        "Sum of revenue codes 1100–1199 (property taxes, including tax sales and redemptions and fee-in-lieu).",
-       {d: series(proptax, d) for d in DISTRICTS.values()}, FY25_NOTE)
-metric("expenditures_total", "Total expenditures", "money", "Nominal dollars, governmental funds",
-       "All functions, actuals, including capital construction and debt service.",
-       {d: series(total_exp, d) for d in DISTRICTS.values()}, FY25_NOTE)
+       lambda d: series(proptax, d))
+metric("local_share", "Local share of revenue", "percent", "Share of local + state + federal revenue",
+       "Local revenue ÷ (local + state + federal revenue), governmental funds, actuals.",
+       lambda d: {y: round(100 * local[d][y] / revenue[d][y], 2) for y in YEARS if revenue[d][y]})
 metric("admin_share", "Administrative spending share", "percent", "Share of current expenditures",
-       "(District administration 23xx + school administration 24xx + central business services 25xx) ÷ current expenditures (all functions except 4xxx capital and 5xxx debt service).",
-       {d: {y: round(100 * spend["administration"][d][y] /
-                     (total_exp[d][y] - spend["capital"][d][y] - spend["debt"][d][y]), 2)
-            for y in YEARS if total_exp[d][y]} for d in DISTRICTS.values()},
-       "Central business services (25xx) includes fiscal, personnel, public information, and administrative technology. "
-       "Coding caution: Tooele reported function 2580 (Administrative Technology Services) for the first time in FY2024 ($4.8M), "
-       "the same year its instruction spending fell $15.7M; part of Tooele's FY2024–FY2025 increase may reflect reclassification "
-       "rather than new spending (not yet verified). Cache has used 2580 since FY2012; Iron and Box Elder do not use it. " + FY25_NOTE)
+       "(District administration 23xx + school administration 24xx + central business services 25xx) ÷ current "
+       "expenditures (all functions except 4xxx capital and 5xxx debt service).",
+       lambda d: {y: round(100 * spend["administration"][d][y] / (total_exp[d][y] - spend["capital"][d][y] - spend["debt"][d][y]), 2)
+                  for y in YEARS if total_exp[d][y] - spend["capital"][d][y] - spend["debt"][d][y] > 0},
+       ADMIN_NOTE + FY25_NOTE)
+metric("instruction_share", "Instruction share of spending", "percent", "Share of current expenditures",
+       "Instruction (1000s) ÷ current expenditures (all functions except 4xxx capital and 5xxx debt service).",
+       lambda d: {y: round(100 * spend["instruction"][d][y] / (total_exp[d][y] - spend["capital"][d][y] - spend["debt"][d][y]), 2)
+                  for y in YEARS if total_exp[d][y] - spend["capital"][d][y] - spend["debt"][d][y] > 0})
 metric("gf_fund_balance", "General Fund balance", "money", "Nominal dollars, end of fiscal year",
        "Total General Fund (fund 10) fund balance: nonspendable + restricted + committed + assigned + unassigned.",
-       {d: {y: round(sum(gf_bal[d][y].values())) for y in YEARS if y in gf_bal[d]} for d in DISTRICTS.values()}, FY25_NOTE)
-metric("gf_fund_balance_pct", "General Fund balance as % of spending", "percent", "Year-end fund balance ÷ General Fund expenditures",
+       lambda d: {y: round(sum(gf_bal[d][y].values())) for y in YEARS if y in gf_bal[d]})
+metric("gf_fund_balance_pct", "General Fund balance as % of spending", "percent",
+       "Year-end fund balance ÷ General Fund expenditures",
        "Total General Fund fund balance at fiscal year end ÷ General Fund actual expenditures for the same year.",
-       {d: {y: round(100 * sum(gf_bal[d][y].values()) / gf_exp[d][y], 2) for y in YEARS if y in gf_bal[d] and gf_exp[d][y]}
-        for d in DISTRICTS.values()}, FY25_NOTE)
-CAT_LABELS = {"instruction": "Instruction", "support": "Student support", "administration": "Administration",
-              "transportation": "Transportation", "operations": "Operations", "capital": "Capital",
-              "debt": "Debt service", "other": "Other"}
+       lambda d: {y: round(100 * sum(gf_bal[d][y].values()) / gf_exp[d][y], 2) for y in YEARS if y in gf_bal[d] and gf_exp[d][y]})
+metric("gf_budget_variance", "General Fund budget variance", "percent", "Actual vs. final budget, General Fund expenditures",
+       "(Actual − final budget) ÷ final budget, General Fund expenditures. Negative = spent less than budgeted.",
+       lambda d: {y: round(100 * (v["Actuals"] - v["Final Budget"]) / v["Final Budget"], 2)
+                  for y, v in bva[d].items() if v.get("Final Budget") and v.get("Actuals") is not None and y in YEARS},
+       "FY2013–FY2024 from the USBE AFR Tableau extracts. FY2025 budgets are not in USBE's FY2025 files.")
 for c in CATS:
     metric("spend_" + c, CAT_LABELS[c] + " spending", "money", "Nominal dollars, governmental funds",
            "Actual expenditures in the USBE function codes mapped to this category (see the Spending page and methodology).",
-           {d: series(spend[c], d) for d in DISTRICTS.values()}, FY25_NOTE)
+           lambda d, c=c: series(spend[c], d), hidden=True)
 
-out = {
-    "metrics": metrics,
-    "spending2025": {c: round(spend[c]["tooele"][2025]) for c in CATS},
-    "budgetVsActual": {d: {y: {"original": round(v.get("Original Budget")) if v.get("Original Budget") is not None else None,
-                                "final": round(v.get("Final Budget")) if v.get("Final Budget") is not None else None,
-                                "actual": round(v.get("Actuals")) if v.get("Actuals") is not None else None}
-                           for y, v in sorted(bva[d].items()) if y >= 2013}
-                       for d in DISTRICTS.values()},
-    "gfBalance": {d: {y: {k: round(gf_bal[d][y][k]) for k in BAL_KEYS} for y in sorted(gf_bal[d]) if y >= 2012}
-                  for d in DISTRICTS.values()},
+def bva_for(d):
+    return {y: {"original": round(v["Original Budget"]) if v.get("Original Budget") is not None else None,
+                "final": round(v["Final Budget"]) if v.get("Final Budget") is not None else None,
+                "actual": round(v["Actuals"]) if v.get("Actuals") is not None else None}
+            for y, v in sorted(bva[d].items()) if y >= 2013}
+
+def gfbal_for(d):
+    return {y: {k: round(gf_bal[d][y][k]) for k in BAL_KEYS} for y in sorted(gf_bal[d]) if y >= 2012}
+
+
+# ---------- Write: data.js block (Tooele + initial peers) ----------
+def rekey(values):
+    return {PEERS[d]: v for d, v in values.items() if d in PEERS}
+
+peer_metrics = {}
+for k, m in metrics.items():
+    pm = dict(m); pm["values"] = rekey(m["values"])
+    if k == "admin_share": pm["notes"] = TOOELE_ADMIN + m["notes"]
+    peer_metrics[k] = pm
+peer_out = {
+    "metrics": peer_metrics,
+    "spending2025": {c: round(spend[c]["30"][2025]) for c in CATS},
+    "budgetVsActual": {PEERS[d]: bva_for(d) for d in PEERS},
+    "gfBalance": {PEERS[d]: gfbal_for(d) for d in PEERS},
 }
-
-os.makedirs(os.path.join(ROOT, "site", "assets", "data", "normalized"), exist_ok=True)
-json.dump(out, open(os.path.join(ROOT, "site", "assets", "data", "normalized", "usbe_site_figures.json"), "w"), indent=1)
-
-js = json.dumps(out, indent=2)
+data_js = os.path.join(ASSETS, "data.js")
 block = ("// BEGIN USBE GENERATED — do not edit by hand; run scripts/build_usbe_data.py\n"
-         "window.TSF_USBE = " + js + ";\n// END USBE GENERATED")
-src = open(DATA_JS).read()
+         "window.TSF_USBE = " + json.dumps(peer_out, indent=2) + ";\n// END USBE GENERATED")
+src = open(data_js).read()
 src = re.sub(r"// BEGIN USBE GENERATED.*?// END USBE GENERATED", lambda m: block, src, flags=re.S)
-open(DATA_JS, "w").write(src)
-print("updated", DATA_JS)
+open(data_js, "w").write(src)
+
+# ---------- Write: statewide.js (every district) ----------
+state = {
+    "generated": "scripts/build_usbe_data.py",
+    "scope": "Utah school districts (charter LEAs excluded)",
+    "years": list(YEARS),
+    "peers": PEERS,
+    "districts": {d: {"name": names[d], "short": names[d].replace(" District", "")} for d in sorted(names)},
+    "metrics": metrics,
+    "categories": {d: {c: series(spend[c], d) for c in CATS} for d in sorted(names)},
+    "budgetVsActual": {d: bva_for(d) for d in sorted(names)},
+    "gfBalance": {d: gfbal_for(d) for d in sorted(names)},
+}
+with open(os.path.join(ASSETS, "statewide.js"), "w") as fh:
+    fh.write("// Generated by scripts/build_usbe_data.py — do not edit by hand.\n")
+    fh.write("window.TSF_STATE = " + json.dumps(state, separators=(",", ":")) + ";\n")
+
+# ---------- Write: normalized long-format CSVs ----------
+os.makedirs(NORM, exist_ok=True)
+def src_for(y): return SRC["excel"] if y == 2025 else SRC["tableau"]
+def write_long(name, header, it):
+    with open(os.path.join(NORM, name), "w", newline="") as fh:
+        w = csv.writer(fh); w.writerow(header); w.writerows(it)
+
+write_long("revenue.csv", ["lea_number", "lea_name", "fiscal_year", "measure", "amount", "basis", "source"],
+           ((d, names[d], y, m, round(t[d][y], 2), "actuals, governmental funds", src_for(y))
+            for d in sorted(names) for y in YEARS
+            for m, t in (("local", local), ("state", state_rev), ("federal", federal),
+                         ("total_local_state_federal", revenue), ("property_taxes_11xx", proptax))
+            if y in t[d]))
+write_long("expenditures.csv", ["lea_number", "lea_name", "fiscal_year", "category", "amount", "basis", "source"],
+           ((d, names[d], y, c, round(spend[c][d][y], 2), "actuals, governmental funds", src_for(y))
+            for d in sorted(names) for y in YEARS for c in CATS if y in spend[c][d]))
+write_long("budgets.csv", ["lea_number", "lea_name", "fiscal_year", "fund", "original_budget", "final_budget", "actual", "source"],
+           ((d, names[d], y, "10 General Fund", v["original"], v["final"], v["actual"], SRC["tableau"])
+            for d in sorted(names) for y, v in bva_for(d).items()))
+write_long("fund_balances.csv", ["lea_number", "lea_name", "fiscal_year", "fund"] + BAL_KEYS + ["total", "source"],
+           ((d, names[d], y, "10 General Fund") + tuple(v[k] for k in BAL_KEYS) + (sum(v.values()), src_for(y))
+            for d in sorted(names) for y, v in gfbal_for(d).items()))
+json.dump(peer_out, open(os.path.join(NORM, "usbe_site_figures.json"), "w"), indent=1)
+print(f"wrote data.js (4 districts), statewide.js ({len(names)} districts), and normalized CSVs")

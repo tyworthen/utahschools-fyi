@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Methodology · Tooele School Finance</title>
-<meta name="description" content="How Tooele School Finance collects, calculates, labels, and publishes financial findings.">
+<title>Methodology · Utah School Finance</title>
+<meta name="description" content="How Utah School Finance collects, calculates, labels, and publishes financial findings.">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,6 +26,10 @@
       <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>
         <li><a href="#labels">How claims are labeled</a></li>
         <li><a href="#evidence">Evidence tiers</a></li>
+        <li><a href="#priority">Which source we use</a></li>
+        <li><a href="#budget-stages">Budget stages</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#validation">Validation</a></li>
         <li><a href="#trace">Traceability</a></li>
         <li><a href="#calcs">Standard calculations</a></li>
         <li><a href="#inflation">Inflation</a></li>
@@ -61,6 +65,39 @@
           </table>
         </div>
         <p class="mt-1">When two Tier 1 sources disagree — for example, the State Auditor’s dashboard and the audited financial statements — we report both and explain the difference. Transparent Utah notes its data can be raw, unaudited, and unconsolidated.</p>
+
+        <h2 id="priority">Which source we use</h2>
+        <p>We prefer centralized Utah government sources over individual district websites whenever they hold equivalent information, because they report every district the same way.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Source</th><th scope="col">How we use it</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Utah State Board of Education</th><td>Primary source for district finances (Annual Financial Reports), enrollment, outcomes, and staffing. Current site figures come from USBE’s AFR data.</td></tr>
+              <tr><th scope="row">Utah State Auditor</th><td>Audited financial statements, audit reports and compliance findings, and local-government financial reporting.</td></tr>
+              <tr><th scope="row">Transparent Utah</th><td>An analytical convenience for statewide comparisons and compensation — not automatically the authoritative accounting record. Its data is raw, unaudited, and unconsolidated, and we say so wherever we use it. We use it as a cross-check against USBE.</td></tr>
+              <tr><th scope="row">Utah State Tax Commission</th><td>Certified, proposed, and adopted tax rates; tax areas; Truth-in-Taxation.</td></tr>
+              <tr><th scope="row">District documents</th><td>Adopted and amended budgets, board presentations, capital plans, bond information, and local explanations. Preserved even when the same numbers are available from the state.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="budget-stages">Budget stages</h2>
+        <p>These are different numbers and are never treated as interchangeable:</p>
+        <ol>
+          <li><strong>Original (adopted) budget</strong> — approved before the fiscal year begins.</li>
+          <li><strong>Final (amended) budget</strong> — the budget after amendments during the year.</li>
+          <li><strong>Actual results</strong> — what was reported as received and spent.</li>
+          <li><strong>Audited results</strong> — actual results after the independent audit.</li>
+        </ol>
+        <p>Budget-vs-actual comparisons on this site use the final budget unless stated otherwise. A single-year variance is common; a repeated pattern is a question worth asking, not a conclusion about financial management.</p>
+
+        <h2 id="scope">Scope</h2>
+        <p>The statewide dataset covers Utah’s 41 school districts. Charter schools are in the source files but are excluded until they can be shown with a clear district/charter distinction. The primary analytical period is FY2016–FY2026; older years are kept where available (currently back to FY2012). All dollar figures are nominal until the inflation table is added.</p>
+        <p>Revenue excludes state <em>Capital Development Project Grants</em> (revenue code 3750) in every year, because USBE’s Tableau extract — our source for FY2012–FY2024 — omits that code. These one-time construction grants went mostly to small rural districts (for example, $18.0M to Piute and $18.1M to Wayne in FY2024); none of Tooele’s initial peers received them in FY2024.</p>
+
+        <h2 id="validation">Validation</h2>
+        <p>FY2012–FY2024 figures come from USBE’s Tableau Public data extracts; FY2025 from USBE’s Excel summaries. Both sources cover FY2024, so we compare them for every district: total spending, revenue, property tax, and General Fund balance. Of 164 comparisons, 162 agree to within 0.5% (nearly all exactly). The two exceptions are Provo’s revenue (+0.8%) and General Fund balance (+3.6%), which we have not yet explained. <a href="assets/data/normalized/validation_FY2024.csv" download>Download the validation results</a>.</p>
+        <p>We also compared USBE revenue with Transparent Utah. They agree closely for Tooele (within about 1% each year), but differ for some peers — including Iron in FY2021–FY2022 and Cache from FY2020 onward — which is one reason USBE is the primary source.</p>
 
         <h2 id="trace">Traceability</h2>
         <p>Every published figure can be traced back through each step to a specific cell in a government document.</p>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utah Overview · Utah School Finance</title>
+<meta name="description" content="Statewide finances for Utah's 41 public school districts: revenue, spending, property taxes, reserves, and district rankings from USBE Annual Financial Reports.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Utah</p>
+      <h1>Utah school districts</h1>
+      <p>The same standardized figures for every one of Utah’s 41 public school districts, built from the districts’ Annual Financial Reports to the State Board of Education. Tooele County School District is the project’s first case study; this is where it sits in the statewide picture.</p>
+    </div>
+  </section>
+
+  <section class="kpi-strip" aria-label="Statewide totals">
+    <div class="wrap"><div class="kpi-grid four" id="state-kpis"></div></div>
+  </section>
+
+  <section class="section white" aria-labelledby="trend-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Statewide</span>
+        <h2 id="trend-h">All 41 districts, combined</h2>
+        <p>Total revenue and total spending across Utah’s school districts. Spending includes construction and debt payments, which can run ahead of revenue in years when bond proceeds are being spent.</p>
+      </div>
+      <div class="chart-box" id="state-trend"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rank-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Rankings</span>
+        <h2 id="rank-h">How the districts compare</h2>
+        <p>Choose a measure and year. Tooele is highlighted in yellow and its three initial peers in their usual colors. Select a district to open its profile. Dollar totals mostly reflect district size; shares and ratios put districts of different sizes on the same scale.</p>
+      </div>
+      <div class="controls">
+        <div class="field"><label for="metric">Measure</label><select id="metric"></select></div>
+        <div class="field"><label for="year">Fiscal year</label><select id="year"></select></div>
+      </div>
+      <div class="chart-box" id="rank"></div>
+    </div>
+  </section>
+
+  <section class="section white" aria-labelledby="stand-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Case study</span>
+        <h2 id="stand-h">Where Tooele stands</h2>
+        <p>Tooele’s value, the statewide median, and Tooele’s rank among the 41 districts (1 = highest), for the latest year available. A high or low rank is a starting point for questions, not a judgment.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Tooele compared with all Utah school districts</caption>
+          <thead><tr><th scope="col">Measure</th><th scope="col" class="n">Fiscal year</th><th scope="col" class="n">Tooele</th><th scope="col" class="n">Statewide median</th><th scope="col" class="n">Tooele rank</th></tr></thead>
+          <tbody id="stand"></tbody>
+        </table>
+      </div>
+      <div class="callout method mt-2"><div class="ct">Scope and limits</div>
+        <p>School districts only; charter schools are excluded until their figures can be shown with a clear district/charter distinction. All dollars are nominal. Per-student and inflation-adjusted figures will follow once enrollment and CPI data are added. FY2012–FY2024 come from USBE’s Tableau Public extracts and FY2025 from USBE’s Excel summaries; the two agree for FY2024 in 162 of 164 district-level checks (see <a href="methodology.html#validation">validation</a>).</p>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/statewide.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, S = TSF_STATE, ids = Object.keys(S.districts), Y = S.years, LAST = Y[Y.length - 1];
+    var peerColor = function (id) { var k = S.peers[id]; return k ? TSF.districts[k].color : "#CBD5E1"; };
+    var total = function (m, y) {
+      var n = 0, sum = 0;
+      ids.forEach(function (d) { var v = S.metrics[m].values[d][y]; if (v != null) { n++; sum += v; } });
+      return { n: n, sum: sum };
+    };
+    function median(arr) { var a = arr.slice().sort(function (p, q) { return p - q; }), h = a.length / 2; return a.length ? (a.length % 2 ? a[Math.floor(h)] : (a[h - 1] + a[h]) / 2) : null; }
+
+    // KPIs
+    var k = [["revenue_total", "Total revenue"], ["expenditures_total", "Total spending"], ["property_tax_total", "Property tax revenue"]];
+    document.getElementById("state-kpis").innerHTML = k.map(function (x) {
+      var t = total(x[0], LAST);
+      return '<div class="kpi"><span class="label">' + x[1] + '</span><span class="value">' + U.fmt(t.sum, "money") + '</span><span class="note">FY' + LAST + ", " + t.n + ' districts</span><a href="#rank" data-m="' + x[0] + '">Rank districts →</a></div>';
+    }).join("") + '<div class="kpi"><span class="label">School districts</span><span class="value">' + ids.length + '</span><span class="note">Charter LEAs not included</span><a href="districts.html">All districts →</a></div>';
+
+    // Statewide trend
+    U.drawLines(document.getElementById("state-trend"), {
+      id: "state", label: "Utah school districts: revenue and spending", basis: "Sum of all 41 districts, nominal dollars, governmental funds",
+      unit: "money", years: Y, source: "usbe-afr",
+      calc: "Revenue = local + state + federal (excludes bond proceeds and transfers). Spending = all functions, including construction and debt service. Summed across districts.",
+      series: [
+        { name: "Revenue", color: "#2563EB", dash: "", bold: false, values: Y.map(function (y) { return total("revenue_total", y).sum || null; }) },
+        { name: "Spending", color: "#082F49", dash: "6 4", bold: false, values: Y.map(function (y) { return total("expenditures_total", y).sum || null; }) }
+      ]
+    });
+
+    // Rankings
+    var mSel = document.getElementById("metric"), ySel = document.getElementById("year");
+    mSel.innerHTML = Object.keys(S.metrics).map(function (m) {
+      return '<option value="' + m + '">' + S.metrics[m].label + "</option>";
+    }).join("");
+    ySel.innerHTML = Y.slice().reverse().map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
+    mSel.value = "gf_fund_balance_pct";
+    function drawRank() {
+      var m = S.metrics[mSel.value], y = ySel.value;
+      var items = ids.map(function (d) {
+        return { name: S.districts[d].short, value: m.values[d][y], color: peerColor(d), bold: d === "30", href: "district.html?id=" + d };
+      }).filter(function (i) { return i.value != null; }).sort(function (a, b) { return b.value - a.value; });
+      U.rankChart(document.getElementById("rank"), {
+        label: m.label + ", FY" + y, sub: m.basis + ". " + items.length + " districts with data.", unit: m.unit,
+        items: items, calc: m.calc, notes: m.notes, source: m.source
+      });
+    }
+    mSel.addEventListener("change", drawRank); ySel.addEventListener("change", drawRank); drawRank();
+    document.querySelectorAll("[data-m]").forEach(function (a) { a.addEventListener("click", function () { mSel.value = a.getAttribute("data-m"); ySel.value = LAST; drawRank(); }); });
+
+    // Where Tooele stands
+    var RATIOS = ["local_share", "instruction_share", "admin_share", "gf_fund_balance_pct", "gf_budget_variance", "revenue_total", "expenditures_total", "property_tax_total"];
+    document.getElementById("stand").innerHTML = RATIOS.map(function (key) {
+      var m = S.metrics[key], y = null;
+      for (var i = Y.length - 1; i >= 0; i--) if (m.values["30"][Y[i]] != null) { y = Y[i]; break; }
+      if (y == null) return "";
+      var vals = ids.map(function (d) { return m.values[d][y]; }).filter(function (v) { return v != null; });
+      var t = m.values["30"][y], rank = vals.filter(function (v) { return v > t; }).length + 1;
+      return '<tr><th scope="row"><a href="#rank" data-rank="' + key + '" data-y="' + y + '">' + m.label + '</a></th><td class="n">FY' + y + '</td><td class="n"><strong>' + U.fmt(t, m.unit) + '</strong></td><td class="n">' + U.fmt(median(vals), m.unit) + '</td><td class="n">' + rank + " of " + vals.length + "</td></tr>";
+    }).join("");
+    document.querySelectorAll("[data-rank]").forEach(function (a) { a.addEventListener("click", function () { mSel.value = a.getAttribute("data-rank"); ySel.value = a.getAttribute("data-y"); drawRank(); }); });
+  })();
+</script>
+</body>
+</html>

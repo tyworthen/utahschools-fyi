@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Compare Districts · Tooele School Finance</title>
+<title>Compare Districts · Utah School Finance</title>
 <meta name="description" content="Compare Tooele County School District with Iron, Cache, and Box Elder school districts on spending, revenue, staffing, debt, and enrollment.">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <div class="wrap">
       <p class="crumbs"><a href="index.html">Home</a> / Compare</p>
       <h1>How does Tooele compare?</h1>
-      <p>Tooele County School District alongside three Utah peer districts, measured the same way from the same sources.</p>
+      <p>Tooele County School District alongside its three initial peer districts, measured the same way from the same sources. Add any other Utah district to the comparison.</p>
     </div>
   </section>
 
@@ -26,6 +26,7 @@
       <div class="controls">
         <div class="field"><label for="metric">Metric</label><select id="metric"></select></div>
         <div class="field"><label for="year">Fiscal year</label><select id="year"></select></div>
+        <div class="field"><label for="add">Add a district</label><select id="add"></select></div>
       </div>
       <div class="grid grid-4" id="cards"></div>
       <div class="chart-box mt-2" id="chart"></div>
@@ -36,7 +37,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2 id="why-h">Why these districts?</h2>
-        <p>Iron, Cache, and Box Elder are Utah districts outside the Wasatch Front’s largest urban systems, with a mix of growing suburban and rural communities. No peer is a perfect match — differences in student population, geography, and local economy can explain real differences in cost.</p>
+        <p>Iron, Cache, and Box Elder are Utah districts outside the Wasatch Front’s largest urban systems, with a mix of growing suburban and rural communities. No peer is a perfect match — differences in student population, geography, and local economy can explain real differences in cost. As the statewide dataset grows, the project will define peer groups from enrollment, growth, geography, and demographics rather than relying on these three alone.</p>
       </div>
       <div class="grid grid-4" id="peer-info"></div>
       <div class="callout method mt-2"><div class="ct">Reading comparisons fairly</div><p>A difference between districts is a starting point, not a conclusion. Before interpreting a gap, we check student needs (special education, English learners, economically disadvantaged students), geography and bus routes, enrollment growth, and local income and property values from Census data.</p></div>
@@ -45,6 +46,7 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/data.js"></script>
+<script src="assets/statewide.js"></script>
 <script src="assets/site.js"></script>
 <script>
   (function () {
@@ -57,14 +59,29 @@
     ySel.innerHTML = '<option value="">Latest available</option>' + TSF.years.slice().reverse().map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
     var params = new URLSearchParams(location.search);
     if (params.get("metric") && TSF.metrics[params.get("metric")]) mSel.value = params.get("metric");
+
+    // Optional fifth district from the statewide dataset
+    var S = window.TSF_STATE, aSel = document.getElementById("add");
+    aSel.innerHTML = '<option value="">None</option>' + Object.keys(S.districts).filter(function (d) { return !S.peers[d]; })
+      .map(function (d) { return '<option value="' + d + '">' + S.districts[d].short + "</option>"; }).join("");
+    if (S.districts[params.get("add")] && !S.peers[params.get("add")]) aSel.value = params.get("add");
+    function applyAdd() {
+      delete TSF.districts.added;
+      Object.keys(TSF.metrics).forEach(function (k) { if (TSF.metrics[k].values) delete TSF.metrics[k].values.added; });
+      var d = aSel.value;
+      if (!d) return;
+      TSF.districts.added = { name: S.districts[d].short, full: S.districts[d].name, role: "Added", color: "#64748B", dash: "1 4" };
+      Object.keys(S.metrics).forEach(function (k) { if (TSF.metrics[k]) TSF.metrics[k].values.added = S.metrics[k].values[d]; });
+    }
     function draw() {
+      applyAdd();
       U.renderDistrictCards(document.getElementById("cards"), mSel.value, ySel.value ? +ySel.value : null);
       U.lineChart(document.getElementById("chart"), mSel.value);
-      var p = new URLSearchParams(); p.set("metric", mSel.value); history.replaceState(null, "", "?" + p);
+      var p = new URLSearchParams(); p.set("metric", mSel.value); if (aSel.value) p.set("add", aSel.value); history.replaceState(null, "", "?" + p);
     }
-    mSel.addEventListener("change", draw); ySel.addEventListener("change", draw);
+    mSel.addEventListener("change", draw); ySel.addEventListener("change", draw); aSel.addEventListener("change", draw);
     draw();
-    document.getElementById("peer-info").innerHTML = Object.keys(TSF.districts).map(function (k) {
+    document.getElementById("peer-info").innerHTML = Object.keys(TSF.districts).filter(function (k) { return k !== "added"; }).map(function (k) {
       var d = TSF.districts[k];
       return '<div class="district-card" style="--c:' + d.color + '"><div class="dname"><h3>' + d.name + '</h3><span class="role">' + d.role + '</span></div><p class="mt-1" style="font-size:15px;color:#334155;margin-bottom:0">' + d.full + "</p></div>";
     }).join("");

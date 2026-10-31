@@ -1,0 +1,4 @@
+check,"Excel and Tableau FY2024 totals (expenditures, revenue, property tax, GF balance) per district",comparisons,164,threshold_pct,0.5
+lea_name,measure,excel_value,tableau_value,difference_pct
+Provo District,revenue,231118810.0,229276542.61,0.804
+Provo District,GF balance,53460254.0,51617988.25,3.569

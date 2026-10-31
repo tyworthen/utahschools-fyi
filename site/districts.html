@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Districts · Utah School Finance</title>
+<meta name="description" content="Key financial figures for all 41 Utah public school districts, with a standardized profile for each.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+  th button:focus-visible { outline: 3px solid var(--info); outline-offset: 2px; }
+  th[aria-sort] button::after { content: "↕"; color: var(--ink-3); font-size: 11px; }
+  th[aria-sort="ascending"] button::after { content: "↑"; color: var(--navy); }
+  th[aria-sort="descending"] button::after { content: "↓"; color: var(--navy); }
+  tr.hl td, tr.hl th { background: #FFFBEB; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Districts</p>
+      <h1>Utah’s 41 school districts</h1>
+      <p>Every district measured the same way, from the same state source. Select a district for its full profile: revenue, spending by category, budget vs. actual, and reserves since FY2012.</p>
+    </div>
+  </section>
+  <section class="section white">
+    <div class="wrap">
+      <div class="controls">
+        <div class="field" style="flex:1;min-width:220px"><label for="q">Find a district</label><input id="q" type="search" placeholder="e.g. Tooele, Washington, Granite"></div>
+        <div class="field"><label for="year">Fiscal year</label><select id="year"></select></div>
+      </div>
+      <div class="table-wrap">
+        <table id="tbl">
+          <caption class="sr-only">Utah school district key figures</caption>
+          <thead><tr></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="mt-1 muted" style="font-size:14px">Nominal dollars, governmental funds, actuals. Shares use current expenditures (excluding construction and debt service). Highlighted rows are the Tooele case study and its initial peers. <a href="methodology.html#calcs">Definitions</a> · <a href="data.html#downloads">Download the normalized data</a></p>
+      <div data-source="usbe-afr"></div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/statewide.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, S = TSF_STATE, ids = Object.keys(S.districts), Y = S.years;
+    var COLS = [
+      ["name", "District", null], ["revenue_total", "Revenue", "money"], ["expenditures_total", "Spending", "money"],
+      ["property_tax_total", "Property tax", "money"], ["local_share", "Local share", "percent"],
+      ["instruction_share", "Instruction share", "percent"], ["admin_share", "Admin share", "percent"],
+      ["gf_fund_balance_pct", "GF balance % of spending", "percent"]
+    ];
+    var sortKey = "revenue_total", dir = -1;
+    var ySel = document.getElementById("year"), q = document.getElementById("q");
+    ySel.innerHTML = Y.slice().reverse().map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
+    var head = document.querySelector("#tbl thead tr"), body = document.querySelector("#tbl tbody");
+    head.innerHTML = COLS.map(function (c) {
+      return '<th scope="col"' + (c[2] ? ' class="n"' : "") + ' aria-sort="none" data-k="' + c[0] + '"><button type="button">' + c[1] + "</button></th>";
+    }).join("");
+    head.querySelectorAll("th").forEach(function (th) {
+      th.querySelector("button").addEventListener("click", function () {
+        var k = th.getAttribute("data-k");
+        dir = sortKey === k ? -dir : (k === "name" ? 1 : -1); sortKey = k; draw();
+      });
+    });
+    function role(id) { return id === "30" ? "Case study" : S.peers[id] ? "Initial peer" : ""; }
+    function draw() {
+      var y = ySel.value, f = q.value.trim().toLowerCase();
+      var rows = ids.filter(function (d) { return !f || S.districts[d].name.toLowerCase().indexOf(f) >= 0; }).map(function (d) {
+        var r = { id: d, name: S.districts[d].short };
+        COLS.slice(1).forEach(function (c) { r[c[0]] = S.metrics[c[0]].values[d][y]; });
+        return r;
+      });
+      rows.sort(function (a, b) {
+        var x = a[sortKey], z = b[sortKey];
+        if (x == null) return 1; if (z == null) return -1;
+        return (x < z ? -1 : x > z ? 1 : 0) * dir;
+      });
+      head.querySelectorAll("th").forEach(function (th) {
+        th.setAttribute("aria-sort", th.getAttribute("data-k") === sortKey ? (dir > 0 ? "ascending" : "descending") : "none");
+      });
+      body.innerHTML = rows.map(function (r) {
+        var rl = role(r.id);
+        return "<tr" + (rl ? ' class="hl"' : "") + '><th scope="row"><a href="district.html?id=' + r.id + '">' + U.esc(r.name) + "</a>" +
+          (rl ? ' <span class="tag ' + (r.id === "30" ? "investigate" : "neutral") + '" style="font-size:10px;padding:2px 6px">' + rl + "</span>" : "") + "</th>" +
+          COLS.slice(1).map(function (c) { return '<td class="n">' + (r[c[0]] == null ? '<span class="muted">—</span>' : U.fmt(r[c[0]], c[2])) + "</td>"; }).join("") + "</tr>";
+      }).join("") || '<tr><td colspan="8" class="muted center">No districts match.</td></tr>';
+    }
+    ySel.addEventListener("change", draw); q.addEventListener("input", draw); draw();
+  })();
+</script>
+</body>
+</html>
