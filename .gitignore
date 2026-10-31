@@ -16,3 +16,6 @@ dist/
 
 # Private correspondence
 email.txt
+
+# Draft records requests and other correspondence
+correspondence/
