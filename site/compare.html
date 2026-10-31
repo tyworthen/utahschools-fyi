@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare Districts · Tooele School Finance</title>
+<meta name="description" content="Compare Tooele County School District with Iron, Cache, and Box Elder school districts on spending, revenue, staffing, debt, and enrollment.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Compare</p>
+      <h1>How does Tooele compare?</h1>
+      <p>Tooele County School District alongside three Utah peer districts, measured the same way from the same sources.</p>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap">
+      <div class="controls">
+        <div class="field"><label for="metric">Metric</label><select id="metric"></select></div>
+        <div class="field"><label for="year">Fiscal year</label><select id="year"></select></div>
+      </div>
+      <div class="grid grid-4" id="cards"></div>
+      <div class="chart-box mt-2" id="chart"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="why-h">Why these districts?</h2>
+        <p>Iron, Cache, and Box Elder are Utah districts outside the Wasatch Front’s largest urban systems, with a mix of growing suburban and rural communities. No peer is a perfect match — differences in student population, geography, and local economy can explain real differences in cost.</p>
+      </div>
+      <div class="grid grid-4" id="peer-info"></div>
+      <div class="callout method mt-2"><div class="ct">Reading comparisons fairly</div><p>A difference between districts is a starting point, not a conclusion. Before interpreting a gap, we check student needs (special education, English learners, economically disadvantaged students), geography and bus routes, enrollment growth, and local income and property values from Census data.</p></div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui;
+    var mSel = document.getElementById("metric"), ySel = document.getElementById("year");
+    var opt = function (k) { return '<option value="' + k + '">' + TSF.metrics[k].label + "</option>"; };
+    var keys = Object.keys(TSF.metrics);
+    mSel.innerHTML = keys.filter(function (k) { return !TSF.metrics[k].hidden; }).map(opt).join("") +
+      '<optgroup label="Spending by category">' + keys.filter(function (k) { return TSF.metrics[k].hidden; }).map(opt).join("") + "</optgroup>";
+    ySel.innerHTML = '<option value="">Latest available</option>' + TSF.years.slice().reverse().map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
+    var params = new URLSearchParams(location.search);
+    if (params.get("metric") && TSF.metrics[params.get("metric")]) mSel.value = params.get("metric");
+    function draw() {
+      U.renderDistrictCards(document.getElementById("cards"), mSel.value, ySel.value ? +ySel.value : null);
+      U.lineChart(document.getElementById("chart"), mSel.value);
+      var p = new URLSearchParams(); p.set("metric", mSel.value); history.replaceState(null, "", "?" + p);
+    }
+    mSel.addEventListener("change", draw); ySel.addEventListener("change", draw);
+    draw();
+    document.getElementById("peer-info").innerHTML = Object.keys(TSF.districts).map(function (k) {
+      var d = TSF.districts[k];
+      return '<div class="district-card" style="--c:' + d.color + '"><div class="dname"><h3>' + d.name + '</h3><span class="role">' + d.role + '</span></div><p class="mt-1" style="font-size:15px;color:#334155;margin-bottom:0">' + d.full + "</p></div>";
+    }).join("");
+  })();
+</script>
+</body>
+</html>

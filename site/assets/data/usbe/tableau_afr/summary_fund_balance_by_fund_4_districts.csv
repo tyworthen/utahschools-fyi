@@ -1,0 +1,317 @@
+district,fiscal_year,fund_code,fund,nonspendable,restricted,committed,assigned,unassigned,other_fund_balance,total
+Box Elder District,2011,10,General Fund,0.0,1768874.0,750000.0,5491028.0,3141173.0,0.0,11151075.0
+Box Elder District,2011,21,Student Activity Fund,0.0,0.0,593773.0,0.0,0.0,0.0,593773.0
+Box Elder District,2011,23,Non K-12 Programs Fund,0.0,0.0,135912.0,0.0,137190.0,0.0,273102.0
+Box Elder District,2011,31,Debt Service Fund,0.0,0.0,0.0,0.0,6425059.0,0.0,6425059.0
+Box Elder District,2011,32,Capital Projects Fund,0.0,6809585.0,6587121.0,0.0,0.0,0.0,13396706.0
+Box Elder District,2011,49,School Food Service Fund,181824.0,0.0,0.0,0.0,553811.0,0.0,735635.0
+Box Elder District,2011,50,Enterprise Funds,0.0,0.0,0.0,0.0,324468.0,0.0,324468.0
+Box Elder District,2011,71,Trust Fund,0.0,0.0,0.0,0.0,359033.0,0.0,359033.0
+Box Elder District,2011,76,Custodial Fund,0.0,0.0,0.0,0.0,41270.0,0.0,41270.0
+Box Elder District,2012,10,General Fund,0.0,0.0,2320000.0,5851553.6,745066.31,1355096.26,10271716.17
+Box Elder District,2012,21,Student Activity Fund,0.0,0.0,0.0,533388.9,0.0,0.0,533388.9
+Box Elder District,2012,31,Debt Service Fund,0.0,0.0,0.0,7109942.38,0.0,0.0,7109942.38
+Box Elder District,2012,32,Capital Projects Fund,0.0,0.0,0.0,19798570.92,0.0,6680079.93,26478650.85
+Box Elder District,2012,49,School Food Service Fund,0.0,0.0,0.0,632978.87,0.0,195755.76,828734.63
+Box Elder District,2012,50,Enterprise Funds,0.0,0.0,0.0,344844.7,0.0,0.0,344844.7
+Box Elder District,2012,71,Trust Fund,0.0,0.0,0.0,30660.83,0.0,406123.14,436783.97
+Box Elder District,2012,76,Custodial Fund,0.0,0.0,0.0,0.0,-10232.33,50881.04,40648.71
+Box Elder District,2015,10,General Fund,0.0,0.0,3563543.45,4502152.25,1418963.22,0.0,9484658.92
+Box Elder District,2015,21,Student Activity Fund,0.0,0.0,557873.14,0.0,161734.74,0.0,719607.88
+Box Elder District,2015,31,Debt Service Fund,0.0,0.0,0.0,0.0,10279360.19,0.0,10279360.19
+Box Elder District,2015,32,Capital Projects Fund,0.0,0.0,2273886.55,715299.39,28104557.62,0.0,31093743.56
+Box Elder District,2015,49,School Food Service Fund,0.0,0.0,85897.4,0.0,676318.65,0.0,762216.05
+Box Elder District,2015,50,Enterprise Funds,0.0,0.0,0.0,0.0,732681.54,0.0,732681.54
+Box Elder District,2015,71,Trust Fund,0.0,0.0,473061.75,0.0,59796.35,0.0,532858.1
+Box Elder District,2016,10,General Fund,0.0,0.0,4365124.61,10504527.62,1446047.14,0.0,16315699.37
+Box Elder District,2016,21,Student Activity Fund,0.0,0.0,11.42,0.0,722764.22,0.0,722775.64
+Box Elder District,2016,31,Debt Service Fund,0.0,0.0,-1292623.0,0.0,11833231.51,0.0,10540608.51
+Box Elder District,2016,32,Capital Projects Fund,0.0,0.0,887361.56,7366180.13,25231494.19,0.0,33485035.88
+Box Elder District,2016,49,School Food Service Fund,0.0,0.0,72328.28,0.0,887753.13,0.0,960081.41
+Box Elder District,2016,50,Enterprise Funds,0.0,0.0,0.0,0.0,872501.39,0.0,872501.39
+Box Elder District,2016,71,Trust Fund,0.0,0.0,546622.79,34900.0,-14782.59,0.0,566740.2
+Box Elder District,2017,10,General Fund,0.0,13493848.77,3900000.0,0.0,4054836.6,0.0,21448685.37
+Box Elder District,2017,21,Student Activity Fund,0.0,239604.11,0.0,0.0,486366.72,0.0,725970.83
+Box Elder District,2017,31,Debt Service Fund,0.0,-1195176.0,0.0,0.0,11593392.51,0.0,10398216.51
+Box Elder District,2017,32,Capital Projects Fund,0.0,-3812655.35,0.0,0.0,32176167.16,0.0,28363511.81
+Box Elder District,2017,49,School Food Service Fund,0.0,103766.0,153012.89,0.0,691199.52,0.0,947978.41
+Box Elder District,2017,50,Enterprise Funds,0.0,0.0,0.0,0.0,0.46,0.0,0.46
+Box Elder District,2017,71,Trust Fund,0.0,460953.41,0.0,34900.0,49994.79,0.0,545848.2
+Box Elder District,2018,10,General Fund,0.0,1042521.62,3900000.0,16349600.12,2717347.07,0.0,24009468.81
+Box Elder District,2018,21,Student Activity Fund,0.0,0.0,0.0,0.0,778256.35,0.0,778256.35
+Box Elder District,2018,31,Debt Service Fund,0.0,0.0,0.0,0.0,7980507.24,0.0,7980507.24
+Box Elder District,2018,32,Capital Projects Fund,0.0,44389.04,0.0,6244633.31,15215717.23,0.0,21504739.58
+Box Elder District,2018,49,School Food Service Fund,0.0,227252.48,0.0,0.0,916185.93,0.0,1143438.41
+Box Elder District,2018,71,Trust Fund,0.0,443859.39,0.0,34900.0,78835.28,0.0,557594.67
+Box Elder District,2019,10,General Fund,0.0,0.0,0.0,21380446.86,1426032.66,0.0,22806479.52
+Box Elder District,2019,20,District Foundation Fund,0.0,0.0,551435.13,0.0,0.0,0.0,551435.13
+Box Elder District,2019,21,Student Activity Fund,0.0,0.0,0.0,0.0,3381373.0,0.0,3381373.0
+Box Elder District,2019,31,Debt Service Fund,0.0,0.0,0.0,0.0,7800099.0,0.0,7800099.0
+Box Elder District,2019,32,Capital Projects Fund,0.0,44389.04,0.0,9637497.2,14806096.0,0.0,24487982.24
+Box Elder District,2019,49,School Food Service Fund,0.0,211346.68,0.0,0.0,690709.0,0.0,902055.68
+Box Elder District,2019,71,Trust Fund,0.0,441337.55,0.0,34900.0,75197.0,0.0,551434.55
+Box Elder District,2020,10,General Fund,0.0,0.0,0.0,20023967.24,1809180.39,0.0,21833147.63
+Box Elder District,2020,20,District Foundation Fund,0.0,0.0,569033.84,0.0,0.0,0.0,569033.84
+Box Elder District,2020,21,Student Activity Fund,0.0,0.0,0.0,0.0,3432020.0,0.0,3432020.0
+Box Elder District,2020,31,Debt Service Fund,0.0,0.0,0.0,0.0,7167629.67,0.0,7167629.67
+Box Elder District,2020,32,Capital Projects Fund,0.0,0.0,0.0,7715299.39,16120809.17,0.0,23836108.56
+Box Elder District,2020,49,School Food Service Fund,0.0,938696.7,0.0,284696.43,0.0,0.0,1223393.13
+Box Elder District,2021,10,General Fund,0.0,0.0,0.0,19153479.74,173428.7,0.0,19326908.44
+Box Elder District,2021,20,District Foundation Fund,0.0,791312.67,0.0,0.0,0.0,0.0,791312.67
+Box Elder District,2021,21,Student Activity Fund,0.0,0.0,0.0,0.0,3415839.67,0.0,3415839.67
+Box Elder District,2021,31,Debt Service Fund,0.0,0.0,0.0,0.0,6968692.33,0.0,6968692.33
+Box Elder District,2021,32,Capital Projects Fund,0.0,0.0,0.0,22715299.39,8321085.46,0.0,31036384.85
+Box Elder District,2021,49,School Food Service Fund,0.0,297939.84,0.0,0.0,2364057.43,0.0,2661997.27
+Box Elder District,2022,10,General Fund,0.0,0.0,0.0,15807297.27,1642130.47,0.0,17449427.74
+Box Elder District,2022,20,District Foundation Fund,0.0,663619.97,0.0,0.0,0.0,0.0,663619.97
+Box Elder District,2022,21,Student Activity Fund,0.0,0.0,0.0,0.0,3580122.89,0.0,3580122.89
+Box Elder District,2022,31,Debt Service Fund,0.0,0.0,0.0,0.0,6963671.84,0.0,6963671.84
+Box Elder District,2022,32,Capital Projects Fund,0.0,0.0,0.0,22715299.39,-5191738.64,0.0,17523560.75
+Box Elder District,2022,49,School Food Service Fund,0.0,151850.84,0.0,0.0,5516108.09,0.0,5667958.93
+Box Elder District,2023,10,General Fund,10000.0,0.0,3900000.0,10204331.0,1308384.0,0.0,15422715.0
+Box Elder District,2023,20,District Foundation Fund,0.0,515690.63,187926.88,0.0,0.0,0.0,703617.51
+Box Elder District,2023,21,Student Activity Fund,0.0,0.0,3692169.9,0.0,0.0,0.0,3692169.9
+Box Elder District,2023,31,Debt Service Fund,0.0,7536001.82,0.0,0.0,0.0,0.0,7536001.82
+Box Elder District,2023,32,Capital Projects Fund,0.0,18396123.25,0.0,0.0,0.0,0.0,18396123.25
+Box Elder District,2023,49,School Food Service Fund,301236.0,5089606.0,0.0,0.0,0.0,0.0,5390842.0
+Box Elder District,2024,10,General Fund,0.0,0.0,7406706.4,13307157.87,0.0,0.0,20713864.27
+Box Elder District,2024,20,District Foundation Fund,0.0,944705.13,0.0,0.0,0.0,0.0,944705.13
+Box Elder District,2024,21,Student Activity Fund,0.0,0.0,3530872.68,0.0,0.0,0.0,3530872.68
+Box Elder District,2024,31,Debt Service Fund,0.0,0.0,0.0,0.0,8546846.51,0.0,8546846.51
+Box Elder District,2024,32,Capital Projects Fund,0.0,0.0,-406151.73,22715299.39,0.0,0.0,22309147.66
+Box Elder District,2024,49,School Food Service Fund,0.0,211381.84,-686647.58,5608448.11,0.0,0.0,5133182.37
+Cache District,2011,10,General Fund,151003.0,0.0,1648994.0,1361261.0,689650.0,0.0,3850908.0
+Cache District,2011,21,Student Activity Fund,0.0,0.0,2196435.0,0.0,0.0,0.0,2196435.0
+Cache District,2011,31,Debt Service Fund,0.0,247736.0,0.0,0.0,0.0,0.0,247736.0
+Cache District,2011,32,Capital Projects Fund,0.0,3480399.0,0.0,0.0,0.0,0.0,3480399.0
+Cache District,2011,49,School Food Service Fund,78180.0,720285.0,1574.0,0.0,0.0,0.0,800039.0
+Cache District,2011,70,Trust and Custodial Funds,60000.0,0.0,285704.0,0.0,0.0,0.0,345704.0
+Cache District,2012,10,General Fund,160791.27,0.0,1603222.0,1380790.0,903603.54,0.0,4048406.81
+Cache District,2012,21,Student Activity Fund,0.0,0.0,2652489.17,0.0,0.0,0.0,2652489.17
+Cache District,2012,31,Debt Service Fund,0.0,403150.97,0.0,0.0,0.0,0.0,403150.97
+Cache District,2012,32,Capital Projects Fund,5333.78,2975112.47,0.0,0.0,0.0,0.0,2980446.25
+Cache District,2012,49,School Food Service Fund,93767.08,727104.38,0.0,0.0,0.0,0.0,820871.46
+Cache District,2012,70,Trust and Custodial Funds,160986.58,0.0,264010.17,0.0,0.0,0.0,424996.75
+Cache District,2013,10,General Fund,158658.83,0.0,1845596.0,2578983.0,958707.6,0.0,5541945.43
+Cache District,2013,21,Student Activity Fund,0.0,0.0,2645325.82,0.0,0.0,0.0,2645325.82
+Cache District,2013,23,Non K-12 Programs Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2013,31,Debt Service Fund,0.0,886588.76,0.0,0.0,0.0,0.0,886588.76
+Cache District,2013,32,Capital Projects Fund,7930.45,2413304.06,0.0,0.0,0.0,0.0,2421234.51
+Cache District,2013,49,School Food Service Fund,63305.29,924245.19,0.0,0.0,0.0,0.0,987550.48
+Cache District,2013,70,Trust and Custodial Funds,60000.0,0.0,365912.39,0.0,0.0,0.0,425912.39
+Cache District,2014,10,General Fund,158203.56,0.0,1707543.0,3399003.0,1051981.29,0.0,6316730.85
+Cache District,2014,21,Student Activity Fund,0.0,0.0,2730690.99,0.0,0.0,0.0,2730690.99
+Cache District,2014,31,Debt Service Fund,0.0,1248249.64,0.0,0.0,0.0,0.0,1248249.64
+Cache District,2014,32,Capital Projects Fund,353797.74,94677372.56,0.0,0.0,0.0,0.0,95031170.3
+Cache District,2014,49,School Food Service Fund,77515.62,1144453.64,0.0,0.0,0.0,0.0,1221969.26
+Cache District,2014,70,Trust and Custodial Funds,60000.0,0.0,366859.16,0.0,0.0,0.0,426859.16
+Cache District,2015,10,General Fund,227610.06,0.0,1638543.0,2948711.0,1893237.72,0.0,6708101.78
+Cache District,2015,21,Student Activity Fund,0.0,0.0,2966822.5,0.0,0.0,0.0,2966822.5
+Cache District,2015,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2015,31,Debt Service Fund,0.0,1048029.7,0.0,0.0,0.0,0.0,1048029.7
+Cache District,2015,32,Capital Projects Fund,355020.97,55285755.46,0.0,0.0,0.0,0.0,55640776.43
+Cache District,2015,49,School Food Service Fund,59298.88,1076163.2,0.0,0.0,0.0,0.0,1135462.08
+Cache District,2015,70,Trust and Custodial Funds,60000.0,0.0,330187.59,0.0,0.0,0.0,390187.59
+Cache District,2016,10,General Fund,169047.25,0.0,2005420.0,4279188.0,3066741.09,0.0,9520396.34
+Cache District,2016,21,Student Activity Fund,0.0,0.0,3185718.85,0.0,0.0,0.0,3185718.85
+Cache District,2016,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2016,31,Debt Service Fund,0.0,1367413.42,0.0,0.0,0.0,0.0,1367413.42
+Cache District,2016,32,Capital Projects Fund,8564.41,47824935.6,0.0,0.0,0.0,0.0,47833500.01
+Cache District,2016,49,School Food Service Fund,48120.53,1254952.68,0.0,0.0,0.0,0.0,1303073.21
+Cache District,2016,70,Trust and Custodial Funds,60000.0,0.0,367788.94,0.0,0.0,0.0,427788.94
+Cache District,2017,10,General Fund,142940.44,0.0,2500000.0,4051004.0,4767884.69,0.0,11461829.13
+Cache District,2017,21,Student Activity Fund,0.0,0.0,3957805.27,0.0,0.0,0.0,3957805.27
+Cache District,2017,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2017,31,Debt Service Fund,0.0,1360978.95,0.0,0.0,0.0,0.0,1360978.95
+Cache District,2017,32,Capital Projects Fund,7271.84,15648268.16,0.0,0.0,0.0,0.0,15655540.0
+Cache District,2017,49,School Food Service Fund,93657.64,1539822.12,0.0,0.0,0.0,0.0,1633479.76
+Cache District,2017,60,Internal Service Fund,0.0,0.0,0.0,0.0,3033910.02,0.0,3033910.02
+Cache District,2017,70,Trust and Custodial Funds,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2017,71,Trust Fund,60000.0,0.0,443228.68,0.0,0.0,0.0,503228.68
+Cache District,2018,10,General Fund,160649.6,0.0,2500000.0,2468163.47,3621003.56,0.0,8749816.63
+Cache District,2018,21,Student Activity Fund,0.0,0.0,4096814.19,0.0,0.0,0.0,4096814.19
+Cache District,2018,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2018,31,Debt Service Fund,0.0,1223723.32,0.0,0.0,0.0,0.0,1223723.32
+Cache District,2018,32,Capital Projects Fund,6141.32,4646023.62,0.0,0.0,0.0,0.0,4652164.94
+Cache District,2018,49,School Food Service Fund,39560.25,982482.7,0.0,0.0,0.0,0.0,1022042.95
+Cache District,2018,60,Internal Service Fund,0.0,0.0,0.0,2964241.47,0.0,0.0,2964241.47
+Cache District,2018,71,Trust Fund,60000.0,0.0,540826.81,0.0,0.0,0.0,600826.81
+Cache District,2019,10,General Fund,130918.13,0.0,4500000.0,1630626.0,4625650.89,0.0,10887195.02
+Cache District,2019,21,Student Activity Fund,0.0,0.0,4472377.06,0.0,0.0,0.0,4472377.06
+Cache District,2019,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2019,31,Debt Service Fund,0.0,1205052.16,0.0,0.0,0.0,0.0,1205052.16
+Cache District,2019,32,Capital Projects Fund,6508.8,7076939.76,0.0,0.0,0.0,0.0,7083448.56
+Cache District,2019,49,School Food Service Fund,48405.81,1363312.49,0.0,0.0,0.0,0.0,1411718.3
+Cache District,2019,60,Internal Service Fund,0.0,0.0,0.0,2964241.47,-236360.33,0.0,2727881.14
+Cache District,2019,71,Trust Fund,60000.0,0.0,653778.63,0.0,0.0,0.0,713778.63
+Cache District,2020,10,General Fund,154669.06,0.0,5500000.0,2311039.0,6663421.36,0.0,14629129.42
+Cache District,2020,21,Student Activity Fund,0.0,0.0,5031800.72,0.0,0.0,0.0,5031800.72
+Cache District,2020,31,Debt Service Fund,0.0,1411592.61,0.0,0.0,0.0,0.0,1411592.61
+Cache District,2020,32,Capital Projects Fund,4889.64,13760216.95,0.0,0.0,0.0,0.0,13765106.59
+Cache District,2020,49,School Food Service Fund,120801.63,2646418.17,0.0,0.0,0.0,0.0,2767219.8
+Cache District,2020,60,Internal Service Fund,0.0,0.0,0.0,2449500.33,0.0,0.0,2449500.33
+Cache District,2020,71,Trust Fund,60000.0,0.0,877464.02,0.0,0.0,0.0,937464.02
+Cache District,2021,10,General Fund,156848.87,0.0,5500000.0,3346691.0,5122312.32,0.0,14125852.19
+Cache District,2021,21,Student Activity Fund,0.0,0.0,6034413.02,0.0,0.0,0.0,6034413.02
+Cache District,2021,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2021,31,Debt Service Fund,0.0,699763.29,0.0,0.0,0.0,0.0,699763.29
+Cache District,2021,32,Capital Projects Fund,5156.31,6467996.69,0.0,0.0,0.0,0.0,6473153.0
+Cache District,2021,49,School Food Service Fund,31192.36,4247751.66,0.0,0.0,0.0,0.0,4278944.02
+Cache District,2021,60,Internal Service Fund,0.0,0.0,0.0,2449500.33,1268874.85,0.0,3718375.18
+Cache District,2021,71,Trust Fund,60000.0,0.0,1144318.65,0.0,0.0,0.0,1204318.65
+Cache District,2022,10,General Fund,141932.56,0.0,5500000.0,3832117.0,5551896.09,0.0,15025945.65
+Cache District,2022,21,Student Activity Fund,0.0,0.0,6807288.24,0.0,0.0,0.0,6807288.24
+Cache District,2022,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2022,31,Debt Service Fund,0.0,1795935.61,0.0,0.0,0.0,0.0,1795935.61
+Cache District,2022,32,Capital Projects Fund,6568.61,4105018.31,0.0,0.0,0.0,0.0,4111586.92
+Cache District,2022,49,School Food Service Fund,38438.92,7555019.11,0.0,0.0,0.0,0.0,7593458.03
+Cache District,2022,60,Internal Service Fund,0.0,0.0,0.0,3718375.18,-4221130.2,0.0,-502755.02
+Cache District,2022,71,Trust Fund,60000.0,0.0,1268231.14,0.0,0.0,0.0,1328231.14
+Cache District,2023,10,General Fund,209060.68,0.0,5500000.0,3698778.0,8001295.36,0.0,17409134.04
+Cache District,2023,21,Student Activity Fund,0.0,0.0,7880941.05,0.0,0.0,0.0,7880941.05
+Cache District,2023,26,Pass-through Taxes Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cache District,2023,31,Debt Service Fund,0.0,2394126.34,0.0,0.0,0.0,0.0,2394126.34
+Cache District,2023,32,Capital Projects Fund,4103.42,4094872.85,0.0,0.0,0.0,0.0,4098976.27
+Cache District,2023,49,School Food Service Fund,32879.63,7106199.8,0.0,0.0,0.0,0.0,7139079.43
+Cache District,2023,60,Internal Service Fund,0.0,0.0,0.0,-502755.02,1165787.77,0.0,663032.75
+Cache District,2023,71,Trust Fund,60000.0,0.0,1450944.41,0.0,0.0,0.0,1510944.41
+Cache District,2024,10,General Fund,154978.6,0.0,7500000.0,4951273.0,13864097.12,0.0,26470348.72
+Cache District,2024,21,Student Activity Fund,0.0,0.0,8506665.61,0.0,0.0,0.0,8506665.61
+Cache District,2024,31,Debt Service Fund,0.0,4132612.65,0.0,0.0,0.0,0.0,4132612.65
+Cache District,2024,32,Capital Projects Fund,3168.92,74820016.98,0.0,0.0,0.0,0.0,74823185.9
+Cache District,2024,49,School Food Service Fund,24777.58,7694038.12,0.0,0.0,0.0,0.0,7718815.7
+Cache District,2024,60,Internal Service Fund,0.0,0.0,0.0,0.0,0.0,2634479.81,2634479.81
+Cache District,2024,71,Trust Fund,0.0,0.0,0.0,0.0,0.0,1546211.64,1546211.64
+Iron District,2011,10,General Fund,235733.0,3095749.0,2400000.0,7690000.0,3715022.0,0.0,17136504.0
+Iron District,2011,21,Student Activity Fund,0.0,0.0,645904.0,0.0,0.0,0.0,645904.0
+Iron District,2011,23,Non K-12 Programs Fund,0.0,0.0,73496.0,0.0,941793.0,0.0,1015289.0
+Iron District,2011,31,Debt Service Fund,0.0,2950528.0,0.0,0.0,0.0,0.0,2950528.0
+Iron District,2011,32,Capital Projects Fund,0.0,0.0,6341318.0,0.0,0.0,0.0,6341318.0
+Iron District,2011,49,School Food Service Fund,128950.0,1188261.0,0.0,0.0,0.0,0.0,1317211.0
+Iron District,2018,10,General Fund,289890.57,2840437.33,2400000.0,9718594.0,203328.73,4431795.23,19884045.86
+Iron District,2018,21,Student Activity Fund,0.0,993282.14,0.0,0.0,0.0,0.0,993282.14
+Iron District,2018,23,Non K-12 Programs Fund,478276.67,0.0,24614.69,0.0,0.0,0.0,502891.36
+Iron District,2018,31,Debt Service Fund,0.0,0.0,1981203.88,0.0,0.0,3773701.03,5754904.91
+Iron District,2018,32,Capital Projects Fund,0.0,0.0,0.0,4331359.89,0.0,2015403.88,6346763.77
+Iron District,2018,49,School Food Service Fund,310967.18,0.0,0.0,0.0,0.0,1157339.8,1468306.98
+Iron District,2019,10,General Fund,297967.49,3109840.74,2400000.0,10384365.0,-739922.6,5180383.56,20632634.19
+Iron District,2019,21,Student Activity Fund,0.0,1189845.43,0.0,0.0,0.0,0.0,1189845.43
+Iron District,2019,23,Non K-12 Programs Fund,0.0,0.0,0.0,497413.56,0.0,20579.67,517993.23
+Iron District,2019,31,Debt Service Fund,0.0,0.0,1981203.88,0.0,0.0,5101954.33,7083158.21
+Iron District,2019,32,Capital Projects Fund,0.0,0.0,0.0,4331359.89,0.0,1407021.13,5738381.02
+Iron District,2019,49,School Food Service Fund,149295.68,161671.5,0.0,0.0,0.0,1319323.49,1630290.67
+Iron District,2020,10,General Fund,367419.24,2323460.39,2400000.0,11247675.0,3698851.93,0.0,20037406.56
+Iron District,2020,21,Student Activity Fund,0.0,1195221.63,0.0,0.0,0.0,0.0,1195221.63
+Iron District,2020,23,Non K-12 Programs Fund,0.0,0.0,132.57,517326.68,0.0,0.0,517459.25
+Iron District,2020,31,Debt Service Fund,0.0,0.0,7173653.6,0.0,0.0,0.0,7173653.6
+Iron District,2020,32,Capital Projects Fund,0.0,0.0,0.0,7525356.73,0.0,0.0,7525356.73
+Iron District,2020,49,School Food Service Fund,155565.17,1610231.63,0.0,0.0,0.0,0.0,1765796.8
+Iron District,2021,10,General Fund,407447.48,3314683.31,2400000.0,10140000.0,5515047.01,0.0,21777177.8
+Iron District,2021,21,Student Activity Fund,0.0,1186387.61,0.0,0.0,0.0,0.0,1186387.61
+Iron District,2021,23,Non K-12 Programs Fund,0.0,4628.53,0.0,518323.63,0.0,0.0,522952.16
+Iron District,2021,31,Debt Service Fund,0.0,8202271.53,0.0,0.0,0.0,0.0,8202271.53
+Iron District,2021,32,Capital Projects Fund,0.0,0.0,0.0,9386602.06,0.0,0.0,9386602.06
+Iron District,2021,49,School Food Service Fund,176854.06,1929506.43,0.0,0.0,0.0,0.0,2106360.49
+Iron District,2022,10,General Fund,379450.22,4446620.42,2400000.0,9900000.0,8982152.29,0.0,26108222.93
+Iron District,2022,21,Student Activity Fund,0.0,1392026.81,0.0,0.0,0.0,0.0,1392026.81
+Iron District,2022,23,Non K-12 Programs Fund,0.0,0.0,321901.86,519824.58,0.0,0.0,841726.44
+Iron District,2022,31,Debt Service Fund,0.0,6767454.64,1981203.88,0.0,0.0,0.0,8748658.52
+Iron District,2022,32,Capital Projects Fund,0.0,0.0,0.0,54856099.62,0.0,0.0,54856099.62
+Iron District,2022,49,School Food Service Fund,155700.66,3274935.4,0.0,0.0,0.0,0.0,3430636.06
+Iron District,2023,10,General Fund,559420.4,7088283.28,2400000.0,11700000.0,11287960.17,0.0,33035663.85
+Iron District,2023,21,Student Activity Fund,0.0,1126648.66,0.0,0.0,0.0,0.0,1126648.66
+Iron District,2023,23,Non K-12 Programs Fund,0.0,0.0,1294888.59,521129.99,0.0,0.0,1816018.58
+Iron District,2023,31,Debt Service Fund,0.0,7949175.87,1981203.88,0.0,0.0,0.0,9930379.75
+Iron District,2023,32,Capital Projects Fund,0.0,0.0,0.0,72353952.77,0.0,0.0,72353952.77
+Iron District,2023,49,School Food Service Fund,169370.55,3604087.28,0.0,0.0,0.0,0.0,3773457.83
+Iron District,2024,10,General Fund,391786.28,8546371.88,2400000.0,12200000.0,21556403.26,0.0,45094561.42
+Iron District,2024,21,Student Activity Fund,0.0,1173839.83,0.0,0.0,0.0,0.0,1173839.83
+Iron District,2024,23,Non K-12 Programs Fund,0.0,0.0,1584427.32,520851.72,0.0,0.0,2105279.04
+Iron District,2024,31,Debt Service Fund,0.0,12567582.3,0.0,0.0,0.0,0.0,12567582.3
+Iron District,2024,32,Capital Projects Fund,0.0,0.0,0.0,49679392.06,0.0,0.0,49679392.06
+Iron District,2024,49,School Food Service Fund,209991.14,3651497.06,0.0,0.0,0.0,0.0,3861488.2
+Tooele District,2011,10,General Fund,165221.0,0.0,4979660.0,0.0,4956289.0,0.0,10101170.0
+Tooele District,2011,21,Student Activity Fund,0.0,0.0,1328536.0,0.0,0.0,0.0,1328536.0
+Tooele District,2011,23,Non K-12 Programs Fund,0.0,546702.0,0.0,0.0,0.0,0.0,546702.0
+Tooele District,2011,31,Debt Service Fund,0.0,4288169.0,0.0,0.0,0.0,0.0,4288169.0
+Tooele District,2011,32,Capital Projects Fund,0.0,0.0,18355675.0,0.0,0.0,0.0,18355675.0
+Tooele District,2011,51,School Food Services Fund,156824.0,661387.0,0.0,0.0,0.0,0.0,818211.0
+Tooele District,2012,10,General Fund,104511.0,0.0,4990125.0,0.0,3139565.39,0.0,8234201.39
+Tooele District,2012,21,Student Activity Fund,0.0,0.0,1446132.12,0.0,0.0,0.0,1446132.12
+Tooele District,2012,23,Non K-12 Programs Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tooele District,2012,31,Debt Service Fund,0.0,5471.93,0.0,0.0,0.0,0.0,5471.93
+Tooele District,2012,32,Capital Projects Fund,0.0,0.0,11970967.18,0.0,0.0,0.0,11970967.18
+Tooele District,2012,51,School Food Services Fund,149312.89,484364.72,0.0,0.0,0.0,0.0,633677.61
+Tooele District,2013,10,General Fund,159181.4,0.0,4999934.0,0.0,3179693.67,0.0,8338809.07
+Tooele District,2013,21,Student Activity Fund,0.0,0.0,1636432.11,0.0,0.0,0.0,1636432.11
+Tooele District,2013,31,Debt Service Fund,0.0,847215.98,0.0,0.0,0.0,0.0,847215.98
+Tooele District,2013,32,Capital Projects Fund,147471.63,0.0,10775062.09,0.0,0.0,0.0,10922533.72
+Tooele District,2013,51,School Food Services Fund,70051.89,292204.92,0.0,0.0,0.0,0.0,362256.81
+Tooele District,2014,10,General Fund,99689.77,0.0,4999934.0,0.0,4124814.43,0.0,9224438.2
+Tooele District,2014,21,Student Activity Fund,0.0,0.0,1781194.05,0.0,0.0,0.0,1781194.05
+Tooele District,2014,31,Debt Service Fund,0.0,1138863.6,0.0,0.0,0.0,0.0,1138863.6
+Tooele District,2014,32,Capital Projects Fund,92982.1,0.0,10362096.94,0.0,0.0,0.0,10455079.04
+Tooele District,2014,51,School Food Services Fund,106979.3,136994.57,0.0,0.0,0.0,0.0,243973.87
+Tooele District,2014,70,Trust and Custodial Funds,0.0,0.0,94669.82,0.0,0.0,0.0,94669.82
+Tooele District,2015,10,General Fund,89717.86,0.0,4999934.0,0.0,4257590.04,0.0,9347241.9
+Tooele District,2015,21,Student Activity Fund,0.0,1962470.4,0.0,0.0,0.0,0.0,1962470.4
+Tooele District,2015,31,Debt Service Fund,0.0,1845385.79,0.0,0.0,0.0,0.0,1845385.79
+Tooele District,2015,32,Capital Projects Fund,93139.98,9088826.12,0.0,0.0,0.0,0.0,9181966.1
+Tooele District,2015,51,School Food Services Fund,133959.45,154347.97,0.0,0.0,0.0,0.0,288307.42
+Tooele District,2015,70,Trust and Custodial Funds,0.0,109652.33,0.0,0.0,0.0,0.0,109652.33
+Tooele District,2016,10,General Fund,94780.43,0.0,7939497.0,0.0,3480062.8,0.0,11514340.23
+Tooele District,2016,21,Student Activity Fund,0.0,2032095.77,0.0,0.0,0.0,0.0,2032095.77
+Tooele District,2016,31,Debt Service Fund,0.0,1171829.24,0.0,0.0,0.0,0.0,1171829.24
+Tooele District,2016,32,Capital Projects Fund,25876.8,7018577.88,0.0,0.0,0.0,0.0,7044454.68
+Tooele District,2016,51,School Food Services Fund,230840.65,27181.89,0.0,0.0,0.0,0.0,258022.54
+Tooele District,2016,70,Trust and Custodial Funds,0.0,56148.15,0.0,0.0,0.0,0.0,56148.15
+Tooele District,2017,10,General Fund,237121.35,0.0,7939497.0,0.0,5699300.85,0.0,13875919.2
+Tooele District,2017,20,District Foundation Fund,749.28,71381.69,0.0,0.0,0.0,0.0,72130.97
+Tooele District,2017,21,Student Activity Fund,0.0,2075640.91,0.0,0.0,0.0,0.0,2075640.91
+Tooele District,2017,31,Debt Service Fund,0.0,1095610.72,0.0,0.0,0.0,0.0,1095610.72
+Tooele District,2017,32,Capital Projects Fund,233004.22,23744021.53,0.0,0.0,0.0,0.0,23977025.75
+Tooele District,2017,49,School Food Service Fund,99411.42,195617.67,0.0,0.0,0.0,0.0,295029.09
+Tooele District,2017,51,School Food Services Fund,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tooele District,2017,70,Trust and Custodial Funds,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tooele District,2018,10,General Fund,144550.2,0.0,7939497.0,0.0,6189321.62,0.0,14273368.82
+Tooele District,2018,20,District Foundation Fund,0.0,148312.68,0.0,0.0,0.0,0.0,148312.68
+Tooele District,2018,21,Student Activity Fund,0.0,2164447.52,0.0,0.0,0.0,0.0,2164447.52
+Tooele District,2018,31,Debt Service Fund,0.0,128846.1,0.0,0.0,0.0,0.0,128846.1
+Tooele District,2018,32,Capital Projects Fund,60877.48,37496700.32,0.0,0.0,0.0,0.0,37557577.8
+Tooele District,2018,49,School Food Service Fund,65693.3,451618.13,0.0,0.0,0.0,0.0,517311.43
+Tooele District,2019,10,General Fund,131688.85,0.0,11500000.0,0.0,6051848.42,0.0,17683537.27
+Tooele District,2019,20,District Foundation Fund,0.0,441724.54,0.0,0.0,0.0,0.0,441724.54
+Tooele District,2019,21,Student Activity Fund,0.0,2182772.92,0.0,0.0,0.0,0.0,2182772.92
+Tooele District,2019,31,Debt Service Fund,0.0,136814.12,0.0,0.0,0.0,0.0,136814.12
+Tooele District,2019,32,Capital Projects Fund,66507.58,35567402.21,0.0,0.0,0.0,0.0,35633909.79
+Tooele District,2019,49,School Food Service Fund,99831.67,39827.72,0.0,0.0,0.0,0.0,139659.39
+Tooele District,2020,10,General Fund,1322900.84,0.0,11500000.0,0.0,4879125.07,0.0,17702025.91
+Tooele District,2020,20,District Foundation Fund,0.0,478814.99,0.0,0.0,0.0,0.0,478814.99
+Tooele District,2020,21,Student Activity Fund,0.0,2322636.14,0.0,0.0,0.0,0.0,2322636.14
+Tooele District,2020,31,Debt Service Fund,0.0,1129100.44,0.0,0.0,0.0,0.0,1129100.44
+Tooele District,2020,32,Capital Projects Fund,209233.06,39872178.9,0.0,0.0,0.0,0.0,40081411.96
+Tooele District,2020,49,School Food Service Fund,175114.75,871114.81,0.0,0.0,0.0,0.0,1046229.56
+Tooele District,2021,10,General Fund,1499737.89,0.0,13500000.0,0.0,8783925.07,0.0,23783662.96
+Tooele District,2021,20,District Foundation Fund,0.0,659964.21,0.0,0.0,0.0,0.0,659964.21
+Tooele District,2021,21,Student Activity Fund,0.0,2411371.47,0.0,0.0,0.0,0.0,2411371.47
+Tooele District,2021,31,Debt Service Fund,0.0,1418841.54,0.0,0.0,0.0,0.0,1418841.54
+Tooele District,2021,32,Capital Projects Fund,63294.87,96191162.1,0.0,0.0,0.0,0.0,96254456.97
+Tooele District,2021,49,School Food Service Fund,91810.58,2557983.49,0.0,0.0,0.0,0.0,2649794.07
+Tooele District,2022,10,General Fund,1293991.88,0.0,14300000.0,0.0,12508645.16,0.0,28102637.04
+Tooele District,2022,20,District Foundation Fund,0.0,810728.93,0.0,0.0,0.0,0.0,810728.93
+Tooele District,2022,21,Student Activity Fund,0.0,2427298.86,0.0,0.0,0.0,0.0,2427298.86
+Tooele District,2022,31,Debt Service Fund,0.0,3114404.95,0.0,0.0,0.0,0.0,3114404.95
+Tooele District,2022,32,Capital Projects Fund,31647.44,121639621.52,0.0,0.0,0.0,0.0,121671268.96
+Tooele District,2022,49,School Food Service Fund,55484.62,4781559.89,0.0,0.0,0.0,0.0,4837044.51
+Tooele District,2023,10,General Fund,1005407.83,0.0,15300000.0,0.0,20425885.78,0.0,36731293.61
+Tooele District,2023,20,District Foundation Fund,0.0,1003956.77,0.0,0.0,0.0,0.0,1003956.77
+Tooele District,2023,21,Student Activity Fund,0.0,2410624.29,0.0,0.0,0.0,0.0,2410624.29
+Tooele District,2023,31,Debt Service Fund,0.0,3518090.81,0.0,0.0,0.0,0.0,3518090.81
+Tooele District,2023,32,Capital Projects Fund,0.0,125036870.31,0.0,0.0,0.0,0.0,125036870.31
+Tooele District,2023,49,School Food Service Fund,117251.13,2832701.29,0.0,0.0,0.0,0.0,2949952.42
+Tooele District,2024,10,General Fund,751442.49,0.0,15300000.0,0.0,20543224.38,0.0,36594666.87
+Tooele District,2024,20,District Foundation Fund,0.0,1318189.29,0.0,0.0,0.0,0.0,1318189.29
+Tooele District,2024,21,Student Activity Fund,0.0,2331710.02,0.0,0.0,0.0,0.0,2331710.02
+Tooele District,2024,31,Debt Service Fund,0.0,3518090.81,0.0,0.0,0.0,0.0,3518090.81
+Tooele District,2024,32,Capital Projects Fund,0.0,164513210.7,0.0,0.0,0.0,0.0,164513210.7
+Tooele District,2024,49,School Food Service Fund,134675.34,1878508.62,0.0,0.0,0.0,0.0,2013183.96

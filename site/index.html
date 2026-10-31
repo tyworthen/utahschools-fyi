@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tooele School Finance</title>
+<meta name="description" content="Independent, nonpartisan research and analysis of Tooele County School District finances, taxation, spending, enrollment, staffing, debt, and educational outcomes.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <svg class="ridge" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 400 L0 270 L140 210 L250 240 L380 150 L470 190 L610 70 L720 160 L800 120 L930 200 L1040 140 L1160 220 L1290 180 L1440 250 L1440 400 Z" fill="#0B3A5A" opacity=".55"/>
+      <path d="M0 400 L0 320 L180 280 L330 300 L520 230 L650 270 L820 210 L1000 280 L1180 250 L1320 290 L1440 280 L1440 400 Z" fill="#0A3452" opacity=".8"/>
+    </svg>
+    <div class="wrap">
+      <span class="eyebrow">Independent · Nonpartisan · Evidence-driven</span>
+      <h1 id="hero-title">Follow the <span class="hl">money.</span></h1>
+      <p class="sub">Understand how Tooele County School District collects, spends, and manages taxpayer dollars.</p>
+      <p class="support">Independent, nonpartisan analysis of district finances, taxes, staffing, enrollment, debt, and educational outcomes.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="finances.html">Explore the Finances →</a>
+        <a class="btn btn-ghost" href="compare.html">Compare Districts</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="kpi-strip" aria-label="Key figures for Tooele County School District">
+    <div class="wrap"><div class="kpi-grid" id="kpis"></div></div>
+  </section>
+
+  <section class="section" aria-labelledby="q-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">The central question</span>
+        <h2 id="q-title">Is the district using taxpayer resources efficiently?</h2>
+        <p>We don’t assume the answer. We measure district spending against the things that should drive it, and publish the evidence so you can reach your own conclusion.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card"><h3>Enrollment</h3><p>Has spending grown faster or slower than the number of students served?</p></div>
+        <div class="card"><h3>Inflation</h3><p>After adjusting for rising prices, how much has spending actually changed?</p></div>
+        <div class="card"><h3>Peer districts</h3><p>How does Tooele compare with Iron, Cache, and Box Elder on the same measures?</p></div>
+        <div class="card"><h3>Outcomes</h3><p>What results — graduation, achievement, growth — accompany the resources spent?</p></div>
+      </div>
+      <p class="mt-2 muted" style="font-size:15px">Lower spending is not automatically better, and higher spending is not automatically evidence of poor management. <a href="methodology.html#efficiency">How we evaluate efficiency →</a></p>
+    </div>
+  </section>
+
+  <section class="section white" aria-labelledby="go-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Spending</span>
+        <h2 id="go-title">Where does the money go?</h2>
+        <p>Every $100 the district spends, divided by what it pays for. Select a category to see its history and how it compares.</p>
+      </div>
+      <div id="hundred"></div>
+    </div>
+  </section>
+
+  <section class="section dark" aria-labelledby="cmp-title">
+    <div class="wrap">
+      <div class="row-between section-head" style="max-width:none">
+        <div style="max-width:720px">
+          <span class="eyebrow">Compare</span>
+          <h2 id="cmp-title">How does Tooele compare?</h2>
+          <p>Spending per student in Tooele and three Utah peer districts. Each district keeps the same color on every chart.</p>
+        </div>
+        <a class="btn btn-ghost" href="compare.html">All comparison metrics →</a>
+      </div>
+      <div class="grid grid-4" id="district-cards"></div>
+      <div class="chart-box mt-2" id="home-chart"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feat-title">
+    <div class="wrap">
+      <span class="eyebrow" style="color:#B45309">Featured investigation</span>
+      <article class="feature">
+        <div class="body">
+          <span class="tag investigate">In progress</span>
+          <h2 id="feat-title" class="mt-1">Where has spending increased?</h2>
+          <p>District expenditures have changed substantially over the past decade. We are examining the major spending categories, adjusting for inflation and enrollment, and comparing Tooele with Iron, Cache, and Box Elder.</p>
+          <dl class="meta-list">
+            <dt>Fiscal years</dt><dd>FY2016–FY2026</dd>
+            <dt>Primary sources</dt><dd>TCSD budgets and actuals; State Auditor spending data; audited financial statements</dd>
+            <dt>Status</dt><dd>Data collection</dd>
+            <dt>Updated</dt><dd data-updated></dd>
+          </dl>
+          <a class="btn btn-outline" href="research.html#featured">Follow this investigation →</a>
+        </div>
+        <div class="visual">
+          <p style="font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#FACC15;margin-bottom:12px">What this analysis will answer</p>
+          <ol style="margin:0;padding-left:1.2em;color:#E2E8F0;font-size:16px;line-height:1.9">
+            <li>Which categories grew the most?</li>
+            <li>How large was the change, in real dollars?</li>
+            <li>Did it outpace enrollment?</li>
+            <li>How do peer districts compare?</li>
+            <li>What do the records explain — and what don’t they?</li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section white" aria-labelledby="qwa-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Open questions</span>
+        <h2 id="qwa-title">Questions worth asking</h2>
+        <p>Where evidence is incomplete, we frame issues as questions, not conclusions. Each is tied to a dataset we are collecting.</p>
+      </div>
+      <div class="grid grid-3">
+        <div data-qwa data-meta="Data: State Auditor spending by function · USBE enrollment">Has administrative spending grown faster than enrollment over the past ten years, and if so, what changed?</div>
+        <div data-qwa data-meta="Data: USBE enrollment projections · bond documents">How did past enrollment projections compare with actual enrollment, and how did they inform decisions to build new schools?</div>
+        <div data-qwa data-meta="Data: TCSD Audit Committee reports">A district-commissioned purchase-card review noted that transaction data did not include a required business-purpose description for every purchase. What, if anything, has changed since?</div>
+      </div>
+      <p class="mt-2"><a class="link-arrow" href="research.html">See all research questions →</a></p>
+    </div>
+  </section>
+
+  <section class="section tight" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="grid grid-3">
+        <a class="card link-card" href="methodology.html"><span class="tag info">How we work</span><h3 class="mt-1" id="how-title">Every number has a source</h3><p>Each published figure traces back to a government document, page, and table. Calculations are shown.</p><span class="link-arrow">Methodology →</span></a>
+        <a class="card link-card" href="sources.html"><span class="tag info">Primary sources</span><h3 class="mt-1">Government records first</h3><p>District budgets, State Auditor data, USBE reports, and audited statements rank above everything else.</p><span class="link-arrow">Source registry →</span></a>
+        <a class="card link-card" href="data.html"><span class="tag info">Open data</span><h3 class="mt-1">Check our work</h3><p>Filter the datasets behind every chart and download them as CSV or JSON.</p><span class="link-arrow">Data explorer →</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  TSFui.renderKPIs(document.getElementById("kpis"));
+  TSFui.renderHundred(document.getElementById("hundred"));
+  TSFui.renderDistrictCards(document.getElementById("district-cards"), "spend_per_student");
+  TSFui.lineChart(document.getElementById("home-chart"), "spend_per_student");
+</script>
+</body>
+</html>

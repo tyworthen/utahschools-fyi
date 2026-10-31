@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taxes · Tooele School Finance</title>
+<meta name="description" content="How Utah school property taxes work, Tooele County School District levies, and an estimate of what the district costs a homeowner.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Taxes</p>
+      <h1>Taxes</h1>
+      <p>How much of your property tax goes to the school district, what each part pays for, and how Utah’s property tax system decides the rate.</p>
+    </div>
+  </section>
+
+  <section class="section white" id="calculator" aria-labelledby="calc-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#B45309">Estimate</span>
+        <h2 id="calc-h">What does the school district cost me?</h2>
+        <p>Enter your home’s market value to estimate the school district portion of your property tax bill. This is an estimate, not your tax notice — check your county valuation notice for your actual figures.</p>
+      </div>
+      <div class="calc">
+        <form class="inputs" id="calc-form" onsubmit="return false">
+          <div class="field"><label for="hv">Home market value</label><input id="hv" type="number" inputmode="numeric" min="0" step="1000" value="450000"></div>
+          <label class="chk"><input id="primary" type="checkbox" checked> This is my primary residence</label>
+          <div class="field"><label for="tv">Taxable value</label><input id="tv" type="text" readonly aria-describedby="tv-note"><span id="tv-note" class="muted" style="font-size:13px">Primary residences in Utah are taxed on 55% of market value.</span></div>
+          <div class="field"><label for="fy">Tax year</label><select id="fy"></select></div>
+        </form>
+        <div class="outputs" aria-live="polite" id="calc-out"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how-h">
+    <div class="wrap two-col">
+      <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>
+        <li><a href="#how-h">How school taxes work</a></li>
+        <li><a href="#levies">The district’s levies</a></li>
+        <li><a href="#tit">Truth in Taxation</a></li>
+        <li><a href="#history">Rate history</a></li>
+      </ol></nav>
+      <div class="prose" style="max-width:none">
+        <h2 id="how-h" class="mt-0">How Utah school property taxes work</h2>
+        <p>Your property tax bill is the sum of several separate taxes — county, city, special districts, and the school district. The school district portion is usually the largest single piece.</p>
+        <p>The basic calculation is:</p>
+        <div class="callout method"><div class="ct">Calculation</div><p style="font-size:20px;font-weight:700;color:#082F49" class="num">Taxable value × school tax rate = school district tax</p><p class="muted" style="font-size:15px">For a primary residence, taxable value is 55% of market value, because Utah exempts 45% of a primary home’s value.</p></div>
+        <p>But the “school tax rate” is not one number. It is several separate <em>levies</em> added together, each with its own legal purpose and rules.</p>
+
+        <h2 id="levies">The district’s levies</h2>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">School district property tax levies</caption>
+            <thead><tr><th scope="col">Levy</th><th scope="col">What it pays for</th><th scope="col" class="n">Rate</th></tr></thead>
+            <tbody id="levy-rows"></tbody>
+          </table>
+        </div>
+        <div data-source="tax-commission-rates" data-extra="Levy descriptions: USBE Property Tax Information."></div>
+
+        <h2 id="tit">Truth in Taxation</h2>
+        <p>Each year, the state calculates a <strong>certified tax rate</strong> for the district: the rate that would bring in the same property tax revenue as last year, not counting new construction. When property values rise, the certified rate falls.</p>
+        <p>If the district wants to collect more than that, it must advertise a proposed tax increase and hold a public hearing before adopting a higher rate. Those hearings are a direct opportunity for taxpayers to ask questions.</p>
+        <div data-qwa data-meta="Data: Utah State Tax Commission rates by area · Truth-in-Taxation notices">In which years did the district adopt a rate above its certified rate, by how much, and what reasons did it give in the public hearing?</div>
+
+        <h2 id="history">Rate history</h2>
+        <div class="chart-box" id="rate-chart"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, R = TSF.taxRates;
+    var LEVY_DESC = {
+      basic: "Set by the Legislature at the same rate statewide; funds the state’s share of the per-student formula.",
+      voted: "Additional operating levy approved by voters.",
+      board: "Additional operating levy set by the local school board, within state limits.",
+      capital: "Buildings, maintenance, equipment, and other capital needs.",
+      debt: "Repays principal and interest on voter-approved bonds.",
+      judgment: "Recovers revenue lost to prior-year property tax refunds."
+    };
+    document.getElementById("levy-rows").innerHTML = R.levies.map(function (l) {
+      return '<tr><th scope="row">' + l.label + "</th><td>" + LEVY_DESC[l.id] + '</td><td class="n">' + (l.rate == null ? '<span class="muted">Pending</span>' : l.rate.toFixed(6)) + "</td></tr>";
+    }).join("");
+    document.getElementById("rate-chart").innerHTML = '<p class="chart-title">TCSD total school tax rate, 2016–' + R.year + '</p><p class="chart-sub">Adopted rate vs. certified rate, by levy.</p>' +
+      U.emptyState("Rate history not yet entered", "Adopted and certified rates for each levy will be taken from the Utah State Tax Commission’s annual “Tax Rates by Area” files.") + U.sourceLine("tax-commission-rates");
+
+    var fy = document.getElementById("fy");
+    fy.innerHTML = '<option value="' + R.year + '">' + R.year + "</option>";
+    var hv = document.getElementById("hv"), pr = document.getElementById("primary"), tv = document.getElementById("tv"), out = document.getElementById("calc-out");
+    var ratesReady = R.levies.every(function (l) { return l.rate != null; });
+    function calc() {
+      var mv = Math.max(0, +hv.value || 0);
+      var taxable = pr.checked ? mv * 0.55 : mv;
+      tv.value = U.fmt(taxable, "dollars");
+      document.getElementById("tv-note").textContent = pr.checked ? "Primary residences in Utah are taxed on 55% of market value." : "Non-primary property is taxed on 100% of market value.";
+      if (!ratesReady) {
+        out.innerHTML = '<p class="muted" style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Estimated school district tax, ' + R.year + "</p>" +
+          U.emptyState(R.year + " rates not yet entered", "The calculator will show your estimate — and its operating, capital, and bond components — once the district’s adopted levy rates are entered from the Tax Commission’s rate file.");
+        return;
+      }
+      var parts = { operating: 0, capital: 0, debt: 0 };
+      R.levies.forEach(function (l) { parts[l.kind] += taxable * l.rate; });
+      var total = parts.operating + parts.capital + parts.debt;
+      out.innerHTML = '<p class="muted" style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px">Estimated school district tax, ' + R.year + '</p><div class="big">' + U.fmt(total, "dollars") + '</div><p class="muted">per year · about ' + U.fmt(total / 12, "dollars") + " per month</p>" +
+        '<div class="table-wrap mt-2"><table><tbody>' +
+        "<tr><th scope=\"row\">Operating levies</th><td class=\"n\">" + U.fmt(parts.operating, "dollars") + "</td></tr>" +
+        "<tr><th scope=\"row\">Capital levy</th><td class=\"n\">" + U.fmt(parts.capital, "dollars") + "</td></tr>" +
+        "<tr><th scope=\"row\">Bond (debt service) levy</th><td class=\"n\">" + U.fmt(parts.debt, "dollars") + "</td></tr>" +
+        "</tbody></table></div><p class=\"source-line\"><strong>Estimate only.</strong> Rates vary slightly by tax area. Your actual tax depends on your county-assessed value and the rate for your tax area.</p>";
+    }
+    hv.addEventListener("input", calc); pr.addEventListener("change", calc);
+    calc();
+  })();
+</script>
+</body>
+</html>

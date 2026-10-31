@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources · Tooele School Finance</title>
+<meta name="description" content="The registry of primary government sources used by Tooele School Finance, with evidence tier and coverage.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Sources</p>
+      <h1>Sources</h1>
+      <p>Every dataset and document this project relies on, ranked by evidence tier. Government records come first.</p>
+    </div>
+  </section>
+  <section class="section white">
+    <div class="wrap">
+      <div class="controls">
+        <div class="field"><label for="tier">Evidence tier</label><select id="tier"><option value="">All tiers</option><option value="1">Tier 1 — State &amp; district records</option><option value="2">Tier 2 — Federal datasets</option></select></div>
+        <div class="field" style="flex:1;min-width:220px"><label for="filter">Filter</label><input id="filter" type="search" placeholder="e.g. compensation, enrollment, bonds"></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Source registry</caption>
+          <thead><tr><th scope="col">Tier</th><th scope="col">Source</th><th scope="col">Publisher</th><th scope="col">Coverage</th><th scope="col">What we use it for</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="mt-1 muted" style="font-size:14px">Each source’s retrieval date and the specific documents archived are recorded in the project’s source registry, available on the <a href="data.html">data page</a>.</p>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, tier = document.getElementById("tier"), f = document.getElementById("filter"), rows = document.getElementById("rows");
+    function draw() {
+      var q = f.value.trim().toLowerCase();
+      var list = TSF.sources.filter(function (s) {
+        return (!tier.value || String(s.tier) === tier.value) && (!q || (s.name + s.publisher + s.use + s.coverage).toLowerCase().indexOf(q) >= 0);
+      });
+      rows.innerHTML = list.length ? list.map(function (s) {
+        return '<tr><td><span class="tag ' + (s.tier === 1 ? "info" : "neutral") + '">Tier ' + s.tier + '</span></td><td><a href="' + U.esc(s.url) + '" rel="noopener"><strong>' + U.esc(s.name) + "</strong></a></td><td>" + U.esc(s.publisher) + '</td><td class="tabular">' + U.esc(s.coverage) + "</td><td>" + U.esc(s.use) + "</td></tr>";
+      }).join("") : '<tr><td colspan="5" class="muted center">No sources match.</td></tr>';
+    }
+    tier.addEventListener("change", draw); f.addEventListener("input", draw); draw();
+  })();
+</script>
+</body>
+</html>

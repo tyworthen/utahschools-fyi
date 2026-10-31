@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spending · Tooele School Finance</title>
+<meta name="description" content="Where Tooele County School District spends its money, by category, over time, and compared with peer districts.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Spending</p>
+      <h1>Where the money goes</h1>
+      <p>District spending by category — what each one pays for, how it has changed, and how it compares with Iron, Cache, and Box Elder.</p>
+    </div>
+  </section>
+
+  <section class="section white" aria-labelledby="h100">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h100">$100 of district spending</h2>
+        <p>Every category below uses the State Auditor’s standardized definitions, so the same category means the same thing in every Utah district.</p>
+      </div>
+      <div id="hundred"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Spending categories">
+    <div class="wrap" id="cats"></div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui;
+    U.renderHundred(document.getElementById("hundred"));
+    var QUESTIONS = {
+      instruction: "Has the share of spending that reaches the classroom changed over ten years, and how does that share compare with peer districts?",
+      support: "How has spending on counselors, nurses, and other student services changed relative to enrollment and student needs?",
+      administration: "Has administrative spending grown faster than enrollment, and which positions or programs account for the change?",
+      transportation: "Has transportation spending grown faster than enrollment, and how much of the change is explained by fuel costs, routes, and staffing?",
+      operations: "How do building operations costs per square foot compare across districts, and how have utility costs changed?",
+      capital: "How have capital project costs compared with their original budgets and with enrollment growth?",
+      debt: "How much of total bond repayment is interest, and how does debt service per student compare with peer districts?",
+      other: "What makes up the spending not classified in other categories, and has it changed significantly?"
+    };
+    var CODES = {
+      instruction: "1000s (instruction)",
+      support: "2100s (student support) and 2200s (instructional staff support)",
+      administration: "2300s (board and district administration), 2400s (school administration), 2500s (central business services, including administrative technology)",
+      transportation: "2700s (student transportation)",
+      operations: "2600s (operation and maintenance of plant) and 3100s (food services)",
+      capital: "4000s (facilities acquisition and construction)",
+      debt: "5000s (debt service)",
+      other: "All other functions, including 3200s enterprise and 3300s community services"
+    };
+    document.getElementById("cats").innerHTML = TSF.spending.categories.map(function (c, i) {
+      return '<article id="' + c.id + '" class="mt-3" style="scroll-margin-top:96px" aria-labelledby="h-' + c.id + '">' +
+        '<div style="display:flex;gap:12px;align-items:center"><span style="width:18px;height:18px;border-radius:4px;background:' + U.CAT_COLORS[i] + ';border:1px solid rgba(0,0,0,.1)" aria-hidden="true"></span><h2 id="h-' + c.id + '" style="margin:0">' + U.esc(c.label) + "</h2></div>" +
+        '<p class="mt-1" style="max-width:70ch;color:#334155">' + U.esc(c.desc) + "</p>" +
+        '<div class="grid grid-2 mt-2"><div class="chart-box" id="chart-' + c.id + '"></div>' +
+        "<div>" + U.qwa(QUESTIONS[c.id], "Per-student and inflation-adjusted comparisons will follow once enrollment and CPI data are added.") +
+        '<p class="mt-2" style="font-size:15px;color:#334155"><strong>USBE function codes:</strong> ' + CODES[c.id] + "</p></div></div></article>";
+    }).join("");
+    TSF.spending.categories.forEach(function (c) { U.lineChart(document.getElementById("chart-" + c.id), "spend_" + c.id); });
+  })();
+</script>
+</body>
+</html>

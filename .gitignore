@@ -1,0 +1,11 @@
+# OS / editor
+.DS_Store
+*.swp
+
+# Tableau Hyper API logs
+hyperd*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/

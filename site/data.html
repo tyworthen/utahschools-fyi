@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Explorer · Tooele School Finance</title>
+<meta name="description" content="Filter, view, and download the datasets behind every Tooele School Finance chart.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="dashboard">
+<div id="site-header"></div>
+<main id="main">
+  <section class="section tight">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html" style="color:#CBD5E1">Home</a> / Data</p>
+      <h1 style="color:#F8FAFC;font-size:clamp(32px,4.5vw,48px)">Data explorer</h1>
+      <p style="color:#CBD5E1;max-width:64ch">The datasets behind every chart on this site. Filter, check our work, and download. Blank cells are values not yet collected and verified — never estimates.</p>
+
+      <div class="controls mt-2">
+        <div class="field"><label for="metric">Metric</label><select id="metric"></select></div>
+        <div class="field"><label for="district">District</label><select id="district"><option value="">All districts</option></select></div>
+        <div class="field"><label for="from">From</label><select id="from"></select></div>
+        <div class="field"><label for="to">To</label><select id="to"></select></div>
+        <div class="field"><span class="flabel" style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#CBD5E1">View</span>
+          <div class="seg" role="group" aria-label="View"><button type="button" data-view="table" aria-pressed="true">Table</button><button type="button" data-view="chart" aria-pressed="false">Line chart</button></div></div>
+      </div>
+      <div class="row-between" style="margin-bottom:16px">
+        <p class="stat-row" id="stat" style="margin:0;font-size:15px"></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btn-outline btn-sm" id="dl-csv" type="button">Download CSV</button>
+          <button class="btn btn-outline btn-sm" id="dl-json" type="button">Download JSON</button>
+          <button class="btn btn-outline btn-sm" id="dl-src" type="button">Source registry (CSV)</button>
+        </div>
+      </div>
+      <div id="out"></div>
+      <div class="callout method mt-2" id="method"></div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, $ = function (id) { return document.getElementById(id); };
+    var view = "table";
+    $("metric").innerHTML = Object.keys(TSF.metrics).map(function (k) { return '<option value="' + k + '">' + TSF.metrics[k].label + "</option>"; }).join("");
+    $("district").innerHTML += Object.keys(TSF.districts).map(function (k) { return '<option value="' + k + '">' + TSF.districts[k].name + "</option>"; }).join("");
+    var yo = TSF.years.map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
+    $("from").innerHTML = yo; $("to").innerHTML = yo; $("to").value = TSF.years[TSF.years.length - 1];
+
+    function rows() {
+      var m = $("metric").value, def = TSF.metrics[m], from = +$("from").value, to = +$("to").value;
+      var ds = $("district").value ? [$("district").value] : Object.keys(TSF.districts);
+      var out = [];
+      ds.forEach(function (d) {
+        TSF.years.forEach(function (y) {
+          if (y < from || y > to) return;
+          var v = (def.values[d] || {})[y];
+          out.push({ metric: m, metric_label: def.label, district: TSF.districts[d].full, fiscal_year: y, value: v == null ? null : v, unit: def.unit, basis: def.basis, source_id: def.source });
+        });
+      });
+      return out;
+    }
+    function draw() {
+      var m = $("metric").value, def = TSF.metrics[m], r = rows();
+      var filled = r.filter(function (x) { return x.value != null; }).length;
+      $("stat").textContent = r.length + " rows · " + filled + " with verified values";
+      if (view === "chart") {
+        $("out").innerHTML = '<div class="chart-box" id="c"></div>';
+        U.lineChart($("c"), m);
+      } else {
+        $("out").innerHTML = '<div class="table-wrap" style="max-height:560px"><table><caption class="sr-only">' + U.esc(def.label) + '</caption><thead><tr><th scope="col">District</th><th scope="col" class="n">Fiscal year</th><th scope="col" class="n">Value</th><th scope="col">Basis</th><th scope="col">Source</th></tr></thead><tbody>' +
+          r.map(function (x) { var s = U.source(x.source_id); return "<tr><td>" + U.esc(x.district) + '</td><td class="n">FY' + x.fiscal_year + '</td><td class="n">' + (x.value == null ? '<span class="muted">—</span>' : U.fmt(x.value, x.unit)) + '</td><td class="muted">' + U.esc(x.basis) + '</td><td><a href="' + U.esc(s.url) + '" rel="noopener">' + U.esc(s.name) + "</a></td></tr>"; }).join("") +
+          "</tbody></table></div>";
+      }
+      $("method").innerHTML = '<div class="ct">Methodology</div><p><strong>Calculation:</strong> ' + U.esc(def.calc) + " <strong>Basis:</strong> " + U.esc(def.basis) + '. <a href="methodology.html#calcs">Full methodology →</a></p>' +
+        (def.notes ? "<p><strong>Data notes:</strong> " + U.esc(def.notes) + "</p>" : "") +
+        (def.ref ? '<p><a href="' + U.esc(def.ref) + '" download>Download the derived summary file</a> · <a href="assets/data/transparent_utah/README.md">Raw files &amp; manifest</a></p>' : "");
+    }
+    function download(name, text, type) {
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([text], { type: type }));
+      a.download = name; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    }
+    function csv(list) {
+      var keys = Object.keys(list[0] || {});
+      var q = function (v) { v = v == null ? "" : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+      return [keys.join(",")].concat(list.map(function (r) { return keys.map(function (k) { return q(r[k]); }).join(","); })).join("\n");
+    }
+    $("dl-csv").addEventListener("click", function () { download("tsf_" + $("metric").value + ".csv", csv(rows()), "text/csv"); });
+    $("dl-json").addEventListener("click", function () { download("tsf_" + $("metric").value + ".json", JSON.stringify({ updated: TSF.updated, rows: rows() }, null, 2), "application/json"); });
+    $("dl-src").addEventListener("click", function () { download("tsf_source_registry.csv", csv(TSF.sources), "text/csv"); });
+    ["metric", "district", "from", "to"].forEach(function (id) { $(id).addEventListener("change", draw); });
+    document.querySelectorAll("[data-view]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        view = b.getAttribute("data-view");
+        document.querySelectorAll("[data-view]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        draw();
+      });
+    });
+    draw();
+  })();
+</script>
+</body>
+</html>

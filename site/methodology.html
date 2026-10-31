@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology · Tooele School Finance</title>
+<meta name="description" content="How Tooele School Finance collects, calculates, labels, and publishes financial findings.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Methodology</p>
+      <h1>Methodology</h1>
+      <p>Transparency applies to this project too. Here is how we find, check, calculate, and label every number we publish.</p>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap two-col">
+      <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>
+        <li><a href="#labels">How claims are labeled</a></li>
+        <li><a href="#evidence">Evidence tiers</a></li>
+        <li><a href="#trace">Traceability</a></li>
+        <li><a href="#calcs">Standard calculations</a></li>
+        <li><a href="#inflation">Inflation</a></li>
+        <li><a href="#efficiency">Efficiency</a></li>
+        <li><a href="#workflow">Research workflow</a></li>
+        <li><a href="#standard">Publication standard</a></li>
+      </ol></nav>
+      <div class="prose" style="max-width:none">
+        <h2 id="labels" class="mt-0">How claims are labeled</h2>
+        <p>Every significant finding separates what a source says from what we calculate and what we think it might mean. We never present an interpretation or hypothesis as a fact.</p>
+        <div class="ev">
+          <div class="k" style="--kc:#082F49">Fact</div><div>What the source explicitly reports.</div>
+          <div class="k" style="--kc:#2563EB">Calculation</div><div>What we calculate from source data, with the formula shown.</div>
+          <div class="k" style="--kc:#0D9488">Interpretation</div><div>What the data appears to indicate.</div>
+          <div class="k" style="--kc:#D97706">Hypothesis</div><div>A possible explanation that requires further investigation.</div>
+          <div class="k" style="--kc:#7C3AED">Opinion</div><div>An interpretation attributed to an identifiable person or organization.</div>
+        </div>
+        <div class="callout method"><div class="ct">Example</div>
+          <p><strong>Not this:</strong> “The district wasted $5 million.”</p>
+          <p><strong>This:</strong> “Transportation spending increased $5 million over the period. The available financial records do not explain the increase. We will examine the underlying expenditures and compare the increase with enrollment, fuel costs, staffing, and peer districts.”</p>
+        </div>
+
+        <h2 id="evidence">Evidence tiers</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Tier</th><th scope="col">Sources</th><th scope="col">How we use them</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1</th><td>Tooele County School District; Utah State Board of Education; Utah State Auditor; State Treasurer; State Tax Commission; Utah Legislature; public meeting records; bond documents; audited financial statements; official budgets and expenditure records</td><td>Primary evidence</td></tr>
+              <tr><th scope="row">2</th><td>Federal datasets: NCES, U.S. Census Bureau, Bureau of Labor Statistics</td><td>Comparison and context</td></tr>
+              <tr><th scope="row">3</th><td>Academic research; reputable journalism</td><td>Context and leads</td></tr>
+              <tr><th scope="row">4</th><td>Advocacy and political organizations; social media; blogs</td><td>Leads only — never treated as evidence without independent verification</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-1">When two Tier 1 sources disagree — for example, the State Auditor’s dashboard and the audited financial statements — we report both and explain the difference. Transparent Utah notes its data can be raw, unaudited, and unconsolidated.</p>
+
+        <h2 id="trace">Traceability</h2>
+        <p>Every published figure can be traced back through each step to a specific cell in a government document.</p>
+        <div class="chain" aria-label="Traceability chain">
+          <span>Published finding</span><i></i><span>Calculation</span><i></i><span>Normalized dataset</span><i></i><span>Original dataset</span><i></i><span>Government document</span><i></i><span>Page / table / cell</span>
+        </div>
+        <p class="mt-2">We keep original source documents, raw and cleaned datasets, transformation scripts, source URLs, and retrieval dates. Historical source data is never overwritten without keeping the original version.</p>
+
+        <h2 id="calcs">Standard calculations</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Measure</th><th scope="col">Definition</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Per student</th><td>Amount ÷ fall (October 1) enrollment for the same fiscal year.</td></tr>
+              <tr><th scope="row">Share of total</th><td>Category amount ÷ total for the same fund scope and year.</td></tr>
+              <tr><th scope="row">Year-over-year change</th><td>(This year ÷ prior year) − 1.</td></tr>
+              <tr><th scope="row">5- and 10-year change</th><td>(End year ÷ start year) − 1.</td></tr>
+              <tr><th scope="row">CAGR</th><td>(End ÷ start)<sup>1 / years</sup> − 1. The steady annual growth rate that produces the same total change.</td></tr>
+              <tr><th scope="row">Enrollment-adjusted growth</th><td>Change in per-student amount, isolating growth beyond what enrollment alone explains.</td></tr>
+              <tr><th scope="row">Revenue</th><td>Local + state + federal revenue in governmental funds. Excludes other financing sources (bond proceeds, transfers between funds, sale of assets), which are borrowing or internal movements, not revenue.</td></tr>
+              <tr><th scope="row">Spending categories</th><td>USBE function codes: instruction 1000s; student support 2100–2299; administration 2300–2599; operations 2600s and food service 3100s; transportation 2700s; capital 4000s; debt service 5000s; other = everything else.</td></tr>
+              <tr><th scope="row">Administrative share</th><td>Administration (2300–2599) ÷ current expenditures (all functions except capital 4000s and debt service 5000s), so construction cycles don’t distort the ratio. Compare with care: districts assign some costs, such as administrative technology (2580), differently.</td></tr>
+              <tr><th scope="row">Fund balance ratio</th><td>General Fund year-end fund balance ÷ General Fund expenditures for the same year.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="inflation">Inflation adjustment</h2>
+        <p>Dollar comparisons across years account for inflation. We use the Bureau of Labor Statistics’ CPI-U (U.S. city average, all items), stored locally as an annual series rather than looked up ad hoc.</p>
+        <div class="callout method"><div class="ct">Calculation</div><p class="num">Real value (FY2026 dollars) = nominal value × (CPI for FY2026 ÷ CPI for the year being adjusted)</p><p class="muted" style="font-size:15px">Utah fiscal years run July 1–June 30. Fiscal-year CPI is the average of the twelve monthly values in that period.</p></div>
+        <p>Charts always state whether dollars are <strong>nominal</strong> or <strong>inflation-adjusted</strong>.</p>
+
+        <h2 id="efficiency">How we think about efficiency</h2>
+        <p>We distinguish three things:</p>
+        <ol>
+          <li><strong>Financial efficiency</strong> — how resources are raised, budgeted, and managed.</li>
+          <li><strong>Operational efficiency</strong> — what it costs to deliver services such as transportation, facilities, and administration.</li>
+          <li><strong>Educational effectiveness</strong> — the measurable outcomes that accompany spending: graduation, assessment results, growth, and attendance.</li>
+        </ol>
+        <p>Lower spending is not automatically better. Higher spending is not automatically evidence of poor management. Efficiency is about both the resources used and the results achieved.</p>
+
+        <h2 id="workflow">Research workflow</h2>
+        <ol class="steps">
+          <li>Identify question</li><li>Locate primary sources</li><li>Acquire documents</li><li>Preserve originals</li><li>Extract data</li><li>Normalize</li><li>Validate</li><li>Compare to history</li><li>Compare to peers</li><li>Investigate anomalies</li><li>Identify alternative explanations</li><li>Calculate metrics</li><li>Fact-check</li><li>Publish methodology</li><li>Publish findings with sources</li>
+        </ol>
+
+        <h2 id="standard">Publication standard</h2>
+        <p>Every major analysis answers eight questions:</p>
+        <ol>
+          <li>What happened?</li><li>How large was the change?</li><li>Why did it happen, if known?</li><li>How does it compare historically?</li><li>How does it compare with peer districts?</li><li>What does the source actually establish?</li><li>What remains unknown?</li><li>What additional information would resolve the uncertainty?</li>
+        </ol>
+        <h2>Chart standards</h2>
+        <ul>
+          <li>Axes are labeled, with units and fiscal years shown.</li>
+          <li>Value axes start at zero unless clearly marked otherwise.</li>
+          <li>District comparisons use a shared scale.</li>
+          <li>Each district has a fixed color and line style: <strong>Tooele</strong> yellow (solid), <strong>Iron</strong> blue (dashed), <strong>Cache</strong> teal (dotted), <strong>Box Elder</strong> purple (dash-dot). Yellow marks the subject district — it is not a judgment.</li>
+          <li>Every chart has a source line and a table version.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
