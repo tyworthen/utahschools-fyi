@@ -24,6 +24,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
+<style>
+  .h-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 18px; font-size: 14px; color: var(--ink-2); }
+  .h-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .h-legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; border: 1px solid rgba(0,0,0,.08); }
+  .h-rows { display: grid; gap: 14px; }
+  .h-row { display: grid; grid-template-columns: 190px 1fr; gap: 16px; align-items: center; }
+  .h-row .who { font-weight: 700; color: var(--navy); line-height: 1.25; }
+  .h-row .who small { display: block; font-weight: 500; color: var(--ink-3); font-size: 13px; }
+  .h-row .who .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+  .h-row.sub .who { border-left: 4px solid var(--yellow); padding-left: 10px; }
+  .h-row .hundred { height: 44px; }
+  .h-row .hundred a { font-size: 13px; padding: 6px; align-items: center; justify-content: center; }
+  .h-row.statewide .hundred { opacity: .9; }
+  .h-row .remove { all: unset; cursor: pointer; color: var(--ink-3); font-size: 13px; text-decoration: underline; margin-top: 2px; display: inline-block; }
+  @media (max-width: 700px) { .h-row { grid-template-columns: 1fr; gap: 6px; } .h-row .hundred a { font-size: 11px; padding: 2px; } }
+</style>
 </head>
 <body>
 <div id="site-header"></div>
@@ -40,7 +56,13 @@
     <div class="wrap">
       <div class="section-head">
         <h2 id="h100">$100 of district spending</h2>
-        <p>Every category below groups function codes from Utah’s uniform chart of accounts, which every district uses to report to the State Board of Education, so the same category means the same thing in every Utah district.</p>
+        <p>How every $100 of spending is divided, for Tooele, its three initial peers, and all Utah districts combined. Add any other district to compare. Categories group function codes from Utah’s uniform chart of accounts, which every district uses to report to the State Board of Education, so the same category means the same thing in every district.</p>
+      </div>
+      <div class="controls">
+        <div class="field"><label for="h-year">Fiscal year</label><select id="h-year"></select></div>
+        <div class="field"><span class="flabel">Spending</span>
+          <div class="seg" role="group" aria-label="Spending basis"><button type="button" data-basis="all" aria-pressed="true">All spending</button><button type="button" data-basis="operating" aria-pressed="false">Operating only</button></div></div>
+        <div class="field"><label for="h-add">Add a district</label><select id="h-add"></select></div>
       </div>
       <div id="hundred"></div>
     </div>
@@ -52,11 +74,72 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/data.js"></script>
+<script src="assets/statewide.js"></script>
 <script src="assets/site.js"></script>
 <script>
   (function () {
     var U = TSFui;
-    U.renderHundred(document.getElementById("hundred"));
+    // ---------- $100 of spending: Tooele, peers, statewide, and added districts ----------
+    var S = TSF_STATE, CATS = TSF.spending.categories, ids = Object.keys(S.districts);
+    var ORDER = ["30", "13", "04", "03"], added = [], basis = "all";
+    var hy = document.getElementById("h-year"), ha = document.getElementById("h-add");
+    hy.innerHTML = S.years.slice().reverse().map(function (y) { return '<option value="' + y + '">FY' + y + "</option>"; }).join("");
+    function addOptions() {
+      ha.innerHTML = '<option value="">Choose a district…</option>' + ids.filter(function (d) { return ORDER.indexOf(d) < 0 && added.indexOf(d) < 0; })
+        .map(function (d) { return '<option value="' + d + '">' + S.districts[d].short + "</option>"; }).join("");
+    }
+    function amounts(d, y) {
+      return CATS.map(function (c) {
+        var v = d === "state" ? ids.reduce(function (a, k) { return a + ((S.categories[k][c.id] || {})[y] || 0); }, 0) : (S.categories[d][c.id] || {})[y] || 0;
+        return basis === "operating" && (c.id === "capital" || c.id === "debt") ? 0 : v;
+      });
+    }
+    function row(d, y) {
+      var a = amounts(d, y), total = a.reduce(function (p, q) { return p + q; }, 0);
+      var isState = d === "state", pk = S.peers[d], name = isState ? "All Utah districts" : S.districts[d].short;
+      var dot = isState ? "#94A3B8" : pk ? TSF.districts[pk].color : "#64748B";
+      var who = '<div class="who"><span class="sw" style="background:' + dot + '"></span>' + U.esc(name) +
+        '<small>' + (total ? U.fmt(total, "money") + " · FY" + y : "No data for FY" + y) + (pk && d !== "30" ? " · initial peer" : d === "30" ? " · case study" : isState ? " · " + ids.length + " districts" : "") + "</small>" +
+        (added.indexOf(d) >= 0 ? '<button type="button" class="remove" data-remove="' + d + '">Remove</button>' : "") + "</div>";
+      if (!total) return '<div class="h-row">' + who + '<div class="muted" style="font-size:14px">Not reported for this year.</div></div>';
+      var label = CATS.map(function (c, i) { return a[i] ? c.label + " $" + (a[i] / total * 100).toFixed(2) : null; }).filter(Boolean).join(", ");
+      var bar = '<div class="hundred" role="img" aria-label="' + U.esc(name) + ", FY" + y + ", of every $100: " + U.esc(label) + '">' +
+        CATS.map(function (c, i) {
+          if (!a[i]) return "";
+          var share = a[i] / total * 100;
+          return '<a href="#' + c.id + '" style="flex:' + share + ";background:" + U.CAT_COLORS[i] + '" title="' + U.esc(name + " · " + c.label) + ": $" + share.toFixed(2) + " of $100 (" + U.fmt(a[i], "money") + ')">' + (share >= 6 ? "$" + share.toFixed(0) : "") + "</a>";
+        }).join("") + "</div>";
+      return '<div class="h-row' + (d === "30" ? " sub" : "") + (isState ? " statewide" : "") + '">' + who + bar + "</div>";
+    }
+    function drawHundred() {
+      var y = +hy.value, list = ORDER.concat(added).concat(["state"]);
+      var cats = CATS.filter(function (c) { return basis === "all" || (c.id !== "capital" && c.id !== "debt"); });
+      var html = '<div class="h-legend" aria-hidden="true">' + cats.map(function (c) { return '<span><i style="background:' + U.CAT_COLORS[CATS.indexOf(c)] + '"></i>' + c.label + "</span>"; }).join("") + "</div>" +
+        '<div class="h-rows">' + list.map(function (d) { return row(d, y); }).join("") + "</div>";
+      html += '<details class="mt-2"><summary style="cursor:pointer;font-size:14px;font-weight:600">View as table</summary><div class="table-wrap mt-1"><table><caption class="sr-only">Of every $100 spent, by category, FY' + y + '</caption><thead><tr><th scope="col">District</th>' +
+        cats.map(function (c) { return '<th scope="col" class="n">' + c.label + "</th>"; }).join("") + '<th scope="col" class="n">Total spent</th></tr></thead><tbody>' +
+        list.map(function (d) {
+          var a = amounts(d, y), total = a.reduce(function (p, q) { return p + q; }, 0);
+          return '<tr><th scope="row">' + (d === "state" ? "All Utah districts" : U.esc(S.districts[d].short)) + "</th>" +
+            cats.map(function (c) { var v = a[CATS.indexOf(c)]; return '<td class="n">' + (total ? "$" + (v / total * 100).toFixed(2) : "—") + "</td>"; }).join("") +
+            '<td class="n">' + (total ? U.fmt(total, "money") : "—") + "</td></tr>";
+        }).join("") + "</tbody></table></div></details>";
+      html += U.sourceLine("usbe-afr", (basis === "operating" ? "Operating spending excludes capital (4000s) and debt service (5000s). " : "All spending includes construction (capital) and debt payments, which swing with building cycles. ") + "Actual expenditures by function, governmental funds, FY" + y + ", nominal dollars.");
+      document.getElementById("hundred").innerHTML = html;
+      document.querySelectorAll("[data-remove]").forEach(function (b) {
+        b.addEventListener("click", function () { added.splice(added.indexOf(b.getAttribute("data-remove")), 1); addOptions(); drawHundred(); });
+      });
+    }
+    hy.addEventListener("change", drawHundred);
+    ha.addEventListener("change", function () { if (ha.value && added.length < 6) { added.push(ha.value); addOptions(); drawHundred(); } });
+    document.querySelectorAll("[data-basis]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        basis = b.getAttribute("data-basis");
+        document.querySelectorAll("[data-basis]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        drawHundred();
+      });
+    });
+    addOptions(); drawHundred();
     var QUESTIONS = {
       instruction: "Has the share of spending that reaches the classroom changed over ten years, and how does that share compare with peer districts?",
       support: "How has spending on counselors, nurses, and other student services changed relative to enrollment and student needs?",
