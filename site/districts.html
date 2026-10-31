@@ -56,7 +56,7 @@
           <tbody></tbody>
         </table>
       </div>
-      <p class="mt-1 muted" style="font-size:14px">Nominal dollars, governmental funds, actuals. Shares use current expenditures (excluding construction and debt service). Highlighted rows are the Tooele case study and its initial peers. <a href="methodology.html#calcs">Definitions</a> · <a href="data.html#downloads">Download the normalized data</a></p>
+      <p class="mt-1 muted" style="font-size:14px">Nominal dollars, governmental funds, actuals. Spending per student = current expenditures ÷ October 1 enrollment; districts with large online programs (including Tooele through FY2023 and Iron) count those students. Shares use current expenditures (excluding construction and debt service). Highlighted rows are the Tooele case study and its initial peers. <a href="methodology.html#calcs">Definitions</a> · <a href="data.html#downloads">Download the normalized data</a></p>
       <div data-source="usbe-afr"></div>
     </div>
   </section>
@@ -69,7 +69,8 @@
   (function () {
     var U = TSFui, S = TSF_STATE, ids = Object.keys(S.districts), Y = S.years;
     var COLS = [
-      ["name", "District", null], ["revenue_total", "Revenue", "money"], ["expenditures_total", "Spending", "money"],
+      ["name", "District", null], ["enrollment", "Enrollment", "count"], ["spend_per_student", "Spending / student", "dollars"],
+      ["revenue_total", "Revenue", "money"], ["expenditures_total", "Spending", "money"],
       ["property_tax_total", "Property tax", "money"], ["local_share", "Local share", "percent"],
       ["instruction_share", "Instruction share", "percent"], ["admin_share", "Admin share", "percent"],
       ["gf_fund_balance_pct", "GF balance % of spending", "percent"]
@@ -108,7 +109,7 @@
         return "<tr" + (rl ? ' class="hl"' : "") + '><th scope="row"><a href="district.html?id=' + r.id + '">' + U.esc(r.name) + "</a>" +
           (rl ? ' <span class="tag ' + (r.id === "30" ? "investigate" : "neutral") + '" style="font-size:10px;padding:2px 6px">' + rl + "</span>" : "") + "</th>" +
           COLS.slice(1).map(function (c) { return '<td class="n">' + (r[c[0]] == null ? '<span class="muted">—</span>' : U.fmt(r[c[0]], c[2])) + "</td>"; }).join("") + "</tr>";
-      }).join("") || '<tr><td colspan="8" class="muted center">No districts match.</td></tr>';
+      }).join("") || '<tr><td colspan="10" class="muted center">No districts match.</td></tr>';
     }
     ySel.addEventListener("change", draw); q.addEventListener("input", draw); draw();
   })();

@@ -44,6 +44,7 @@
         <li><a href="#priority">Which source we use</a></li>
         <li><a href="#budget-stages">Budget stages</a></li>
         <li><a href="#scope">Scope</a></li>
+        <li><a href="#students">Counting students</a></li>
         <li><a href="#validation">Validation</a></li>
         <li><a href="#trace">Traceability</a></li>
         <li><a href="#cleaning">Data cleaning &amp; personal information</a></li>
@@ -111,6 +112,16 @@
         <p>The statewide dataset covers Utah’s 41 school districts. Charter schools are in the source files but are excluded until they can be shown with a clear district/charter distinction. The primary analytical period is FY2016–FY2026; older years are kept where available (currently back to FY2012). All dollar figures are nominal until the inflation table is added.</p>
         <p>Revenue excludes state <em>Capital Development Project Grants</em> (revenue code 3750) in every year, because USBE’s Tableau extract — our source for FY2012–FY2024 — omits that code. These one-time construction grants went mostly to small rural districts (for example, $18.0M to Piute and $18.1M to Wayne in FY2024); none of Tooele’s initial peers received them in FY2024.</p>
 
+        <h2 id="students">Counting students</h2>
+        <p>Per-student figures use USBE’s October 1 enrollment, the count used for state funding: K-12 students enrolled on October 1 who are Utah residents. FY2015–FY2018 come from USBE’s Enrollment by LEA report and FY2019 onward from Fall Enrollment by Grade Level. We checked Average Daily Membership (ADM), which measures how much of the year each student is enrolled; for the four initial districts it runs within 2% of the October 1 count, so the choice of count does not change the comparisons.</p>
+        <p><strong>Online programs.</strong> Some districts run online schools that enroll students from across the state, and those students count in the district’s enrollment. Because online students generally cost less to serve, a large online program lowers a district’s spending per student, and a change in online enrollment can move per-student figures sharply. We identify these programs by school name and enrollment pattern from USBE’s school-level counts (available from FY2019):</p>
+        <ul>
+          <li><strong>Tooele:</strong> Blue Peak High for FY2019–FY2021, when it housed the online program (2,817 to 9,476 students), then the Digital Education Center (8,332 students in FY2022, 8,882 in FY2023, 263 in FY2024). From FY2022, Blue Peak High has about 120 students and is not counted as online.</li>
+          <li><strong>Iron:</strong> Southwest Educational Academy and Iron Online.</li>
+          <li><strong>Cache and Box Elder:</strong> none identified.</li>
+        </ul>
+        <p>This classification is ours, made from names and enrollment patterns; it has not yet been confirmed with the districts. Online programs in the other 37 districts have not been identified, so statewide per-student comparisons should be read with this in mind.</p>
+
         <h2 id="validation">Validation</h2>
         <p>FY2012–FY2024 figures come from USBE’s Tableau Public data extracts; FY2025 from USBE’s Excel summaries. Both sources cover FY2024, so we compare them for every district: total spending, revenue, property tax, and General Fund balance. Of 164 comparisons, 162 agree to within 0.5% (nearly all exactly). The two exceptions are Provo’s revenue (+0.8%) and General Fund balance (+3.6%), which we have not yet explained. <a href="assets/data/normalized/validation_FY2024.csv" download>Download the validation results</a>.</p>
         <p>We also compared USBE revenue with Transparent Utah. They agree closely for Tooele (within about 1% each year), but differ for some peers — including Iron in FY2021–FY2022 and Cache from FY2020 onward — which is one reason USBE is the primary source.</p>
@@ -136,7 +147,7 @@
           <table>
             <thead><tr><th scope="col">Measure</th><th scope="col">Definition</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Per student</th><td>Amount ÷ fall (October 1) enrollment for the same fiscal year.</td></tr>
+              <tr><th scope="row">Per student</th><td>Amount ÷ October 1 enrollment for the same school year (school year 2024–25 = FY2025). Spending per student uses current expenditures — all functions except capital (4000s) and debt service (5000s) — so construction cycles don’t distort it.</td></tr>
               <tr><th scope="row">Share of total</th><td>Category amount ÷ total for the same fund scope and year.</td></tr>
               <tr><th scope="row">Year-over-year change</th><td>(This year ÷ prior year) − 1.</td></tr>
               <tr><th scope="row">5- and 10-year change</th><td>(End year ÷ start year) − 1.</td></tr>

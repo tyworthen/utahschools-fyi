@@ -39,6 +39,7 @@
   <section class="section tight white">
     <div class="wrap two-col">
       <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>
+        <li><a href="#students">Students and per-student figures</a></li>
         <li><a href="#revenue">Where the money comes from</a></li>
         <li><a href="#expenditures">Where the money goes</a></li>
         <li><a href="#funds">The district’s funds</a></li>
@@ -48,7 +49,17 @@
       </ol></nav>
 
       <div>
-        <section id="revenue" aria-labelledby="rev-h">
+        <section id="students" aria-labelledby="stu-h">
+          <span class="eyebrow" style="color:#B45309">Students</span>
+          <h2 id="stu-h">How many students, and how much per student?</h2>
+          <p class="prose">Per-student figures divide spending or revenue by October 1 enrollment. Tooele’s enrollment includes students in the district’s online program, which was large for several years and then shrank sharply in the fall of 2023. That change alone moves every per-student figure, so the two are shown together here.</p>
+          <div class="chart-box mt-2" id="enr-chart"></div>
+          <div class="chart-box mt-2" id="sps-chart"></div>
+          <div class="chart-box mt-2" id="rps-chart"></div>
+          <div class="mt-2" data-qwa data-meta="Data: USBE Fall Enrollment by school · USBE AFR expenditures">Tooele’s spending per student rose from $9,051 in FY2023 to $13,576 in FY2024, the same year its online program fell from 8,882 to 263 students. How much did the online program cost to run, and how much of the district’s spending did it account for before and after?</div>
+        </section>
+
+        <section id="revenue" class="mt-3" aria-labelledby="rev-h">
           <span class="eyebrow" style="color:#B45309">Revenue</span>
           <h2 id="rev-h">Where does the money come from?</h2>
           <p class="prose">Utah school districts are funded by three main sources. <strong>Local</strong> revenue is mostly property tax. <strong>State</strong> revenue flows largely through the Minimum School Program, which uses a per-student funding formula. <strong>Federal</strong> revenue is mostly tied to specific programs, such as special education and services for low-income students.</p>
@@ -148,6 +159,19 @@
   (function () {
     var U = TSFui;
     U.lineChart(document.getElementById("rev-chart"), "revenue_total");
+    var OE = TSF.onlineEnrollment.tooele, ey = TSF.years;
+    U.drawLines(document.getElementById("enr-chart"), {
+      id: "enr", label: "Tooele enrollment: in-person and online", basis: "October 1 enrollment, K-12", unit: "count", years: ey, source: "usbe-enrollment",
+      calc: "In-person = total October 1 enrollment − enrollment in the district’s online program (Blue Peak High through October 2020, then the Digital Education Center). The online breakdown starts with October 2018 (FY2019).",
+      notes: "School-level counts are only available from FY2019, so the in-person and online lines start there.",
+      series: [
+        { name: "Total", color: "#082F49", bold: false, values: ey.map(function (y) { return OE.total[y] == null ? null : OE.total[y]; }) },
+        { name: "In-person", color: "#FACC15", bold: true, values: ey.map(function (y) { return OE.total[y] != null && OE.online[y] != null ? OE.total[y] - OE.online[y] : null; }) },
+        { name: "Online", color: "#2563EB", dash: "6 4", bold: false, values: ey.map(function (y) { return OE.online[y] == null ? null : OE.online[y]; }) }
+      ]
+    });
+    U.lineChart(document.getElementById("sps-chart"), "spend_per_student");
+    U.lineChart(document.getElementById("rps-chart"), "revenue_per_student");
     U.lineChart(document.getElementById("exp-chart"), "expenditures_total");
 
     // Budget vs. actual: General Fund expenditures, Tooele

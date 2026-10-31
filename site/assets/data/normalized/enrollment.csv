@@ -1,0 +1,534 @@
+lea_number,lea_name,school_year,october_1_enrollment,online_school_enrollment,source
+01,Alpine District,2015,73570,,USBE Enrollment by LEA (2019 report)
+01,Alpine District,2016,75307,,USBE Enrollment by LEA (2019 report)
+01,Alpine District,2017,77343,,USBE Enrollment by LEA (2019 report)
+01,Alpine District,2018,78853,,USBE Enrollment by LEA (2019 report)
+01,Alpine District,2019,79748,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2020,81532,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2021,80953,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2022,83999,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2023,84666,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2024,84710,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2025,84757,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2026,84215,,USBE Fall Enrollment by Grade Level
+01,Alpine District,2027,82505,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2015,1516,,USBE Enrollment by LEA (2019 report)
+02,Beaver District,2016,1563,,USBE Enrollment by LEA (2019 report)
+02,Beaver District,2017,1519,,USBE Enrollment by LEA (2019 report)
+02,Beaver District,2018,1540,,USBE Enrollment by LEA (2019 report)
+02,Beaver District,2019,1527,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2020,1524,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2021,1519,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2022,1528,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2023,1507,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2024,1468,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2025,1434,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2026,1452,,USBE Fall Enrollment by Grade Level
+02,Beaver District,2027,1394,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2015,11238,,USBE Enrollment by LEA (2019 report)
+03,Box Elder District,2016,11341,,USBE Enrollment by LEA (2019 report)
+03,Box Elder District,2017,11572,,USBE Enrollment by LEA (2019 report)
+03,Box Elder District,2018,11671,,USBE Enrollment by LEA (2019 report)
+03,Box Elder District,2019,11770,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2020,11914,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2021,11832,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2022,12296,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2023,12338,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2024,12268,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2025,12244,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2026,12087,,USBE Fall Enrollment by Grade Level
+03,Box Elder District,2027,11741,,USBE Fall Enrollment by Grade Level
+04,Cache District,2015,16457,,USBE Enrollment by LEA (2019 report)
+04,Cache District,2016,16976,,USBE Enrollment by LEA (2019 report)
+04,Cache District,2017,17536,,USBE Enrollment by LEA (2019 report)
+04,Cache District,2018,17895,,USBE Enrollment by LEA (2019 report)
+04,Cache District,2019,18270,,USBE Fall Enrollment by Grade Level
+04,Cache District,2020,18802,,USBE Fall Enrollment by Grade Level
+04,Cache District,2021,18833,,USBE Fall Enrollment by Grade Level
+04,Cache District,2022,19554,,USBE Fall Enrollment by Grade Level
+04,Cache District,2023,19731,,USBE Fall Enrollment by Grade Level
+04,Cache District,2024,19794,,USBE Fall Enrollment by Grade Level
+04,Cache District,2025,19847,,USBE Fall Enrollment by Grade Level
+04,Cache District,2026,19720,,USBE Fall Enrollment by Grade Level
+04,Cache District,2027,19560,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2015,3384,,USBE Enrollment by LEA (2019 report)
+05,Carbon District,2016,3383,,USBE Enrollment by LEA (2019 report)
+05,Carbon District,2017,3348,,USBE Enrollment by LEA (2019 report)
+05,Carbon District,2018,3364,,USBE Enrollment by LEA (2019 report)
+05,Carbon District,2019,3484,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2020,3472,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2021,3289,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2022,3362,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2023,3334,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2024,3178,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2025,3186,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2026,3135,,USBE Fall Enrollment by Grade Level
+05,Carbon District,2027,2990,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2015,174,,USBE Enrollment by LEA (2019 report)
+06,Daggett District,2016,181,,USBE Enrollment by LEA (2019 report)
+06,Daggett District,2017,183,,USBE Enrollment by LEA (2019 report)
+06,Daggett District,2018,163,,USBE Enrollment by LEA (2019 report)
+06,Daggett District,2019,178,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2020,189,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2021,187,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2022,187,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2023,177,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2024,177,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2025,161,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2026,140,,USBE Fall Enrollment by Grade Level
+06,Daggett District,2027,128,,USBE Fall Enrollment by Grade Level
+07,Davis District,2015,69139,,USBE Enrollment by LEA (2019 report)
+07,Davis District,2016,69879,,USBE Enrollment by LEA (2019 report)
+07,Davis District,2017,71021,,USBE Enrollment by LEA (2019 report)
+07,Davis District,2018,71908,,USBE Enrollment by LEA (2019 report)
+07,Davis District,2019,72263,,USBE Fall Enrollment by Grade Level
+07,Davis District,2020,72897,,USBE Fall Enrollment by Grade Level
+07,Davis District,2021,70643,,USBE Fall Enrollment by Grade Level
+07,Davis District,2022,72540,,USBE Fall Enrollment by Grade Level
+07,Davis District,2023,71564,,USBE Fall Enrollment by Grade Level
+07,Davis District,2024,70703,,USBE Fall Enrollment by Grade Level
+07,Davis District,2025,69602,,USBE Fall Enrollment by Grade Level
+07,Davis District,2026,67466,,USBE Fall Enrollment by Grade Level
+07,Davis District,2027,65221,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2015,5170,,USBE Enrollment by LEA (2019 report)
+08,Duchesne District,2016,5076,,USBE Enrollment by LEA (2019 report)
+08,Duchesne District,2017,5009,,USBE Enrollment by LEA (2019 report)
+08,Duchesne District,2018,5103,,USBE Enrollment by LEA (2019 report)
+08,Duchesne District,2019,5142,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2020,5164,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2021,4987,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2022,5133,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2023,5224,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2024,5143,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2025,5104,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2026,4942,,USBE Fall Enrollment by Grade Level
+08,Duchesne District,2027,4714,,USBE Fall Enrollment by Grade Level
+09,Emery District,2015,2281,,USBE Enrollment by LEA (2019 report)
+09,Emery District,2016,2220,,USBE Enrollment by LEA (2019 report)
+09,Emery District,2017,2174,,USBE Enrollment by LEA (2019 report)
+09,Emery District,2018,2184,,USBE Enrollment by LEA (2019 report)
+09,Emery District,2019,2181,,USBE Fall Enrollment by Grade Level
+09,Emery District,2020,2141,,USBE Fall Enrollment by Grade Level
+09,Emery District,2021,2172,,USBE Fall Enrollment by Grade Level
+09,Emery District,2022,2136,,USBE Fall Enrollment by Grade Level
+09,Emery District,2023,2085,,USBE Fall Enrollment by Grade Level
+09,Emery District,2024,2058,,USBE Fall Enrollment by Grade Level
+09,Emery District,2025,1986,,USBE Fall Enrollment by Grade Level
+09,Emery District,2026,1907,,USBE Fall Enrollment by Grade Level
+09,Emery District,2027,1790,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2015,926,,USBE Enrollment by LEA (2019 report)
+10,Garfield District,2016,922,,USBE Enrollment by LEA (2019 report)
+10,Garfield District,2017,904,,USBE Enrollment by LEA (2019 report)
+10,Garfield District,2018,909,,USBE Enrollment by LEA (2019 report)
+10,Garfield District,2019,899,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2020,899,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2021,923,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2022,1267,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2023,1243,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2024,1511,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2025,1561,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2026,1319,,USBE Fall Enrollment by Grade Level
+10,Garfield District,2027,1226,,USBE Fall Enrollment by Grade Level
+11,Grand District,2015,1456,,USBE Enrollment by LEA (2019 report)
+11,Grand District,2016,1451,,USBE Enrollment by LEA (2019 report)
+11,Grand District,2017,1483,,USBE Enrollment by LEA (2019 report)
+11,Grand District,2018,1451,,USBE Enrollment by LEA (2019 report)
+11,Grand District,2019,1520,,USBE Fall Enrollment by Grade Level
+11,Grand District,2020,1498,,USBE Fall Enrollment by Grade Level
+11,Grand District,2021,1379,,USBE Fall Enrollment by Grade Level
+11,Grand District,2022,1448,,USBE Fall Enrollment by Grade Level
+11,Grand District,2023,1435,,USBE Fall Enrollment by Grade Level
+11,Grand District,2024,1397,,USBE Fall Enrollment by Grade Level
+11,Grand District,2025,1371,,USBE Fall Enrollment by Grade Level
+11,Grand District,2026,1376,,USBE Fall Enrollment by Grade Level
+11,Grand District,2027,1301,,USBE Fall Enrollment by Grade Level
+12,Granite District,2015,67660,,USBE Enrollment by LEA (2019 report)
+12,Granite District,2016,67822,,USBE Enrollment by LEA (2019 report)
+12,Granite District,2017,67177,,USBE Enrollment by LEA (2019 report)
+12,Granite District,2018,66024,,USBE Enrollment by LEA (2019 report)
+12,Granite District,2019,64281,,USBE Fall Enrollment by Grade Level
+12,Granite District,2020,63989,,USBE Fall Enrollment by Grade Level
+12,Granite District,2021,61851,,USBE Fall Enrollment by Grade Level
+12,Granite District,2022,60371,,USBE Fall Enrollment by Grade Level
+12,Granite District,2023,59121,,USBE Fall Enrollment by Grade Level
+12,Granite District,2024,58312,,USBE Fall Enrollment by Grade Level
+12,Granite District,2025,57038,,USBE Fall Enrollment by Grade Level
+12,Granite District,2026,54467,,USBE Fall Enrollment by Grade Level
+12,Granite District,2027,51400,,USBE Fall Enrollment by Grade Level
+13,Iron District,2015,8814,,USBE Enrollment by LEA (2019 report)
+13,Iron District,2016,8933,,USBE Enrollment by LEA (2019 report)
+13,Iron District,2017,9074,,USBE Enrollment by LEA (2019 report)
+13,Iron District,2018,9169,,USBE Enrollment by LEA (2019 report)
+13,Iron District,2019,9395,84,USBE Fall Enrollment by Grade Level
+13,Iron District,2020,9544,107,USBE Fall Enrollment by Grade Level
+13,Iron District,2021,10748,1584,USBE Fall Enrollment by Grade Level
+13,Iron District,2022,11830,2167,USBE Fall Enrollment by Grade Level
+13,Iron District,2023,12421,2597,USBE Fall Enrollment by Grade Level
+13,Iron District,2024,14479,4789,USBE Fall Enrollment by Grade Level
+13,Iron District,2025,13883,4282,USBE Fall Enrollment by Grade Level
+13,Iron District,2026,13407,3706,USBE Fall Enrollment by Grade Level
+13,Iron District,2027,12791,3198,USBE Fall Enrollment by Grade Level
+14,Jordan District,2015,51806,,USBE Enrollment by LEA (2019 report)
+14,Jordan District,2016,52324,,USBE Enrollment by LEA (2019 report)
+14,Jordan District,2017,52507,,USBE Enrollment by LEA (2019 report)
+14,Jordan District,2018,53519,,USBE Enrollment by LEA (2019 report)
+14,Jordan District,2019,54865,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2020,56339,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2021,56102,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2022,57840,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2023,57829,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2024,57436,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2025,57083,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2026,55820,,USBE Fall Enrollment by Grade Level
+14,Jordan District,2027,54092,,USBE Fall Enrollment by Grade Level
+15,Juab District,2015,2322,,USBE Enrollment by LEA (2019 report)
+15,Juab District,2016,2412,,USBE Enrollment by LEA (2019 report)
+15,Juab District,2017,2513,,USBE Enrollment by LEA (2019 report)
+15,Juab District,2018,2510,,USBE Enrollment by LEA (2019 report)
+15,Juab District,2019,2587,,USBE Fall Enrollment by Grade Level
+15,Juab District,2020,2655,,USBE Fall Enrollment by Grade Level
+15,Juab District,2021,2590,,USBE Fall Enrollment by Grade Level
+15,Juab District,2022,2676,,USBE Fall Enrollment by Grade Level
+15,Juab District,2023,2705,,USBE Fall Enrollment by Grade Level
+15,Juab District,2024,2686,,USBE Fall Enrollment by Grade Level
+15,Juab District,2025,2705,,USBE Fall Enrollment by Grade Level
+15,Juab District,2026,2654,,USBE Fall Enrollment by Grade Level
+15,Juab District,2027,2568,,USBE Fall Enrollment by Grade Level
+16,Kane District,2015,1193,,USBE Enrollment by LEA (2019 report)
+16,Kane District,2016,1209,,USBE Enrollment by LEA (2019 report)
+16,Kane District,2017,1256,,USBE Enrollment by LEA (2019 report)
+16,Kane District,2018,1250,,USBE Enrollment by LEA (2019 report)
+16,Kane District,2019,1269,,USBE Fall Enrollment by Grade Level
+16,Kane District,2020,1275,,USBE Fall Enrollment by Grade Level
+16,Kane District,2021,1287,,USBE Fall Enrollment by Grade Level
+16,Kane District,2022,1402,,USBE Fall Enrollment by Grade Level
+16,Kane District,2023,1424,,USBE Fall Enrollment by Grade Level
+16,Kane District,2024,1426,,USBE Fall Enrollment by Grade Level
+16,Kane District,2025,1408,,USBE Fall Enrollment by Grade Level
+16,Kane District,2026,1386,,USBE Fall Enrollment by Grade Level
+16,Kane District,2027,1363,,USBE Fall Enrollment by Grade Level
+17,Millard District,2015,2852,,USBE Enrollment by LEA (2019 report)
+17,Millard District,2016,2803,,USBE Enrollment by LEA (2019 report)
+17,Millard District,2017,2840,,USBE Enrollment by LEA (2019 report)
+17,Millard District,2018,2884,,USBE Enrollment by LEA (2019 report)
+17,Millard District,2019,2916,,USBE Fall Enrollment by Grade Level
+17,Millard District,2020,2973,,USBE Fall Enrollment by Grade Level
+17,Millard District,2021,2973,,USBE Fall Enrollment by Grade Level
+17,Millard District,2022,3074,,USBE Fall Enrollment by Grade Level
+17,Millard District,2023,3120,,USBE Fall Enrollment by Grade Level
+17,Millard District,2024,3109,,USBE Fall Enrollment by Grade Level
+17,Millard District,2025,3064,,USBE Fall Enrollment by Grade Level
+17,Millard District,2026,2997,,USBE Fall Enrollment by Grade Level
+17,Millard District,2027,2881,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2015,2766,,USBE Enrollment by LEA (2019 report)
+18,Morgan District,2016,2836,,USBE Enrollment by LEA (2019 report)
+18,Morgan District,2017,2994,,USBE Enrollment by LEA (2019 report)
+18,Morgan District,2018,3069,,USBE Enrollment by LEA (2019 report)
+18,Morgan District,2019,3178,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2020,3194,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2021,3201,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2022,3334,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2023,3290,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2024,3181,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2025,3110,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2026,3021,,USBE Fall Enrollment by Grade Level
+18,Morgan District,2027,2983,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2015,31393,,USBE Enrollment by LEA (2019 report)
+19,Nebo District,2016,31895,,USBE Enrollment by LEA (2019 report)
+19,Nebo District,2017,32437,,USBE Enrollment by LEA (2019 report)
+19,Nebo District,2018,32809,,USBE Enrollment by LEA (2019 report)
+19,Nebo District,2019,33117,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2020,33379,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2021,35335,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2022,35454,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2023,36229,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2024,43672,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2025,42946,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2026,41675,,USBE Fall Enrollment by Grade Level
+19,Nebo District,2027,41876,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2015,2385,,USBE Enrollment by LEA (2019 report)
+20,North Sanpete District,2016,2377,,USBE Enrollment by LEA (2019 report)
+20,North Sanpete District,2017,2360,,USBE Enrollment by LEA (2019 report)
+20,North Sanpete District,2018,2438,,USBE Enrollment by LEA (2019 report)
+20,North Sanpete District,2019,2471,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2020,2507,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2021,2445,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2022,2531,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2023,2534,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2024,2473,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2025,2486,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2026,2485,,USBE Fall Enrollment by Grade Level
+20,North Sanpete District,2027,2421,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2015,1004,,USBE Enrollment by LEA (2019 report)
+21,North Summit District,2016,1034,,USBE Enrollment by LEA (2019 report)
+21,North Summit District,2017,1042,,USBE Enrollment by LEA (2019 report)
+21,North Summit District,2018,1048,,USBE Enrollment by LEA (2019 report)
+21,North Summit District,2019,1044,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2020,1014,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2021,1011,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2022,1027,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2023,1026,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2024,1043,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2025,1041,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2026,1024,,USBE Fall Enrollment by Grade Level
+21,North Summit District,2027,987,,USBE Fall Enrollment by Grade Level
+22,Park City District,2015,4739,,USBE Enrollment by LEA (2019 report)
+22,Park City District,2016,4763,,USBE Enrollment by LEA (2019 report)
+22,Park City District,2017,4891,,USBE Enrollment by LEA (2019 report)
+22,Park City District,2018,4816,,USBE Enrollment by LEA (2019 report)
+22,Park City District,2019,4780,,USBE Fall Enrollment by Grade Level
+22,Park City District,2020,4757,,USBE Fall Enrollment by Grade Level
+22,Park City District,2021,4696,,USBE Fall Enrollment by Grade Level
+22,Park City District,2022,4592,,USBE Fall Enrollment by Grade Level
+22,Park City District,2023,4350,,USBE Fall Enrollment by Grade Level
+22,Park City District,2024,4246,,USBE Fall Enrollment by Grade Level
+22,Park City District,2025,4117,,USBE Fall Enrollment by Grade Level
+22,Park City District,2026,4049,,USBE Fall Enrollment by Grade Level
+22,Park City District,2027,3941,,USBE Fall Enrollment by Grade Level
+23,Piute District,2015,302,,USBE Enrollment by LEA (2019 report)
+23,Piute District,2016,291,,USBE Enrollment by LEA (2019 report)
+23,Piute District,2017,280,,USBE Enrollment by LEA (2019 report)
+23,Piute District,2018,274,,USBE Enrollment by LEA (2019 report)
+23,Piute District,2019,273,,USBE Fall Enrollment by Grade Level
+23,Piute District,2020,279,,USBE Fall Enrollment by Grade Level
+23,Piute District,2021,291,,USBE Fall Enrollment by Grade Level
+23,Piute District,2022,283,,USBE Fall Enrollment by Grade Level
+23,Piute District,2023,260,,USBE Fall Enrollment by Grade Level
+23,Piute District,2024,262,,USBE Fall Enrollment by Grade Level
+23,Piute District,2025,431,,USBE Fall Enrollment by Grade Level
+23,Piute District,2026,408,,USBE Fall Enrollment by Grade Level
+23,Piute District,2027,441,,USBE Fall Enrollment by Grade Level
+24,Rich District,2015,478,,USBE Enrollment by LEA (2019 report)
+24,Rich District,2016,492,,USBE Enrollment by LEA (2019 report)
+24,Rich District,2017,497,,USBE Enrollment by LEA (2019 report)
+24,Rich District,2018,494,,USBE Enrollment by LEA (2019 report)
+24,Rich District,2019,507,,USBE Fall Enrollment by Grade Level
+24,Rich District,2020,498,,USBE Fall Enrollment by Grade Level
+24,Rich District,2021,498,,USBE Fall Enrollment by Grade Level
+24,Rich District,2022,510,,USBE Fall Enrollment by Grade Level
+24,Rich District,2023,511,,USBE Fall Enrollment by Grade Level
+24,Rich District,2024,522,,USBE Fall Enrollment by Grade Level
+24,Rich District,2025,499,,USBE Fall Enrollment by Grade Level
+24,Rich District,2026,485,,USBE Fall Enrollment by Grade Level
+24,Rich District,2027,491,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2015,3022,,USBE Enrollment by LEA (2019 report)
+25,San Juan District,2016,2975,,USBE Enrollment by LEA (2019 report)
+25,San Juan District,2017,2940,,USBE Enrollment by LEA (2019 report)
+25,San Juan District,2018,2889,,USBE Enrollment by LEA (2019 report)
+25,San Juan District,2019,2876,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2020,2891,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2021,2929,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2022,2880,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2023,2881,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2024,2831,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2025,2768,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2026,2725,,USBE Fall Enrollment by Grade Level
+25,San Juan District,2027,2686,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2015,4609,,USBE Enrollment by LEA (2019 report)
+26,Sevier District,2016,4520,,USBE Enrollment by LEA (2019 report)
+26,Sevier District,2017,4513,,USBE Enrollment by LEA (2019 report)
+26,Sevier District,2018,4560,,USBE Enrollment by LEA (2019 report)
+26,Sevier District,2019,4538,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2020,4548,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2021,4461,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2022,4567,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2023,4563,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2024,4502,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2025,4432,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2026,4272,,USBE Fall Enrollment by Grade Level
+26,Sevier District,2027,4177,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2015,3140,,USBE Enrollment by LEA (2019 report)
+27,South Sanpete District,2016,3157,,USBE Enrollment by LEA (2019 report)
+27,South Sanpete District,2017,3221,,USBE Enrollment by LEA (2019 report)
+27,South Sanpete District,2018,3263,,USBE Enrollment by LEA (2019 report)
+27,South Sanpete District,2019,3268,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2020,3230,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2021,3127,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2022,3194,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2023,3189,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2024,3171,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2025,3173,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2026,3101,,USBE Fall Enrollment by Grade Level
+27,South Sanpete District,2027,3034,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2015,1510,,USBE Enrollment by LEA (2019 report)
+28,South Summit District,2016,1537,,USBE Enrollment by LEA (2019 report)
+28,South Summit District,2017,1574,,USBE Enrollment by LEA (2019 report)
+28,South Summit District,2018,1650,,USBE Enrollment by LEA (2019 report)
+28,South Summit District,2019,1694,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2020,1701,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2021,1635,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2022,1654,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2023,1669,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2024,1632,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2025,1573,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2026,1516,,USBE Fall Enrollment by Grade Level
+28,South Summit District,2027,1488,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2015,259,,USBE Enrollment by LEA (2019 report)
+29,Tintic District,2016,258,,USBE Enrollment by LEA (2019 report)
+29,Tintic District,2017,244,,USBE Enrollment by LEA (2019 report)
+29,Tintic District,2018,239,,USBE Enrollment by LEA (2019 report)
+29,Tintic District,2019,226,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2020,214,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2021,213,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2022,225,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2023,254,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2024,262,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2025,262,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2026,250,,USBE Fall Enrollment by Grade Level
+29,Tintic District,2027,247,,USBE Fall Enrollment by Grade Level
+30,Tooele District,2015,13873,,USBE Enrollment by LEA (2019 report)
+30,Tooele District,2016,13988,,USBE Enrollment by LEA (2019 report)
+30,Tooele District,2017,14332,,USBE Enrollment by LEA (2019 report)
+30,Tooele District,2018,16154,,USBE Enrollment by LEA (2019 report)
+30,Tooele District,2019,16903,2817,USBE Fall Enrollment by Grade Level
+30,Tooele District,2020,17608,3432,USBE Fall Enrollment by Grade Level
+30,Tooele District,2021,22004,9476,USBE Fall Enrollment by Grade Level
+30,Tooele District,2022,22939,8332,USBE Fall Enrollment by Grade Level
+30,Tooele District,2023,23828,8882,USBE Fall Enrollment by Grade Level
+30,Tooele District,2024,15588,263,USBE Fall Enrollment by Grade Level
+30,Tooele District,2025,15619,235,USBE Fall Enrollment by Grade Level
+30,Tooele District,2026,15737,244,USBE Fall Enrollment by Grade Level
+30,Tooele District,2027,15463,288,USBE Fall Enrollment by Grade Level
+31,Uintah District,2015,7912,,USBE Enrollment by LEA (2019 report)
+31,Uintah District,2016,7287,,USBE Enrollment by LEA (2019 report)
+31,Uintah District,2017,7034,,USBE Enrollment by LEA (2019 report)
+31,Uintah District,2018,6986,,USBE Enrollment by LEA (2019 report)
+31,Uintah District,2019,7069,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2020,6989,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2021,6668,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2022,6820,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2023,6829,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2024,6749,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2025,6486,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2026,6350,,USBE Fall Enrollment by Grade Level
+31,Uintah District,2027,6057,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2015,5959,,USBE Enrollment by LEA (2019 report)
+32,Wasatch District,2016,6286,,USBE Enrollment by LEA (2019 report)
+32,Wasatch District,2017,6605,,USBE Enrollment by LEA (2019 report)
+32,Wasatch District,2018,6826,,USBE Enrollment by LEA (2019 report)
+32,Wasatch District,2019,7040,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2020,7146,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2021,9061,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2022,8731,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2023,8793,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2024,8667,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2025,8485,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2026,8214,,USBE Fall Enrollment by Grade Level
+32,Wasatch District,2027,7699,,USBE Fall Enrollment by Grade Level
+33,Washington District,2015,27118,,USBE Enrollment by LEA (2019 report)
+33,Washington District,2016,28167,,USBE Enrollment by LEA (2019 report)
+33,Washington District,2017,29355,,USBE Enrollment by LEA (2019 report)
+33,Washington District,2018,30015,,USBE Enrollment by LEA (2019 report)
+33,Washington District,2019,31074,,USBE Fall Enrollment by Grade Level
+33,Washington District,2020,33884,,USBE Fall Enrollment by Grade Level
+33,Washington District,2021,35346,,USBE Fall Enrollment by Grade Level
+33,Washington District,2022,36453,,USBE Fall Enrollment by Grade Level
+33,Washington District,2023,36623,,USBE Fall Enrollment by Grade Level
+33,Washington District,2024,36753,,USBE Fall Enrollment by Grade Level
+33,Washington District,2025,36006,,USBE Fall Enrollment by Grade Level
+33,Washington District,2026,34396,,USBE Fall Enrollment by Grade Level
+33,Washington District,2027,33202,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2015,482,,USBE Enrollment by LEA (2019 report)
+34,Wayne District,2016,469,,USBE Enrollment by LEA (2019 report)
+34,Wayne District,2017,450,,USBE Enrollment by LEA (2019 report)
+34,Wayne District,2018,447,,USBE Enrollment by LEA (2019 report)
+34,Wayne District,2019,444,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2020,436,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2021,429,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2022,441,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2023,438,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2024,402,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2025,420,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2026,406,,USBE Fall Enrollment by Grade Level
+34,Wayne District,2027,388,,USBE Fall Enrollment by Grade Level
+35,Weber District,2015,31188,,USBE Enrollment by LEA (2019 report)
+35,Weber District,2016,31184,,USBE Enrollment by LEA (2019 report)
+35,Weber District,2017,31445,,USBE Enrollment by LEA (2019 report)
+35,Weber District,2018,31957,,USBE Enrollment by LEA (2019 report)
+35,Weber District,2019,32171,,USBE Fall Enrollment by Grade Level
+35,Weber District,2020,32588,,USBE Fall Enrollment by Grade Level
+35,Weber District,2021,32197,,USBE Fall Enrollment by Grade Level
+35,Weber District,2022,32731,,USBE Fall Enrollment by Grade Level
+35,Weber District,2023,32557,,USBE Fall Enrollment by Grade Level
+35,Weber District,2024,32103,,USBE Fall Enrollment by Grade Level
+35,Weber District,2025,31747,,USBE Fall Enrollment by Grade Level
+35,Weber District,2026,30968,,USBE Fall Enrollment by Grade Level
+35,Weber District,2027,30131,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2015,23615,,USBE Enrollment by LEA (2019 report)
+36,Salt Lake District,2016,23600,,USBE Enrollment by LEA (2019 report)
+36,Salt Lake District,2017,23047,,USBE Enrollment by LEA (2019 report)
+36,Salt Lake District,2018,22845,,USBE Enrollment by LEA (2019 report)
+36,Salt Lake District,2019,22401,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2020,22017,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2021,20536,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2022,19833,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2023,19449,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2024,18966,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2025,18535,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2026,17649,,USBE Fall Enrollment by Grade Level
+36,Salt Lake District,2027,16679,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2015,12350,,USBE Enrollment by LEA (2019 report)
+37,Ogden City District,2016,12128,,USBE Enrollment by LEA (2019 report)
+37,Ogden City District,2017,12192,,USBE Enrollment by LEA (2019 report)
+37,Ogden City District,2018,11736,,USBE Enrollment by LEA (2019 report)
+37,Ogden City District,2019,11553,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2020,11460,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2021,10617,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2022,10475,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2023,10246,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2024,10151,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2025,10045,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2026,9798,,USBE Fall Enrollment by Grade Level
+37,Ogden City District,2027,9492,,USBE Fall Enrollment by Grade Level
+38,Provo District,2015,16600,,USBE Enrollment by LEA (2019 report)
+38,Provo District,2016,16983,,USBE Enrollment by LEA (2019 report)
+38,Provo District,2017,17840,,USBE Enrollment by LEA (2019 report)
+38,Provo District,2018,15991,,USBE Enrollment by LEA (2019 report)
+38,Provo District,2019,16165,,USBE Fall Enrollment by Grade Level
+38,Provo District,2020,16603,,USBE Fall Enrollment by Grade Level
+38,Provo District,2021,13317,,USBE Fall Enrollment by Grade Level
+38,Provo District,2022,13623,,USBE Fall Enrollment by Grade Level
+38,Provo District,2023,13612,,USBE Fall Enrollment by Grade Level
+38,Provo District,2024,13455,,USBE Fall Enrollment by Grade Level
+38,Provo District,2025,13463,,USBE Fall Enrollment by Grade Level
+38,Provo District,2026,13010,,USBE Fall Enrollment by Grade Level
+38,Provo District,2027,12377,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2015,5965,,USBE Enrollment by LEA (2019 report)
+39,Logan City District,2016,5957,,USBE Enrollment by LEA (2019 report)
+39,Logan City District,2017,5719,,USBE Enrollment by LEA (2019 report)
+39,Logan City District,2018,5555,,USBE Enrollment by LEA (2019 report)
+39,Logan City District,2019,5569,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2020,5420,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2021,5484,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2022,5278,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2023,5143,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2024,5130,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2025,5056,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2026,5075,,USBE Fall Enrollment by Grade Level
+39,Logan City District,2027,4886,,USBE Fall Enrollment by Grade Level
+40,Murray District,2015,6415,,USBE Enrollment by LEA (2019 report)
+40,Murray District,2016,6502,,USBE Enrollment by LEA (2019 report)
+40,Murray District,2017,6494,,USBE Enrollment by LEA (2019 report)
+40,Murray District,2018,6416,,USBE Enrollment by LEA (2019 report)
+40,Murray District,2019,6264,,USBE Fall Enrollment by Grade Level
+40,Murray District,2020,6425,,USBE Fall Enrollment by Grade Level
+40,Murray District,2021,6097,,USBE Fall Enrollment by Grade Level
+40,Murray District,2022,5991,,USBE Fall Enrollment by Grade Level
+40,Murray District,2023,5768,,USBE Fall Enrollment by Grade Level
+40,Murray District,2024,5601,,USBE Fall Enrollment by Grade Level
+40,Murray District,2025,5539,,USBE Fall Enrollment by Grade Level
+40,Murray District,2026,5404,,USBE Fall Enrollment by Grade Level
+40,Murray District,2027,5155,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2015,33676,,USBE Enrollment by LEA (2019 report)
+42,Canyons District,2016,33899,,USBE Enrollment by LEA (2019 report)
+42,Canyons District,2017,34017,,USBE Enrollment by LEA (2019 report)
+42,Canyons District,2018,33907,,USBE Enrollment by LEA (2019 report)
+42,Canyons District,2019,34134,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2020,34178,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2021,33488,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2022,33252,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2023,32933,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2024,32733,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2025,32289,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2026,31499,,USBE Fall Enrollment by Grade Level
+42,Canyons District,2027,30365,,USBE Fall Enrollment by Grade Level

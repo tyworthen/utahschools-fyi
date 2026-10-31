@@ -1266,6 +1266,470 @@
     }
    }
   },
+  "enrollment": {
+   "label": "Enrollment",
+   "unit": "count",
+   "basis": "October 1 enrollment, K-12",
+   "calc": "As reported by USBE; no calculation.",
+   "source": "usbe-enrollment",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": 11238,
+     "2016": 11341,
+     "2017": 11572,
+     "2018": 11671,
+     "2019": 11770,
+     "2020": 11914,
+     "2021": 11832,
+     "2022": 12296,
+     "2023": 12338,
+     "2024": 12268,
+     "2025": 12244,
+     "2026": 12087,
+     "2027": 11741
+    },
+    "cache": {
+     "2015": 16457,
+     "2016": 16976,
+     "2017": 17536,
+     "2018": 17895,
+     "2019": 18270,
+     "2020": 18802,
+     "2021": 18833,
+     "2022": 19554,
+     "2023": 19731,
+     "2024": 19794,
+     "2025": 19847,
+     "2026": 19720,
+     "2027": 19560
+    },
+    "iron": {
+     "2015": 8814,
+     "2016": 8933,
+     "2017": 9074,
+     "2018": 9169,
+     "2019": 9395,
+     "2020": 9544,
+     "2021": 10748,
+     "2022": 11830,
+     "2023": 12421,
+     "2024": 14479,
+     "2025": 13883,
+     "2026": 13407,
+     "2027": 12791
+    },
+    "tooele": {
+     "2015": 13873,
+     "2016": 13988,
+     "2017": 14332,
+     "2018": 16154,
+     "2019": 16903,
+     "2020": 17608,
+     "2021": 22004,
+     "2022": 22939,
+     "2023": 23828,
+     "2024": 15588,
+     "2025": 15619,
+     "2026": 15737,
+     "2027": 15463
+    }
+   }
+  },
+  "spend_per_student": {
+   "label": "Spending per student",
+   "unit": "dollars",
+   "basis": "Current expenditures \u00f7 October 1 enrollment, nominal dollars",
+   "calc": "Current expenditures (all functions except 4xxx capital and 5xxx debt service, governmental funds) \u00f7 October 1 enrollment for the same school year.",
+   "source": "usbe-afr",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level. FY2012\u2013FY2024 from the USBE AFR Tableau extracts; FY2025 from the USBE AFR Excel summaries.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": 7348,
+     "2016": 7543,
+     "2017": 7566,
+     "2018": 7983,
+     "2019": 8816,
+     "2020": 9230,
+     "2021": 10251,
+     "2022": 10170,
+     "2023": 11241,
+     "2024": 12214,
+     "2025": 12908
+    },
+    "cache": {
+     "2015": 6719,
+     "2016": 7014,
+     "2017": 7445,
+     "2018": 8339,
+     "2019": 8286,
+     "2020": 8510,
+     "2021": 9067,
+     "2022": 9747,
+     "2023": 10740,
+     "2024": 11549,
+     "2025": 11895
+    },
+    "iron": {
+     "2015": 6846,
+     "2016": 7136,
+     "2017": 7632,
+     "2018": 8197,
+     "2019": 8710,
+     "2020": 9364,
+     "2021": 9087,
+     "2022": 9160,
+     "2023": 9737,
+     "2024": 9880,
+     "2025": 11073
+    },
+    "tooele": {
+     "2015": 7195,
+     "2016": 7313,
+     "2017": 7617,
+     "2018": 7357,
+     "2019": 8107,
+     "2020": 8263,
+     "2021": 8189,
+     "2022": 8443,
+     "2023": 9051,
+     "2024": 13576,
+     "2025": 13460
+    }
+   }
+  },
+  "revenue_per_student": {
+   "label": "Revenue per student",
+   "unit": "dollars",
+   "basis": "Revenue \u00f7 October 1 enrollment, nominal dollars",
+   "calc": "Local + state + federal revenue (excludes bond proceeds and transfers) \u00f7 October 1 enrollment.",
+   "source": "usbe-afr",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level. FY2012\u2013FY2024 from the USBE AFR Tableau extracts; FY2025 from the USBE AFR Excel summaries.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": 8776,
+     "2016": 9206,
+     "2017": 9377,
+     "2018": 9530,
+     "2019": 10150,
+     "2020": 10441,
+     "2021": 11302,
+     "2022": 11557,
+     "2023": 12635,
+     "2024": 14270,
+     "2025": 14377
+    },
+    "cache": {
+     "2015": 7633,
+     "2016": 8172,
+     "2017": 8616,
+     "2018": 9213,
+     "2019": 9603,
+     "2020": 9914,
+     "2021": 10318,
+     "2022": 11228,
+     "2023": 12196,
+     "2024": 13521,
+     "2025": 13832
+    },
+    "iron": {
+     "2015": 8407,
+     "2016": 8861,
+     "2017": 9047,
+     "2018": 9605,
+     "2019": 9988,
+     "2020": 10331,
+     "2021": 10124,
+     "2022": 10334,
+     "2023": 11518,
+     "2024": 12296,
+     "2025": 12808
+    },
+    "tooele": {
+     "2015": 9126,
+     "2016": 9347,
+     "2017": 9273,
+     "2018": 8719,
+     "2019": 9763,
+     "2020": 10116,
+     "2021": 9873,
+     "2022": 10459,
+     "2023": 11526,
+     "2024": 16928,
+     "2025": 16227
+    }
+   }
+  },
+  "proptax_per_student": {
+   "label": "Property tax revenue per student",
+   "unit": "dollars",
+   "basis": "Property taxes \u00f7 October 1 enrollment, nominal dollars",
+   "calc": "Revenue codes 1100\u20131199 \u00f7 October 1 enrollment.",
+   "source": "usbe-afr",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level. FY2012\u2013FY2024 from the USBE AFR Tableau extracts; FY2025 from the USBE AFR Excel summaries.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": 3155,
+     "2016": 3360,
+     "2017": 3320,
+     "2018": 3222,
+     "2019": 3334,
+     "2020": 3381,
+     "2021": 3526,
+     "2022": 3643,
+     "2023": 3897,
+     "2024": 4370,
+     "2025": 4553
+    },
+    "cache": {
+     "2015": 1953,
+     "2016": 2067,
+     "2017": 2151,
+     "2018": 2267,
+     "2019": 2355,
+     "2020": 2575,
+     "2021": 2597,
+     "2022": 2840,
+     "2023": 3030,
+     "2024": 3139,
+     "2025": 3168
+    },
+    "iron": {
+     "2015": 2698,
+     "2016": 3041,
+     "2017": 3096,
+     "2018": 3292,
+     "2019": 3428,
+     "2020": 3557,
+     "2021": 3178,
+     "2022": 2808,
+     "2023": 3155,
+     "2024": 3034,
+     "2025": 3360
+    },
+    "tooele": {
+     "2015": 2651,
+     "2016": 2859,
+     "2017": 2954,
+     "2018": 2475,
+     "2019": 2790,
+     "2020": 2902,
+     "2021": 2457,
+     "2022": 2674,
+     "2023": 2789,
+     "2024": 4265,
+     "2025": 5338
+    }
+   }
+  },
+  "instruction_per_student": {
+   "label": "Instruction spending per student",
+   "unit": "dollars",
+   "basis": "Instruction \u00f7 October 1 enrollment, nominal dollars",
+   "calc": "Function 1000s (instruction) \u00f7 October 1 enrollment.",
+   "source": "usbe-afr",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level. FY2012\u2013FY2024 from the USBE AFR Tableau extracts; FY2025 from the USBE AFR Excel summaries.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": 4308,
+     "2016": 4509,
+     "2017": 4608,
+     "2018": 5045,
+     "2019": 5565,
+     "2020": 5923,
+     "2021": 6689,
+     "2022": 6552,
+     "2023": 7111,
+     "2024": 7716,
+     "2025": 7776
+    },
+    "cache": {
+     "2015": 4351,
+     "2016": 4492,
+     "2017": 4797,
+     "2018": 4980,
+     "2019": 5240,
+     "2020": 5290,
+     "2021": 5764,
+     "2022": 5993,
+     "2023": 6683,
+     "2024": 7291,
+     "2025": 7338
+    },
+    "iron": {
+     "2015": 4589,
+     "2016": 4805,
+     "2017": 5077,
+     "2018": 5042,
+     "2019": 5325,
+     "2020": 5648,
+     "2021": 5789,
+     "2022": 5585,
+     "2023": 6018,
+     "2024": 6214,
+     "2025": 6950
+    },
+    "tooele": {
+     "2015": 4331,
+     "2016": 4444,
+     "2017": 4622,
+     "2018": 4580,
+     "2019": 4979,
+     "2020": 4952,
+     "2021": 5029,
+     "2022": 5238,
+     "2023": 5565,
+     "2024": 7497,
+     "2025": 7543
+    }
+   }
+  },
+  "admin_per_student": {
+   "label": "Administration spending per student",
+   "unit": "dollars",
+   "basis": "Administration \u00f7 October 1 enrollment, nominal dollars",
+   "calc": "Functions 2300\u20132599 \u00f7 October 1 enrollment.",
+   "source": "usbe-afr",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level. FY2012\u2013FY2024 from the USBE AFR Tableau extracts; FY2025 from the USBE AFR Excel summaries.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": 647,
+     "2016": 636,
+     "2017": 650,
+     "2018": 589,
+     "2019": 612,
+     "2020": 641,
+     "2021": 658,
+     "2022": 688,
+     "2023": 759,
+     "2024": 794,
+     "2025": 835
+    },
+    "cache": {
+     "2015": 542,
+     "2016": 584,
+     "2017": 625,
+     "2018": 602,
+     "2019": 663,
+     "2020": 677,
+     "2021": 676,
+     "2022": 721,
+     "2023": 795,
+     "2024": 859,
+     "2025": 934
+    },
+    "iron": {
+     "2015": 611,
+     "2016": 639,
+     "2017": 645,
+     "2018": 685,
+     "2019": 735,
+     "2020": 759,
+     "2021": 721,
+     "2022": 768,
+     "2023": 877,
+     "2024": 865,
+     "2025": 948
+    },
+    "tooele": {
+     "2015": 555,
+     "2016": 547,
+     "2017": 579,
+     "2018": 557,
+     "2019": 625,
+     "2020": 654,
+     "2021": 587,
+     "2022": 598,
+     "2023": 658,
+     "2024": 1476,
+     "2025": 1631
+    }
+   }
+  },
+  "enrollment_growth": {
+   "label": "Enrollment change since FY2016",
+   "unit": "percent",
+   "basis": "October 1 enrollment vs. FY2016",
+   "calc": "(Enrollment \u00f7 FY2016 enrollment \u2212 1) \u00d7 100.",
+   "source": "usbe-enrollment",
+   "ref": "assets/data/normalized/",
+   "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level.",
+   "hidden": false,
+   "values": {
+    "boxelder": {
+     "2015": -0.91,
+     "2016": 0.0,
+     "2017": 2.04,
+     "2018": 2.91,
+     "2019": 3.78,
+     "2020": 5.05,
+     "2021": 4.33,
+     "2022": 8.42,
+     "2023": 8.79,
+     "2024": 8.17,
+     "2025": 7.96,
+     "2026": 6.58,
+     "2027": 3.53
+    },
+    "cache": {
+     "2015": -3.06,
+     "2016": 0.0,
+     "2017": 3.3,
+     "2018": 5.41,
+     "2019": 7.62,
+     "2020": 10.76,
+     "2021": 10.94,
+     "2022": 15.19,
+     "2023": 16.23,
+     "2024": 16.6,
+     "2025": 16.91,
+     "2026": 16.16,
+     "2027": 15.22
+    },
+    "iron": {
+     "2015": -1.33,
+     "2016": 0.0,
+     "2017": 1.58,
+     "2018": 2.64,
+     "2019": 5.17,
+     "2020": 6.84,
+     "2021": 20.32,
+     "2022": 32.43,
+     "2023": 39.05,
+     "2024": 62.08,
+     "2025": 55.41,
+     "2026": 50.08,
+     "2027": 43.19
+    },
+    "tooele": {
+     "2015": -0.82,
+     "2016": 0.0,
+     "2017": 2.46,
+     "2018": 15.48,
+     "2019": 20.84,
+     "2020": 25.88,
+     "2021": 57.31,
+     "2022": 63.99,
+     "2023": 70.35,
+     "2024": 11.44,
+     "2025": 11.66,
+     "2026": 12.5,
+     "2027": 10.54
+    }
+   }
+  },
   "spend_admin_district": {
    "label": "District administration spending",
    "unit": "money",
@@ -3037,6 +3501,110 @@
    "6": "Supplies and materials",
    "7": "Property and equipment",
    "8": "Debt service and other"
+  }
+ },
+ "onlineEnrollment": {
+  "tooele": {
+   "schools": [
+    "Blue Peak High",
+    "Digital Education Center"
+   ],
+   "online": {
+    "2019": 2817,
+    "2020": 3432,
+    "2021": 9476,
+    "2022": 8332,
+    "2023": 8882,
+    "2024": 263,
+    "2025": 235,
+    "2026": 244,
+    "2027": 288
+   },
+   "total": {
+    "2015": 13873,
+    "2016": 13988,
+    "2017": 14332,
+    "2018": 16154,
+    "2019": 16903,
+    "2020": 17608,
+    "2021": 22004,
+    "2022": 22939,
+    "2023": 23828,
+    "2024": 15588,
+    "2025": 15619,
+    "2026": 15737,
+    "2027": 15463
+   }
+  },
+  "iron": {
+   "schools": [
+    "Southwest Educational Academy",
+    "Iron Online"
+   ],
+   "online": {
+    "2019": 84,
+    "2020": 107,
+    "2021": 1584,
+    "2022": 2167,
+    "2023": 2597,
+    "2024": 4789,
+    "2025": 4282,
+    "2026": 3706,
+    "2027": 3198
+   },
+   "total": {
+    "2015": 8814,
+    "2016": 8933,
+    "2017": 9074,
+    "2018": 9169,
+    "2019": 9395,
+    "2020": 9544,
+    "2021": 10748,
+    "2022": 11830,
+    "2023": 12421,
+    "2024": 14479,
+    "2025": 13883,
+    "2026": 13407,
+    "2027": 12791
+   }
+  },
+  "cache": {
+   "schools": [],
+   "online": {},
+   "total": {
+    "2015": 16457,
+    "2016": 16976,
+    "2017": 17536,
+    "2018": 17895,
+    "2019": 18270,
+    "2020": 18802,
+    "2021": 18833,
+    "2022": 19554,
+    "2023": 19731,
+    "2024": 19794,
+    "2025": 19847,
+    "2026": 19720,
+    "2027": 19560
+   }
+  },
+  "boxelder": {
+   "schools": [],
+   "online": {},
+   "total": {
+    "2015": 11238,
+    "2016": 11341,
+    "2017": 11572,
+    "2018": 11671,
+    "2019": 11770,
+    "2020": 11914,
+    "2021": 11832,
+    "2022": 12296,
+    "2023": 12338,
+    "2024": 12268,
+    "2025": 12244,
+    "2026": 12087,
+    "2027": 11741
+   }
   }
  }
 }

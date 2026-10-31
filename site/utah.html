@@ -81,7 +81,7 @@
         </table>
       </div>
       <div class="callout method mt-2"><div class="ct">Scope and limits</div>
-        <p>School districts only; charter schools are excluded until their figures can be shown with a clear district/charter distinction. All dollars are nominal. Per-student and inflation-adjusted figures will follow once enrollment and CPI data are added. FY2012–FY2024 come from USBE’s Tableau Public extracts and FY2025 from USBE’s Excel summaries; the two agree for FY2024 in 162 of 164 district-level checks (see <a href="methodology.html#validation">validation</a>).</p>
+        <p>School districts only; charter schools are excluded until their figures can be shown with a clear district/charter distinction. All dollars are nominal; inflation-adjusted figures will follow once CPI data is added. Per-student figures divide by October 1 enrollment, which includes students in district-run online programs — so districts with large online programs (Tooele through FY2023, Iron) show lower per-student figures in those years. FY2012–FY2024 come from USBE’s Tableau Public extracts and FY2025 from USBE’s Excel summaries; the two agree for FY2024 in 162 of 164 district-level checks (see <a href="methodology.html#validation">validation</a>).</p>
       </div>
     </div>
   </section>
@@ -102,10 +102,10 @@
     function median(arr) { var a = arr.slice().sort(function (p, q) { return p - q; }), h = a.length / 2; return a.length ? (a.length % 2 ? a[Math.floor(h)] : (a[h - 1] + a[h]) / 2) : null; }
 
     // KPIs
-    var k = [["revenue_total", "Total revenue"], ["expenditures_total", "Total spending"], ["property_tax_total", "Property tax revenue"]];
+    var k = [["enrollment", "Students (Oct 1)"], ["revenue_total", "Total revenue"], ["expenditures_total", "Total spending"]];
     document.getElementById("state-kpis").innerHTML = k.map(function (x) {
       var t = total(x[0], LAST);
-      return '<div class="kpi"><span class="label">' + x[1] + '</span><span class="value">' + U.fmt(t.sum, "money") + '</span><span class="note">FY' + LAST + ", " + t.n + ' districts</span><a href="#rank" data-m="' + x[0] + '">Rank districts →</a></div>';
+      return '<div class="kpi"><span class="label">' + x[1] + '</span><span class="value">' + U.fmt(t.sum, S.metrics[x[0]].unit) + '</span><span class="note">FY' + LAST + ", " + t.n + ' districts</span><a href="#rank" data-m="' + x[0] + '">Rank districts →</a></div>';
     }).join("") + '<div class="kpi"><span class="label">School districts</span><span class="value">' + ids.length + '</span><span class="note">Charter LEAs not included</span><a href="districts.html">All districts →</a></div>';
 
     // Statewide trend
@@ -140,7 +140,7 @@
     document.querySelectorAll("[data-m]").forEach(function (a) { a.addEventListener("click", function () { mSel.value = a.getAttribute("data-m"); ySel.value = LAST; drawRank(); }); });
 
     // Where Tooele stands
-    var RATIOS = ["local_share", "instruction_share", "admin_share", "gf_fund_balance_pct", "gf_budget_variance", "revenue_total", "expenditures_total", "property_tax_total"];
+    var RATIOS = ["spend_per_student", "revenue_per_student", "instruction_per_student", "admin_per_student", "enrollment_growth", "local_share", "instruction_share", "admin_share", "gf_fund_balance_pct", "gf_budget_variance", "enrollment", "expenditures_total"];
     document.getElementById("stand").innerHTML = RATIOS.map(function (key) {
       var m = S.metrics[key], y = null;
       for (var i = Y.length - 1; i >= 0; i--) if (m.values["30"][Y[i]] != null) { y = Y[i]; break; }

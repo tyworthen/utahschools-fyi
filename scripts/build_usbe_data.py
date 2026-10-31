@@ -145,6 +145,53 @@ for r in district_rows("afr_balancesheet_all_leas_FY2011-FY2024.csv.gz"):
 BY_NAME = {v: k for k, v in names.items()}
 
 
+# ---------- Enrollment (October 1 counts; school year YYYY = fiscal year YYYY) ----------
+# Fall Enrollment files (SY2019-SY2027) give LEA and school counts; Enrollment by LEA (2019 file)
+# adds Oct 2014-Oct 2017 (SY2015-SY2018). Per-student figures divide by these counts.
+ENR = os.path.join(DATA, "enrollment")
+# District-run online schools, identified by name and enrollment pattern (see methodology), with the
+# school years each is counted as online. Blue Peak High housed Tooele's online program through SY2021
+# (2,817-9,476 students); from SY2022 the program is the Digital Education Center and Blue Peak has ~120.
+ONLINE_SCHOOLS = {"30": [("Blue Peak High", 2019, 2021), ("Digital Education Center", 2019, 2100)],
+                  "13": [("Southwest Educational Academy", 2019, 2100), ("Iron Online", 2019, 2100)]}
+BY_SHORT = {}
+for k, v in names.items():
+    short = v.replace(" District", "")
+    BY_SHORT[short] = k; BY_SHORT[short.replace(" City", "")] = k
+
+enroll = tree()                       # enroll[lea][sy]
+online = tree()                       # online[lea][sy] (peers with online schools)
+for sy in range(2019, 2028):
+    R = rows(os.path.join(ENR, f"{sy}FallEnrollmentGradeLevelDemographics.xlsx"), "By LEA")
+    h = next(i for i, r in enumerate(R[:10]) if r and "Total K-12" in r); hdr = list(R[h])
+    li, ti = hdr.index("LEA Name"), hdr.index("Total K-12")
+    for r in R[h + 1:]:
+        d = BY_NAME.get(str(r[li]).strip()) if r[li] else None
+        if d and isinstance(r[ti], (int, float)): enroll[d][sy] = r[ti]
+    R = rows(os.path.join(ENR, f"{sy}FallEnrollmentGradeLevelDemographics.xlsx"), "By School")
+    h = next(i for i, r in enumerate(R[:10]) if r and "Total K-12" in r); hdr = list(R[h])
+    li, si, ti = hdr.index("LEA Name"), hdr.index("School Name"), hdr.index("Total K-12")
+    for r in R[h + 1:]:
+        d = BY_NAME.get(str(r[li]).strip()) if r[li] else None
+        if d in ONLINE_SCHOOLS and isinstance(r[ti], (int, float)) and any(
+                str(r[si]).strip() == name and lo <= sy <= hi for name, lo, hi in ONLINE_SCHOOLS[d]):
+            online[d][sy] += r[ti]
+R = rows(os.path.join(ENR, "2019EnrollmentLEA.xlsx"), openpyxl.load_workbook(os.path.join(ENR, "2019EnrollmentLEA.xlsx"), read_only=True).sheetnames[0])
+cols = {str(c).strip(): j for j, c in enumerate(R[1]) if c}
+in_districts = False
+for r in R:
+    label = str(r[0]).strip() if r and r[0] else ""
+    if label == "School District" and r[1] is None: in_districts = True; continue
+    if label == "Charter School" and in_districts: break
+    d = BY_SHORT.get(label) if in_districts else None
+    if d:
+        for y in range(2014, 2018):
+            v = r[cols[f"Oct {y}"]]
+            if isinstance(v, (int, float)) and (y + 1) not in enroll[d]: enroll[d][y + 1] = v
+missing_enr = [names[d] for d in names if 2025 not in enroll[d]]
+if missing_enr: print("No FY2025 enrollment for:", ", ".join(missing_enr))
+
+
 # ---------- Excel AFR summaries (FY2025; FY2024 for validation) ----------
 def lea_of(name):
     return BY_NAME.get(str(name).strip()) if name else None
@@ -293,8 +340,8 @@ TOOELE_ADMIN = ("Coding caution: Tooele reported function 2580 for the first tim
                 "rather than new spending (not yet verified). Cache has used 2580 since FY2012; Iron and Box Elder do not use it. ")
 
 metrics = {}
-def metric(key, label, unit, basis, calc, fn, notes=FY25_NOTE, hidden=False):
-    metrics[key] = {"label": label, "unit": unit, "basis": basis, "calc": calc, "source": "usbe-afr",
+def metric(key, label, unit, basis, calc, fn, notes=FY25_NOTE, hidden=False, source="usbe-afr"):
+    metrics[key] = {"label": label, "unit": unit, "basis": basis, "calc": calc, "source": source,
                     "ref": "assets/data/normalized/", "notes": notes, "hidden": hidden,
                     "values": {d: fn(d) for d in sorted(names)}}
 
@@ -336,6 +383,42 @@ for c in CATS:
            "Actual expenditures in the USBE function codes mapped to this category (see the Spending page and methodology).",
            lambda d, c=c: series(spend[c], d), hidden=True)
 
+ENR_NOTE = ("October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, "
+            "and online students generally cost less to serve, so per-student figures are not directly comparable across "
+            "districts or years when online enrollment changes. FY2015–FY2018 counts come from USBE's Enrollment by LEA "
+            "report; FY2019 onward from Fall Enrollment by Grade Level.")
+TOOELE_ONLINE = ("Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education "
+                 "Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in "
+                 "October 2023. "
+                 "Per-student figures before and after FY2024 therefore divide by very different student populations. ")
+EYEARS = range(2015, 2028)
+def per_student(t, d):
+    return {y: round(t[d][y] / enroll[d][y]) for y in YEARS if y in t[d] and enroll[d].get(y)}
+current_exp = tree()
+for d in names:
+    for y in YEARS:
+        if total_exp[d][y]: current_exp[d][y] = total_exp[d][y] - spend["capital"][d][y] - spend["debt"][d][y]
+
+metric("enrollment", "Enrollment", "count", "October 1 enrollment, K-12",
+       "As reported by USBE; no calculation.", lambda d: {y: int(enroll[d][y]) for y in EYEARS if y in enroll[d]}, ENR_NOTE,
+       source="usbe-enrollment")
+metric("spend_per_student", "Spending per student", "dollars", "Current expenditures ÷ October 1 enrollment, nominal dollars",
+       "Current expenditures (all functions except 4xxx capital and 5xxx debt service, governmental funds) ÷ October 1 enrollment for the same school year.",
+       lambda d: per_student(current_exp, d), ENR_NOTE + " " + FY25_NOTE)
+metric("revenue_per_student", "Revenue per student", "dollars", "Revenue ÷ October 1 enrollment, nominal dollars",
+       "Local + state + federal revenue (excludes bond proceeds and transfers) ÷ October 1 enrollment.",
+       lambda d: per_student(revenue, d), ENR_NOTE + " " + FY25_NOTE)
+metric("proptax_per_student", "Property tax revenue per student", "dollars", "Property taxes ÷ October 1 enrollment, nominal dollars",
+       "Revenue codes 1100–1199 ÷ October 1 enrollment.", lambda d: per_student(proptax, d), ENR_NOTE + " " + FY25_NOTE)
+metric("instruction_per_student", "Instruction spending per student", "dollars", "Instruction ÷ October 1 enrollment, nominal dollars",
+       "Function 1000s (instruction) ÷ October 1 enrollment.", lambda d: per_student(spend["instruction"], d), ENR_NOTE + " " + FY25_NOTE)
+metric("admin_per_student", "Administration spending per student", "dollars", "Administration ÷ October 1 enrollment, nominal dollars",
+       "Functions 2300–2599 ÷ October 1 enrollment.", lambda d: per_student(spend["administration"], d), ENR_NOTE + " " + FY25_NOTE)
+metric("enrollment_growth", "Enrollment change since FY2016", "percent", "October 1 enrollment vs. FY2016",
+       "(Enrollment ÷ FY2016 enrollment − 1) × 100.",
+       lambda d: {y: round(100 * (enroll[d][y] / enroll[d][2016] - 1), 2) for y in EYEARS if y in enroll[d] and enroll[d].get(2016)}, ENR_NOTE,
+       source="usbe-enrollment")
+
 for k in ADMIN_SUBS.values():
     metric("spend_" + k, ADMIN_SUB_LABELS[k].split(" (")[0] + " spending", "money", "Nominal dollars, governmental funds",
            {"admin_district": "Functions 2300–2399: board of education, elections, superintendent's office.",
@@ -367,6 +450,7 @@ peer_metrics = {}
 for k, m in metrics.items():
     pm = dict(m); pm["values"] = rekey(m["values"])
     if k == "admin_share": pm["notes"] = TOOELE_ADMIN + m["notes"]
+    if k == "enrollment" or k.endswith("_per_student") or k == "enrollment_growth": pm["notes"] = TOOELE_ONLINE + m["notes"]
     peer_metrics[k] = pm
 peer_out = {
     "metrics": peer_metrics,
@@ -375,6 +459,9 @@ peer_out = {
     "gfBalance": {PEERS[d]: gfbal_for(d) for d in PEERS},
     "adminDetail": {PEERS[d]: admin_detail(d) for d in PEERS},
     "adminLabels": {"subs": ADMIN_SUB_LABELS, "objects": OBJECTS},
+    "onlineEnrollment": {PEERS[d]: {"schools": [n for n, _, _ in ONLINE_SCHOOLS.get(d, [])],
+                                    "online": {y: int(online[d][y]) for y in sorted(online[d])},
+                                    "total": {y: int(enroll[d][y]) for y in EYEARS if y in enroll[d]}} for d in PEERS},
 }
 data_js = os.path.join(ASSETS, "data.js")
 block = ("// BEGIN USBE GENERATED — do not edit by hand; run scripts/build_usbe_data.py\n"
@@ -418,6 +505,10 @@ write_long("expenditures.csv", ["lea_number", "lea_name", "fiscal_year", "catego
 write_long("budgets.csv", ["lea_number", "lea_name", "fiscal_year", "fund", "original_budget", "final_budget", "actual", "source"],
            ((d, names[d], y, "10 General Fund", v["original"], v["final"], v["actual"], SRC["tableau"])
             for d in sorted(names) for y, v in bva_for(d).items()))
+write_long("enrollment.csv", ["lea_number", "lea_name", "school_year", "october_1_enrollment", "online_school_enrollment", "source"],
+           ((d, names[d], y, int(enroll[d][y]), int(online[d][y]) if y in online[d] else "",
+             "USBE Fall Enrollment by Grade Level" if y >= 2019 else "USBE Enrollment by LEA (2019 report)")
+            for d in sorted(names) for y in EYEARS if y in enroll[d]))
 write_long("fund_balances.csv", ["lea_number", "lea_name", "fiscal_year", "fund"] + BAL_KEYS + ["total", "source"],
            ((d, names[d], y, "10 General Fund") + tuple(v[k] for k in BAL_KEYS) + (sum(v.values()), src_for(y))
             for d in sorted(names) for y, v in gfbal_for(d).items()))

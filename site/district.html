@@ -117,10 +117,10 @@
     pick.addEventListener("change", function () { location.search = "?id=" + pick.value; });
 
     // KPIs
-    var K = [["revenue_total", "Revenue"], ["expenditures_total", "Spending"], ["property_tax_total", "Property tax revenue"], ["gf_fund_balance_pct", "GF balance, % of spending"]];
+    var K = [["enrollment", "Enrollment (Oct 1)"], ["spend_per_student", "Spending per student"], ["revenue_total", "Revenue"], ["gf_fund_balance_pct", "GF balance, % of spending"]];
     document.getElementById("kpis").innerHTML = K.map(function (k) {
       var m = S.metrics[k[0]], v = val(k[0], id, LAST), prev = val(k[0], id, LAST - 5);
-      var chg = m.unit === "money" && v != null && prev ? U.pct(v, prev) + " since FY" + (LAST - 5) : "FY" + LAST;
+      var chg = m.unit !== "percent" && v != null && prev ? "FY" + LAST + " · " + U.pct(v, prev) + " since FY" + (LAST - 5) : "FY" + LAST;
       return '<div class="kpi"><span class="label">' + k[1] + '</span>' + (v == null ? '<span class="value pending">' + U.PENDING + "</span>" : '<span class="value">' + U.fmt(v, m.unit) + "</span>") +
         '<span class="note">' + chg + '</span><a href="utah.html#rank">Statewide ranking →</a></div>';
     }).join("");
@@ -149,7 +149,7 @@
     gy.addEventListener("change", drawHundred); drawHundred();
 
     // Compared with the state
-    var VS = ["instruction_share", "admin_share", "local_share", "gf_fund_balance_pct", "gf_budget_variance"];
+    var VS = ["spend_per_student", "revenue_per_student", "enrollment_growth", "instruction_share", "admin_share", "admin_per_student", "local_share", "gf_fund_balance_pct", "gf_budget_variance"];
     var vm = document.getElementById("vm");
     vm.innerHTML = VS.map(function (k) { return '<option value="' + k + '">' + S.metrics[k].label + "</option>"; }).join("");
     if (!isTooele) document.getElementById("vs-tooele").textContent = " and the Tooele case study";
