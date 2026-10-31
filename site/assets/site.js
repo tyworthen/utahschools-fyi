@@ -233,12 +233,39 @@
     });
   }
 
+  /* Dollar basis for charts: nominal (default) or inflation-adjusted to the CPI base year.
+     The choice applies to every dollar chart and is remembered per browser. */
+  var REAL = false, CHARTS = [];
+  try { REAL = localStorage.getItem("usfyi-dollars") === "real"; } catch (e) { /* storage unavailable */ }
+  function dollarToggle() {
+    var c = D.cpi;
+    return '<div class="seg dollars-toggle" role="group" aria-label="Dollar basis">' +
+      '<button type="button" data-dollars="nominal" aria-pressed="' + !REAL + '">Nominal</button>' +
+      '<button type="button" data-dollars="real" aria-pressed="' + REAL + '">' + esc(c.label) + "</button></div>";
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-dollars]");
+    if (!b) return;
+    REAL = b.getAttribute("data-dollars") === "real";
+    try { localStorage.setItem("usfyi-dollars", REAL ? "real" : "nominal"); } catch (err) { /* ignore */ }
+    CHARTS = CHARTS.filter(function (c) { return document.contains(c); });
+    CHARTS.forEach(function (c) { drawLines(c, c._cfg); });
+  });
+
   /* Generic multi-line chart. cfg.series: [{name, color, dash, bold, values (aligned to cfg.years)}]. */
   function drawLines(el, cfg) {
-    var years = cfg.years, series = cfg.series, unit = cfg.unit;
+    if (CHARTS.indexOf(el) < 0) CHARTS.push(el);
+    el._cfg = cfg;
+    var years = cfg.years, unit = cfg.unit;
+    var isMoney = (unit === "money" || unit === "dollars") && D.cpi;
+    var real = isMoney && REAL, f = D.cpi && D.cpi.factor;
+    var series = cfg.series.map(function (s) {
+      return real ? Object.assign({}, s, { values: s.values.map(function (v, i) { return v == null || !f[years[i]] ? null : v * f[years[i]]; }) }) : s;
+    });
+    var basis = real ? (/nominal dollars/i.test(cfg.basis) ? cfg.basis.replace(/nominal dollars/i, D.cpi.label) : cfg.basis + ", " + D.cpi.label) : cfg.basis;
     var all = [];
     series.forEach(function (s) { s.values.forEach(function (x) { if (x != null) all.push(x); }); });
-    var title = '<p class="chart-title">' + esc(cfg.label) + ", FY" + years[0] + "–FY" + years[years.length - 1] + '</p><p class="chart-sub">' + esc(cfg.basis) + ". Fiscal years end June 30.</p>";
+    var title = '<div class="row-between" style="align-items:flex-start;gap:12px"><div><p class="chart-title">' + esc(cfg.label) + ", FY" + years[0] + "–FY" + years[years.length - 1] + '</p><p class="chart-sub">' + esc(basis) + ". Fiscal years end June 30.</p></div>" + (isMoney ? dollarToggle() : "") + "</div>";
     if (!all.length) {
       el.innerHTML = title + emptyState("No verified values entered yet", cfg.emptyMsg || "") + sourceLine(cfg.source);
       return;
@@ -282,7 +309,8 @@
       "</tbody></table></div></details>";
     el.innerHTML = title + '<div class="chart-scroll">' + svg + "</div>" + table +
       (cfg.calc ? '<p class="source-line" style="border:0;margin-top:4px;padding-top:0"><strong>Calculation:</strong> ' + esc(cfg.calc) + "</p>" : "") +
-      (cfg.notes ? '<p class="source-line" style="border:0;margin-top:0;padding-top:0"><strong>Data notes:</strong> ' + esc(cfg.notes) + " Gaps in a line are values not available or not yet verified.</p>" : "") + sourceLine(cfg.source);
+      (cfg.notes ? '<p class="source-line" style="border:0;margin-top:0;padding-top:0"><strong>Data notes:</strong> ' + esc(cfg.notes) + " Gaps in a line are values not available or not yet verified.</p>" : "") +
+      (real ? '<p class="source-line" style="border:0;margin-top:0;padding-top:0"><strong>Inflation:</strong> ' + esc(D.cpi.note) + ' <a href="methodology.html#inflation">Method</a></p>' : "") + sourceLine(cfg.source);
   }
 
   /* Horizontal ranking chart. cfg.items: [{name, value, color, href, bold}], sorted by the caller. */

@@ -1,0 +1,3 @@
+file,bytes,sha256,series,request,retrieved
+cpi_u_CUUR0000SA0_2011-2020.json,10703,fa7485129dbefe709d5d1d4deeed1c16813fc5cf0c30c28ba5b4ffd3a13b448c,"CUUR0000SA0 (CPI-U, U.S. city average, all items, not seasonally adjusted, 1982-84=100)","POST https://api.bls.gov/publicAPI/v1/timeseries/data/ startyear 2011, endyear 2020",2026-10-31
+cpi_u_CUUR0000SA0_2021-2026.json,6503,a92ae9284c882a503d8cc080ee207deec79cd2da5b9077d22ac4d8d08eff0b39,"CUUR0000SA0 (CPI-U, U.S. city average, all items, not seasonally adjusted, 1982-84=100)","POST https://api.bls.gov/publicAPI/v1/timeseries/data/ startyear 2021, endyear 2030",2026-10-31

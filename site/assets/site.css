@@ -404,3 +404,7 @@ body.dashboard .stat-row { color: #CBD5E1; }
 .field { min-width: 0; max-width: 100%; }
 select { max-width: 100%; }
 @media (max-width: 420px) { .cat-list { grid-template-columns: 1fr; } }
+
+/* Nominal / inflation-adjusted toggle on dollar charts */
+.dollars-toggle { flex-shrink: 0; }
+.dollars-toggle button { font-size: 13px; padding: 6px 10px; min-height: 34px; }

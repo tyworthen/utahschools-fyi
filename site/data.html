@@ -70,6 +70,7 @@
         <div><a href="assets/data/normalized/revenue.csv" download>revenue.csv</a><p>Local, state, federal, total, and property-tax revenue by district and year.</p></div>
         <div><a href="assets/data/normalized/expenditures.csv" download>expenditures.csv</a><p>Spending by category (instruction, administration, …) by district and year.</p></div>
         <div><a href="assets/data/normalized/enrollment.csv" download>enrollment.csv</a><p>October 1 enrollment by district and school year, FY2015–FY2027, with online-program enrollment for Tooele and Iron.</p></div>
+        <div><a href="assets/data/normalized/inflation.csv" download>inflation.csv</a><p>BLS CPI-U fiscal-year averages and factors to convert any year to FY2026 dollars.</p></div>
         <div><a href="assets/data/normalized/budgets.csv" download>budgets.csv</a><p>General Fund original budget, final budget, and actual expenditures, FY2013–FY2024.</p></div>
         <div><a href="assets/data/normalized/fund_balances.csv" download>fund_balances.csv</a><p>General Fund year-end balance by component.</p></div>
         <div><a href="assets/data/normalized/validation_FY2024.csv" download>validation_FY2024.csv</a><p>Where USBE’s two FY2024 sources disagree by more than 0.5%.</p></div>
@@ -104,7 +105,10 @@
         S.years.forEach(function (y) {
           if (y < from || y > to) return;
           var v = def.values[d][y];
-          out.push({ lea_number: d, district: S.districts[d].name, fiscal_year: y, metric: m, metric_label: def.label, value: v == null ? null : v, unit: def.unit, basis: def.basis, source_id: def.source });
+          var money = def.unit === "money" || def.unit === "dollars", f = S.cpi.factor[y];
+          var row = { lea_number: d, district: S.districts[d].name, fiscal_year: y, metric: m, metric_label: def.label, value: v == null ? null : v, unit: def.unit, basis: def.basis, source_id: def.source };
+          if (money) row["value_" + S.cpi.label.toLowerCase().replace(/ /g, "_")] = v == null || !f ? null : Math.round(v * f);
+          out.push(row);
         });
       });
       return out;

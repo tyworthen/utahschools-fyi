@@ -149,7 +149,7 @@
     gy.addEventListener("change", drawHundred); drawHundred();
 
     // Compared with the state
-    var VS = ["spend_per_student", "revenue_per_student", "enrollment_growth", "instruction_share", "admin_share", "admin_per_student", "local_share", "gf_fund_balance_pct", "gf_budget_variance"];
+    var VS = ["spend_per_student", "spend_per_student_real_change", "revenue_per_student", "enrollment_growth", "instruction_share", "admin_share", "admin_per_student", "local_share", "gf_fund_balance_pct", "gf_budget_variance"];
     var vm = document.getElementById("vm");
     vm.innerHTML = VS.map(function (k) { return '<option value="' + k + '">' + S.metrics[k].label + "</option>"; }).join("");
     if (!isTooele) document.getElementById("vs-tooele").textContent = " and the Tooele case study";

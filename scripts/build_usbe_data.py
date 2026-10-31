@@ -322,6 +322,31 @@ missing25 = [names[d] for d in names if d not in rev25 or d not in exp25]
 if missing25: print("No FY2025 Excel row for:", ", ".join(sorted(missing25)))
 
 
+# ---------- Inflation (BLS CPI-U, fiscal-year averages) ----------
+# Fiscal year Y runs July (Y-1) through June (Y). Each FY average uses the months BLS published;
+# October 2025 was not published (2025 federal shutdown), so FY2026 averages 11 months.
+CPI_BASE = 2026
+BLS = os.path.join(ASSETS, "data", "bls")
+cpi_month = {}
+for f in sorted(os.listdir(BLS)):
+    if f.endswith(".json"):
+        for p in json.load(open(os.path.join(BLS, f)))["Results"]["series"][0]["data"]:
+            if p["period"].startswith("M") and p["period"] != "M13":
+                try: cpi_month[(int(p["year"]), int(p["period"][1:]))] = float(p["value"])
+                except ValueError: pass          # "-" = not published
+cpi_fy = {}
+for fy in range(2012, CPI_BASE + 1):
+    months = [cpi_month[(fy - 1, m)] for m in range(7, 13) if (fy - 1, m) in cpi_month] + \
+             [cpi_month[(fy, m)] for m in range(1, 7) if (fy, m) in cpi_month]
+    if len(months) >= 11:
+        cpi_fy[fy] = (sum(months) / len(months), len(months))
+cpi_factor = {fy: round(cpi_fy[CPI_BASE][0] / v, 6) for fy, (v, n) in cpi_fy.items()}
+CPI_OUT = {"base": CPI_BASE, "series": "CUUR0000SA0", "source": "bls-cpi",
+           "label": f"FY{CPI_BASE} dollars", "factor": cpi_factor,
+           "note": f"Adjusted with BLS CPI-U (U.S. city average, all items), July–June fiscal-year averages, to FY{CPI_BASE} dollars. "
+                   "October 2025 was not published by BLS, so FY2026 averages 11 months."}
+
+
 # ---------- Assemble metrics (values keyed by lea_number) ----------
 total_exp = tree()
 for c in CATS:
@@ -419,6 +444,13 @@ metric("enrollment_growth", "Enrollment change since FY2016", "percent", "Octobe
        lambda d: {y: round(100 * (enroll[d][y] / enroll[d][2016] - 1), 2) for y in EYEARS if y in enroll[d] and enroll[d].get(2016)}, ENR_NOTE,
        source="usbe-enrollment")
 
+metric("spend_per_student_real_change", "Spending per student, inflation-adjusted change since FY2016", "percent",
+       f"Change in spending per student since FY2016, in FY{CPI_BASE} dollars",
+       f"(Spending per student × CPI factor) ÷ (FY2016 spending per student × FY2016 CPI factor) − 1, using BLS CPI-U fiscal-year averages (FY{CPI_BASE} dollars).",
+       lambda d: (lambda sp: {y: round(100 * (sp[y] * cpi_factor[y] / (sp[2016] * cpi_factor[2016]) - 1), 2)
+                              for y in sp if y in cpi_factor and 2016 in sp})(per_student(current_exp, d)),
+       ENR_NOTE + " " + CPI_OUT["note"])
+
 for k in ADMIN_SUBS.values():
     metric("spend_" + k, ADMIN_SUB_LABELS[k].split(" (")[0] + " spending", "money", "Nominal dollars, governmental funds",
            {"admin_district": "Functions 2300–2399: board of education, elections, superintendent's office.",
@@ -450,7 +482,7 @@ peer_metrics = {}
 for k, m in metrics.items():
     pm = dict(m); pm["values"] = rekey(m["values"])
     if k == "admin_share": pm["notes"] = TOOELE_ADMIN + m["notes"]
-    if k == "enrollment" or k.endswith("_per_student") or k == "enrollment_growth": pm["notes"] = TOOELE_ONLINE + m["notes"]
+    if k == "enrollment" or "_per_student" in k or k == "enrollment_growth": pm["notes"] = TOOELE_ONLINE + m["notes"]
     peer_metrics[k] = pm
 peer_out = {
     "metrics": peer_metrics,
@@ -459,6 +491,7 @@ peer_out = {
     "gfBalance": {PEERS[d]: gfbal_for(d) for d in PEERS},
     "adminDetail": {PEERS[d]: admin_detail(d) for d in PEERS},
     "adminLabels": {"subs": ADMIN_SUB_LABELS, "objects": OBJECTS},
+    "cpi": CPI_OUT,
     "onlineEnrollment": {PEERS[d]: {"schools": [n for n, _, _ in ONLINE_SCHOOLS.get(d, [])],
                                     "online": {y: int(online[d][y]) for y in sorted(online[d])},
                                     "total": {y: int(enroll[d][y]) for y in EYEARS if y in enroll[d]}} for d in PEERS},
@@ -477,6 +510,7 @@ state = {
     "years": list(YEARS),
     "peers": PEERS,
     "districts": {d: {"name": names[d], "short": names[d].replace(" District", "")} for d in sorted(names)},
+    "cpi": CPI_OUT,
     "metrics": metrics,
     "categories": {d: {c: series(spend[c], d) for c in CATS} for d in sorted(names)},
     "budgetVsActual": {d: bva_for(d) for d in sorted(names)},
@@ -509,6 +543,8 @@ write_long("enrollment.csv", ["lea_number", "lea_name", "school_year", "october_
            ((d, names[d], y, int(enroll[d][y]), int(online[d][y]) if y in online[d] else "",
              "USBE Fall Enrollment by Grade Level" if y >= 2019 else "USBE Enrollment by LEA (2019 report)")
             for d in sorted(names) for y in EYEARS if y in enroll[d]))
+write_long("inflation.csv", ["fiscal_year", "cpi_u_fiscal_year_average", "months_averaged", f"factor_to_fy{CPI_BASE}_dollars", "source"],
+           ((fy, round(v, 3), n, cpi_factor[fy], "BLS CPI-U CUUR0000SA0") for fy, (v, n) in sorted(cpi_fy.items())))
 write_long("fund_balances.csv", ["lea_number", "lea_name", "fiscal_year", "fund"] + BAL_KEYS + ["total", "source"],
            ((d, names[d], y, "10 General Fund") + tuple(v[k] for k in BAL_KEYS) + (sum(v.values()), src_for(y))
             for d in sorted(names) for y, v in gfbal_for(d).items()))

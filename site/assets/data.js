@@ -75,10 +75,6 @@ window.TSF = {
     }
   },
 
-  // Annual CPI-U (U.S. city average, annual average) for inflation adjustment.
-  // Fiscal-year adjustment method is described on the methodology page.
-  cpi: { series: "CUUR0000SA0", values: {} },
-
   // TCSD property tax rates by levy, from the Utah State Tax Commission
   // "Tax Rates by Area" file for the given tax year.
   taxRates: {
@@ -1894,6 +1890,70 @@ window.TSF_USBE = {
         }
       }
     },
+    "spend_per_student_real_change": {
+      "label": "Spending per student, inflation-adjusted change since FY2016",
+      "unit": "percent",
+      "basis": "Change in spending per student since FY2016, in FY2026 dollars",
+      "calc": "(Spending per student \u00d7 CPI factor) \u00f7 (FY2016 spending per student \u00d7 FY2016 CPI factor) \u2212 1, using BLS CPI-U fiscal-year averages (FY2026 dollars).",
+      "source": "usbe-afr",
+      "ref": "assets/data/normalized/",
+      "notes": "Tooele: the district's online program (Blue Peak High through October 2020, then the Digital Education Center) had 2,817 students in October 2018, 9,476 in October 2020, and 8,882 in October 2022, then 263 in October 2023. Per-student figures before and after FY2024 therefore divide by very different student populations. October 1 enrollment (school year = fiscal year). Districts that run online schools count those students, and online students generally cost less to serve, so per-student figures are not directly comparable across districts or years when online enrollment changes. FY2015\u2013FY2018 counts come from USBE's Enrollment by LEA report; FY2019 onward from Fall Enrollment by Grade Level. Adjusted with BLS CPI-U (U.S. city average, all items), July\u2013June fiscal-year averages, to FY2026 dollars. October 2025 was not published by BLS, so FY2026 averages 11 months.",
+      "hidden": false,
+      "values": {
+        "boxelder": {
+          "2015": -1.93,
+          "2016": 0.0,
+          "2017": -1.51,
+          "2018": 1.63,
+          "2019": 9.96,
+          "2020": 13.35,
+          "2021": 23.05,
+          "2022": 13.91,
+          "2023": 18.49,
+          "2024": 24.63,
+          "2025": 28.33
+        },
+        "cache": {
+          "2015": -3.56,
+          "2016": 0.0,
+          "2017": 4.23,
+          "2018": 14.17,
+          "2019": 11.14,
+          "2020": 12.39,
+          "2021": 17.05,
+          "2022": 17.41,
+          "2023": 21.74,
+          "2024": 26.73,
+          "2025": 27.18
+        },
+        "iron": {
+          "2015": -3.42,
+          "2016": 0.0,
+          "2017": 5.02,
+          "2018": 10.31,
+          "2019": 14.83,
+          "2020": 21.55,
+          "2021": 15.3,
+          "2022": 8.45,
+          "2023": 8.49,
+          "2024": 6.57,
+          "2025": 16.37
+        },
+        "tooele": {
+          "2015": -0.95,
+          "2016": 0.0,
+          "2017": 2.28,
+          "2018": -3.39,
+          "2019": 4.29,
+          "2020": 4.66,
+          "2021": 1.39,
+          "2022": -2.46,
+          "2023": -1.6,
+          "2024": 42.89,
+          "2025": 38.03
+        }
+      }
+    },
     "spend_admin_district": {
       "label": "District administration spending",
       "unit": "money",
@@ -3667,6 +3727,30 @@ window.TSF_USBE = {
       "8": "Debt service and other"
     }
   },
+  "cpi": {
+    "base": 2026,
+    "series": "CUUR0000SA0",
+    "source": "bls-cpi",
+    "label": "FY2026 dollars",
+    "factor": {
+      "2012": 1.439888,
+      "2013": 1.416315,
+      "2014": 1.394533,
+      "2015": 1.384454,
+      "2016": 1.375175,
+      "2017": 1.350338,
+      "2018": 1.320569,
+      "2019": 1.293757,
+      "2020": 1.273832,
+      "2021": 1.245172,
+      "2022": 1.161838,
+      "2023": 1.093374,
+      "2024": 1.058461,
+      "2025": 1.031274,
+      "2026": 1.0
+    },
+    "note": "Adjusted with BLS CPI-U (U.S. city average, all items), July\u2013June fiscal-year averages, to FY2026 dollars. October 2025 was not published by BLS, so FY2026 averages 11 months."
+  },
   "onlineEnrollment": {
     "tooele": {
       "schools": [
@@ -3793,4 +3877,5 @@ window.TSF_USBE = {
   T.adminDetail = U.adminDetail;
   T.adminLabels = U.adminLabels;
   T.onlineEnrollment = U.onlineEnrollment;
+  T.cpi = U.cpi;
 })(window.TSF, window.TSF_USBE);

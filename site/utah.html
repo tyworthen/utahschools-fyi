@@ -140,7 +140,7 @@
     document.querySelectorAll("[data-m]").forEach(function (a) { a.addEventListener("click", function () { mSel.value = a.getAttribute("data-m"); ySel.value = LAST; drawRank(); }); });
 
     // Where Tooele stands
-    var RATIOS = ["spend_per_student", "revenue_per_student", "instruction_per_student", "admin_per_student", "enrollment_growth", "local_share", "instruction_share", "admin_share", "gf_fund_balance_pct", "gf_budget_variance", "enrollment", "expenditures_total"];
+    var RATIOS = ["spend_per_student", "spend_per_student_real_change", "revenue_per_student", "instruction_per_student", "admin_per_student", "enrollment_growth", "local_share", "instruction_share", "admin_share", "gf_fund_balance_pct", "gf_budget_variance", "enrollment", "expenditures_total"];
     document.getElementById("stand").innerHTML = RATIOS.map(function (key) {
       var m = S.metrics[key], y = null;
       for (var i = Y.length - 1; i >= 0; i--) if (m.values["30"][Y[i]] != null) { y = Y[i]; break; }

@@ -163,8 +163,9 @@
 
         <h2 id="inflation">Inflation adjustment</h2>
         <p>Dollar comparisons across years account for inflation. We use the Bureau of Labor Statistics’ CPI-U (U.S. city average, all items), stored locally as an annual series rather than looked up ad hoc.</p>
-        <div class="callout method"><div class="ct">Calculation</div><p class="num">Real value (FY2026 dollars) = nominal value × (CPI for FY2026 ÷ CPI for the year being adjusted)</p><p class="muted" style="font-size:15px">Utah fiscal years run July 1–June 30. Fiscal-year CPI is the average of the twelve monthly values in that period.</p></div>
-        <p>Charts always state whether dollars are <strong>nominal</strong> or <strong>inflation-adjusted</strong>.</p>
+        <div class="callout method"><div class="ct">Calculation</div><p class="num">Real value (FY2026 dollars) = nominal value × (CPI for FY2026 ÷ CPI for the year being adjusted)</p><p class="muted" style="font-size:15px">Utah fiscal years run July 1–June 30. Fiscal-year CPI is the average of the monthly CPI-U values (series CUUR0000SA0, not seasonally adjusted) from July through June. BLS did not publish October 2025 because of the 2025 federal government shutdown, so FY2026 averages the 11 published months.</p></div>
+        <p>For example, $1.00 spent in FY2016 is equivalent to about $1.38 in FY2026 dollars, and $1.00 in FY2023 to about $1.09. <a href="assets/data/normalized/inflation.csv" download>Download the inflation table</a>.</p>
+        <p>Dollar charts show <strong>nominal</strong> dollars by default; use the <strong>FY2026 dollars</strong> switch on any chart to see inflation-adjusted values. The setting applies to every chart and is remembered on your device. Within a single year, comparisons between districts are unaffected by inflation, so rankings use nominal dollars. CPI-U measures consumer prices nationally; school costs (mostly salaries and benefits) and Utah prices can rise at different rates, so inflation-adjusted figures are an approximation.</p>
 
         <h2 id="efficiency">How we think about efficiency</h2>
         <p>We distinguish three things:</p>
