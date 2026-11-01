@@ -29,10 +29,11 @@ FINANCIAL = re.compile(r"(?i)budget|financ|expenditure|expense|revenue|disburs|\
                        r"\bcosts?\b|cost (estimate|analysis|avoidance|comparison|savings)|funding|allocation|"
                        r"estimate|price|quote|\bbids?\b|\bRFP|\bIFB|\bRFQ|award (recommendation|justification|"
                        r"statement|letter|bid)|bid award|score ?(card|sheet)|transparency|"
-                       r"\bcontract|construction|land purchase|purchase contract|state aid|\bWPU|HB120")
+                       r"\bcontract|construction|land purchase|purchase contract|state aid|\bWPU|HB120|cash ?flow|"
+                       r"business administrator|\bBA report|board update|capital improvements plan")
 EXCLUDE = re.compile(r"(?i)\.(mp3|mp4|m4a|wav|jpe?g|png)$|\bpolic(y|ies)\b|template|personnel|"
                      r"trust ?lands?|land trust|\bSLT\b|TSSA|90.day plan|semester plans|improvement plans|"
-                     r"construction (update|photos)|board report construction")
+                     r"construction photos|board report construction")
 
 
 def get(url):

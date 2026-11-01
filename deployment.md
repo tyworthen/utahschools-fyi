@@ -71,11 +71,11 @@ A domain can be attached to only one project. If a Pages project already serves
 
    | Setting | Value |
    |---|---|
-   | Project name | `utahschools` (must match `name` in `wrangler.toml`) |
+   | Project name | `utahschools-fyi` (must match `name` in `wrangler.toml`) |
    | Production branch | `main` |
    | Build command | `bash scripts/build_site.sh` |
    | Deploy command | `npx wrangler deploy` |
-   | Non-production branch deploy command | `npx wrangler versions upload` (gives each branch a preview URL) |
+   | Non-production branch deploy command | `npx wrangler preview` (gives each branch a preview URL; needs the `[previews]` block in `wrangler.toml`) |
    | Root directory | *(leave blank)* |
 
 4. **Deploy.** Every later push to `main` builds and publishes the site.
@@ -90,7 +90,7 @@ bash scripts/build_site.sh
 npx wrangler deploy
 ```
 
-The first deploy creates the `utahschools` Worker and attaches the custom domains in
+The first deploy creates the `utahschools-fyi` Worker and attaches the custom domains in
 `wrangler.toml`. If you also connect Workers Builds (1.4), either method can publish; the most
 recent deploy wins.
 
