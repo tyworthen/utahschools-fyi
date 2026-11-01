@@ -9,6 +9,10 @@ directory = "./dist"
 html_handling = "auto-trailing-slash"   # /utah serves utah.html; /utah.html redirects to /utah
 not_found_handling = "404-page"         # missing URLs get dist/404.html with a 404 status
 
+# Required by `npx wrangler preview` (Workers Builds' non-production branch deploys). Empty is fine:
+# assets, compatibility settings, and routes stay at the top level and apply to previews too.
+[previews]
+
 [[routes]]
 pattern = "utahschools.fyi"
 custom_domain = true
