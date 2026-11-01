@@ -1,6 +1,7 @@
 # Cloudflare Worker (static assets only) for https://utahschools.fyi
 # Build and deploy:  bash scripts/build_site.sh && npx wrangler deploy
-name = "utahschools"
+# wrangler.toml
+name = 'utahschools-fyi'
 compatibility_date = "2026-10-31"
 
 [assets]
@@ -15,3 +16,4 @@ custom_domain = true
 [[routes]]
 pattern = "www.utahschools.fyi"
 custom_domain = true
+# wrangler.toml
