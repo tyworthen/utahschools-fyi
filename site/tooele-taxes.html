@@ -74,11 +74,11 @@
         <div class="table-wrap">
           <table>
             <caption class="sr-only">School district property tax levies</caption>
-            <thead><tr><th scope="col">Levy</th><th scope="col">What it pays for</th><th scope="col" class="n">Rate</th></tr></thead>
+            <thead><tr><th scope="col">Levy</th><th scope="col">What it pays for</th><th scope="col" class="n" id="levy-prior-h">Prior year</th><th scope="col" class="n" id="levy-h">Rate</th></tr></thead>
             <tbody id="levy-rows"></tbody>
           </table>
         </div>
-        <div data-source="tax-commission-rates" data-extra="Levy descriptions: USBE Property Tax Information."></div>
+        <div data-source="tcsd-board" data-extra="Tax year 2025 rates as adopted by the board on Form PT-800 (Truth in Taxation hearing, Aug 5, 2025). Levy descriptions: USBE Property Tax Information."></div>
 
         <h2 id="tit">Truth in Taxation</h2>
         <p>Each year, the state calculates a <strong>certified tax rate</strong> for the district: the rate that would bring in the same property tax revenue as last year, not counting new construction. When property values rise, the certified rate falls.</p>
@@ -86,7 +86,10 @@
         <div data-qwa data-meta="Data: Utah State Tax Commission rates by area · Truth-in-Taxation notices">In which years did the district adopt a rate above its certified rate, by how much, and what reasons did it give in the public hearing?</div>
 
         <h2 id="history">Rate history</h2>
+        <p>Each summer the board chooses between the certified rate and a higher rate that requires a Truth in Taxation hearing. The chart compares the rate it adopted with the certified rate; where the lines separate, the board raised revenue above what the certified rate would have produced.</p>
         <div class="chart-box" id="rate-chart"></div>
+        <h3 class="mt-3" id="decisions">Board decisions by year</h3>
+        <div id="rate-timeline"></div>
       </div>
     </div>
   </section>
@@ -101,15 +104,43 @@
       basic: "Set by the Legislature at the same rate statewide; funds the state’s share of the per-student formula.",
       voted: "Additional operating levy approved by voters.",
       board: "Additional operating levy set by the local school board, within state limits.",
+      charter: "Required by state law; helps fund students who live in the district but attend charter schools.",
       capital: "Buildings, maintenance, equipment, and other capital needs.",
       debt: "Repays principal and interest on voter-approved bonds.",
       judgment: "Recovers revenue lost to prior-year property tax refunds."
     };
+    var P = R.priorYear || {};
+    function rate(v) { return v == null ? '<span class="muted">Pending</span>' : v.toFixed(6); }
+    document.getElementById("levy-prior-h").textContent = P.year ? "Tax year " + P.year : "Prior year";
+    document.getElementById("levy-h").textContent = "Tax year " + R.year;
     document.getElementById("levy-rows").innerHTML = R.levies.map(function (l) {
-      return '<tr><th scope="row">' + l.label + "</th><td>" + LEVY_DESC[l.id] + '</td><td class="n">' + (l.rate == null ? '<span class="muted">Pending</span>' : l.rate.toFixed(6)) + "</td></tr>";
-    }).join("");
-    document.getElementById("rate-chart").innerHTML = '<p class="chart-title">TCSD total school tax rate, 2016–' + R.year + '</p><p class="chart-sub">Adopted rate vs. certified rate, by levy.</p>' +
-      U.emptyState("Rate history not yet entered", "Adopted and certified rates for each levy will be taken from the Utah State Tax Commission’s annual “Tax Rates by Area” files.") + U.sourceLine("tax-commission-rates");
+      return '<tr><th scope="row">' + l.label + "</th><td>" + LEVY_DESC[l.id] + '</td><td class="n muted">' + rate(P[l.id]) + '</td><td class="n">' + rate(l.rate) + "</td></tr>";
+    }).join("") + '<tr><th scope="row">Total</th><td></td><td class="n muted">' + rate(P.total) + '</td><td class="n"><strong>' + rate(R.total) + "</strong></td></tr>";
+    // Rate history: tax year N funds fiscal year N+1, so plot on the site's fiscal-year axis.
+    var H = R.history || [];
+    U.drawLines(document.getElementById("rate-chart"), {
+      id: "rate-history", label: "TCSD total school tax rate", unit: "rate", axis: "Tax rate (per $1 of taxable value)",
+      basis: "Adopted vs. certified total rate, all district levies; tax year N rates fund fiscal year N+1",
+      calc: "Total of the basic, voted, board, charter, capital, debt service, and judgment levies.",
+      notes: "The certified rate for tax year 2025 is not in the documents reviewed. The tax year 2026 total is pending confirmation because the posted rate form omits the basic school levy.",
+      source: "tcsd-board", years: H.map(function (h) { return h.taxYear + 1; }),
+      series: [
+        { name: "Adopted", color: "#082F49", bold: true, values: H.map(function (h) { return h.adopted; }) },
+        { name: "Certified", color: "#64748B", dash: "6 4", values: H.map(function (h) { return h.certified; }) }
+      ]
+    });
+    document.getElementById("rate-timeline").innerHTML = '<ol class="decision-list">' +
+      H.slice().reverse().map(function (h) {
+        var above = h.adopted != null && h.certified != null && h.adopted > h.certified + 1e-9;
+        var tag = above ? '<span class="tag info">Above certified</span> ' : h.tnt ? '<span class="tag neutral">TNT hearing</span> ' : "";
+        var rate = function (v) { return v == null ? '<span class="muted">—</span>' : v.toFixed(6); };
+        var fact = function (k, v) { return "<div><dt>" + k + "</dt><dd>" + v + "</dd></div>"; };
+        return '<li><div class="dyear">' + h.taxYear + "<span>funds FY" + (h.taxYear + 1) + '</span></div><div><p class="dtext">' + U.esc(h.action) + "</p>" + tag +
+          '<dl class="dfacts">' + fact("Adopted", rate(h.adopted)) + fact("Certified", rate(h.certified)) + fact("Vote", U.esc(h.vote || "—")) +
+          fact("Property tax revenue, FY" + (h.taxYear + 1), U.fmt(h.revenue, "money") + (h.revenueBasis ? ' <span class="muted" style="font-weight:400">(' + U.esc(h.revenueBasis.replace(/^FY\d+ /, "")) + ")</span>" : "")) +
+          "</dl></div></li>";
+      }).join("") + "</ol>" +
+      U.sourceLine("tcsd-board", "Board minutes, Truth in Taxation presentations and notices, PT-800 resolutions, the 2019 Tooele County Tax Rate History report, and the FY2025 audited financial statements (pp. 61–62). Revenue is total property tax, all funds, audited through FY2025.");
 
     var fy = document.getElementById("fy");
     fy.innerHTML = '<option value="' + R.year + '">' + R.year + "</option>";
@@ -122,7 +153,7 @@
       document.getElementById("tv-note").textContent = pr.checked ? "Primary residences in Utah are taxed on 55% of market value." : "Non-primary property is taxed on 100% of market value.";
       if (!ratesReady) {
         out.innerHTML = '<p class="muted" style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Estimated school district tax, ' + R.year + "</p>" +
-          U.emptyState(R.year + " rates not yet entered", "The calculator will show your estimate — and its operating, capital, and bond components — once the district’s adopted levy rates are entered from the Tax Commission’s rate file.");
+          U.emptyState(R.year + " rates not yet entered", "The calculator will show your estimate — and its operating, capital, and bond components — once the district’s adopted levy rates are entered.");
         return;
       }
       var parts = { operating: 0, capital: 0, debt: 0 };

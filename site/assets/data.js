@@ -12,7 +12,7 @@
  * Dollar values are nominal unless the field says otherwise.
  */
 window.TSF = {
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   currentFY: 2026,
 
   districts: {
@@ -32,7 +32,8 @@ window.TSF = {
     { id: "enrollment",   label: "Enrollment",           metric: "enrollment",         value: null, format: "count", note: "October 1, 2024 (FY2025)", source: "usbe-gateway", href: "tooele-compare.html?metric=enrollment" },
     { id: "perstudent",   label: "Spending / Student",   metric: "spend_per_student",  value: null, format: "dollars", note: "FY2025, current spending, nominal", source: "usbe-afr", href: "tooele-compare.html?metric=spend_per_student" },
     { id: "proptax",      label: "Property Tax Revenue", metric: "property_tax_total", value: null, format: "money", note: "FY2025, governmental funds", source: "usbe-afr", href: "tooele-compare.html?metric=property_tax_total" },
-    { id: "debt",         label: "Outstanding Debt",     value: null, format: "money",   note: "General obligation bonds", source: "auditor-reports", ref: "", href: "tooele-finances.html#debt" }
+    { id: "debt",         label: "Outstanding Debt",     value: 177605000, format: "money", note: "General obligation bond principal, June 30, 2025", source: "tcsd-board",
+      ref: "TCSD audited financial statements FY2025, Note 9 Long-Term Liabilities, p. 39 (board meeting Jan 20, 2026). Excludes $54,320,000 of Building Authority lease revenue bonds.", href: "tooele-finances.html#debt" }
   ],
 
   // "Where the money goes": share of a typical $100 of district spending.
@@ -66,32 +67,137 @@ window.TSF = {
     debt_per_student: {
       label: "Debt per student", unit: "dollars", basis: "Outstanding GO bond principal, nominal dollars",
       calc: "Outstanding general obligation principal at fiscal year end ÷ fall enrollment.",
-      source: "auditor-reports", values: {}
+      source: "tcsd-board",
+      ref: "Principal: TCSD audited financial statements FY2016–FY2025, long-term liabilities note (GO bonds payable, ending balance). Enrollment: USBE October 1 counts.",
+      notes: "Tooele only; peer districts not yet entered. Enrollment includes the district's online program, so the rise in FY2024 mostly reflects that program shrinking from 8,882 to 263 students, not new borrowing.",
+      values: { tooele: { 2016: 4255, 2017: 5763, 2018: 5513, 2019: 4688, 2020: 3919, 2021: 4717, 2022: 6201, 2023: 7128, 2024: 12086, 2025: 11371 } }
+    },
+    go_debt_outstanding: {
+      label: "Outstanding GO bond principal", unit: "money", basis: "General obligation bond principal at June 30, nominal dollars",
+      calc: "Ending balance of general obligation bonds payable, excluding unamortized premiums and lease revenue bonds.",
+      source: "tcsd-board",
+      ref: "TCSD audited financial statements FY2016–FY2025, long-term liabilities note.",
+      notes: "Tooele only; peer districts not yet entered.",
+      values: { tooele: { 2016: 59520000, 2017: 82600000, 2018: 89060000, 2019: 79235000, 2020: 69010000, 2021: 103790000, 2022: 142240000, 2023: 169840000, 2024: 188400000, 2025: 177605000 } }
     }
   },
 
-  // TCSD property tax rates by levy, from the Utah State Tax Commission
-  // "Tax Rates by Area" file for the given tax year.
-  taxRates: {
-    year: 2025,
-    source: "tax-commission-rates",
-    ref: "",
-    levies: [
-      { id: "basic",   label: "Basic school levy (state-set)",      kind: "operating", rate: null },
-      { id: "voted",   label: "Voted local levy",                   kind: "operating", rate: null },
-      { id: "board",   label: "Board local levy",                   kind: "operating", rate: null },
-      { id: "capital", label: "Capital local levy",                 kind: "capital",   rate: null },
-      { id: "debt",    label: "Debt service levy",                  kind: "debt",      rate: null },
-      { id: "judgment",label: "Judgment recovery levy",             kind: "operating", rate: null }
+  // TCSD funds, FY2026 final amended budget (total expenditures by function, all sources).
+  funds: {
+    fy: 2026,
+    basis: "Final amended budget, total expenditures",
+    source: "tcsd-board",
+    ref: "FY26 Final Budget - Posted (dated 6/11/2026), fund pages 2–9; Budget Hearing, Jun 16, 2026.",
+    total: 292084272,
+    rows: [
+      { id: "general",    label: "General Fund",       budget: 204790273, desc: "Day-to-day operations: salaries, benefits, instruction, transportation, utilities." },
+      { id: "capital",    label: "Capital Projects",   budget: 40817892,  desc: "Construction, land, major renovations, and large equipment." },
+      { id: "debt",       label: "Debt Service",       budget: 20681257,  desc: "Principal and interest on bonds approved by voters." },
+      { id: "food",       label: "Food Service",       budget: 9818738,   desc: "School breakfast and lunch programs." },
+      { id: "activities", label: "Student Activities", budget: 5931348,   desc: "Clubs, athletics, and other school-level activity accounts." },
+      { id: "increment",  label: "Tax Increment",      budget: 6169303,   desc: "Property tax revenue tied to redevelopment areas." },
+      // The budget has one more fund page ($1,310,000, all employee benefits) titled only
+      // "All Funds". It is probably Insurance; left null until the district confirms.
+      { id: "insurance",  label: "Insurance",          budget: null,      desc: "Self-insurance and related reserves." },
+      { id: "foundation", label: "Foundation",         budget: 2565462,   desc: "Activity of the district’s affiliated education foundation." }
     ],
-    priorYear: null // same shape as `levies` rates, keyed by id, for year-over-year comparison
+    note: "One fund page in the budget ($1,310,000) is not labeled; it is likely the Insurance fund and is pending confirmation. With it, the funds total the all-funds budget of $292,084,272."
   },
 
-  // Bond issuance history, for the debt timeline.
+  // TCSD property tax rates by levy for the given tax year, as adopted by the board on the
+  // Tax Commission's Form PT-800. A rate of 0 means the levy was not imposed that year.
+  taxRates: {
+    year: 2025,
+    source: "tcsd-board",
+    ref: "PT-800 Resolution Adopting Final Tax Rates and Budgets, tax year 2025 (Truth in Taxation hearing, Aug 5, 2025). Prior year: PT-800 for tax year 2024 (board meeting Aug 20, 2024). Both agree with the FY2025 audit, Property Tax Rates by Fund, p. 62.",
+    levies: [
+      { id: "basic",   label: "Basic school levy (state-set)",      kind: "operating", rate: 0.001379 },
+      { id: "voted",   label: "Voted local levy",                   kind: "operating", rate: 0.001600 },
+      { id: "board",   label: "Board local levy",                   kind: "operating", rate: 0.002392 },
+      { id: "charter", label: "Charter school levy",                kind: "operating", rate: 0.000108 },
+      { id: "capital", label: "Capital local levy",                 kind: "capital",   rate: 0.001457 },
+      { id: "debt",    label: "Debt service levy",                  kind: "debt",      rate: 0.002199 },
+      { id: "judgment",label: "Judgment recovery levy",             kind: "operating", rate: 0 }
+    ],
+    total: 0.009135,
+    // same shape as `levies` rates, keyed by id, for year-over-year comparison
+    priorYear: { year: 2024, basic: 0.001408, voted: 0.001838, board: 0.002411, charter: 0.000089, capital: 0.000833, debt: 0.002375, judgment: 0, total: 0.008954 },
+
+    // Total rate by tax year and the board's decision that year. Tax year N rates fund fiscal
+    // year N+1. `revenue` is total property tax, all funds, for that fiscal year (audited through
+    // FY2025; `revenueBasis` says otherwise). Sources: board minutes, TNT presentations and notices,
+    // PT-800 resolutions, the 2019 Tooele County Tax Rate History report, FY2025 audit pp. 61–62.
+    history: [
+      { taxYear: 2015, adopted: 0.009593, certified: 0.009058, tnt: true,  vote: "7–0", revenue: 39988146,
+        action: "Truth in Taxation hearing (Aug 11, 2015). Kept the rate flat under the district’s 2014 ten-year plan, adding about $1.8M for the Capital Projects Fund." },
+      { taxYear: 2016, adopted: 0.009593, certified: 0.009408, tnt: true,  vote: "Carried", revenue: 42333771,
+        action: "Truth in Taxation hearing (Aug 9, 2016). Kept the rate flat; budgeted about $0.7M more for capital projects." },
+      { taxYear: 2017, adopted: 0.009122, certified: 0.009122, tnt: false, vote: "7–0", revenue: 39982515,
+        action: "Adopted the certified rate, letting the rate fall ahead of the voted levy election. Voters approved a 0.001 voted levy increase on Nov 7, 2017, 4,661 to 4,380." },
+      { taxYear: 2018, adopted: 0.010199, certified: 0.009194, tnt: false, vote: null, revenue: 47165605,
+        action: "The voter-approved levy increase took effect, for employee salaries; no Truth in Taxation hearing. Voted levy revenue rose from $2.5M (FY2018) to $7.1M (FY2019)." },
+      { taxYear: 2019, adopted: 0.009565, certified: 0.009565, tnt: false, vote: null, revenue: 51107120,
+        action: "Adopted the certified rate during the bond campaign. The $190M bond failed on Nov 5, 2019, 5,073 to 7,071." },
+      { taxYear: 2020, adopted: 0.009565, certified: 0.009042, tnt: true,  vote: "Carried", revenue: 54058597,
+        action: "Truth in Taxation hearing (Aug 11, 2020). Kept the rate flat to fund pay increases; starting teacher pay rose from $43,800 to $47,000. The $170M bond passed on Nov 3, 2020, 15,970 to 14,789." },
+      { taxYear: 2021, adopted: 0.009296, certified: 0.009296, tnt: false, vote: "6–0", revenue: 61334414,
+        action: "Declined to hold the rate flat, an option worth about $1.34M, and adopted the certified rate (Jun 22, 2021)." },
+      { taxYear: 2022, adopted: 0.007737, certified: 0.007737, tnt: true,  vote: "7–0", revenue: 66461379,
+        action: "Advertised a 17.7% increase ($160 a year on a $460,000 home); after the Aug 9, 2022 hearing, adopted the certified rate instead." },
+      { taxYear: 2023, adopted: 0.007042, certified: 0.006678, tnt: true,  vote: "6–1", revenue: 66477376,
+        action: "Truth in Taxation hearing (Aug 8, 2023). Adopted an increase of about $100 a year on a $500,000 home, about $3.2M." },
+      { taxYear: 2024, adopted: 0.008954, certified: 0.008954, tnt: false, vote: "4–3", revenue: 82471868,
+        action: "County taxable value fell from $8.96B to $7.75B, so the certified rate rose. The board advertised a further increase ($254 a year on the average home) in June, then adopted the certified rate on Aug 20, 2024. FY2025 revenue includes a one-time $5.2M centrally assessed adjustment." },
+      { taxYear: 2025, adopted: 0.009135, certified: null, tnt: true,  vote: "5–2", revenue: 86367271, revenueBasis: "FY2026 final budget",
+        action: "Truth in Taxation hearing (Aug 5, 2025). Adopted a $9.25M increase to replace one-time money used for pay, and formed a cost-savings committee. Options considered were the certified rate, a flat rate, and +$13.25M." },
+      // The 2026 PT-800 omits the basic school levy and its total ($58.4M) does not reconcile with
+      // the FY2027 budget, so the total rate is left null until checked against the Tax Commission.
+      { taxYear: 2026, adopted: null, certified: null, tnt: false, vote: null, revenue: 88132932, revenueBasis: "FY2027 proposed budget",
+        action: "Adopted the certified rate, with no Truth in Taxation hearing (Jun 16, 2026). The rate form posted (0.006729) omits the basic school levy; the total rate is pending confirmation." }
+    ]
+  },
+
+  // Bond issuance history, for the debt timeline. Principal is the original issue amount.
+  // Final maturities are not stated in the documents reviewed (bond resolutions are pre-sale
+  // forms with maturities left blank); null until taken from each official statement.
   bonds: [
-    // { year: 2017, name: "General Obligation School Building Bonds, Series 2017",
-    //   principal: null, voterApproved: null, finalMaturity: null,
-    //   projects: [], source: "auditor-reports", ref: "" }
+    { year: 2014, name: "General Obligation Refunding Bonds, Series 2014B", type: "GO refunding",
+      principal: 22545000, rates: "4.00%–5.00%", voterApproved: null, finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audited financial statements, Note 9, p. 40" },
+    { year: 2015, name: "General Obligation Refunding Bonds, Series 2015", type: "GO refunding",
+      principal: 16960000, rates: "1.75%–5.00%", voterApproved: null, finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audited financial statements, Note 9, p. 40" },
+    { year: 2016, name: "General Obligation School Building Bonds, Series 2016", type: "GO",
+      principal: 33000000, rates: "1.25%–5.00%", voterApproved: "Nov 3, 2015 election, $49,000,000 (3,903 for, 3,189 against)", finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40; 2016 Preliminary Official Statement (board meeting May 10, 2016)" },
+    { year: 2017, name: "General Obligation School Building Bonds, Series 2017", type: "GO",
+      principal: 16000000, rates: "3.00%–5.00%", voterApproved: "Nov 3, 2015 election, $49,000,000", finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40; bond resolution (board meeting May 9, 2017)" },
+    { year: 2021, name: "General Obligation School Building Bonds, Series 2021", type: "GO",
+      principal: 45480000, rates: "2.00%–5.00%", voterApproved: "Nov 3, 2020 election, $170,000,000 (15,970 for, 14,789 against)", finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40; 2020 canvass (board meeting Nov 17, 2020)" },
+    { year: 2022, name: "General Obligation School Building Bonds, Series 2022", type: "GO",
+      principal: 49085000, rates: "3.38%–5.00%", voterApproved: "Nov 3, 2020 election, $170,000,000", finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40" },
+    { year: 2023, name: "General Obligation School Building Bonds, Series 2023", type: "GO",
+      principal: 37750000, rates: "4.00%–5.00%", voterApproved: "Nov 3, 2020 election, $170,000,000", finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40" },
+    { year: 2024, name: "General Obligation School Building Bonds, Series 2024", type: "GO",
+      principal: 28730000, rates: "4.00%–5.00%", voterApproved: "Nov 3, 2020 election, $170,000,000", finalMaturity: null,
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40" },
+    { year: 2024, name: "Lease Revenue Bonds, Series 2024 (Building Authority of TCSD)", type: "Lease revenue",
+      principal: 50000000, rates: "4.00%–5.00%", voterApproved: "Not voter-approved; repaid from the Capital Projects Fund", finalMaturity: "June 2044",
+      source: "tcsd-board", ref: "FY2025 audit, Note 9, p. 40; Building Authority resolution (board meeting Apr 16, 2024)" }
+  ],
+
+  // Bond elections, including those that failed.
+  bondElections: [
+    { date: "2015-11-03", amount: 49000000, votesFor: 3903, votesAgainst: 3189, passed: true,
+      ref: "2016 Preliminary Official Statement (board meeting May 10, 2016)" },
+    { date: "2019-11-05", amount: 190000000, votesFor: 5073, votesAgainst: 7071, passed: false,
+      ref: "TCSD Bond Election 2019 - Canvassed Results (board meeting Nov 12, 2019)" },
+    { date: "2020-11-03", amount: 170000000, votesFor: 15970, votesAgainst: 14789, passed: true,
+      ref: "Tooele County canvass, 2020 General Election (board meeting Nov 17, 2020)" }
   ],
 
   sources: [
@@ -104,6 +210,9 @@ window.TSF = {
     { id: "tcsd-finance", tier: 1, name: "TCSD Finance Department — budgets and actuals", publisher: "Tooele County School District",
       url: "https://www.tooeleschools.org/departments/finance", coverage: "Budgets and actual results by fund",
       use: "Primary source for detailed TCSD analysis; budget versus actual comparisons." },
+    { id: "tcsd-board", tier: 1, name: "Board of Education meeting documents — audited financial statements, budgets, tax rate resolutions, bond records", publisher: "Tooele County School District",
+      url: "https://tooele-schools.community.highbond.com/Portal/MeetingTypeList.aspx", coverage: "2015–2026",
+      use: "Attachments to board agendas and minutes: annual audited financial statements (debt, rates by fund), adopted budgets by fund, PT-800 tax rate resolutions, bond election results and resolutions." },
     { id: "tcsd-legaudit", tier: 1, name: "2025 Systemic Performance Audit of TCSD", publisher: "Office of the Legislative Auditor General (posted by TCSD)",
       url: "https://www.tooeleschools.org/about-us/legislative-audit-2025", coverage: "2025",
       use: "Independent review of governance, achievement, coordination, policy adherence, and operations; findings and recommendations." },

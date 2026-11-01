@@ -83,19 +83,11 @@
             <table>
               <caption class="sr-only">District funds and their purposes</caption>
               <thead><tr><th scope="col">Fund</th><th scope="col">What it pays for</th><th scope="col" class="n">FY2026 budget</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">General Fund</th><td>Day-to-day operations: salaries, benefits, instruction, transportation, utilities.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Capital Projects</th><td>Construction, land, major renovations, and large equipment.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Debt Service</th><td>Principal and interest on bonds approved by voters.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Food Service</th><td>School breakfast and lunch programs.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Student Activities</th><td>Clubs, athletics, and other school-level activity accounts.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Tax Increment</th><td>Property tax revenue tied to redevelopment areas.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Insurance</th><td>Self-insurance and related reserves.</td><td class="n muted">Pending</td></tr>
-                <tr><th scope="row">Foundation</th><td>Activity of the district’s affiliated education foundation.</td><td class="n muted">Pending</td></tr>
-              </tbody>
+              <tbody id="fund-rows"></tbody>
             </table>
           </div>
-          <div data-source="tcsd-finance" data-extra="Fund list as published on the district finance page."></div>
+          <p id="fund-note" class="muted" style="font-size:14px"></p>
+          <div data-source="tcsd-board" data-extra="FY2026 final amended budget, total expenditures by fund (FY26 Final Budget, posted for the Jun 16, 2026 budget hearing)."></div>
         </section>
 
         <section id="budget" class="mt-3" aria-labelledby="bud-h">
@@ -155,7 +147,10 @@
             <div class="tstep" role="listitem"><strong>Repayment</strong><span>Debt-service levy pays principal and interest.</span></div>
             <div class="tstep" role="listitem"><strong>Final payment</strong><span>Final maturity; levy obligation ends.</span></div>
           </div>
+          <h3 class="mt-3">Bond elections</h3>
+          <div id="bond-elections"></div>
           <h3 class="mt-3">Bond issuance history</h3>
+          <p class="prose">Most of the district’s borrowing is general obligation bonds approved by voters. In FY2024 the district’s Building Authority also issued $50 million of lease revenue bonds, which do not require a vote and are repaid from the Capital Projects Fund rather than the debt-service levy. The outstanding principal above counts general obligation bonds only.</p>
           <div id="bonds"></div>
           <div class="mt-2" data-qwa data-meta="Data: bond official statements · audited statements · USBE enrollment">For each bond, how did the projects actually built and their final costs compare with what was presented to voters?</div>
         </section>
@@ -213,13 +208,29 @@
     function mini(v) { return v ? '<div style="font-size:30px;font-weight:800;color:#082F49" class="num">' + v + "</div>" : '<div style="font-weight:700;color:#64748B;display:flex;gap:8px;align-items:center">' + U.PENDING + "</div>"; }
     document.getElementById("debt-principal").innerHTML = mini(U.fmt(debtKpi.value, "money"));
     var dps = U.latest("debt_per_student", "tooele");
-    document.getElementById("debt-per").innerHTML = mini(dps && U.fmt(dps.value, "dollars"));
+    document.getElementById("debt-per").innerHTML = mini(dps && U.fmt(dps.value, "dollars")) + (dps ? '<p class="muted" style="font-size:13px;margin:4px 0 0">FY' + dps.year + '. Rose in FY2024 mostly because online enrollment fell, not new borrowing. <a href="tooele-compare.html?metric=debt_per_student">History →</a></p>' : "");
     var ds = (TSF.metrics.spend_debt.values.tooele || {})[2025];
     document.getElementById("debt-service").innerHTML = mini(U.fmt(ds, "money")) + '<p class="muted" style="font-size:13px;margin:4px 0 0">Principal and interest, functions 5xxx. <a href="tooele-compare.html?metric=spend_debt">History →</a></p>';
     document.getElementById("bonds").innerHTML = TSF.bonds.length
-      ? '<div class="table-wrap"><table><thead><tr><th>Year</th><th>Issue</th><th class="n">Principal</th><th>Final maturity</th></tr></thead><tbody>' +
-        TSF.bonds.map(function (b) { return "<tr><td>" + b.year + "</td><td>" + U.esc(b.name) + '</td><td class="n">' + (U.fmt(b.principal, "money") || "—") + "</td><td>" + (b.finalMaturity || "—") + "</td></tr>"; }).join("") + "</tbody></table></div>" + U.sourceLine("auditor-reports")
+      ? '<div class="table-wrap"><table><thead><tr><th scope="col">Year</th><th scope="col">Issue</th><th scope="col" class="n">Principal</th><th scope="col">Interest rates</th><th scope="col">Authorization</th><th scope="col">Final maturity</th></tr></thead><tbody>' +
+        TSF.bonds.map(function (b) { return "<tr><td>" + b.year + "</td><td>" + U.esc(b.name) + '</td><td class="n">' + (U.fmt(b.principal, "money") || "—") + "</td><td>" + U.esc(b.rates || "—") + "</td><td>" + U.esc(b.voterApproved || (b.type === "GO refunding" ? "Refinanced earlier bonds" : "—")) + "</td><td>" + U.esc(b.finalMaturity || "—") + "</td></tr>"; }).join("") + "</tbody></table></div>" +
+        U.sourceLine("tcsd-board", "Original issue amounts and rates from the FY2025 audited financial statements, Note 9. Final maturities for individual GO series are pending.")
       : U.emptyState("Bond history not yet entered", "Each bond series will be listed with its voter authorization, amount, interest cost, final maturity, and the projects it financed, drawn from official statements and audited debt schedules.");
+    var el = TSF.bondElections || [];
+    document.getElementById("bond-elections").innerHTML = el.length
+      ? '<div class="table-wrap"><table><caption class="sr-only">Bond elections</caption><thead><tr><th scope="col">Election</th><th scope="col" class="n">Amount</th><th scope="col" class="n">For</th><th scope="col" class="n">Against</th><th scope="col">Result</th></tr></thead><tbody>' +
+        el.map(function (e) {
+          var pctFor = 100 * e.votesFor / (e.votesFor + e.votesAgainst);
+          return '<tr><th scope="row">' + new Date(e.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) + '</th><td class="n">' + U.fmt(e.amount, "money") + '</td><td class="n">' + e.votesFor.toLocaleString("en-US") + ' <span class="muted">(' + pctFor.toFixed(1) + '%)</span></td><td class="n">' + e.votesAgainst.toLocaleString("en-US") + "</td><td>" + (e.passed ? "Passed" : "Failed") + "</td></tr>";
+        }).join("") + "</tbody></table></div>" + U.sourceLine("tcsd-board", "Canvassed results and the 2016 official statement, as attached to board meeting agendas.")
+      : "";
+
+    // District funds, FY2026 budget
+    var F = TSF.funds;
+    document.getElementById("fund-rows").innerHTML = F.rows.map(function (f) {
+      return '<tr><th scope="row">' + U.esc(f.label) + "</th><td>" + U.esc(f.desc) + '</td><td class="n">' + (f.budget == null ? '<span class="muted">Pending</span>' : U.fmt(f.budget, "money")) + "</td></tr>";
+    }).join("") + '<tr><th scope="row">All funds</th><td></td><td class="n"><strong>' + U.fmt(F.total, "money") + "</strong></td></tr>";
+    document.getElementById("fund-note").textContent = F.note;
   })();
 </script>
 </body>

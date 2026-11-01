@@ -377,9 +377,10 @@
       return sign + (a >= 1e9 ? "$" + +(a / 1e9).toFixed(1) + "B" : a >= 1e6 ? "$" + +(a / 1e6).toFixed(1) + "M" : a >= 1000 ? "$" + +(a / 1000).toFixed(1) + "k" : "$" + a);
     }
     if (unit === "percent") return v + "%";
+    if (unit === "rate") return v.toFixed(4);
     return v >= 1000 ? (v / 1000) + "k" : String(v);
   }
-  function unitLabel(u) { return { dollars: "Dollars", money: "Dollars", percent: "Percent", ratio: "Ratio", count: "Count" }[u] || ""; }
+  function unitLabel(u) { return { dollars: "Dollars", money: "Dollars", percent: "Percent", ratio: "Ratio", count: "Count", rate: "Tax rate" }[u] || ""; }
 
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
