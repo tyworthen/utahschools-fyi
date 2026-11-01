@@ -12,7 +12,7 @@
  * Dollar values are nominal unless the field says otherwise.
  */
 window.TSF = {
-  updated: "2026-10-31",
+  updated: "2026-11-01",
   currentFY: 2026,
 
   districts: {
@@ -200,6 +200,112 @@ window.TSF = {
       ref: "Tooele County canvass, 2020 General Election (board meeting Nov 17, 2020)" }
   ],
 
+  // The three schools built with the 2020 bond: what voters were shown, what the board later
+  // budgeted, and what has been reported spent. Each stage has its own basis; they are not
+  // interchangeable (see `basis` notes). Dates are board meeting dates of the source documents.
+  construction: {
+    source: "tcsd-board",
+    stages: [
+      { id: "ballot",   label: "Plan shown to voters",   date: "2020-09-15",
+        basis: "Voter information pamphlet, Plan of Finance (board meeting Sep 15, 2020). Rounded amounts. Total bond proceeds could exceed the $170M authorization by up to 2%." },
+      { id: "estimate", label: "Estimate after high school bid", date: "2022-02-22",
+        basis: "Deseret Peak HS Updated Budget (work session Feb 22, 2022): high school bid budget and the district’s junior high and elementary estimates." },
+      { id: "budget",   label: "Board budget, April 2023", date: "2023-03-28",
+        basis: "“Update on School Construction Financing,” Board work meeting (Mar 28, 2023). Current budget for each project." },
+      { id: "spent",    label: "Latest reported cost", date: "2026-01-20",
+        basis: "Twenty Wells: total spent, project complete (Business Administrator’s report, Dec 10, 2024). Deseret Peak and Stansbury: construction-contract costs paid through June 30, 2025 (FY2025 audited financial statements, construction commitments note), not a final all-in project cost." }
+    ],
+    schools: [
+      { id: "twes", name: "Twenty Wells Elementary", short: "Twenty Wells", kind: "Elementary", city: "Grantsville", capacity: 900, sqft: 75733,
+        promised: "August 2022", opened: "2022–23 school year", promisedMonth: "2022-08", openedMonth: "2022-08",
+        ballot: 20000000, estimate: 21618550, budget: 22200000, spent: 21200000, spentFinal: true,
+        contractor: "Bud Mahas Construction, general contractor (lowest of three proposals, $17.87M; Apr 13, 2021)",
+        contracts: [
+          { date: "2021-06-30", authorized: 17870000, toDate: 1501103, ref: "FY2021 audit, construction commitments" },
+          { date: "2022-06-30", authorized: 19350935, toDate: 16755135, ref: "FY2022 audit, construction commitments" }
+        ],
+        notes: "Signed contract plus addenda $18.27M, $38.5K left to finish (Feb 14, 2023). April 2023 budget of $22.2M included $400K of change orders." },
+      { id: "dphs", name: "Deseret Peak High School", short: "Deseret Peak", kind: "High School", city: "Tooele", capacity: 1800, sqft: 336020,
+        promised: "July 2024", opened: "August 2025", promisedMonth: "2024-07", openedMonth: "2025-08",
+        ballot: 100000000, estimate: 156182600, budget: 156500000, spent: 146290745, spentFinal: false,
+        contractor: "Hughes General Contractors, construction manager/general contractor (Apr 27, 2021)",
+        contracts: [
+          { date: "2022-06-30", authorized: 139740262, toDate: 13669271, ref: "FY2022 audit (listed as “High School Tooele”)" },
+          { date: "2023-06-30", authorized: 140273132, toDate: 64273092, ref: "FY2023 audit" },
+          { date: "2024-06-30", authorized: 143501291, toDate: 112162753, ref: "FY2024 audit" },
+          { date: "2025-06-30", authorized: 147776477, toDate: 146290745, ref: "FY2025 audit" }
+        ],
+        notes: "Feb 2022 budget: $134.6M building construction ($395.88 per sq ft on 340,000 sq ft), $13.46M furniture and equipment, $5.2M design fees, $1.74M offsite road, and smaller items. Signed contract $134.8M (Feb 14, 2023). Estimated $1.8M road change orders and a requested Teen Center change order (Mar 28, 2023). Tooele City to reimburse $1M for the north road (Feb 10, 2026)." },
+      { id: "sjhs", name: "Stansbury Junior High", short: "Stansbury", kind: "Junior High", city: "Stansbury Park (Erda)", capacity: 1200, sqft: 167531,
+        promised: "March 2025", opened: "August 2025", promisedMonth: "2025-03", openedMonth: "2025-08",
+        ballot: 50000000, estimate: 70610792, budget: 70400000, spent: 62381790, spentFinal: false,
+        contractor: null,
+        contracts: [
+          { date: "2021-06-30", authorized: 2130450, toDate: 101074, ref: "FY2021 audit" },
+          { date: "2022-06-30", authorized: 3015150, toDate: 885150, ref: "FY2022 audit" },
+          { date: "2023-06-30", authorized: 61617984, toDate: 5859706, ref: "FY2023 audit" },
+          { date: "2024-06-30", authorized: 63887679, toDate: 36226950, ref: "FY2024 audit" },
+          { date: "2025-06-30", authorized: 63386332, toDate: 62381790, ref: "FY2025 audit" }
+        ],
+        notes: "Out to bid in February 2023. Costs from FY2024 on were moved off the general obligation bond ledger and paid from the Building Authority’s $50M lease revenue bonds." }
+    ],
+    // Construction programs charged to the 2020 bond (programs 0521–0524), all funding sources.
+    // From the Bond Proceeds Spend Summary as of 6/30/2025 (board meeting Oct 14, 2025).
+    spending: [
+      { fy: 2021, total: 2855701.04,  goBond: 2855701.04 },
+      { fy: 2022, total: 29432518.78, goBond: 29432518.78 },
+      { fy: 2023, total: 59923484.55, goBond: 59923484.55 },
+      { fy: 2024, total: 74782233.89, goBond: 45885922.62 },
+      { fy: 2025, total: 58937269.08, goBond: 33875530.80 }
+    ],
+    spentAfter: { asOf: "2025-10-09", amount: 9500000, ref: "Business Administrator’s report, Oct 14, 2025 (cash basis)" },
+    funding: {
+      goFace: 161045000, goPremium: 12647924.05, goCash: 173692924.05, goUnspent: 731123.17,
+      leaseRevenue: 50000000,
+      ref: "Bond Proceeds Spend Summary as of 6/30/2025; FY2025 audit, Note 9"
+    },
+    // What it costs to open and run the two secondary schools (budget planning, Dec 10, 2024).
+    operating: [
+      { label: "New staff, Deseret Peak High", amount: 3000000, upTo: true },
+      { label: "New staff, Stansbury Junior High", amount: 1700000, upTo: true },
+      { label: "Utilities for the new schools", amount: 775000 },
+      { label: "Extracurricular stipends, both schools", amount: 330000 }
+    ],
+    milestones: [
+      { date: "2019-04-23", text: "District staff estimate a new high school at $80M–$100M, a junior high at $40M–$45M, and an elementary at $20M–$23M (repeating an existing design).", ref: "Needs, Capital Projects, New Construction and Cost (work session Apr 23, 2019)" },
+      { date: "2019-11-05", text: "Voters reject a $190M bond (5,073 for, 7,071 against) that listed the high school at $100M, the junior high at $50M, an elementary at $30M, and $10M of upgrades.", ref: "2019 bond trifold; canvassed results (Nov 12, 2019)" },
+      { date: "2020-11-03", text: "Voters approve a $170M bond (15,970 for, 14,789 against): elementary $20M, junior high $50M, high school $100M, with “no net tax increase” expected.", ref: "2020 voter information pamphlet and FAQ (Sep 15, 2020)" },
+      { date: "2021-04-13", text: "Board awards Twenty Wells Elementary to Bud Mahas Construction, the lowest of three proposals at $17.87M.", ref: "Twenty Wells Scoresheet; minutes Apr 13, 2021" },
+      { date: "2021-08-10", text: "Capital cash-flow report carries the high school $20M and the junior high $10M above their bond amounts. The contractor and architect (Hughes, VCBO) estimate Deseret Peak will open in August 2025, a year after the date shown to voters, citing a 14-month wait for steel joists and deck.", ref: "Cash Flow 8.2.21 (Aug 10, 2021); work session minutes Aug 24, 2021" },
+      { date: "2021-12-14", text: "Business Administrator reports that, with construction inflation, Deseret Peak could cost $37M more than estimated, and that more would be drawn from reserves.", ref: "Board minutes Dec 14, 2021" },
+      { date: "2022-02-22", text: "Deseret Peak bid comes in at $156.2M, about $100 more per square foot than first estimated, leaving the junior high about $55.0M short. Options discussed: a capital tax increase, another GO bond, or Building Authority bonds.", ref: "Deseret Peak HS Updated Budget; minutes Feb 22, 2022" },
+      { date: "2022-08-24", text: "Twenty Wells Elementary is set to open on Aug 24, 2022, matching the August 2022 date shown to voters, with a contingency plan if it is not ready.", ref: "Superintendent’s report, board minutes Aug 9, 2022" },
+      { date: "2023-03-28", text: "Board reviews budgets of $22.2M, $156.5M, and $70.4M ($249.1M in all) against $193.4M of committed funding (bond, 2% premium, $20M reserves): $55.6M short.", ref: "March Work Meeting presentation; minutes Mar 28, 2023" },
+      { date: "2024-03-12", text: "Administration recommends using $40M of capital reserves and issuing $50M of Building Authority lease revenue bonds, which do not require a vote, alongside a shift of $11.3M from the capital levy to General Fund levies.", ref: "Board minutes Mar 12, 2024" },
+      { date: "2024-04-16", text: "Board issues the last $28.73M of the 2020 authorization and approves the $50M lease revenue bonds.", ref: "Bond and Building Authority resolutions (Apr 16, 2024)" },
+      { date: "2025-08-01", text: "Deseret Peak High and Stansbury Junior High open for the 2025–26 school year. In March the district reported both on schedule for substantial completion in April and May 2025.", ref: "New Construction Update (Mar 11, 2025); budget minutes Aug 12, 2025" },
+      { date: "2025-10-14", text: "All but $731K of the 2020 bond and all of the $50M lease revenue bonds are reported spent; $9.5M more was spent by Oct 9, 2025 from accumulated fund balances.", ref: "BA report and Bond Proceeds Spend Summary (Oct 14, 2025)" },
+      { date: "2026-08-11", text: "An FY2026 budget amendment includes final construction costs for the two new schools; the amount is not broken out.", ref: "Board minutes Aug 11, 2026" }
+    ],
+    // Estimated costs other districts reported to USBE for new schools, for scale only.
+    peers: {
+      source: "usbe-capoutlay",
+      rows: [
+        { report: 2022, district: "Tooele",  name: "Twenty Wells Elementary",       kind: "Elementary", sqft: 75733,  cost: 18933250,  tooele: true },
+        { report: 2022, district: "Alpine",  name: "Trailside Elementary",          kind: "Elementary", sqft: 83745,  cost: 20827800 },
+        { report: 2022, district: "Jordan",  name: "Hidden Oaks Elementary",        kind: "Elementary", sqft: 76282,  cost: 20000000 },
+        { report: 2022, district: "Jordan",  name: "Village 8 Elementary (Aspen)",  kind: "Elementary", sqft: 72282,  cost: 16757400 },
+        { report: 2022, district: "Kane",    name: "Kanab Elementary",              kind: "Elementary", sqft: 74460,  cost: 29689685 },
+        { report: 2024, district: "Iron",    name: "Cedar East Elementary",         kind: "Elementary", sqft: 77326,  cost: 34000000 },
+        { report: 2022, district: "Alpine",  name: "Micron Middle",                 kind: "Middle / junior high", sqft: 186898, cost: 41000000 },
+        { report: 2024, district: "Tooele",  name: "Stansbury Junior High",         kind: "Middle / junior high", sqft: 167531, cost: 67000000, tooele: true },
+        { report: 2024, district: "Alpine",  name: "Middle School #440",            kind: "Middle / junior high", sqft: 186898, cost: 82000000 },
+        { report: 2021, district: "Canyons", name: "Brighton High (replacement)",   kind: "High school", sqft: 408806, cost: 107700000 },
+        { report: 2024, district: "Tooele",  name: "Deseret Peak High",             kind: "High school", sqft: 336020, cost: 130000000, tooele: true }
+      ]
+    }
+  },
+
   sources: [
     { id: "usbe-afr", tier: 1, name: "Annual Financial Report (AFR) summaries — revenues, expenditures, balance sheet", publisher: "Utah State Board of Education",
       url: "https://schools.utah.gov/financialoperations/reporting", coverage: "FY2011–FY2025",
@@ -213,6 +319,9 @@ window.TSF = {
     { id: "tcsd-board", tier: 1, name: "Board of Education meeting documents — audited financial statements, budgets, tax rate resolutions, bond records", publisher: "Tooele County School District",
       url: "https://tooele-schools.community.highbond.com/Portal/MeetingTypeList.aspx", coverage: "2015–2026",
       use: "Attachments to board agendas and minutes: annual audited financial statements (debt, rates by fund), adopted budgets by fund, PT-800 tax rate resolutions, bond election results and resolutions." },
+    { id: "usbe-capoutlay", tier: 1, name: "School Plant Capital Outlay Report (Superintendent’s Annual Report)", publisher: "Utah State Board of Education",
+      url: "https://www.schools.utah.gov/superintendentannualreport/financialoperations/fy2024/School%20Plant%20Capital%20Outlay%20Report%202024%20sqft.pdf", coverage: "FY2021–FY2024",
+      use: "New school and major remodel projects reported by each district: location, square footage, and estimated cost." },
     { id: "tcsd-legaudit", tier: 1, name: "2025 Systemic Performance Audit of TCSD", publisher: "Office of the Legislative Auditor General (posted by TCSD)",
       url: "https://www.tooeleschools.org/about-us/legislative-audit-2025", coverage: "2025",
       use: "Independent review of governance, achievement, coordination, policy adherence, and operations; findings and recommendations." },
