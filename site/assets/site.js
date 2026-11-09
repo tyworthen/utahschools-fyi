@@ -12,6 +12,7 @@
     ["tooele-taxes.html", "Taxes"],
     ["tooele-spending.html", "Spending"],
     ["tooele-construction.html", "Construction"],
+    ["tooele-compensation.html", "Compensation"],
     ["tooele-compare.html", "Compare Peer Districts"],
     ["tooele-schools.html", "Schools"],
     ["tooele-research.html", "Research"]
@@ -37,6 +38,7 @@
     ["tooele-taxes.html#calculator", "Taxpayer calculator", "What does the school district cost me?"],
     ["tooele-spending.html", "Tooele spending: where the money goes", "$100 of district spending by category"],
     ["tooele-construction.html", "Tooele construction: 2020 bond schools", "Deseret Peak High, Stansbury Jr. High, Twenty Wells Elementary: plan vs. cost"],
+    ["tooele-compensation.html", "Tooele compensation deep dive", "Payroll, teacher pay, administrators, $100k+ earners, and how pay is coded, vs. Iron, Cache, Box Elder"],
     ["tooele-compare.html", "Tooele: compare peer districts", "Tooele, Iron, Cache, Box Elder, and any other Utah district"],
     ["tooele-schools.html", "Tooele schools", "School-level profiles (planned)"],
     ["tooele-research.html", "Tooele research & investigations", "Questions, investigations, and audit findings"],

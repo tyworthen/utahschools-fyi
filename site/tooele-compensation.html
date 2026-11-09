@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tooele Compensation · Utah Schools FYI</title>
+<meta name="description" content="How Tooele County School District’s payroll, teacher pay, administrative staffing, and $100,000-plus salaries changed from FY2019 to FY2026, compared with Iron, Cache, and Box Elder.">
+<link rel="canonical" href="https://utahschools.fyi/tooele-compensation">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Utah Schools FYI">
+<meta property="og:title" content="Tooele Compensation · Utah Schools FYI">
+<meta property="og:description" content="How Tooele County School District’s payroll, teacher pay, administrative staffing, and $100,000-plus salaries changed from FY2019 to FY2026, compared with Iron, Cache, and Box Elder.">
+<meta property="og:url" content="https://utahschools.fyi/tooele-compensation">
+<meta property="og:image" content="https://utahschools.fyi/assets/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Utah Schools .FYI logo: mountains over the words Utah Schools">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#082F49">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / <a href="district.html?id=30">Tooele case study</a> / Compensation</p>
+      <h1>Compensation: a deep dive</h1>
+      <p>Salaries are the largest part of a school district’s budget. This page follows every Tooele County School District employee’s pay from FY2019 to FY2026, as reported to the State Auditor, and compares it with Iron, Cache, and Box Elder. It covers total payroll, teacher pay, administrative staffing, who earns $100,000 or more, and how pay is coded.</p>
+    </div>
+  </section>
+
+  <section class="kpi-strip" aria-label="Compensation at a glance">
+    <div class="wrap"><div class="kpi-grid four" id="comp-kpis"></div></div>
+  </section>
+
+  <section class="section" aria-labelledby="found-h">
+    <div class="wrap two-col">
+      <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>
+        <li><a href="#found-h">What we found</a></li>
+        <li><a href="#payroll-h">Total payroll</a></li>
+        <li><a href="#teachers-h">Teacher pay</a></li>
+        <li><a href="#staffing-h">Staffing and administration</a></li>
+        <li><a href="#high-h">Who earns $100,000+</a></li>
+        <li><a href="#coding-h">How pay is coded</a></li>
+        <li><a href="#unknown-h">What we don’t know</a></li>
+        <li><a href="#method-h">Method and data</a></li>
+      </ol></nav>
+      <div class="prose" style="max-width:none">
+        <h2 id="found-h" class="mt-0">What we found</h2>
+        <ul id="found"></ul>
+
+        <h2 id="payroll-h">Total payroll</h2>
+        <p id="payroll-text"></p>
+        <div class="chart-box mt-2" id="chart-per-student"></div>
+
+        <h2 id="teachers-h">Teacher pay</h2>
+        <p id="teachers-text"></p>
+        <div class="chart-box mt-2" id="chart-teacher"></div>
+        <p class="mt-2" id="stayers-text"></p>
+        <div class="chart-box mt-2" id="chart-retention"></div>
+
+        <h2 id="staffing-h">Staffing and administration</h2>
+        <p id="staffing-text"></p>
+        <div class="chart-box mt-2" id="chart-admin"></div>
+        <h3>Full-time employees by role</h3>
+        <div id="roles"></div>
+        <div class="mt-2" data-qwa data-meta="Data: Transparent Utah all-employee compensation · USBE enrollment">Tooele has had fewer students per full-time administrator than Iron, Cache, or Box Elder in every year since FY2019; Iron has moved closer to Tooele, while the gap with Box Elder has grown. Districts code similar jobs to different accounts, so part of the difference may be classification. What do the district and school administrative positions added since FY2019 do, and how would they be coded in a peer district?</div>
+
+        <h2 id="high-h">Who earns $100,000 or more</h2>
+        <p id="high-text"></p>
+        <div id="high-table"></div>
+        <h3>Where Tooele’s $100,000+ earners work</h3>
+        <div id="high-places"></div>
+
+        <h2 id="coding-h">How pay is coded</h2>
+        <p>Utah districts report salaries to the state by account code (for example, 131 for teachers or 115 for supervisors and directors). Comparing Tooele’s pay records with its own staff directory and with the state’s financial reports shows several places where the codes do not match what the job appears to be. None of these show money was misspent. They matter because comparisons across districts, including some on this page, rely on the codes.</p>
+        <ul id="coding"></ul>
+        <div class="mt-2" data-qwa data-meta="Data: Transparent Utah all-employee compensation · TCSD district directory · USBE Annual Financial Report">Nineteen district-level staff, including coordinators and specialists, are paid from the teacher salary account, and maintenance and grounds wages are reported under technology. How does the district decide which account a position is charged to, and do these choices affect the instruction and administration figures reported to the state?</div>
+
+        <h2 id="unknown-h">What we don’t know</h2>
+        <ul>
+          <li><strong>Full-time status.</strong> The data has no hours or FTE. “Full-time” here means paid at least $40,000 in FY2026 dollars, which leaves out part-time and partial-year employees but may include some people paid for extra assignments.</li>
+          <li><strong>Why positions were added.</strong> Pay records show how many people were paid from each account, not why positions were created or what they do. Board budget documents and job descriptions would answer that.</li>
+          <li><strong>Matching people across years.</strong> The records have no employee ID, and name formats change between years. People are matched on first name and last surname, so a few may be merged or split.</li>
+          <li><strong>Benefits.</strong> <span id="benefits-note"></span></li>
+          <li><strong>Cache after FY2021.</strong> Cache stopped reporting state account codes in FY2022, so its roles cannot be compared after FY2021, and its FY2026 file appears incomplete.</li>
+          <li><strong>Contracted staff.</strong> Work done by contractors, such as substitute teachers hired through an agency, is paid as purchased services and does not appear in payroll.</li>
+        </ul>
+
+        <h2 id="method-h">Method and data</h2>
+        <div class="callout method"><div class="ct">How these figures are calculated</div>
+          <p><strong>People and roles.</strong> Transparent Utah lists each employee’s pay as separate lines by fund, school or department, and account. Lines are added up for each person and year. A person’s role is the account that carries most of their salary: 11x district administration, 12x school administration, 131 teachers, 14x other licensed staff (counselors, psychologists, nurses, specialists), 15x office, 16x aides, 17x transportation, 18x maintenance, custodial, and technology, and 19x food service, coaches, and other.</p>
+          <p><strong>Full-time and medians.</strong> “Full-time” = salary of at least $40,000 in FY2026 dollars, adjusted for inflation each year so that raises alone do not move people across the line. Medians for groups of fewer than ten people are not shown, so no individual’s pay can be inferred.</p>
+          <p><strong>Per student.</strong> Salaries ÷ October 1 enrollment minus online-school enrollment. Tooele’s FY2021 rise reflects about 1,650 students moving into its online school during COVID while staff stayed on payroll.</p>
+          <p><strong>Central vs. school.</strong> Based on each district’s own location labels in the pay records (for example, “030 DISTRICT OFFICE” in Tooele or “District Level” in Iron), so treat cross-district differences as approximate.</p>
+          <p><strong>Salaries only.</strong> Dollar amounts are salaries and wages; benefits are excluded except where stated.</p>
+        </div>
+        <p><a class="btn" href="assets/data/transparent_utah/compensation_summary/compensation_by_district.csv" download>Download the district-level figures (CSV)</a></p>
+        <div data-source="transparent-comp-downloader" data-extra="FY2019–FY2026 all-employee compensation for Tooele, Iron, Cache, and Box Elder, retrieved November 2026. Enrollment: USBE Fall Enrollment. Inflation: BLS CPI-U."></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/compensation.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var U = TSFui, C = TSF_COMP, D = TSF.districts, Y = C.years, K = ["tooele", "iron", "cache", "boxelder"];
+    var T = C.districts.tooele, last = function (k) { return C.districts[k].lastCodedYear; };
+    var at = function (k, m, y) { return C.districts[k].series[m][Y.indexOf(y)]; };
+    var money = function (v) { return U.fmt(v, "money"); }, dollars = function (v) { return v == null ? "—" : U.fmt(v, "dollars"); };
+    var num = function (v) { return v == null ? "—" : U.fmt(v); };
+    var chg = function (a, b) { return U.pct(b, a); };
+    var grew = function (a, b) { return chg(a, b).replace(/^\+/, ""); };   // "grew 10.0%", not "grew +10.0%"
+    var SRC = "transparent-comp-downloader";
+    var series = function (m) {
+      return K.map(function (k) { return { name: D[k].name, color: D[k].color, dash: D[k].dash, bold: k === "tooele", values: C.districts[k].series[m] }; });
+    };
+    var peerRange = function (m, y, fmt) {
+      var v = K.slice(1).map(function (k) { return at(k, m, Math.min(y, last(k))); }).filter(function (x) { return x != null; });
+      return fmt(Math.min.apply(null, v)) + "–" + fmt(Math.max.apply(null, v));
+    };
+
+    /* KPIs */
+    function kpi(label, value, note) {
+      return '<div class="kpi"><span class="label">' + label + '</span><span class="value">' + value + '</span><span class="note">' + note + "</span></div>";
+    }
+    var s19 = at("tooele", "salaries", 2019), s26 = at("tooele", "salaries", 2026);
+    document.getElementById("comp-kpis").innerHTML =
+      kpi("Total salaries, FY2026", money(s26), chg(s19, s26) + " since FY2019 (nominal)") +
+      kpi("Median full-time teacher", dollars(at("tooele", "teacherMedian", 2026)), "FY2026; " + dollars(at("tooele", "teacherMedian", 2019)) + " in FY2019") +
+      kpi("Students per administrator", String(Math.round(at("tooele", "studentsPerAdmin", 2026))), "FY2026; peers " + peerRange("studentsPerAdmin", 2026, function (v) { return Math.round(v); }) + " (Cache FY2021)") +
+      kpi("Paid $100,000 or more", num(at("tooele", "earners100k", 2026)), "FY2026 salary; " + at("tooele", "earners100k", 2019) + " in FY2019");
+
+    /* What we found */
+    var tr = T.roles, admin19 = tr["district admin"].ft[0] + tr["school admin"].ft[0], admin26 = tr["district admin"].ft[1] + tr["school admin"].ft[1];
+    var H = T.highEarners, TD = C.tooele;
+    document.getElementById("found").innerHTML = [
+      "Tooele’s salaries grew from " + money(s19) + " in FY2019 to " + money(s26) + " in FY2026 (" + chg(s19, s26) + "). Over the same years, brick-and-mortar enrollment grew " + grew(at("tooele", "students", 2019), at("tooele", "students", 2026)) + " and prices rose " + grew(1 / TSF.cpi.factor[2019], 1 / TSF.cpi.factor[2026]) + ".",
+      "The median full-time teacher salary rose from " + dollars(at("tooele", "teacherMedian", 2019)) + " to " + dollars(at("tooele", "teacherMedian", 2026)) + ". Tooele led its peers in FY2022, dipped in FY2025, and in FY2026 was close to Iron and below Box Elder.",
+      "Full-time administrators (district and school) rose from " + admin19 + " to " + admin26 + ". Tooele has " + Math.round(at("tooele", "studentsPerAdmin", 2026)) + " students per administrator, fewer than any peer.",
+      "Employees paid $100,000 or more rose from " + at("tooele", "earners100k", 2019) + " to " + H.total + ". " + H.central + " of them are paid mainly at central offices, " + H.centralPer1000 + " per 1,000 students, the highest of the four districts.",
+      "Pay coding differs from job titles in several places: " + TD.directory.teacherAccount.people + " district-level staff are paid from the teacher account, and about " + money(TD.maintenanceOnTechnologyAccountFY2024) + " of maintenance wages (FY2024) is reported as technology."
+    ].map(function (t) { return "<li>" + U.esc(t) + "</li>"; }).join("");
+
+    /* Payroll */
+    document.getElementById("payroll-text").textContent = "Across the four districts, salaries grew faster than enrollment and inflation. Per student, Tooele started FY2019 with the highest salary cost of the four; by FY2026 Iron and Box Elder had passed it.";
+    U.drawLines(document.getElementById("chart-per-student"), {
+      id: "comp-per-student", label: "Salaries per brick-and-mortar student", basis: "All funds, salaries and wages only, nominal dollars",
+      unit: "dollars", axis: "Dollars per student", years: Y, source: SRC, series: series("salariesPerStudent"),
+      calc: "Total salaries reported for all employees ÷ (October 1 enrollment − online-school enrollment).",
+      notes: "Tooele’s FY2021 rise reflects students moving into its online school during COVID. Cache FY2026 is omitted because the file appears incomplete."
+    });
+
+    /* Teachers */
+    document.getElementById("teachers-text").textContent = "Median salary of full-time employees paid mainly from the teacher account (131). Medians reflect both raises and changes in who is on staff, such as retirements and new hires.";
+    U.drawLines(document.getElementById("chart-teacher"), {
+      id: "comp-teacher", label: "Median full-time teacher salary", basis: "Salary only (excludes benefits), nominal dollars",
+      unit: "dollars", axis: "Median salary", years: Y, source: SRC, series: series("teacherMedian"),
+      calc: "Median salary of employees whose largest salary account is 131 (teachers) and whose salary is at least $40,000 in FY2026 dollars.",
+      notes: "Cache is shown through FY2021, its last year with state account codes."
+    });
+    var st = K.map(function (k) { var s = C.districts[k].stayers; return D[k].name + " " + (s.nominal >= 0 ? "+" : "") + s.nominal + "% (" + (s.real >= 0 ? "+" : "") + s.real + "% after inflation" + (s.toYear !== 2026 ? ", through FY" + s.toYear : "") + ")"; });
+    document.getElementById("stayers-text").textContent = "For teachers who stayed, raises were similar across districts. The median change in salary for full-time teachers in the same district in FY2019 and FY2026: " + st.join("; ") + ".";
+    U.drawLines(document.getElementById("chart-retention"), {
+      id: "comp-retention", label: "FY2019 full-time teachers still paid full-time by the district", basis: "Share of each district’s FY2019 full-time teachers",
+      unit: "percent", axis: "Percent still employed full-time", years: Y, source: SRC,
+      series: K.map(function (k) { return { name: D[k].name, color: D[k].color, dash: D[k].dash, bold: k === "tooele", values: C.districts[k].retention }; }),
+      calc: "People matched by name across years. Leaving includes retirement, moving to part-time, and moving to another district.",
+      notes: "Cache FY2026 omitted."
+    });
+
+    /* Staffing */
+    document.getElementById("staffing-text").textContent = "Administrators are employees paid mainly from district administration (11x) or school administration (12x) accounts: superintendents, directors, supervisors, principals, and assistant principals.";
+    U.drawLines(document.getElementById("chart-admin"), {
+      id: "comp-admin", label: "Students per full-time administrator", basis: "District and school administration accounts",
+      unit: "ratio", axis: "Students per administrator", years: Y, source: SRC, series: series("studentsPerAdmin"),
+      calc: "(October 1 enrollment − online-school enrollment) ÷ full-time employees whose largest salary account is 11x or 12x.",
+      notes: "Districts code similar jobs differently; Tooele codes many coordinators as supervisors and directors (115). Cache shown through FY2021."
+    });
+    var ROLE_LABEL = { "teachers": "Teachers", "school admin": "School administration", "district admin": "District administration", "other licensed": "Other licensed (counselors, psychologists, specialists)",
+      "office": "Office and clerical", "transport": "Transportation", "maintenance, custodial, technology": "Maintenance, custodial, technology", "food service, coaches, other": "Food service, coaches, other" };
+    var roles = Object.keys(ROLE_LABEL);
+    document.getElementById("roles").innerHTML = '<div class="table-wrap"><table><caption class="sr-only">Full-time employees by role, FY2019 and latest year</caption><thead><tr><th scope="col">Role</th>' +
+      K.map(function (k) { return '<th scope="col" class="n">' + D[k].name + "<br><span style=\"font-weight:500\">FY19 → FY" + String(last(k)).slice(2) + "</span></th>"; }).join("") + "</tr></thead><tbody>" +
+      roles.map(function (r) {
+        return '<tr><th scope="row">' + U.esc(ROLE_LABEL[r]) + "</th>" + K.map(function (k) {
+          var f = C.districts[k].roles[r].ft, b = k === "tooele" ? ["<strong>", "</strong>"] : ["", ""];
+          return '<td class="n">' + b[0] + f[0] + " → " + f[1] + b[1] + '<br><span class="muted" style="font-size:13px">' + (f[0] ? U.pct(f[1], f[0]) : "") + "</span></td>";
+        }).join("") + "</tr>";
+      }).join("") + '<tr><th scope="row">Students per teacher</th>' + K.map(function (k) { return '<td class="n">' + at(k, "studentsPerTeacher", 2019) + " → " + at(k, "studentsPerTeacher", last(k)) + "</td>"; }).join("") + "</tr>" +
+      "</tbody></table></div>" +
+      '<p class="source-line" style="border:0;margin-top:8px;padding-top:0"><strong>Calculation:</strong> Full-time employees (salary of at least $40,000 in FY2026 dollars) by the account carrying most of their salary. Aides and many food-service and transportation staff are mostly part-time and fall below the threshold. Cache’s latest year with account codes is FY2021.</p>' + U.sourceLine(SRC);
+
+    /* High earners */
+    document.getElementById("high-text").textContent = "The number of employees paid $100,000 or more grew in every district, mostly because raises from FY2022 to FY2024 moved experienced teachers and principals past that line. The table shows where these salaries are paid: in schools or at central offices (“central”).";
+    document.getElementById("high-table").innerHTML = '<div class="table-wrap"><table><caption class="sr-only">Employees paid $100,000 or more, by location</caption><thead><tr><th scope="col">District</th><th scope="col" class="n">FY</th><th scope="col" class="n">$100k+</th><th scope="col" class="n">Central</th><th scope="col" class="n">Share</th><th scope="col" class="n">Central per 1,000 students</th></tr></thead><tbody>' +
+      K.map(function (k) {
+        var h = C.districts[k].highEarners, b = k === "tooele" ? ["<strong>", "</strong>"] : ["", ""];
+        return '<tr><th scope="row" style="white-space:nowrap">' + b[0] + D[k].name + b[1] + '</th><td class="n">' + h.fy + '</td><td class="n">' + h.total + '</td><td class="n">' + b[0] + h.central + b[1] + '</td><td class="n">' + Math.round(100 * h.central / h.total) + '%</td><td class="n">' + b[0] + h.centralPer1000.toFixed(1) + b[1] + "</td></tr>";
+      }).join("") + "</tbody></table></div>" +
+      '<p class="mt-1">All staff paid mainly at central locations, at any salary: ' + K.map(function (k) { var h = C.districts[k].highEarners; return D[k].name + " " + U.fmt(h.centralStaff) + " people, " + money(h.centralPayroll); }).join("; ") + ".</p>" +
+      '<p class="source-line" style="border:0;margin-top:8px;padding-top:0"><strong>Calculation:</strong> Salary only. FY = fiscal year shown. “Central” = the location carrying most of a person’s salary is not a school, using each district’s own labels; approximate across districts. Box Elder books many pay lines to its district office, and Cache is shown for FY2025 because its FY2026 file appears incomplete.</p>' + U.sourceLine(SRC);
+    document.getElementById("high-places").innerHTML = '<div class="table-wrap"><table><caption class="sr-only">Tooele employees paid $100,000 or more, by location, FY2026</caption><thead><tr><th scope="col">Location</th><th scope="col" class="n">People</th></tr></thead><tbody>' +
+      TD.highEarnerPlaces.map(function (p) { return '<tr><th scope="row">' + U.esc(p.place) + '</th><td class="n">' + p.people + "</td></tr>"; }).join("") +
+      '</tbody></table></div><p class="mt-1">Of the ' + H.central + ' paid mainly at central locations, by salary account: ' +
+      TD.centralHighByAccount.map(function (a) { return U.esc(a.account) + " " + a.people; }).join("; ") + ".</p>" + U.sourceLine(SRC, "FY2026.");
+
+    /* Coding */
+    var dir = TD.directory;
+    document.getElementById("coding").innerHTML = [
+      "<strong>District staff paid as teachers.</strong> Of the " + dir.listed + " people in the district’s staff directory, " + dir.matched + " were matched to FY2026 pay records. " + dir.teacherAccount.people + " of them, including literacy and curriculum coordinators, special education specialists, and gifted-education staff, are paid mainly from the teacher account (131): " + money(dir.teacherAccount.salaries) + " in salary. These are instructional support roles, but they are not classroom teachers.",
+      "<strong>Maintenance reported as technology.</strong> In FY2024 Tooele reported " + money(TD.maintenanceOnTechnologyAccountFY2024) + " of “Technology Support” salaries (account 184) under operation and maintenance of buildings. Directory listings show maintenance and grounds staff paid from this account. Iron and Cache use account 184 only for technology staff.",
+      "<strong>Central earners not in the directory.</strong> " + dir.centralHighNotListed + " of the " + dir.centralHigh + " people paid $100,000+ mainly at central locations in FY2026 were not found in the district’s public staff directory. The directory is a current listing: board personnel reports show that five of them left the district or moved to school positions in 2026. The others may be in roles the directory does not list.",
+      "<strong>Substitutes moved off payroll.</strong> Substitute-teacher salaries fell from " + money(TD.substitutes.fy2019) + " in FY2019 to " + money(TD.substitutes.fy2026) + " in FY2026, consistent with substitutes being provided through a contractor. Their cost now appears as purchased services, so payroll comparisons slightly understate Tooele’s staffing cost."
+    ].map(function (t) { return "<li>" + t + "</li>"; }).join("");
+
+    var bg = C.benefitsVsUsbeFY2024;
+    document.getElementById("benefits-note").textContent = "Benefit totals in the Transparent Utah data are below the audited totals districts report to USBE (FY2024: Tooele " + bg.tooele + "%, Iron " + bg.iron + "%, Box Elder " + bg.boxelder + "%, Cache " + bg.cache + "%), while salaries match within 1%. This page therefore compares salaries, not total compensation.";
+  })();
+</script>
+</body>
+</html>

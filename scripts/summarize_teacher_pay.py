@@ -12,6 +12,9 @@ Output (public, no personal information):
   percentiles and mean of instructional wages, total wages, and total compensation. Statistics
   for groups of fewer than MIN_GROUP teachers are left blank so no individual can be identified.
 
+The raw files list a teacher once per school they teach at, repeating the same district-wide pay
+on each row. Each teacher (CACTUS ID) is counted once per district and year.
+
 Run: python3 scripts/summarize_teacher_pay.py
 """
 import csv, glob, json, os, statistics
@@ -36,11 +39,15 @@ def pct(values, q):
 
 rows = []
 for path in sorted(glob.glob(os.path.join(RAW, "teacher_pay_FY*.csv"))):
-    groups = {}
+    groups, seen = {}, set()
     for r in csv.DictReader(open(path, encoding="utf-8-sig")):
         d = by_name.get(r["lea_name"])
         if not d:
             continue                      # charter LEAs are outside the current scope
+        key = (d, r["school_year"], r["cactus_id"])
+        if key in seen:
+            continue                      # same teacher listed again at another school
+        seen.add(key)
         g = groups.setdefault((d, int(r["school_year"])), {m: [] for m in MEASURES})
         for m in MEASURES:
             try:
