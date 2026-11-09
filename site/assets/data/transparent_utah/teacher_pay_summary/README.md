@@ -10,3 +10,6 @@ total wages, and total compensation. Statistics for groups of fewer than 10 teac
 
 Coverage: only teachers matched to at least one course in USBE's CACTUS database; the match rate
 varies by district and year, so `teachers` is not a full headcount.
+
+A teacher who teaches at more than one school appears once per school in the downloads, with the
+same pay on each row; `teachers` counts each CACTUS ID once per district and year.

@@ -1,0 +1,520 @@
+district,fiscal_year,metric,value
+tooele,2019,salaries,69898243
+tooele,2019,benefits,33426597
+tooele,2019,students,14086
+tooele,2019,salariesPerStudent,4962
+tooele,2019,earners100k,19
+tooele,2019,ftTeachers,724
+tooele,2019,ftAdmins,66
+tooele,2019,teacherMedian,57447
+tooele,2019,studentsPerAdmin,213.4
+tooele,2019,teachersPerAdmin,11.0
+tooele,2019,studentsPerTeacher,19.5
+tooele,2020,salaries,73896488
+tooele,2020,benefits,35260608
+tooele,2020,students,14176
+tooele,2020,salariesPerStudent,5213
+tooele,2020,earners100k,23
+tooele,2020,ftTeachers,721
+tooele,2020,ftAdmins,68
+tooele,2020,teacherMedian,60150
+tooele,2020,studentsPerAdmin,208.5
+tooele,2020,teachersPerAdmin,10.6
+tooele,2020,studentsPerTeacher,19.7
+tooele,2021,salaries,83068425
+tooele,2021,benefits,38539233
+tooele,2021,students,12528
+tooele,2021,salariesPerStudent,6631
+tooele,2021,earners100k,41
+tooele,2021,ftTeachers,745
+tooele,2021,ftAdmins,74
+tooele,2021,teacherMedian,65271
+tooele,2021,studentsPerAdmin,169.3
+tooele,2021,teachersPerAdmin,10.1
+tooele,2021,studentsPerTeacher,16.8
+tooele,2022,salaries,91502104
+tooele,2022,benefits,41118797
+tooele,2022,students,14607
+tooele,2022,salariesPerStudent,6264
+tooele,2022,earners100k,65
+tooele,2022,ftTeachers,765
+tooele,2022,ftAdmins,74
+tooele,2022,teacherMedian,70250
+tooele,2022,studentsPerAdmin,197.4
+tooele,2022,teachersPerAdmin,10.3
+tooele,2022,studentsPerTeacher,19.1
+tooele,2023,salaries,103657132
+tooele,2023,benefits,45480506
+tooele,2023,students,14946
+tooele,2023,salariesPerStudent,6935
+tooele,2023,earners100k,116
+tooele,2023,ftTeachers,806
+tooele,2023,ftAdmins,83
+tooele,2023,teacherMedian,74772
+tooele,2023,studentsPerAdmin,180.1
+tooele,2023,teachersPerAdmin,9.7
+tooele,2023,studentsPerTeacher,18.5
+tooele,2024,salaries,113472355
+tooele,2024,benefits,49602728
+tooele,2024,students,15325
+tooele,2024,salariesPerStudent,7404
+tooele,2024,earners100k,175
+tooele,2024,ftTeachers,833
+tooele,2024,ftAdmins,91
+tooele,2024,teacherMedian,79300
+tooele,2024,studentsPerAdmin,168.4
+tooele,2024,teachersPerAdmin,9.2
+tooele,2024,studentsPerTeacher,18.4
+tooele,2025,salaries,113848546
+tooele,2025,benefits,48317070
+tooele,2025,students,15384
+tooele,2025,salariesPerStudent,7400
+tooele,2025,earners100k,174
+tooele,2025,ftTeachers,843
+tooele,2025,ftAdmins,93
+tooele,2025,teacherMedian,78299
+tooele,2025,studentsPerAdmin,165.4
+tooele,2025,teachersPerAdmin,9.1
+tooele,2025,studentsPerTeacher,18.2
+tooele,2026,salaries,119269273
+tooele,2026,benefits,48749009
+tooele,2026,students,15493
+tooele,2026,salariesPerStudent,7698
+tooele,2026,earners100k,188
+tooele,2026,ftTeachers,842
+tooele,2026,ftAdmins,90
+tooele,2026,teacherMedian,80141
+tooele,2026,studentsPerAdmin,172.1
+tooele,2026,teachersPerAdmin,9.4
+tooele,2026,studentsPerTeacher,18.4
+tooele,2019,ft_teachers,724
+tooele,2019,median_teachers,57447
+tooele,2019,salary_dollars_teachers,42603474
+tooele,2026,ft_teachers,842
+tooele,2026,median_teachers,80141
+tooele,2026,salary_dollars_teachers,69896213
+tooele,2019,ft_school admin,40
+tooele,2019,median_school admin,87700
+tooele,2019,salary_dollars_school admin,3457944
+tooele,2026,ft_school admin,54
+tooele,2026,median_school admin,119250
+tooele,2026,salary_dollars_school admin,6226823
+tooele,2019,ft_district admin,26
+tooele,2019,median_district admin,93150
+tooele,2019,salary_dollars_district admin,2487945
+tooele,2026,ft_district admin,36
+tooele,2026,median_district admin,116950
+tooele,2026,salary_dollars_district admin,4651892
+tooele,2019,ft_other licensed,43
+tooele,2019,median_other licensed,56034
+tooele,2019,salary_dollars_other licensed,2487443
+tooele,2026,ft_other licensed,81
+tooele,2026,median_other licensed,79666
+tooele,2026,salary_dollars_other licensed,6460690
+tooele,2019,ft_aides,2
+tooele,2019,salary_dollars_aides,4828191
+tooele,2026,ft_aides,6
+tooele,2026,salary_dollars_aides,9633053
+tooele,2019,ft_office,60
+tooele,2019,median_office,38660
+tooele,2019,salary_dollars_office,3058595
+tooele,2026,ft_office,78
+tooele,2026,median_office,49776
+tooele,2026,salary_dollars_office,5368911
+tooele,2019,ft_transport,11
+tooele,2019,median_transport,50634
+tooele,2019,salary_dollars_transport,1820292
+tooele,2026,ft_transport,19
+tooele,2026,median_transport,49734
+tooele,2026,salary_dollars_transport,2746337
+tooele,2019,"ft_maintenance, custodial, technology",84
+tooele,2019,"median_maintenance, custodial, technology",47596
+tooele,2019,"salary_dollars_maintenance, custodial, technology",5100001
+tooele,2026,"ft_maintenance, custodial, technology",128
+tooele,2026,"median_maintenance, custodial, technology",56423
+tooele,2026,"salary_dollars_maintenance, custodial, technology",9424814
+tooele,2019,"ft_food service, coaches, other",5
+tooele,2019,"salary_dollars_food service, coaches, other",2967688
+tooele,2026,"ft_food service, coaches, other",10
+tooele,2026,"median_food service, coaches, other",43911
+tooele,2026,"salary_dollars_food service, coaches, other",4734891
+iron,2019,salaries,42823847
+iron,2019,benefits,20095822
+iron,2019,students,9311
+iron,2019,salariesPerStudent,4599
+iron,2019,earners100k,10
+iron,2019,ftTeachers,439
+iron,2019,ftAdmins,26
+iron,2019,teacherMedian,57408
+iron,2019,studentsPerAdmin,358.1
+iron,2019,teachersPerAdmin,16.9
+iron,2019,studentsPerTeacher,21.2
+iron,2020,salaries,46534085
+iron,2020,benefits,22293014
+iron,2020,students,9437
+iron,2020,salariesPerStudent,4931
+iron,2020,earners100k,9
+iron,2020,ftTeachers,452
+iron,2020,ftAdmins,27
+iron,2020,teacherMedian,60768
+iron,2020,studentsPerAdmin,349.5
+iron,2020,teachersPerAdmin,16.7
+iron,2020,studentsPerTeacher,20.9
+iron,2021,salaries,49601760
+iron,2021,benefits,23448046
+iron,2021,students,9164
+iron,2021,salariesPerStudent,5413
+iron,2021,earners100k,15
+iron,2021,ftTeachers,460
+iron,2021,ftAdmins,31
+iron,2021,teacherMedian,62567
+iron,2021,studentsPerAdmin,295.6
+iron,2021,teachersPerAdmin,14.8
+iron,2021,studentsPerTeacher,19.9
+iron,2022,salaries,53647274
+iron,2022,benefits,24649929
+iron,2022,students,9663
+iron,2022,salariesPerStudent,5552
+iron,2022,earners100k,25
+iron,2022,ftTeachers,484
+iron,2022,ftAdmins,32
+iron,2022,teacherMedian,64885
+iron,2022,studentsPerAdmin,302.0
+iron,2022,teachersPerAdmin,15.1
+iron,2022,studentsPerTeacher,20.0
+iron,2023,salaries,60744291
+iron,2023,benefits,27323533
+iron,2023,students,9824
+iron,2023,salariesPerStudent,6183
+iron,2023,earners100k,40
+iron,2023,ftTeachers,501
+iron,2023,ftAdmins,35
+iron,2023,teacherMedian,69946
+iron,2023,studentsPerAdmin,280.7
+iron,2023,teachersPerAdmin,14.3
+iron,2023,studentsPerTeacher,19.6
+iron,2024,salaries,69387856
+iron,2024,benefits,30722107
+iron,2024,students,9690
+iron,2024,salariesPerStudent,7161
+iron,2024,earners100k,53
+iron,2024,ftTeachers,532
+iron,2024,ftAdmins,40
+iron,2024,teacherMedian,73545
+iron,2024,studentsPerAdmin,242.2
+iron,2024,teachersPerAdmin,13.3
+iron,2024,studentsPerTeacher,18.2
+iron,2025,salaries,75308683
+iron,2025,benefits,32850992
+iron,2025,students,9601
+iron,2025,salariesPerStudent,7844
+iron,2025,earners100k,86
+iron,2025,ftTeachers,535
+iron,2025,ftAdmins,42
+iron,2025,teacherMedian,77409
+iron,2025,studentsPerAdmin,228.6
+iron,2025,teachersPerAdmin,12.7
+iron,2025,studentsPerTeacher,17.9
+iron,2026,salaries,78981486
+iron,2026,benefits,35118449
+iron,2026,students,9701
+iron,2026,salariesPerStudent,8142
+iron,2026,earners100k,95
+iron,2026,ftTeachers,542
+iron,2026,ftAdmins,44
+iron,2026,teacherMedian,79733
+iron,2026,studentsPerAdmin,220.5
+iron,2026,teachersPerAdmin,12.3
+iron,2026,studentsPerTeacher,17.9
+iron,2019,ft_teachers,439
+iron,2019,median_teachers,57408
+iron,2019,salary_dollars_teachers,25028489
+iron,2026,ft_teachers,542
+iron,2026,median_teachers,79733
+iron,2026,salary_dollars_teachers,43904801
+iron,2019,ft_school admin,21
+iron,2019,median_school admin,92552
+iron,2019,salary_dollars_school admin,1964059
+iron,2026,ft_school admin,35
+iron,2026,median_school admin,124668
+iron,2026,salary_dollars_school admin,4392187
+iron,2019,ft_district admin,5
+iron,2019,salary_dollars_district admin,666411
+iron,2026,ft_district admin,9
+iron,2026,salary_dollars_district admin,1531488
+iron,2019,ft_other licensed,41
+iron,2019,median_other licensed,56967
+iron,2019,salary_dollars_other licensed,2459905
+iron,2026,ft_other licensed,63
+iron,2026,median_other licensed,80342
+iron,2026,salary_dollars_other licensed,5108921
+iron,2019,ft_aides,2
+iron,2019,salary_dollars_aides,4586082
+iron,2026,ft_aides,1
+iron,2026,salary_dollars_aides,9678345
+iron,2019,ft_office,22
+iron,2019,median_office,37154
+iron,2019,salary_dollars_office,1577284
+iron,2026,ft_office,36
+iron,2026,median_office,48419
+iron,2026,salary_dollars_office,3041807
+iron,2019,ft_transport,6
+iron,2019,salary_dollars_transport,1570452
+iron,2026,ft_transport,13
+iron,2026,median_transport,56855
+iron,2026,salary_dollars_transport,2500510
+iron,2019,"ft_maintenance, custodial, technology",62
+iron,2019,"median_maintenance, custodial, technology",47951
+iron,2019,"salary_dollars_maintenance, custodial, technology",3406599
+iron,2026,"ft_maintenance, custodial, technology",77
+iron,2026,"median_maintenance, custodial, technology",66717
+iron,2026,"salary_dollars_maintenance, custodial, technology",5983182
+iron,2019,"ft_food service, coaches, other",10
+iron,2019,"median_food service, coaches, other",34443
+iron,2019,"salary_dollars_food service, coaches, other",1560408
+iron,2026,"ft_food service, coaches, other",18
+iron,2026,"median_food service, coaches, other",48447
+iron,2026,"salary_dollars_food service, coaches, other",2840245
+cache,2019,salaries,83251190
+cache,2019,benefits,34539074
+cache,2019,students,18270
+cache,2019,salariesPerStudent,4557
+cache,2019,earners100k,46
+cache,2019,ftTeachers,828
+cache,2019,ftAdmins,46
+cache,2019,teacherMedian,58482
+cache,2019,studentsPerAdmin,397.2
+cache,2019,teachersPerAdmin,18.0
+cache,2019,studentsPerTeacher,22.1
+cache,2020,salaries,88813974
+cache,2020,benefits,38315022
+cache,2020,students,18802
+cache,2020,salariesPerStudent,4724
+cache,2020,earners100k,49
+cache,2020,ftTeachers,854
+cache,2020,ftAdmins,48
+cache,2020,teacherMedian,60396
+cache,2020,studentsPerAdmin,391.7
+cache,2020,teachersPerAdmin,17.8
+cache,2020,studentsPerTeacher,22.0
+cache,2021,salaries,97312500
+cache,2021,benefits,41819906
+cache,2021,students,18833
+cache,2021,salariesPerStudent,5167
+cache,2021,earners100k,68
+cache,2021,ftTeachers,884
+cache,2021,ftAdmins,48
+cache,2021,teacherMedian,64615
+cache,2021,studentsPerAdmin,392.4
+cache,2021,teachersPerAdmin,18.4
+cache,2021,studentsPerTeacher,21.3
+cache,2022,salaries,103365689
+cache,2022,benefits,46082728
+cache,2022,students,19554
+cache,2022,salariesPerStudent,5286
+cache,2022,earners100k,82
+cache,2023,salaries,114344890
+cache,2023,benefits,51395941
+cache,2023,students,19731
+cache,2023,salariesPerStudent,5795
+cache,2023,earners100k,134
+cache,2024,salaries,127089024
+cache,2024,benefits,55635742
+cache,2024,students,19794
+cache,2024,salariesPerStudent,6421
+cache,2024,earners100k,218
+cache,2025,salaries,131698628
+cache,2025,benefits,56077703
+cache,2025,students,19847
+cache,2025,salariesPerStudent,6636
+cache,2025,earners100k,263
+cache,2019,ft_teachers,828
+cache,2019,median_teachers,58482
+cache,2019,salary_dollars_teachers,51595050
+cache,2021,ft_teachers,884
+cache,2021,median_teachers,64615
+cache,2021,salary_dollars_teachers,59991632
+cache,2019,ft_school admin,36
+cache,2019,median_school admin,103920
+cache,2019,salary_dollars_school admin,3772832
+cache,2021,ft_school admin,36
+cache,2021,median_school admin,111227
+cache,2021,salary_dollars_school admin,4023509
+cache,2019,ft_district admin,10
+cache,2019,median_district admin,130372
+cache,2019,salary_dollars_district admin,1320758
+cache,2021,ft_district admin,12
+cache,2021,median_district admin,139124
+cache,2021,salary_dollars_district admin,1638826
+cache,2019,ft_other licensed,52
+cache,2019,median_other licensed,64202
+cache,2019,salary_dollars_other licensed,3367158
+cache,2021,ft_other licensed,67
+cache,2021,median_other licensed,72425
+cache,2021,salary_dollars_other licensed,4700936
+cache,2019,ft_aides,3
+cache,2019,salary_dollars_aides,7874417
+cache,2021,ft_aides,1
+cache,2021,salary_dollars_aides,9808653
+cache,2019,ft_office,49
+cache,2019,median_office,41998
+cache,2019,salary_dollars_office,2824506
+cache,2021,ft_office,55
+cache,2021,median_office,44189
+cache,2021,salary_dollars_office,3087150
+cache,2019,ft_transport,43
+cache,2019,median_transport,38947
+cache,2019,salary_dollars_transport,4260996
+cache,2021,ft_transport,50
+cache,2021,median_transport,38376
+cache,2021,salary_dollars_transport,4653199
+cache,2019,"ft_maintenance, custodial, technology",84
+cache,2019,"median_maintenance, custodial, technology",44871
+cache,2019,"salary_dollars_maintenance, custodial, technology",5131474
+cache,2021,"ft_maintenance, custodial, technology",90
+cache,2021,"median_maintenance, custodial, technology",48693
+cache,2021,"salary_dollars_maintenance, custodial, technology",6039936
+cache,2019,"ft_food service, coaches, other",15
+cache,2019,"median_food service, coaches, other",35783
+cache,2019,"salary_dollars_food service, coaches, other",2865618
+cache,2021,"ft_food service, coaches, other",18
+cache,2021,"median_food service, coaches, other",38856
+cache,2021,"salary_dollars_food service, coaches, other",3088601
+boxelder,2019,salaries,57077208
+boxelder,2019,benefits,21411186
+boxelder,2019,students,11770
+boxelder,2019,salariesPerStudent,4849
+boxelder,2019,earners100k,20
+boxelder,2019,ftTeachers,548
+boxelder,2019,ftAdmins,37
+boxelder,2019,teacherMedian,59952
+boxelder,2019,studentsPerAdmin,318.1
+boxelder,2019,teachersPerAdmin,14.8
+boxelder,2019,studentsPerTeacher,21.5
+boxelder,2020,salaries,61385206
+boxelder,2020,benefits,23347098
+boxelder,2020,students,11914
+boxelder,2020,salariesPerStudent,5152
+boxelder,2020,earners100k,33
+boxelder,2020,ftTeachers,565
+boxelder,2020,ftAdmins,37
+boxelder,2020,teacherMedian,62460
+boxelder,2020,studentsPerAdmin,322.0
+boxelder,2020,teachersPerAdmin,15.3
+boxelder,2020,studentsPerTeacher,21.1
+boxelder,2021,salaries,66809385
+boxelder,2021,benefits,24547630
+boxelder,2021,students,11832
+boxelder,2021,salariesPerStudent,5646
+boxelder,2021,earners100k,40
+boxelder,2021,ftTeachers,573
+boxelder,2021,ftAdmins,41
+boxelder,2021,teacherMedian,65611
+boxelder,2021,studentsPerAdmin,288.6
+boxelder,2021,teachersPerAdmin,14.0
+boxelder,2021,studentsPerTeacher,20.6
+boxelder,2022,salaries,69713829
+boxelder,2022,benefits,25533924
+boxelder,2022,students,12296
+boxelder,2022,salariesPerStudent,5670
+boxelder,2022,earners100k,54
+boxelder,2022,ftTeachers,583
+boxelder,2022,ftAdmins,40
+boxelder,2022,teacherMedian,66977
+boxelder,2022,studentsPerAdmin,307.4
+boxelder,2022,teachersPerAdmin,14.6
+boxelder,2022,studentsPerTeacher,21.1
+boxelder,2023,salaries,75510810
+boxelder,2023,benefits,27285385
+boxelder,2023,students,12338
+boxelder,2023,salariesPerStudent,6120
+boxelder,2023,earners100k,76
+boxelder,2023,ftTeachers,599
+boxelder,2023,ftAdmins,43
+boxelder,2023,teacherMedian,69472
+boxelder,2023,studentsPerAdmin,286.9
+boxelder,2023,teachersPerAdmin,13.9
+boxelder,2023,studentsPerTeacher,20.6
+boxelder,2024,salaries,84665905
+boxelder,2024,benefits,29825205
+boxelder,2024,students,12268
+boxelder,2024,salariesPerStudent,6901
+boxelder,2024,earners100k,120
+boxelder,2024,ftTeachers,637
+boxelder,2024,ftAdmins,41
+boxelder,2024,teacherMedian,76001
+boxelder,2024,studentsPerAdmin,299.2
+boxelder,2024,teachersPerAdmin,15.5
+boxelder,2024,studentsPerTeacher,19.3
+boxelder,2025,salaries,88066817
+boxelder,2025,benefits,30174754
+boxelder,2025,students,12244
+boxelder,2025,salariesPerStudent,7193
+boxelder,2025,earners100k,124
+boxelder,2025,ftTeachers,639
+boxelder,2025,ftAdmins,43
+boxelder,2025,teacherMedian,77197
+boxelder,2025,studentsPerAdmin,284.7
+boxelder,2025,teachersPerAdmin,14.9
+boxelder,2025,studentsPerTeacher,19.2
+boxelder,2026,salaries,95174734
+boxelder,2026,benefits,31737330
+boxelder,2026,students,12087
+boxelder,2026,salariesPerStudent,7874
+boxelder,2026,earners100k,181
+boxelder,2026,ftTeachers,634
+boxelder,2026,ftAdmins,42
+boxelder,2026,teacherMedian,83760
+boxelder,2026,studentsPerAdmin,287.8
+boxelder,2026,teachersPerAdmin,15.1
+boxelder,2026,studentsPerTeacher,19.1
+boxelder,2019,ft_teachers,548
+boxelder,2019,median_teachers,59952
+boxelder,2019,salary_dollars_teachers,31891464
+boxelder,2026,ft_teachers,634
+boxelder,2026,median_teachers,83760
+boxelder,2026,salary_dollars_teachers,47320194
+boxelder,2019,ft_school admin,26
+boxelder,2019,median_school admin,95340
+boxelder,2019,salary_dollars_school admin,2364592
+boxelder,2026,ft_school admin,29
+boxelder,2026,median_school admin,137445
+boxelder,2026,salary_dollars_school admin,3921181
+boxelder,2019,ft_district admin,11
+boxelder,2019,median_district admin,105350
+boxelder,2019,salary_dollars_district admin,1224257
+boxelder,2026,ft_district admin,13
+boxelder,2026,median_district admin,153620
+boxelder,2026,salary_dollars_district admin,1998428
+boxelder,2019,ft_other licensed,36
+boxelder,2019,median_other licensed,61517
+boxelder,2019,salary_dollars_other licensed,2135548
+boxelder,2026,ft_other licensed,60
+boxelder,2026,median_other licensed,92314
+boxelder,2026,salary_dollars_other licensed,4679243
+boxelder,2019,ft_aides,0
+boxelder,2019,salary_dollars_aides,5667908
+boxelder,2026,ft_aides,3
+boxelder,2026,salary_dollars_aides,11942833
+boxelder,2019,ft_office,33
+boxelder,2019,median_office,38922
+boxelder,2019,salary_dollars_office,2267649
+boxelder,2026,ft_office,47
+boxelder,2026,median_office,51682
+boxelder,2026,salary_dollars_office,3665755
+boxelder,2019,ft_transport,22
+boxelder,2019,median_transport,34018
+boxelder,2019,salary_dollars_transport,2602459
+boxelder,2026,ft_transport,33
+boxelder,2026,median_transport,46510
+boxelder,2026,salary_dollars_transport,4205099
+boxelder,2019,"ft_maintenance, custodial, technology",83
+boxelder,2019,"median_maintenance, custodial, technology",43778
+boxelder,2019,"salary_dollars_maintenance, custodial, technology",4432594
+boxelder,2026,"ft_maintenance, custodial, technology",95
+boxelder,2026,"median_maintenance, custodial, technology",56409
+boxelder,2026,"salary_dollars_maintenance, custodial, technology",6663194
+boxelder,2019,"ft_food service, coaches, other",3
+boxelder,2019,"salary_dollars_food service, coaches, other",2174076
+boxelder,2026,"ft_food service, coaches, other",5
+boxelder,2026,"salary_dollars_food service, coaches, other",3704642
